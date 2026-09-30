@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onde dormir, cidade a cidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{
+  --fundo:#f6f7f9; --papel:#ffffff; --tinta:#0f172a; --tinta-2:#334155; --tinta-3:#5b6678;
+  --linha:#e2e6ec; --azul:#1d4ed8; --azul-claro:#e8eefc; --ambar:#b45309; --ambar-claro:#fdf3e1;
+  --verde:#15803d; --verde-claro:#e7f5ec; --rosa:#be185d; --rosa-claro:#fce8f2; --destaque:#c2410c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fundo:#0b1120; --papel:#131c2e; --tinta:#e8ecf3; --tinta-2:#c3cad6; --tinta-3:#8d97a8;
+    --linha:#243049; --azul:#7aa2ff; --azul-claro:#1a2748; --ambar:#f5a524; --ambar-claro:#2d2210;
+    --verde:#4ade80; --verde-claro:#12291b; --rosa:#f472b6; --rosa-claro:#2c1322; --destaque:#fb7c45;
+  }
+}
+:root[data-theme="dark"]{
+  --fundo:#0b1120; --papel:#131c2e; --tinta:#e8ecf3; --tinta-2:#c3cad6; --tinta-3:#8d97a8;
+  --linha:#243049; --azul:#7aa2ff; --azul-claro:#1a2748; --ambar:#f5a524; --ambar-claro:#2d2210;
+  --verde:#4ade80; --verde-claro:#12291b; --rosa:#f472b6; --rosa-claro:#2c1322; --destaque:#fb7c45;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.55 "Outfit",ui-sans-serif,system-ui,sans-serif;padding-inline:16px}
+.miolo{max-width:1120px;margin:0 auto;padding-block:36px 80px}
+h1,h2,h3{margin:0;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(1.9rem,4.5vw,2.7rem);font-weight:700;letter-spacing:-.02em}
+h1 .ponto{color:var(--destaque)}
+h2{font-size:1.45rem;font-weight:600}
+h3{font-size:1.02rem;font-weight:600}
+p{margin:0}
+a{color:var(--azul)}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--azul);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.sub{color:var(--tinta-2);max-width:70ch}
+.fraco{color:var(--tinta-3);font-size:.9rem}
+.voltar{display:inline-block;margin-bottom:18px;font-size:.93rem}
+section{margin-top:44px}
+
+.total{margin-top:22px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.caixa{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:16px 18px}
+.caixa .v{font-size:1.6rem;font-weight:700;margin-top:2px}
+.caixa .v small{font-size:.88rem;font-weight:500;color:var(--tinta-3)}
+
+.abas{position:sticky;top:0;z-index:5;background:var(--fundo);padding-block:12px;margin-top:36px;display:flex;gap:6px;overflow-x:auto;border-bottom:1px solid var(--linha)}
+.abas button{font:inherit;font-size:.95rem;font-weight:500;white-space:nowrap;border:1px solid var(--linha);background:var(--papel);color:var(--tinta-2);padding:8px 14px;border-radius:999px;cursor:pointer}
+.abas button[aria-selected="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
+.abas button span{font-size:.8rem;opacity:.75;margin-left:6px}
+
+.cab-cidade{margin-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px}
+.nota-cidade{margin-top:14px;background:var(--papel);border:1px solid var(--linha);border-left:4px solid var(--destaque);border-radius:10px;padding:14px 18px;color:var(--tinta-2)}
+.nota-cidade b{color:var(--tinta)}
+.resumo{display:grid;gap:10px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.resumo .caixa .v{font-size:1.35rem}
+
+.grade{display:grid;gap:14px;margin-top:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.item{background:var(--papel);border:1px solid var(--linha);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.item img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--linha)}
+.item .corpo{padding:12px 14px 14px;display:grid;gap:7px;flex:1;align-content:start}
+.item .preco{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.item .preco b{font-size:1.22rem;font-weight:700}
+.item .preco span{color:var(--tinta-3);font-size:.88rem}
+.item h3{font-size:.98rem}
+.fatos{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:.8rem;font-weight:500;padding:2px 9px;border-radius:999px;background:var(--fundo);border:1px solid var(--linha);color:var(--tinta-2);white-space:nowrap}
+.chip.airbnb{background:var(--rosa-claro);color:var(--rosa);border-color:transparent}
+.chip.hotel{background:var(--azul-claro);color:var(--azul);border-color:transparent}
+.chip.alerta{background:var(--ambar-claro);color:var(--ambar);border-color:transparent}
+.item .det{color:var(--tinta-3);font-size:.86rem}
+.item .abrir{margin-top:auto;font-weight:600;text-decoration:none;padding-top:4px}
+
+#mapa{height:420px;border-radius:10px;border:1px solid var(--linha);margin-top:16px;z-index:0}
+.pino{padding:2px 7px;border-radius:999px;color:#fff;font:600 11px/1.4 "Outfit",sans-serif;white-space:nowrap;border:1.5px solid #fff;box-shadow:0 1px 3px rgb(0 0 0/.35);transform:translate(-50%,-50%)}
+.leg{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:.88rem;color:var(--tinta-2)}
+.leg i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+.filtros{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin-top:16px;background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:12px 16px}
+.filtros label{display:grid;gap:4px;font-size:.85rem;color:var(--tinta-3)}
+.filtros select{font:inherit;font-size:.95rem;padding:7px 10px;border-radius:6px;border:1px solid var(--linha);background:var(--fundo);color:var(--tinta)}
+.filtros .caixinha{display:flex;align-items:center;gap:8px;font-size:.95rem;color:var(--tinta)}
+.filtros .caixinha input{width:18px;height:18px;accent-color:var(--azul)}
+#contagem{margin-left:auto;font-size:.93rem;color:var(--tinta-2)}
+.regras{margin-top:16px;display:grid;gap:10px;padding:0;list-style:none}
+.regras li{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:13px 16px;color:var(--tinta-2)}
+.regras b{color:var(--tinta)}
+footer{margin-top:60px;color:var(--tinta-3);font-size:.85rem;border-top:1px solid var(--linha);padding-top:14px}
+@media (max-width:560px){#mapa{height:340px} #contagem{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="miolo">
+<a class="voltar" href="index.html">← Roteiro completo</a>
+
+<header>
+  <h1>Onde dormir, cidade a cidade<span class="ponto">.</span></h1>
+  <p class="sub" style="margin-top:12px">Busquei em 30/09/2026 no Airbnb (apartamento inteiro, 2 quartos ou mais) e no Booking (só hotel, 5 adultos em 2 quartos, nota 8 ou mais), sempre nas datas de vocês. Para cada parada separei os <b>6 mais baratos de cada tipo que têm avaliação boa</b>: Airbnb com nota 4,7 ou mais e 15+ avaliações, hotel com nota 8,2 ou mais e 150+ avaliações, todos perto do centro. Preços em reais, pelo total da estadia dos 5, com as taxas.</p>
+  <div class="total num" id="total"></div>
+</header>
+
+<section>
+  <h2>Como ler</h2>
+  <ul class="regras">
+    <li><b>O Airbnb sai mais barato em todas as paradas.</b> A diferença vai de ~10% na noite única de Innsbruck, onde a taxa de limpeza pesa, a ~90% em Roma. Hotel só compensa quando conta outra coisa: recepção 24h na chegada à meia-noite, ou café da manhã incluído.</li>
+    <li><b>Hotel para 5 é sempre combinação de quartos</b> (triplo + duplo, ou 2 com cama extra). Confiram no link a combinação que o Booking montou.</li>
+    <li><b>Preço de agora, não garantido.</b> Reservem com cancelamento grátis o que agradar e continuem olhando.</li>
+  </ul>
+</section>
+
+<nav class="abas" role="tablist" aria-label="Cidades" id="abas"></nav>
+<div id="cidade"></div>
+
+<footer>Dados: buscas públicas do Airbnb e do Booking em 30/09/2026, datas do plano recomendado (com 2 noites em Budapeste). Distância em linha reta até o ponto indicado.</footer>
+</div>
+
+<script src="hospedagens-dados.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const H = window.HOSP || [];
+const NOTAS = {
+  "madri-ida": "<b>Vocês chegam à meia-noite.</b> No Airbnb, confirmem antes de reservar que o check-in é autônomo. Hotel tem recepção 24h, e é a única vantagem dele aqui, porque custa ~60% a mais por pessoa.",
+  "roma": "<b>Taxa turística fora do preço no Airbnb:</b> ~€6 por pessoa por noite, cerca de €150 para vocês nas 5 noites, cobrada na chegada. Nos hotéis do Booking o preço mostrado já soma \"impostos e taxas\". Mesmo assim, o Airbnb sai bem mais barato.",
+  "verona": "Duas noites e uma cidade pequena: tudo a até 2 km da Arena. Há Airbnb com <b>5 camas de verdade</b> pelo preço de hotel barato.",
+  "innsbruck": "<b>Uma noite só.</b> A taxa de limpeza do Airbnb não se dilui, então hotel empata. Vale ficar perto da Hauptbahnhof: vocês chegam e saem de trem.",
+  "viena": "A melhor relação preço/qualidade da viagem em Airbnb. Nos hotéis baratos, confiram se o 5º dorme em sofá-cama.",
+  "budapeste": "A parada mais barata da viagem. Dá para escolher o melhor lugar sem pesar no total.",
+  "madri-volta": "<b>O ideal é voltar ao mesmo apartamento da chegada</b>: é o que permite deixar as malas grandes guardadas. Se não der, perto de Atocha facilita o trem até o aeroporto no dia 08."
+};
+const reais = v => "R$ " + Math.round(v).toLocaleString("pt-BR");
+const dm = iso => iso.slice(8,10) + "/" + iso.slice(5,7);
+// Roma cobra ~€6 por pessoa/noite no aluguel por temporada: 5 x 5 x €6, a R$ 5,95
+const ROMA_TAXA = 150 * 5.95;
+const COR = {airbnb:"#be185d", hotel:"#1d4ed8"};
+let atual = H[0]?.chave, mapa, camada;
+
+// total da viagem pela opção boa mais barata de cada parada
+(function(){
+  let ab = 0;
+  H.forEach(c => {
+    const e = c.itens.filter(x => x.escolha);
+    const minAb = Math.min(...e.filter(x=>x.tipo==="airbnb").map(x=>x.total));
+    ab += minAb;
+  });
+  const noites = H.reduce((s,c)=>s+c.noites,0);
+  document.getElementById("total").innerHTML = `
+    <div class="caixa"><p class="fraco">Só Airbnb, sempre a opção boa mais barata</p><p class="v">${reais(ab)}</p><p class="fraco">${reais(ab/5)} por pessoa · ${noites} noites</p></div>
+    <div class="caixa"><p class="fraco">Somando a taxa turística de Roma (~€150, câmbio R$ 5,95)</p><p class="v">${reais(ab + ROMA_TAXA)}</p><p class="fraco">${reais((ab + ROMA_TAXA)/5)} por pessoa · ${reais((ab + ROMA_TAXA)/5/noites)} por pessoa/noite</p></div>
+    <div class="caixa"><p class="fraco">Referência: o que vocês pagaram em 2026</p><p class="v">R$ 182–196 <small>por pessoa/noite</small></p><p class="fraco">Airbnb em Roma e Madri, 4 pessoas</p></div>`;
+})();
+
+// abas
+document.getElementById("abas").innerHTML = H.map(c =>
+  `<button role="tab" type="button" id="aba-${c.chave}" aria-selected="${c.chave===atual}" data-k="${c.chave}">${c.nome}<span class="num">${dm(c.ent)}</span></button>`).join("");
+document.querySelectorAll("#abas button").forEach(b => b.onclick = () => { atual = b.dataset.k; mostrar(); });
+
+function alertas(x){
+  const a = [];
+  if (/sof[áa]-cama/i.test(x.detalhes)) a.push("sofá-cama");
+  const m = x.detalhes.match(/(\d+)\s*camas?\b/);
+  if (x.tipo==="airbnb" && m && +m[1] < 3) a.push("poucas camas");
+  if (!x.nota) a.push("sem avaliações");
+  return a;
+}
+function cartao(x, c){
+  const nota = x.nota ? (x.tipo==="hotel" ? x.nota.toLocaleString("pt-BR",{minimumFractionDigits:1}) : x.nota.toLocaleString("pt-BR")) : null;
+  return `<article class="item">
+    ${x.foto ? `<img src="${x.foto}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
+    <div class="corpo">
+      <div class="preco num"><b>${reais(x.total)}</b><span>${reais(x.pp)} por pessoa/noite</span></div>
+      <h3>${x.nome}</h3>
+      <div class="fatos num">
+        <span class="chip ${x.tipo}">${x.tipo==="airbnb"?"Airbnb":"Hotel"}</span>
+        ${nota ? `<span class="chip">★ ${nota} (${x.aval.toLocaleString("pt-BR")})</span>` : ""}
+        ${x.km_centro!=null ? `<span class="chip">${x.km_centro.toLocaleString("pt-BR")} km de ${c.centro}</span>` : ""}
+        ${x.km_estacao!=null && c.estacao ? `<span class="chip">${x.km_estacao.toLocaleString("pt-BR")} km de ${c.estacao}</span>` : ""}
+        ${x.superhost ? `<span class="chip">Superhost</span>` : ""}
+        ${alertas(x).map(t=>`<span class="chip alerta">${t}</span>`).join("")}
+      </div>
+      ${x.detalhes ? `<p class="det">${x.detalhes}</p>` : ""}
+      <a class="abrir" href="${x.url}" target="_blank" rel="noopener">Abrir no ${x.tipo==="airbnb"?"Airbnb":"Booking"} ↗</a>
+    </div></article>`;
+}
+
+function mostrar(){
+  document.querySelectorAll("#abas button").forEach(b => b.setAttribute("aria-selected", b.dataset.k===atual));
+  const c = H.find(x => x.chave===atual), r = c.resumo;
+  const esc = t => c.itens.filter(x => x.escolha && x.tipo===t).sort((a,b)=>a.total-b.total);
+  document.getElementById("cidade").innerHTML = `
+    <div class="cab-cidade"><h2>${c.nome}</h2><span class="fraco num">${dm(c.ent)} → ${dm(c.sai)} · ${c.noites} ${c.noites>1?"noites":"noite"} · 5 pessoas</span></div>
+    <p class="nota-cidade">${NOTAS[c.chave]||""}</p>
+    <div class="resumo num">
+      <div class="caixa"><p class="fraco">Airbnb bom mais barato</p><p class="v">${r.min_bom_airbnb?reais(r.min_bom_airbnb):"—"} <small>/pessoa/noite</small></p></div>
+      <div class="caixa"><p class="fraco">Airbnb, mediana (${r.n_airbnb} anúncios)</p><p class="v">${r.med_airbnb?reais(r.med_airbnb):"—"} <small>/pessoa/noite</small></p></div>
+      <div class="caixa"><p class="fraco">Hotel bom mais barato</p><p class="v">${r.min_bom_hotel?reais(r.min_bom_hotel):"—"} <small>/pessoa/noite</small></p></div>
+      <div class="caixa"><p class="fraco">Hotel, mediana (${r.n_hotel} hotéis)</p><p class="v">${r.med_hotel?reais(r.med_hotel):"—"} <small>/pessoa/noite</small></p></div>
+    </div>
+    <section><h2>Airbnb: os 6 que eu olharia</h2><div class="grade">${esc("airbnb").map(x=>cartao(x,c)).join("") || '<p class="fraco">Nenhum passou no filtro.</p>'}</div></section>
+    <section><h2>Hotéis: os 6 que eu olharia</h2><div class="grade">${esc("hotel").map(x=>cartao(x,c)).join("") || '<p class="fraco">Nenhum passou no filtro.</p>'}</div></section>
+    <section><h2>No mapa</h2><div id="mapa" role="img" aria-label="Mapa das hospedagens em ${c.nome}"></div>
+      <div class="leg"><span><i style="background:${COR.airbnb}"></i>Airbnb</span><span><i style="background:${COR.hotel}"></i>hotel</span><span>etiqueta = escolha (R$/pessoa/noite) · ponto = demais</span></div></section>
+    <section><h2>Tudo o que apareceu</h2>
+      <div class="filtros">
+        <label for="f-tipo">Tipo<select id="f-tipo"><option value="">Airbnb e hotel</option><option value="airbnb">só Airbnb</option><option value="hotel">só hotel</option></select></label>
+        <label for="f-ordem">Ordenar<select id="f-ordem"><option value="preco">mais barato</option><option value="centro">mais perto do centro</option><option value="nota">melhor avaliação</option></select></label>
+        <label class="caixinha" for="f-bons"><input type="checkbox" id="f-bons" checked> só avaliação boa</label>
+        <span id="contagem" class="num"></span>
+      </div>
+      <div class="grade" id="lista"></div></section>`;
+  ["f-tipo","f-ordem","f-bons"].forEach(id => document.getElementById(id).addEventListener("change", ()=>lista(c)));
+  lista(c); desenharMapa(c);
+}
+
+function bom(x){ return x.tipo==="airbnb" ? (x.nota||0)>=4.7 && x.aval>=15 : (x.nota||0)>=8.2 && x.aval>=150; }
+function lista(c){
+  const tipo = document.getElementById("f-tipo").value, ordem = document.getElementById("f-ordem").value, soBons = document.getElementById("f-bons").checked;
+  let l = c.itens.filter(x => (!tipo || x.tipo===tipo) && (!soBons || bom(x)));
+  const notaN = x => x.tipo==="hotel" ? (x.nota||0)/2 : (x.nota||0);
+  l.sort(ordem==="preco" ? (a,b)=>a.pp-b.pp : ordem==="centro" ? (a,b)=>(a.km_centro??99)-(b.km_centro??99) : (a,b)=>notaN(b)-notaN(a) || b.aval-a.aval);
+  document.getElementById("contagem").textContent = `${l.length} de ${c.itens.length}`;
+  document.getElementById("lista").innerHTML = l.map(x=>cartao(x,c)).join("") || '<p class="fraco">Nada com esses filtros.</p>';
+}
+
+function desenharMapa(c){
+  if (!window.L) { document.getElementById("mapa").innerHTML = '<p style="padding:20px">O mapa precisa de internet.</p>'; return; }
+  if (mapa) { mapa.remove(); mapa = null; }
+  mapa = L.map("mapa", {scrollWheelZoom:false});
+  const esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(esri + "World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap", maxZoom:16}).addTo(mapa);
+  L.tileLayer(esri + "World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {maxZoom:16}).addTo(mapa);
+  const pts = c.itens.filter(x => x.lat != null);
+  const bounds = [];
+  [...pts].sort((a,b)=>(a.escolha?1:0)-(b.escolha?1:0)).forEach(x => {
+    const pop = `<b>${reais(x.total)}</b> · ${reais(x.pp)}/pessoa/noite<br>${x.nome}<br><a href="${x.url}" target="_blank" rel="noopener">Abrir ↗</a>`;
+    if (x.escolha) {
+      L.marker([x.lat,x.lng], {zIndexOffset:1000, icon:L.divIcon({className:"", iconSize:null,
+        html:`<div class="pino num" style="background:${COR[x.tipo]}">R$ ${x.pp}</div>`})}).addTo(mapa).bindPopup(pop);
+      bounds.push([x.lat,x.lng]);
+    } else {
+      L.circleMarker([x.lat,x.lng], {radius:4.5, weight:1, color:"#fff", fillColor:COR[x.tipo], fillOpacity:.6}).addTo(mapa)
+        .bindTooltip(`${reais(x.pp)}/pessoa/noite`).bindPopup(pop);
+    }
+  });
+  L.circleMarker(c.centro_pos, {radius:7, color:"#0f172a", weight:2, fillColor:"#fff", fillOpacity:1}).addTo(mapa).bindTooltip(c.centro);
+  bounds.push(c.centro_pos);
+  mapa.fitBounds(bounds.length > 1 ? bounds : pts.map(x=>[x.lat,x.lng]), {padding:[36,36], maxZoom:15});
+}
+mostrar();
+</script>
+</body>
+</html>
