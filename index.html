@@ -9,530 +9,332 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<style>
-:root{
-  --fundo:#f6f7f9; --papel:#ffffff; --tinta:#0f172a; --tinta-2:#334155; --tinta-3:#5b6678;
-  --linha:#e2e6ec; --azul:#1d4ed8; --azul-claro:#e8eefc; --ambar:#d97706; --ambar-claro:#fdf3e1;
-  --verde:#15803d; --verde-claro:#e7f5ec; --vermelho:#b42318; --vermelho-claro:#fdecea;
-  --madrid:#c2410c; --roma:#b45309; --verona:#9333ea; --innsbruck:#0e7490; --viena:#1d4ed8; --budapeste:#15803d; --florenca:#be185d;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --fundo:#0b1120; --papel:#131c2e; --tinta:#e8ecf3; --tinta-2:#c3cad6; --tinta-3:#8d97a8;
-    --linha:#243049; --azul:#7aa2ff; --azul-claro:#1a2748; --ambar:#f5a524; --ambar-claro:#2d2210;
-    --verde:#4ade80; --verde-claro:#12291b; --vermelho:#ff8a80; --vermelho-claro:#2e1614;
-  }
-}
-:root[data-theme="dark"]{
-  --fundo:#0b1120; --papel:#131c2e; --tinta:#e8ecf3; --tinta-2:#c3cad6; --tinta-3:#8d97a8;
-  --linha:#243049; --azul:#7aa2ff; --azul-claro:#1a2748; --ambar:#f5a524; --ambar-claro:#2d2210;
-  --verde:#4ade80; --verde-claro:#12291b; --vermelho:#ff8a80; --vermelho-claro:#2e1614;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.55 "Outfit",ui-sans-serif,system-ui,sans-serif;padding-inline:16px}
-.miolo{max-width:1040px;margin:0 auto;padding-block:40px 80px}
-h1,h2,h3{line-height:1.15;text-wrap:balance;margin:0}
-h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-.02em}
-h1 .ponto{color:var(--ambar)}
-h2{font-size:1.6rem;font-weight:600;letter-spacing:-.01em}
-h3{font-size:1.1rem;font-weight:600}
-p{margin:0}
-a{color:var(--azul)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--azul);outline-offset:2px;border-radius:4px}
-.num{font-variant-numeric:tabular-nums}
-.sub{color:var(--tinta-2);max-width:65ch}
-.fraco{color:var(--tinta-3);font-size:.9rem}
-section{margin-top:56px}
-section > .sub{margin-top:8px}
-
-/* topo */
-.topo{display:grid;gap:18px}
-.fatos{display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--tinta-2)}
-.fatos b{color:var(--tinta);font-weight:600}
-
-/* barra de noites */
-.barra{display:flex;height:44px;border-radius:10px;overflow:hidden;margin-top:24px;gap:2px}
-.barra div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem;font-weight:600;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 6px}
-.legenda-barra{display:flex;justify-content:space-between;margin-top:6px}
-
-/* alternador */
-.alterna{display:inline-flex;background:var(--papel);border:1px solid var(--linha);border-radius:999px;padding:4px;gap:4px;margin-top:20px;flex-wrap:wrap}
-.alterna button{font:inherit;font-size:.95rem;font-weight:500;border:0;background:transparent;color:var(--tinta-2);padding:8px 16px;border-radius:999px;cursor:pointer}
-.alterna button[aria-pressed="true"]{background:var(--tinta);color:var(--papel)}
-
-/* mapa */
-#mapa{height:460px;border-radius:10px;border:1px solid var(--linha);margin-top:20px;background:var(--papel);z-index:0}
-.leg-mapa{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:10px;color:var(--tinta-2);font-size:.9rem}
-.leg-mapa i{display:inline-block;width:28px;height:0;vertical-align:middle;margin-right:6px;border-top:3px solid var(--azul)}
-.leg-mapa i.voo{border-top:3px dashed var(--ambar)}
-.pino{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;color:#fff;font:600 13px/1 "Outfit",sans-serif;border:2px solid #fff;box-shadow:0 1px 4px rgb(0 0 0/.35)}
-
-/* recomendações */
-.recs{display:grid;gap:14px;margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.rec{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:18px 20px;display:grid;gap:8px;align-content:start}
-.rec .tag{justify-self:start;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:999px}
-.tag.mudar{background:var(--ambar-claro);color:var(--ambar)}
-.tag.opcional{background:var(--azul-claro);color:var(--azul)}
-.tag.atencao{background:var(--vermelho-claro);color:var(--vermelho)}
-.tag.dinheiro{background:var(--verde-claro);color:var(--verde)}
-.rec p{color:var(--tinta-2)}
-
-/* dia a dia */
-.dias{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:0;border-left:2px solid var(--linha);margin-left:10px}
-.dia{position:relative;padding:0 0 22px 26px}
-.dia::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--cor,var(--tinta-3));box-shadow:0 0 0 3px var(--fundo)}
-.dia .cab{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
-.dia .data{font-weight:600;min-width:92px}
-.dia .cidade{font-weight:600;color:var(--cor)}
-.dia .noite{margin-left:auto;font-size:.85rem;color:var(--tinta-3)}
-.dia p{color:var(--tinta-2);margin-top:4px;max-width:72ch}
-.dia.trecho .data::after{content:" · deslocamento";font-weight:400;color:var(--tinta-3);font-size:.85rem}
-.dia .alt{margin-top:6px;font-size:.92rem;color:var(--azul)}
-
-/* tabelas */
-.rolagem{overflow-x:auto;margin-top:20px;border:1px solid var(--linha);border-radius:10px;background:var(--papel)}
-table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
-th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--linha);vertical-align:top}
-th{font-weight:600;color:var(--tinta-3);font-size:.85rem;background:var(--fundo)}
-tr:last-child td{border-bottom:0}
-td .modo{display:inline-block;font-size:.8rem;font-weight:600;padding:2px 8px;border-radius:999px}
-.modo.trem{background:var(--azul-claro);color:var(--azul)}
-.modo.aviao{background:var(--ambar-claro);color:var(--ambar)}
-
-/* hospedagem */
-.hosp{display:grid;gap:14px;margin-top:20px}
-.cidade-hosp{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:20px;display:grid;gap:14px;border-top:4px solid var(--cor)}
-.cidade-hosp .cab{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;align-items:baseline}
-.cidade-hosp .cab .fraco{font-size:.92rem}
-.bairros{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.bairro{border:1px solid var(--linha);border-radius:6px;padding:12px 14px}
-.bairro b{display:block;font-weight:600}
-.bairro span{color:var(--tinta-2);font-size:.93rem}
-.bairro.evitar{border-style:dashed}
-.bairro.evitar b{color:var(--tinta-3)}
-.links{display:flex;flex-wrap:wrap;gap:8px}
-.links a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:500;font-size:.93rem;padding:8px 14px;border-radius:6px;border:1px solid var(--linha);color:var(--tinta)}
-.links a:hover{border-color:var(--azul);color:var(--azul)}
-.estimativa{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.93rem;color:var(--tinta-2)}
-.estimativa b{color:var(--tinta)}
-
-.regras{display:grid;gap:10px;margin-top:20px;padding:0;list-style:none}
-.regras li{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:14px 18px}
-.regras b{font-weight:600}
-.regras span{color:var(--tinta-2)}
-
-.total{margin-top:14px;background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:18px 20px;display:flex;flex-wrap:wrap;gap:10px 32px;align-items:baseline}
-.total .grande{font-size:1.6rem;font-weight:700}
-
-.checks{columns:2 300px;column-gap:24px;margin-top:20px;padding:0;list-style:none}
-.checks li{break-inside:avoid;padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--linha)}
-.checks input{position:absolute;left:0;top:13px;width:18px;height:18px;accent-color:var(--azul)}
-.checks label{cursor:pointer}
-.checks label span{display:block;color:var(--tinta-3);font-size:.9rem}
-
-.perguntas{margin-top:20px;display:grid;gap:8px;padding-left:20px;color:var(--tinta-2)}
-footer{margin-top:64px;color:var(--tinta-3);font-size:.85rem;border-top:1px solid var(--linha);padding-top:16px}
-
-@media (max-width:560px){
-  #mapa{height:360px}
-  .barra div{font-size:.72rem;padding:0 2px}
-  .dia .noite{margin-left:0;width:100%}
-}
-@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
-</style>
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="miolo">
+<nav class="nav" aria-label="Seções">
+  <div class="trilho">
+    <a class="marca" href="#topo">Europa 2027</a>
+    <a href="#compras">O que comprar e quando</a>
+    <a href="#dias">Dia a dia</a>
+    <a href="#transporte">Voos e trens</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="#cidades">Cidades</a>
+    <a href="hospedagens.html">Hospedagem</a>
+    <a href="#checklist">Checklist</a>
+  </div>
+</nav>
 
-<header class="topo">
+<div class="miolo">
+<header id="topo">
   <h1>Madri, Roma, Verona, Innsbruck, Viena e Budapeste<span class="ponto">.</span></h1>
   <div class="fatos num">
     <span><b>18/02 → 08/03/2027</b></span>
     <span><b>5 pessoas</b></span>
     <span><b>18 noites</b> na Europa</span>
-    <span>Air China GRU ⇄ MAD</span>
+    <span>Air China CA898 / CA897</span>
+    <span>Voos internos: mala de mão para os 5 + 2 despachadas</span>
   </div>
-  <p class="sub">O roteiro de vocês cabe inteiro nas datas. Proponho uma troca só (dormir em Budapeste em vez de ir e voltar no mesmo dia), explico o porquê logo abaixo e deixo o plano original a um clique para comparar.</p>
-
-  <div class="alterna" role="group" aria-label="Qual plano mostrar">
-    <button type="button" id="b-rec" aria-pressed="true">Recomendado: dormir em Budapeste</button>
-    <button type="button" id="b-orig" aria-pressed="false">Original: Budapeste bate-volta</button>
-  </div>
-
+  <p class="sub" style="margin-top:14px">Este é o guia da viagem: o que fazer em cada dia, onde comer (a sua lista e os seus mapas encaixados nos dias em que cada lugar abre), o que comprar e em que data, e quanto tudo custa. Os preços são de pesquisas feitas em 30/09/2026.</p>
   <div class="barra num" id="barra" aria-label="Noites por cidade"></div>
-  <div class="legenda-barra fraco num"><span>qui 18/02 · chegada 22:35</span><span>seg 08/03 · voo 22:30</span></div>
+  <div class="legenda-barra fraco num"><span>qui 18/02 · pousa 22:35</span><span>seg 08/03 · voo 22:30</span></div>
 </header>
 
-<section>
+<section id="compras">
+  <h2>O que comprar, e quando</h2>
+  <p class="sub">A ordem importa. Algumas coisas esgotam, e outras só abrem numa data certa.</p>
+  <ol class="compras" id="lista-compras"></ol>
+</section>
+
+<section id="mapa-sec">
   <h2>O caminho</h2>
-  <div id="mapa" role="img" aria-label="Mapa do roteiro pela Europa"></div>
-  <div class="leg-mapa"><span><i></i>trem</span><span><i class="voo"></i>avião</span><span>os números seguem a ordem das cidades</span></div>
+  <div id="mapa" class="mapa" role="img" aria-label="Mapa do roteiro"></div>
+  <div class="leg-mapa"><span><i class="linha"></i>trem</span><span><i class="linha voo"></i>avião</span><span>números na ordem das cidades</span></div>
 </section>
 
-<section>
-  <h2>O que eu mudaria, e o que eu cuidaria</h2>
-  <div class="recs">
-    <article class="rec">
-      <span class="tag mudar">Mudança que sugiro</span>
-      <h3>Dormir 2 noites em Budapeste e voar de lá para Madri</h3>
-      <p>O bate-volta são ~2h40 de trem na ida e outras ~2h40 na volta. Em março escurece por volta de 17h45, então sobram umas 6 horas de cidade para 5 pessoas. E Budapeste tem voo direto para Madri (Wizz Air, Ryanair, Iberia e Vueling), então vocês não precisam voltar a Viena para pegar o avião.</p>
-      <p>O total de noites é o mesmo: só muda onde vocês dormem em 04 e 05/03.</p>
-    </article>
-    <article class="rec">
-      <span class="tag atencao">Do bilhete</span>
-      <h3>Vocês chegam de noite: tratem a primeira noite como só dormir</h3>
-      <p>Ida no CA898: sai de GRU na quinta, 18/02, às 08:25, e pousa em Madri às 22:35 do mesmo dia. Somando imigração (com o registro biométrico novo, o EES) e as malas, vocês chegam à hospedagem por volta da meia-noite. Por isso: <b>check-in 24h ou autônomo</b>, e combinem o horário antes. A essa hora, com 5 pessoas e malas, o mais simples é uma van ou carro XL já reservado.</p><p>Volta no CA897: segunda, 08/03, às 22:30 (chega em GRU às 05:30 de terça). Com isso, 08/03 é um dia inteiro em Madri. Estejam no aeroporto às 19h30.</p>
-    </article>
-    <article class="rec">
-      <span class="tag dinheiro">Economia grande</span>
-      <h3>Deixem as malas grandes em Madri</h3>
-      <p>Vocês começam e terminam em Madri. Viajar com 5 malas de inverno por 5 trens e 2 voos low-cost (que cobram mala despachada) custa caro e cansa. Reservem o mesmo hotel ou apartamento no começo e no fim e peçam para guardar as malas, o que muitos aceitam quando a volta já está reservada. Levem só mala de mão e mochila.</p>
-    </article>
-    <article class="rec">
-      <span class="tag atencao">5 pessoas</span>
-      <h3>Táxi comum leva 4</h3>
-      <p>Em todo aeroporto vão ser 2 táxis, ou um carro grande no Uber/Cabify/Bolt, ou transfer de van. Nos trajetos de aeroporto, o trem ou ônibus expresso quase sempre sai mais barato para 5 (detalhes na tabela de transporte).</p>
-    </article>
-    <article class="rec">
-      <span class="tag opcional">Opcional</span>
-      <h3>Florença no caminho</h3>
-      <p>Florença fica exatamente no trilho Roma → Verona (1h30 de cada lado). Se 5 noites em Roma parecerem muitas, troquem a última por 1 noite em Florença, sem gastar nenhuma hora extra de trem.</p>
-    </article>
-    <article class="rec">
-      <span class="tag opcional">Opcional</span>
-      <h3>Veneza ou Lago de Garda saindo de Verona</h3>
-      <p>Veneza fica a 1h10 de trem e Sirmione (Garda) a uns 30–40 min. O Carnaval de Veneza de 2027 termina em 09/02, antes de vocês chegarem: a cidade vai estar mais vazia e mais barata.</p>
-    </article>
-  </div>
-</section>
-
-<section>
+<section id="dias">
   <h2>Dia a dia</h2>
-  <p class="sub">Um roteiro-base, não uma agenda: o que precisa de reserva está marcado, e o resto pode ser trocado de dia.</p>
-  <ol class="dias" id="dias"></ol>
+  <p class="sub">Toque num dia para abrir. Os lugares em cada bloco levam à página da cidade, com horário, dia em que fecha, o que pedir e mapa.</p>
+  <div id="dia-a-dia"></div>
 </section>
 
-<section>
-  <h2>Transporte entre cidades</h2>
-  <p class="sub">Preços por pessoa, só como ordem de grandeza para comprar com antecedência. Não é cotação. Trem na Europa fica mais caro perto da data, e as tarifas promocionais costumam não ter reembolso.</p>
+<section id="transporte">
+  <h2>Voos e trens</h2>
+  <div id="voos"></div>
+  <h3 style="margin-top:36px">Trens</h3>
+  <p class="sub" style="margin-top:6px">Preços para os 5, em euros e reais (câmbio R$ 5,95). A linha verde é a que eu compraria.</p>
+  <div id="trens"></div>
+  <h3 style="margin-top:36px">Aeroporto ⇄ centro, para 5</h3>
   <div class="rolagem">
     <table>
-      <thead><tr><th>Trecho</th><th>Como</th><th>Duração</th><th>Onde comprar</th><th>Referência / pessoa</th><th>Nota</th></tr></thead>
-      <tbody id="trechos"></tbody>
-    </table>
-  </div>
-
-  <h3 style="margin-top:32px">Aeroporto ⇄ centro, pensando em 5</h3>
-  <div class="rolagem">
-    <table>
-      <thead><tr><th>Cidade</th><th>Mais barato para 5</th><th>Mais cômodo</th></tr></thead>
+      <thead><tr><th>Onde</th><th>Mais barato</th><th>Mais cômodo</th></tr></thead>
       <tbody>
-        <tr><td><b>Madri</b> (MAD)</td><td>Ônibus Exprés Aeropuerto (24h, até Atocha/Cibeles, ~€5 por pessoa) ou metrô linha 8</td><td>Táxi com tarifa fixa até o centro (~€33 por carro, que leva 4: são 2 carros) ou Uber/Cabify XL</td></tr>
-        <tr><td><b>Roma</b> (FCO)</td><td>Trem Leonardo Express até Termini, 32 min, ~€14 por pessoa (~€70 os 5)</td><td>Transfer de van para 5 com malas, que costuma sair perto de 2 táxis de tarifa fixa</td></tr>
-        <tr><td><b>Roma</b> (CIA, Ryanair)</td><td>Ônibus até Termini</td><td>Van ou 2 táxis</td></tr>
-        <tr><td><b>Budapeste</b> (BUD)</td><td>Ônibus 100E direto até o centro</td><td>Bolt ou táxi oficial do aeroporto (Főtaxi)</td></tr>
-        <tr><td><b>Verona, Innsbruck, Viena</b></td><td colspan="2">Vocês chegam e saem de trem, e as estações são centrais: dá para ir a pé ou de bonde/metrô.</td></tr>
+        <tr><td><b>Madri</b> na chegada (22:35)</td><td>Ônibus Exprés Aeropuerto (24h) até Cibeles/Atocha, ~€5 por pessoa</td><td>Van ou Uber/Cabify XL reservado: é meia-noite, e táxi comum leva só 4</td></tr>
+        <tr><td><b>Roma</b> (FCO)</td><td>Leonardo Express até Termini, 32 min, ~€14 por pessoa</td><td>Transfer de van para 5 com malas</td></tr>
+        <tr><td><b>Budapeste</b> (BUD)</td><td>Ônibus 100E, 2.500 HUF por pessoa (o passe comum não vale nele)</td><td>Bolt ou Főtaxi</td></tr>
+        <tr><td><b>Madri</b> na volta (08/03)</td><td>Metrô: saiam ~17h30, as marchas do Dia da Mulher fecham o centro</td><td>Carro XL, mas o trânsito vai estar ruim</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<section>
-  <h2>Onde ficar</h2>
-  <p class="sub"><a href="hospedagens.html"><b>Ver Airbnb e hotéis já pesquisados em cada cidade →</b></a><br>Os links abaixo abrem a busca com as datas certas e 5 hóspedes. Em cada cidade vão 1 ou 2 bairros que eu escolheria, e 1 que eu evitaria.</p>
-
-  <h3 style="margin-top:28px">As regras que mais pesam para 5 pessoas</h3>
-  <ul class="regras">
-    <li><b>Apartamento inteiro, não 2 quartos de hotel.</b> <span>Na Europa quarto para 5 é raro; em geral vira um triplo + um duplo, pelo preço de dois. Um apartamento de 2 ou 3 quartos costuma sair mais barato e ainda tem cozinha: o café da manhã de 5 pessoas por 17 dias é dinheiro de verdade.</span></li>
-    <li><b>Confira as camas, não só o "acomoda 5".</b> <span>Muito anúncio chega a 5 com um sofá-cama na sala. Abra "Onde você vai dormir" e conte as camas de verdade.</span></li>
-    <li><b>Elevador.</b> <span>Prédio antigo em Roma, Verona e Budapeste pode ser 4º andar sem elevador. Mesmo só com mala de mão, vale filtrar.</span></li>
-    <li><b>Taxa turística fora do preço.</b> <span>Roma cobra €5–7 por pessoa por noite em apartamento ou B&amp;B (€6 no aluguel por plataforma). São 5 × 5 × €6 = <b class="num">€150</b>, pagos na chegada e muitas vezes fora do total do Booking. As outras cidades também cobram, mas bem menos.</span></li>
-    <li><b>Reserve já com cancelamento grátis.</b> <span>Fevereiro é baixa temporada, menos em Innsbruck, que está em temporada de esqui. Garanta agora com cancelamento grátis e troque se aparecer coisa melhor.</span></li>
-    <li><b>Horário de chegada.</b> <span>Apartamento sem recepção cobra taxa de check-in tarde. Avise o horário do trem ou voo, ou prefira check-in automático (cofre com chave).</span></li>
-  </ul>
-
-  <div class="hosp" id="hosp"></div>
-
-  <div class="total">
-    <div><p class="fraco">Hospedagem, 18 noites, os 5 juntos</p><p class="grande num" id="total-faixa"></p></div>
-    <div><p class="fraco">Por pessoa</p><p class="grande num" id="total-pp"></p></div>
-    <p class="fraco" style="flex-basis:100%">É uma estimativa minha para baixa temporada em apartamento bem localizado, não cotação. Serve de régua: abaixo disso é achado, acima é caro. Sem as taxas turísticas.</p>
-  </div>
+<section id="orcamento">
+  <h2>Quanto custa</h2>
+  <p class="sub">Somando o que já foi pesquisado. Desmarque o que vocês não forem fazer e o total se ajusta. Não inclui comida nem compras.</p>
+  <div class="orc num" id="orc"></div>
+  <details class="cartao" style="margin-top:14px">
+    <summary style="cursor:pointer;font-weight:600">Ingressos e passeios, por pessoa</summary>
+    <div class="lista-orc num" id="lista-orc"></div>
+  </details>
 </section>
 
-<section>
-  <h2>Antes de ir</h2>
+<section id="cidades">
+  <h2>Cidades</h2>
+  <p class="sub">Cada cidade tem a sua página: tudo o que foi pesquisado, num mapa e numa lista com filtros.</p>
+  <div class="cidades" id="lista-cidades"></div>
+</section>
+
+<section id="checklist">
+  <h2>Checklist</h2>
+  <p class="sub">As marcações ficam salvas neste aparelho.</p>
   <ul class="checks" id="checks"></ul>
 </section>
 
-<section>
-  <h2>O que me falta para fechar</h2>
-  <ol class="perguntas">
-    <li>Quem são os 5? Casais, amigos, crianças? Muda a distribuição das camas, e criança com menos de 10 anos não paga taxa turística em Roma.</li>
-    <li>Quanto vocês querem gastar por noite, somando o grupo?</li>
-    <li>Aceitam a troca de Budapeste? E Florença entra ou não?</li>
-    <li>Vão com quantas malas despachadas?</li>
-    <li>Têm pontos Livelo, Esfera ou outro programa? Os voos Madri → Roma e Budapeste → Madri podem sair em Avios pela Iberia.</li>
-  </ol>
-</section>
-
-<footer>
-  Montado em 30/09/2026. Horários de voo e trem, preços e regras de entrada mudam: confira nos sites oficiais antes de pagar.
-</footer>
+<footer>Pesquisas de 30/09/2026 (Airbnb, Booking, Trenitalia, Italo, ÖBB, Google Flights, sites oficiais). Horários, preços e regras mudam: confiram antes de pagar.</footer>
 </div>
 
+<script src="dados/guia.js"></script>
+<script src="hospedagens-dados.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const COR = {
-  Madri:"var(--madrid)", Roma:"var(--roma)", Florença:"var(--florenca)", Verona:"var(--verona)",
-  Innsbruck:"var(--innsbruck)", Viena:"var(--viena)", Budapeste:"var(--budapeste)"
-};
-// as cores literais servem para o Leaflet, que não lê variável CSS
-const HEX = {Madri:"#c2410c",Roma:"#b45309",Verona:"#9333ea",Innsbruck:"#0e7490",Viena:"#1d4ed8",Budapeste:"#15803d"};
+const G = window.GUIA, HOSP = window.HOSP || [];
+const COR = {madri:"var(--madri)",roma:"var(--roma)",verona:"var(--verona)",innsbruck:"var(--innsbruck)",viena:"var(--viena)",budapeste:"var(--budapeste)"};
+const HEX = {madri:"#c2410c",roma:"#b45309",verona:"#9333ea",innsbruck:"#0e7490",viena:"#1d4ed8",budapeste:"#15803d"};
+const NOME = Object.fromEntries(G.cidades);
+const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
+const dm = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
+const sem = iso => DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()];
+const eur = v => "€" + v.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:2});
+const brl = v => "R$ " + Math.round(v).toLocaleString("pt-BR");
+const porId = {}; Object.values(G.lugares).flat().forEach(x => porId[x.id] = x);
 
-const P = {
-  Madri:[40.4168,-3.7038], Roma:[41.9028,12.4964], Verona:[45.4384,10.9916],
-  Innsbruck:[47.2692,11.4041], Viena:[48.2082,16.3738], Budapeste:[47.4979,19.0402],
-  // pontos de passagem, para a linha do trem seguir o trilho de verdade
-  Florença:[43.7696,11.2558], Bolonha:[44.4949,11.3426], Bolzano:[46.4983,11.3548],
-  Brenner:[47.0036,11.5058], Salzburgo:[47.8095,13.0550], Linz:[48.3069,14.2858], Gyor:[47.6875,17.6504]
-};
+// ---------- barra de noites ----------
+const NOITES = [["madri",3],["roma",5],["verona",2],["innsbruck",1],["viena",3],["budapeste",2],["madri",2]];
+document.getElementById("barra").innerHTML = NOITES.map(([c,n]) =>
+  `<a href="cidade.html?c=${c}" style="flex:${n};background:${COR[c]}" title="${NOME[c]}: ${n} ${n>1?"noites":"noite"}">${NOME[c]} ${n}</a>`).join("");
 
-const PLANOS = {
-  rec: {
-    noites:[["Madri",3],["Roma",5],["Verona",2],["Innsbruck",1],["Viena",3],["Budapeste",2],["Madri",2]],
-    trechos:[
-      ["Madri","Roma","voo",[]],["Roma","Verona","trem",["Florença","Bolonha"]],
-      ["Verona","Innsbruck","trem",["Bolzano","Brenner"]],["Innsbruck","Viena","trem",["Salzburgo","Linz"]],
-      ["Viena","Budapeste","trem",["Gyor"]],["Budapeste","Madri","voo",[]]
-    ]
-  },
-  orig: {
-    noites:[["Madri",3],["Roma",5],["Verona",2],["Innsbruck",1],["Viena",5],["Madri",2]],
-    trechos:[
-      ["Madri","Roma","voo",[]],["Roma","Verona","trem",["Florença","Bolonha"]],
-      ["Verona","Innsbruck","trem",["Bolzano","Brenner"]],["Innsbruck","Viena","trem",["Salzburgo","Linz"]],
-      ["Viena","Budapeste","trem",["Gyor"]],["Budapeste","Viena","trem",["Gyor"]],["Viena","Madri","voo",[]]
-    ]
-  }
-};
-
-// [data, dia, cidade, texto, noite, trecho?, alternativa?]
-const BASE = [
-  ["18/02","qui","Madri","CA898 sai de GRU às 08:25 e pousa em Madri às 22:35. Imigração com registro biométrico (EES), malas e direto para a hospedagem. É só para dormir.","Madri · 1",true],
-  ["19/02","sex","Madri","Primeiro dia inteiro: Puerta del Sol, Plaza Mayor, Mercado de San Miguel, Palácio Real. Pôr do sol no Templo de Debod.","Madri · 2"],
-  ["20/02","sáb","Madri","Museu do Prado de manhã (grátis nas 2 últimas horas do dia, com fila), Parque do Retiro à tarde, tapas em La Latina à noite.","Madri · 3"],
-  ["21/02","dom","Roma","Voo Madri → Roma de manhã (~2h30). À tarde, a pé: Panteão, Piazza Navona, Fontana di Trevi à noite (mais vazia).","Roma · 1",true],
-  ["22/02","seg","Roma","Coliseu, Fórum Romano e Palatino. <b>Reserva com horário</b>, compre no site oficial.","Roma · 2"],
-  ["23/02","ter","Roma","Museus Vaticanos e Capela Sistina (<b>reserva</b>; fechados aos domingos), depois a Basílica de São Pedro.","Roma · 3"],
-  ["24/02","qua","Roma","Quarta de manhã tem a audiência geral do Papa (ingresso gratuito, pedido com antecedência). Tarde e jantar em Trastevere.","Roma · 4"],
-  ["25/02","qui","Roma","Galeria Borghese (<b>reserva obrigatória</b>) e Villa Borghese, Monti, Termas de Caracalla.","Roma · 5",false,"Opção: dormir esta noite em Florença, que fica no caminho para Verona."],
-  ["26/02","sex","Verona","Frecciarossa ou Italo, ~3h. À tarde: Arena, Piazza delle Erbe, Casa di Giulietta.","Verona · 1",true],
-  ["27/02","sáb","Verona","Castelvecchio, Torre dei Lamberti e Castel San Pietro no fim da tarde, com a vista da cidade.","Verona · 2",false,"Ou bate-volta: Veneza (1h10 de trem) ou Sirmione, no Lago de Garda."],
-  ["28/02","dom","Innsbruck","EuroCity direto, ~3h30, subindo os Alpes pelo Passo do Brenner (a janela é parte do passeio). À tarde: centro antigo e o Telhado Dourado.","Innsbruck · 1",true],
-  ["01/03","seg","Viena","De manhã, o teleférico Nordkette sai do centro e sobe a ~2.000 m, com neve. Railjet para Viena no começo da tarde (~4h15), chegando no fim do dia.","Viena · 1",true],
-  ["02/03","ter","Viena","Palácio de Schönbrunn, Naschmarkt, Ópera à noite (o ingresso em pé é barato e vendido no dia).","Viena · 2"],
-  ["03/03","qua","Viena","Belvedere (O Beijo, de Klimt), Hofburg, Catedral de Santo Estêvão e um café vienense de verdade (Central, Sperl, Hawelka).","Viena · 3"]
+// ---------- compras ----------
+const COMPRAS = [
+  ["Agora", "outubro/2026", [
+    `<b>Hospedagens</b> com cancelamento grátis. <a href="hospedagens.html">Opções pesquisadas por cidade</a>.`,
+    `<b>Trem Roma → Verona</b> (26/02): Italo 8956, tarifa Italo Friends, <b>€159,80 para os 5</b>, todos na mesma reserva. <a href="https://www.italotreno.com" target="_blank" rel="noopener">italotreno.com</a>`,
+    `<b>Alertas de preço dos voos</b> Madri → Roma (21/02) e Budapeste → Madri (06/03). Recomendação: Iberia, em 2 reservas (3 Basic + 2 Optimal). <a href="#transporte">Detalhes</a>.`
+  ]],
+  ["~15/10/2026", "quando o horário 2027 entrar", [
+    `<b>Trens da Áustria e da Hungria</b>: Verona → Innsbruck (28/02), Innsbruck → Viena (01/03), Viena → Budapeste (04/03). Tarifa Sparschiene, a mais barata, que acaba primeiro. Hoje o sistema só vende até 12/12/2026. <a href="https://www.oebb.at" target="_blank" rel="noopener">oebb.at</a>`
+  ]],
+  ["Até meados de dezembro", "janela barata: 15/10 a 29/12", [
+    `<b>Comprar os voos internos</b>: Iberia 08:45 Madri → Roma e Iberia 11:10 Budapeste → Madri, ~R$ 6.300 para os 5 com bagagens.`
+  ]],
+  ["Dezembro/2026", "~2 meses antes", [
+    `<b>Museus Vaticanos</b> para 23/02: as datas abrem ~2 meses antes. Só em <a href="https://tickets.museivaticani.va" target="_blank" rel="noopener">tickets.museivaticani.va</a> (existem sites falsos).`,
+    `<b>Galleria Borghese</b> para 25/02, turno das 9h: reserva obrigatória, sem venda na porta.`,
+    `<b>Botín</b> em Madri, se quiserem: pede reserva com semanas de antecedência.`
+  ]],
+  ["~20/01/2027", "~1 mês antes", [
+    `<b>Audiência do Papa</b> (quarta, 24/02): ingressos grátis pedidos à Prefeitura da Casa Pontifícia (formulário no vatican.va ou fax +39 06 6988 5863).`,
+    `<b>Seguro viagem Schengen</b> e <b>ETIAS</b>, se já estiver valendo (€20 por pessoa, só no site oficial).`,
+    `Conferir o calendário 2027 da <b>taxa de acesso a Veneza</b> (27/02).`
+  ]],
+  ["23/01/2027", "às 5h de Brasília", [
+    `<b>Coliseu</b> para 22/02, 8h30: as vendas abrem 30 dias antes, de manhã em Roma. Só em <a href="https://ticketing.colosseo.it" target="_blank" rel="noopener">ticketing.colosseo.it</a>.`
+  ]],
+  ["Fevereiro", "1–2 semanas antes", [
+    `<b>Parlamento de Budapeste</b> (05/02... 05/03), <b>Casa di Giulietta</b> (26/02, horário marcado) e os <b>banhos Széchenyi</b> online.`,
+    `<b>Reservas de restaurante</b> para 5: Emma (21/02), Taverna dei Quaranta e Il Grottino (22/02), Rugantino (24/02), Peroni (25/02), Al Pompiere (27/02), Stiftskeller ou Gasthaus Goldenes Dachl (28/02).`
+  ]],
+  ["Na viagem", "1–3 dias antes ou no dia", [
+    `<b>Schönbrunn</b> e <b>Belvedere</b> em Viena: horário marcado, 1–3 dias antes.`,
+    `<b>Ópera de Viena em pé</b> (02/03): venda só no dia, a partir das 10h, no máximo 2 por conta. São 3 contas para os 5.`
+  ]],
 ];
-const FIM = {
-  rec: [
-    ["04/03","qui","Budapeste","Railjet de manhã, ~2h40. Tarde no Parlamento (<b>visita com reserva</b>), beira do Danúbio, Ponte das Correntes iluminada à noite.","Budapeste · 1",true],
-    ["05/03","sex","Budapeste","Castelo de Buda e Bastião dos Pescadores de manhã. À tarde, os banhos termais Széchenyi: piscina a céu aberto a ~38 °C com o ar gelado em volta.","Budapeste · 2"],
-    ["06/03","sáb","Madri","Voo direto Budapeste → Madri, ~3h15. Recolhem as malas grandes e jantam em La Latina.","Madri · 4",true],
-    ["07/03","dom","Madri","El Rastro (feira de domingo) de manhã e tarde livre.","Madri · 5",false,"Ou bate-volta a Toledo: 33 min de trem rápido."],
-    ["08/03","seg","Madri","Último dia: Museu Reina Sofía (Guernica) e compras. Estar no aeroporto às 19h30 para o CA897 das 22:30.","avião",true]
-  ],
-  orig: [
-    ["04/03","qui","Budapeste","Bate-volta: ~2h40 de trem na ida e ~2h40 na volta. Na prática, umas 6 horas de cidade antes de escurecer (~17h45).","Viena · 4",true],
-    ["05/03","sex","Viena","Dia livre em Viena: Kunsthistorisches, Prater, MuseumsQuartier.","Viena · 5"],
-    ["06/03","sáb","Madri","Voo direto Viena → Madri, ~3h. Recolhem as malas grandes.","Madri · 4",true],
-    ["07/03","dom","Madri","El Rastro (feira de domingo) de manhã e tarde livre.","Madri · 5",false,"Ou bate-volta a Toledo: 33 min de trem rápido."],
-    ["08/03","seg","Madri","Último dia: Museu Reina Sofía (Guernica) e compras. Estar no aeroporto às 19h30 para o CA897 das 22:30.","avião",true]
-  ]
+document.getElementById("lista-compras").innerHTML = COMPRAS.map(([q,s,l]) =>
+  `<li class="compra"><div class="quando num">${q}<span>${s}</span></div><ul>${l.map(x=>`<li>${x}</li>`).join("")}</ul></li>`).join("")
+  .replace("(05/02... 05/03)", "(05/03)");
+
+// ---------- mapa ----------
+(function(){
+  if (!window.L) return;
+  const P = {madri:[40.4168,-3.7038],roma:[41.9028,12.4964],verona:[45.4384,10.9916],innsbruck:[47.2692,11.4041],viena:[48.2082,16.3738],budapeste:[47.4979,19.0402],
+    florenca:[43.7696,11.2558],bolonha:[44.4949,11.3426],bolzano:[46.4983,11.3548],brenner:[47.0036,11.5058],salzburgo:[47.8095,13.0550],linz:[48.3069,14.2858],gyor:[47.6875,17.6504]};
+  const mapa = L.map("mapa",{scrollWheelZoom:false});
+  const esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(esri+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(mapa);
+  L.tileLayer(esri+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(mapa);
+  const trem = pts => L.polyline(pts.map(p=>P[p]),{color:"#1d4ed8",weight:4,opacity:.85}).addTo(mapa);
+  const voo = (a,b) => { const [la1,lo1]=P[a],[la2,lo2]=P[b], m=[(la1+la2)/2+Math.abs(lo2-lo1)*.12,(lo1+lo2)/2], arco=[];
+    for(let t=0;t<=1.0001;t+=.05) arco.push([(1-t)**2*la1+2*(1-t)*t*m[0]+t*t*la2,(1-t)**2*lo1+2*(1-t)*t*m[1]+t*t*lo2]);
+    L.polyline(arco,{color:"#d97706",weight:3,dashArray:"8 8"}).addTo(mapa); };
+  voo("madri","roma"); trem(["roma","florenca","bolonha","verona"]); trem(["verona","bolzano","brenner","innsbruck"]);
+  trem(["innsbruck","salzburgo","linz","viena"]); trem(["viena","gyor","budapeste"]); voo("budapeste","madri");
+  ["madri","roma","verona","innsbruck","viena","budapeste"].forEach((c,i) => {
+    const ic = L.divIcon({className:"",html:`<div class="pino" style="background:${HEX[c]}">${i+1}</div>`,iconSize:[28,28],iconAnchor:[14,14]});
+    L.marker(P[c],{icon:ic,title:NOME[c]}).addTo(mapa).bindPopup(`<b>${NOME[c]}</b><br><a href="cidade.html?c=${c}">Abrir a página da cidade</a>`);
+  });
+  mapa.fitBounds(L.latLngBounds(["madri","roma","verona","innsbruck","viena","budapeste"].map(c=>P[c])),{padding:[30,30]});
+})();
+
+// ---------- dia a dia ----------
+(function(){
+  const grupos = [];
+  G.dias.forEach(d => { const u = grupos[grupos.length-1]; if (u && u.c===d.cidade) u.dias.push(d); else grupos.push({c:d.cidade, dias:[d]}); });
+  const hoje = new Date().toISOString().slice(0,10);
+  document.getElementById("dia-a-dia").innerHTML = grupos.map(g => `
+    <div class="cidade-bloco" style="--cor:${COR[g.c]}">
+      <div class="cab"><h3>${NOME[g.c]}</h3><a class="fraco" href="cidade.html?c=${g.c}">Página de ${NOME[g.c]} →</a></div>
+      ${g.dias.map(d => `
+        <details class="dia" id="dia-${d.data}" ${d.data===hoje?"open":""}>
+          <summary><span class="data num">${sem(d.data)} ${dm(d.data)}</span><span class="titulo">${d.titulo}</span><span class="dorme">${d.noite?"dorme em "+d.noite:"noite no avião"}</span></summary>
+          <div class="blocos">${d.blocos.map(b => `
+            <div class="bloco"><span class="q">${b.quando}</span><div><p>${b.texto}</p>
+              ${b.ids.length?`<div class="lugs">${b.ids.map(id => { const x = porId[id]; return `<a class="chip" href="cidade.html?c=${x.cidade}#${id}">${x.tipo==="comer"?"🍽":"◎"} ${x.nome.replace(/\s*\(.*$/,"").replace(/\s+[—–-]\s+.*$/,"")}</a>`; }).join("")}</div>`:""}
+            </div></div>`).join("")}
+          </div>
+        </details>`).join("")}
+    </div>`).join("");
+})();
+
+// ---------- voos ----------
+(function(){
+  const el = document.getElementById("voos");
+  const v = G.voos;
+  if (!v) { el.innerHTML = `<h3>Voos dentro da Europa</h3><p class="cartao" style="margin-top:12px">A pesquisa de voos com as bagagens (mala de mão para os 5 e 2 despachadas) ainda está sendo feita. Esta seção se atualiza quando ela terminar.</p>`; return; }
+  const rota = (titulo, data, rec, linhas) => `<div class="trecho cartao">
+    <div class="cab"><h3>${titulo}</h3><span><span class="chip ok">à venda</span> <span class="fraco num">${data}</span></span></div>
+    <p class="rec">${rec}</p>
+    <div class="rolagem"><table class="num"><thead><tr><th>Voo</th><th>Horário</th><th>Como fica a bagagem</th><th>Total para os 5</th><th>Preço</th></tr></thead><tbody>
+      ${linhas.map(([r,v,h,bag,tot,cert]) => `<tr class="${r?"recomendado":""}"><td>${v}</td><td>${h}</td><td>${bag}</td><td><b>${tot}</b></td><td class="fraco">${cert}</td></tr>`).join("")}
+    </tbody></table></div></div>`;
+  el.innerHTML = `<h3>Voos dentro da Europa</h3>
+    <p class="sub" style="margin-top:6px">Todos os totais já incluem a regra de vocês: <b>mala de mão de 10 kg para os 5 e mala despachada para 2</b>. Não incluem o IOF do cartão (3,5%). Pesquisa de 30/09/2026.</p>
+    ${rota("Madri → Roma", "dom 21/02",
+      "<b>Iberia 08:45 → 11:10</b>, pousando em Fiumicino. Na Iberia a mala de mão já vem na tarifa Basic, e a tarifa vale para a reserva inteira. Por isso o mais barato são <b>duas reservas</b>: 3 pessoas na Basic e 2 na Optimal, que inclui a mala de 23 kg (+€34 por pessoa). Se sair às 12:40 não atrapalhar, a Air Europa economiza uns R$ 700, mas o preço das 2 malas dela é estimado.",
+      [[1,"Iberia","08:45 → 11:10 (ou 11:30 → 13:55)","3 Basic + 2 Optimal","R$ 2.845 (€481)","todo ao vivo"],
+       [0,"Air Europa","12:40 → 15:05","mala de mão incluída; +2 malas","~R$ 2.000–2.240","malas estimadas"],
+       [0,"Wizz Air","09:25 → 11:55","5 Priority + 2 malas de 20 kg","~R$ 2.180 (até R$ 4.280)","estimado (site bloqueia)"],
+       [0,"Ryanair FR2436","09:35","5 Regular + 2 malas","~R$ 3.016","mala estimada"],
+       [0,"Iberia","21:50 → 00:15","3 Basic + 2 Optimal","R$ 2.046","ao vivo, mas chega à meia-noite"]])}
+    ${rota("Budapeste → Madri", "sáb 06/03",
+      "<b>Iberia 11:10 → 14:30</b>: o preço conferido e um horário bom, com a mesma divisão (3 Basic + 2 Optimal). A Wizz só compensa se, na hora de comprar, Priority para 5 + 2 malas de 20 kg saírem por menos de ~€270 no total.",
+      [[1,"Iberia","11:10 → 14:30","3 Basic + 2 Optimal","R$ 3.449","todo ao vivo"],
+       [0,"Wizz Air","15:45 → 19:15","5 Priority + 2 malas de 20 kg","~R$ 2.830 (R$ 2.120–4.930)","estimado"],
+       [0,"Ryanair FR5712","16:15 → 19:35","5 Regular + 2 malas","~R$ 3.210","mala estimada"],
+       [0,"Ryanair FR6712","06:10","5 Regular + 2 malas","~R$ 3.150","mala estimada"]])}
+    <div class="cartao" style="margin-top:16px">
+      <h3>Quando comprar</h3>
+      <p class="rec" style="margin-top:8px;color:var(--tinta-2)">O Google considera o preço de hoje "típico" e aponta <b>15/10 a 29/12</b> como a janela mais barata para Madri–Roma. Criem alertas de preço agora e comprem até meados de dezembro. Não deixem para o fim: 5 pessoas precisam de 5 lugares na mesma faixa barata, e um dos voos já mostrava "5 lugares restantes neste preço".</p>
+      <h3 style="margin-top:14px">Armadilhas das low-cost</h3>
+      <ul style="margin:8px 0 0;padding-left:18px;color:var(--tinta-2);display:grid;gap:4px">
+        <li><b>Ryanair:</b> o pacote Plus inclui a mala de 20 kg mas <b>não</b> a mala de mão. Para a mala de mão é Priority ou o pacote Regular.</li>
+        <li><b>Wizz:</b> o pacote WIZZ Go inclui a mala de 20 kg mas <b>não</b> a mala de mão.</li>
+        <li><b>Air Europa:</b> a mala de mão é mais estreita (55×35×25). <b>ITA:</b> só 8 kg.</li>
+      </ul>
+    </div>`;
+  window.TOTAL_VOOS_BRL = 2845 + 3449;
+})();
+
+// ---------- trens ----------
+const TRENS_PT = {
+  "1": {rec:"<b>Dá para comprar já.</b> Italo 8956, 08:20 → 11:38, direto, tarifa <b>Italo Friends</b> (grupo de 3 a 5 pessoas na mesma reserva): €159,80 para os 5. Troca com taxa até 72h antes; não reembolsa. Plano B: Frecciarossa 8506, 08:50 → 12:08, Super Economy €199,50. O site do Italo pode mostrar dólar porque vocês estão no Brasil: paguem em euro.", ok:true,
+        destaque: o => /Friends \(Smart\)/.test(o.fare_name||"")},
+  "2": {rec:"<b>Venda abre ~meados de outubro</b>, quando o horário de 2027 entrar no sistema. Railjet 88, 09:01 → 12:32, direto. Comparem ÖBB e Trenitalia: a Trenitalia vende esse mesmo trem e saiu mais barata na data de referência. Olhem também a 1ª classe, que na referência saiu mais barata que a 2ª.",
+        destaque: o => /88/.test(o.train||"") && /Spar/i.test(o.fare_name||"")},
+  "3": {rec:"<b>Venda abre ~meados de outubro.</b> Railjet ~13:58 → 18:32, direto (ou 12:56 → 17:32). Sparschiene na referência: ~€124,50 para os 5; a tarifa cheia seria €434. Evitem o trem das 12:42, que passa pela Alemanha e custa €753.",
+        destaque: o => /13:5/.test(o.dep||"") && /Spar/i.test(o.fare_name||"")},
+  "4": {rec:"<b>Venda abre ~meados de outubro.</b> Railjet ~07:40 → 10:35 (ou EuroCity 06:40 → 09:29). Sparschiene na referência: ~€80,60 para os 5; a cheia seria €266,50. Confiram que o trem termina em Budapest-Keleti.",
+        destaque: o => /07:4/.test(o.dep||"") && /Spar/i.test(o.fare_name||"")},
+  "4-ALT": {rec:"Só vale para o plano antigo, com bate-volta a Budapeste: ~€155 ida e volta para os 5.", destaque: () => false},
 };
-
-const TRECHOS = {
-  rec: [
-    ["Madri → Roma","aviao","~2h30","Google Flights (Iberia, ITA, Ryanair, Vueling)","€40–120 + mala","Ryanair costuma pousar em Ciampino, as outras em Fiumicino. Veja o aeroporto antes de comprar.", "https://www.google.com/travel/flights?q=Flights%20from%20MAD%20to%20ROM%20on%202027-02-21%20for%205%20adults"],
-    ["Roma → Verona","trem","~2h55–3h20","trenitalia.com · italotreno.com","€25–60","Frecciarossa e Italo são direto ou com troca em Bolonha. Lugar marcado incluso.","https://www.trenitalia.com"],
-    ["Verona → Innsbruck","trem","~3h30","oebb.at · bahn.com","€30–60","EuroCity direto (linha Verona–Munique). A tarifa \"Sparschiene\" da ÖBB é a mais barata.","https://www.oebb.at"],
-    ["Innsbruck → Viena","trem","~4h15","oebb.at","€20–60","Railjet direto, de hora em hora. Sparschiene abre com meses de antecedência.","https://www.oebb.at"],
-    ["Viena → Budapeste","trem","~2h40","oebb.at · mavcsoport.hu","€15–35","Sai da Wien Hauptbahnhof.","https://www.oebb.at"],
-    ["Budapeste → Madri","aviao","~3h15","Google Flights (Wizz Air, Ryanair, Iberia, Vueling)","€50–130 + mala","Low-cost cobra à parte até mochila maior. Somem a mala antes de comparar.","https://www.google.com/travel/flights?q=Flights%20from%20BUD%20to%20MAD%20on%202027-03-06%20for%205%20adults"]
-  ],
-  orig: [
-    ["Madri → Roma","aviao","~2h30","Google Flights (Iberia, ITA, Ryanair, Vueling)","€40–120 + mala","Ryanair costuma pousar em Ciampino, as outras em Fiumicino. Veja o aeroporto antes de comprar.","https://www.google.com/travel/flights?q=Flights%20from%20MAD%20to%20ROM%20on%202027-02-21%20for%205%20adults"],
-    ["Roma → Verona","trem","~2h55–3h20","trenitalia.com · italotreno.com","€25–60","Frecciarossa e Italo são direto ou com troca em Bolonha. Lugar marcado incluso.","https://www.trenitalia.com"],
-    ["Verona → Innsbruck","trem","~3h30","oebb.at · bahn.com","€30–60","EuroCity direto (linha Verona–Munique). A tarifa \"Sparschiene\" da ÖBB é a mais barata.","https://www.oebb.at"],
-    ["Innsbruck → Viena","trem","~4h15","oebb.at","€20–60","Railjet direto, de hora em hora.","https://www.oebb.at"],
-    ["Viena ⇄ Budapeste","trem","~2h40 cada perna","oebb.at","€30–70 ida e volta","São dois bilhetes, e cinco pessoas no trem por ~5h30 no mesmo dia.","https://www.oebb.at"],
-    ["Viena → Madri","aviao","~3h","Google Flights (Iberia, Austrian, Ryanair)","€50–130 + mala","","https://www.google.com/travel/flights?q=Flights%20from%20VIE%20to%20MAD%20on%202027-03-06%20for%205%20adults"]
-  ]
-};
-
-// cidade, datas de entrada/saída (ISO) por plano, estimativa por noite para os 5, bairros
-const HOSP = [
-  {c:"Madri", rot:"Madri — chegada", ent:"2027-02-18", sai:"2027-02-21", n:3, faixa:[150,230],
-   b:[["Barrio de las Letras / Huertas","Entre Sol e o Prado, tudo a pé, cheio de bar e restaurante."],
-      ["La Latina","Charmoso, perto do Palácio Real e do Rastro."]],
-   evitar:["Longe do metrô para economizar","Madri é grande; a economia vira táxi para 5."],
-   q:["Huertas, Madrid","Barrio-de-las-Letras--Madrid"]},
-  {c:"Roma", rot:"Roma", ent:"2027-02-21", sai:"2027-02-26", n:5, faixa:[170,260],
-   b:[["Prati","Ao lado do Vaticano, com metrô A. Mais calmo e com melhor custo que o centro histórico."],
-      ["Monti","Entre o Coliseu e Termini: charmoso, com metrô, e a estação fica perto para o trem a Verona."]],
-   evitar:["Rua colada à Termini","É mais barato, mas desagradável à noite. Se ficar ali, prefira o lado do Esquilino, perto de Santa Maria Maggiore."],
-   q:["Prati, Roma","Prati--Roma"]},
-  {c:"Verona", rot:"Verona", ent:"2027-02-26", sai:"2027-02-28", n:2, faixa:[130,200],
-   b:[["Città Antica","Dentro da curva do rio: Arena, Erbe e Julieta a pé."],
-      ["Veronetta","Do outro lado da ponte, mais barato e ainda a 10 min a pé do centro."]],
-   evitar:["Zona industrial ou longe da cidade","Anúncio \"Verona\" pode ser em outra cidade. Confira o mapa."],
-   q:["Centro Storico, Verona","Verona--Italia"]},
-  {c:"Innsbruck", rot:"Innsbruck", ent:"2027-02-28", sai:"2027-03-01", n:1, faixa:[180,280],
-   b:[["Perto da Hauptbahnhof","Uma noite só: desçam do trem e larguem a mala. O centro antigo fica a 10 min a pé."],
-      ["Altstadt","O centro antigo, mais bonito e mais caro."]],
-   evitar:["Vilas de esqui em volta (Igls, Axams)","Aparecem na busca \"Innsbruck\" e ficam longe da estação."],
-   q:["Innsbruck Hauptbahnhof","Innsbruck--Austria"]},
-  {c:"Viena", rot:"Viena", ent:"2027-03-01", sai:{rec:"2027-03-04",orig:"2027-03-06"}, n:{rec:3,orig:5}, faixa:[150,230],
-   b:[["Neubau / Mariahilf (7º e 6º)","Bairros vivos, perto do MuseumsQuartier e do metrô U3."],
-      ["Wieden (4º)","Perto do Naschmarkt e a um passo da Hauptbahnhof, de onde sai o trem para Budapeste."]],
-   evitar:["Fora do anel de metrô","Viena é ótima de metrô, mas só se ele estiver a 5 min."],
-   q:["Neubau, Wien","Neubau--Vienna"]},
-  {c:"Budapeste", rot:"Budapeste", plano:"rec", ent:"2027-03-04", sai:"2027-03-06", n:2, faixa:[90,150],
-   b:[["Distrito V (Belváros)","O centro de Pest, na beira do Danúbio, perto do Parlamento."],
-      ["Distrito VI (Terézváros)","Na Avenida Andrássy, perto da Ópera e com metrô direto aos banhos Széchenyi."]],
-   evitar:["Coração do Distrito VII para dormir","Bairro dos bares em ruínas: ótimo para sair, barulhento para dormir."],
-   q:["Terézváros, Budapest","Budapest--Hungary"]},
-  {c:"Madri", rot:"Madri — volta", ent:"2027-03-06", sai:"2027-03-08", n:2, faixa:[150,230],
-   b:[["O mesmo lugar da chegada","É o que permite deixar as malas grandes guardadas os 15 dias."],
-      ["Perto de Atocha","Se preferirem trem ao táxi para o voo das 22:30, a estação tem trem direto (Cercanías) para o aeroporto."]],
-   evitar:["Checkout sem guarda-malas","O voo sai às 22:30: sem guardar as malas, vocês perdem o último dia."],
-   q:["Huertas, Madrid","Barrio-de-las-Letras--Madrid"]}
-];
-
-const CHECKS = [
-  ["ETIAS (autorização de viagem)","Estava previsto para o último trimestre de 2026, por €20 por pessoa e válido 3 anos. Confirmem perto da viagem se já vale, e façam SÓ pelo site oficial: tem site intermediário cobrando muito mais."],
-  ["Seguro viagem Schengen","Obrigatório, com cobertura de pelo menos €30 mil. Pode ser pedido na imigração em Madri."],
-  ["Passaporte","Válido por pelo menos 3 meses depois de 08/03/2027."],
-  ["Comprar trens assim que abrirem","A Trenitalia e a ÖBB liberam as tarifas promocionais meses antes, e são as primeiras a acabar."],
-  ["Reservas com horário","Coliseu, Vaticano, Galeria Borghese e Parlamento de Budapeste."],
-  ["Florim na Hungria","A Hungria não usa euro (a moeda é o florim). Cartão funciona em quase tudo, e em conversão no cartão escolham sempre pagar na moeda local."],
-  ["Roupa de frio de verdade","Madri e Roma ficam entre ~3 e 14 °C; Verona, Viena e Budapeste perto de 0 °C; Innsbruck abaixo de zero, com neve. Sapato impermeável."],
-  ["Franquia da Air China: 2 malas por pessoa","São até 10 malas despachadas para 5. Não precisam levar todas; as que forem ficam guardadas em Madri."],
-  ["Chip / eSIM europeu","Um eSIM com roaming na UE vale para os 4 países."],
-  ["Onde deixar as malas em Madri","Confirmem por escrito com a hospedagem da chegada."]
-];
-
-// ---------- render ----------
-let plano = "rec", mapa, camada;
-
-function render(){
-  document.getElementById("b-rec").setAttribute("aria-pressed", plano==="rec");
-  document.getElementById("b-orig").setAttribute("aria-pressed", plano==="orig");
-
-  // barra de noites
-  const barra = document.getElementById("barra");
-  barra.innerHTML = PLANOS[plano].noites.map(([c,n]) =>
-    `<div style="flex:${n};background:${COR[c]}" title="${c}: ${n} ${n>1?"noites":"noite"}">${c} ${n}</div>`).join("");
-
-  // dia a dia
-  const dias = [...BASE, ...FIM[plano]];
-  document.getElementById("dias").innerHTML = dias.map(([d,s,c,t,noite,trecho,alt]) => `
-    <li class="dia${trecho?" trecho":""}" style="--cor:${COR[c]||"var(--tinta-3)"}">
-      <div class="cab"><span class="data num">${s} ${d}</span><span class="cidade">${c}</span><span class="noite">${noite==="avião"?"noite no avião":"dorme em "+noite}</span></div>
-      <p>${t}</p>${alt?`<p class="alt">${alt}</p>`:""}
-    </li>`).join("");
-
-  // trechos
-  document.getElementById("trechos").innerHTML = TRECHOS[plano].map(([t,m,d,onde,preco,nota,url]) => `
-    <tr><td><b>${t}</b></td><td><span class="modo ${m==="aviao"?"aviao":"trem"}">${m==="aviao"?"avião":"trem"}</span></td>
-    <td class="num">${d}</td><td><a href="${url}" target="_blank" rel="noopener">${onde}</a></td><td class="num">${preco}</td><td>${nota}</td></tr>`).join("");
-
-  // hospedagem
-  const lista = HOSP.filter(h => !h.plano || h.plano===plano);
-  let min=0, max=0;
-  document.getElementById("hosp").innerHTML = lista.map(h => {
-    const sai = typeof h.sai==="object" ? h.sai[plano] : h.sai;
-    const n = typeof h.n==="object" ? h.n[plano] : h.n;
-    min += h.faixa[0]*n; max += h.faixa[1]*n;
-    const booking = `https://www.booking.com/searchresults.pt-br.html?ss=${encodeURIComponent(h.q[0])}&checkin=${h.ent}&checkout=${sai}&group_adults=5&no_rooms=1&group_children=0`;
-    const airbnb = `https://www.airbnb.com.br/s/${h.q[1]}/homes?checkin=${h.ent}&checkout=${sai}&adults=5&min_bedrooms=2`;
-    const fmt = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
-    return `<article class="cidade-hosp" style="--cor:${COR[h.c]}">
-      <div class="cab"><h3>${h.rot}</h3><span class="fraco num">${fmt(h.ent)} → ${fmt(sai)} · ${n} ${n>1?"noites":"noite"}</span></div>
-      <div class="bairros">
-        ${h.b.map(([b,s])=>`<div class="bairro"><b>${b}</b><span>${s}</span></div>`).join("")}
-        <div class="bairro evitar"><b>Evitar: ${h.evitar[0]}</b><span>${h.evitar[1]}</span></div>
-      </div>
-      <div class="estimativa num"><span>Referência para os 5: <b>€${h.faixa[0]}–${h.faixa[1]}</b> por noite</span><span>≈ €${Math.round(h.faixa[0]/5)}–${Math.round(h.faixa[1]/5)} por pessoa</span></div>
-      <div class="links">
-        <a href="hospedagens.html"><b>Airbnb e hotéis pesquisados →</b></a>
-        <a href="${airbnb}" target="_blank" rel="noopener">Airbnb · 5 hóspedes, 2+ quartos ↗</a>
-        <a href="${booking}" target="_blank" rel="noopener">Booking · 5 hóspedes ↗</a>
-      </div>
-    </article>`;
+(function(){
+  const legs = (G.trens && G.trens.legs) || [];
+  document.getElementById("trens").innerHTML = legs.map(l => {
+    const k = (l.leg.match(/^([\d]+(?:-ALT)?)/i)||[])[1]?.toUpperCase() || "";
+    const t = TRENS_PT[k] || {rec:"", destaque:()=>false};
+    const titulo = l.leg.replace(/^[\d\-A-Z]+\.\s*/,"").replace("->","→").replace("same-day return","ida e volta no mesmo dia");
+    const hora = s => (s||"").match(/\d{2}:\d{2}/)?.[0] || s || "";
+    return `<div class="trecho cartao">
+      <div class="cab"><h3>${titulo}</h3><span>${l.sales_open ? '<span class="chip ok">à venda</span>' : '<span class="chip espera">venda abre ~meados de out/2026</span>'} <span class="fraco num">${l.date.replace(/\s*\(.*\)/,"").split("-").reverse().slice(0,2).join("/")}</span></span></div>
+      <p class="rec">${t.rec}</p>
+      <div class="rolagem"><table class="num"><thead><tr><th>Trem</th><th>Sai → chega</th><th>Trocas</th><th>Tarifa</th><th>Total 5 (€)</th><th>Total 5 (R$)</th><th>Dado</th></tr></thead><tbody>
+        ${l.options.map(o => `<tr class="${t.destaque(o)?"recomendado":""}"><td>${o.operator||""} ${(o.train||"").replace(/\s*\(.*$/,"")}</td><td>${hora(o.dep)} → ${hora(o.arr)}</td><td>${o.changes ?? ""}</td><td>${o.fare_name||""}</td><td>${o.total_5_eur!=null?eur(o.total_5_eur):"—"}</td><td>${o.total_5_brl!=null?brl(o.total_5_brl):"—"}</td><td class="fraco">${/live/i.test(o.source||"")&&!/reference|NOT/i.test(o.source||"")?"ao vivo":"referência"}</td></tr>`).join("")}
+      </tbody></table></div>
+    </div>`;
   }).join("");
-  const brl = v => "€" + v.toLocaleString("pt-BR");
-  document.getElementById("total-faixa").textContent = `${brl(min)} – ${brl(max)}`;
-  document.getElementById("total-pp").textContent = `${brl(Math.round(min/5))} – ${brl(Math.round(max/5))}`;
+})();
 
-  desenharMapa();
+// ---------- orçamento ----------
+const ATRACOES = [
+  ["Madri","Palácio Real",18],["Madri","Prado (grátis 18h–20h)",0],["Madri","Tour do Bernabéu",37],
+  ["Roma","Coliseu + Fórum + Palatino",20],["Roma","Museus Vaticanos",25],["Roma","Cúpula de São Pedro",10],["Roma","Galleria Borghese",17],["Roma","Panteão",7],["Roma","Trevi (perto da fonte)",2],["Roma","Castel Sant'Angelo",16],
+  ["Verona","Arena",12],["Verona","Casa di Giulietta (completa)",12],["Verona","Torre dei Lamberti",6],["Verona","Trem ida e volta a Veneza",26],
+  ["Innsbruck","Hofburg",15],["Innsbruck","Nordkette (Seegrube)",50.4],
+  ["Viena","Schönbrunn",42],["Viena","Belvedere",23],["Viena","Kunsthistorisches",22],["Viena","Museu Sisi",20],["Viena","Torre da Stephansdom",8],["Viena","Ópera em pé",13],["Viena","Passe 24h × 2 dias",19.4],
+  ["Budapeste","Parlamento",35],["Budapeste","Banhos Széchenyi",37],["Budapeste","Passe 24h + ônibus 100E",13],
+];
+function orcamento(){
+  const marc = [...document.querySelectorAll("#lista-orc input")].map(i => i.checked);
+  const atr = ATRACOES.reduce((s,a,i) => s + (marc[i] === false ? 0 : a[2]), 0) * 5 * G.cambio;
+  let hosp = 0; HOSP.forEach(c => { const e = c.itens.filter(x => x.escolha && x.tipo==="airbnb"); if (e.length) hosp += Math.min(...e.map(x=>x.total)); });
+  hosp += 150 * G.cambio; // taxa turística de Roma
+  const trens = (159.80 + 125 + 124.50 + 80.60) * G.cambio;
+  const voos = window.TOTAL_VOOS_BRL || null;
+  const total = hosp + trens + atr + (voos || 0);
+  document.getElementById("orc").innerHTML = `
+    <div class="caixa"><p class="fraco">Hospedagem (Airbnb bom mais barato + taxa de Roma)</p><p class="v">${brl(hosp)}</p></div>
+    <div class="caixa"><p class="fraco">Trens (4 trechos)</p><p class="v">${brl(trens)}</p><p class="fraco">1 ao vivo, 3 por referência</p></div>
+    <div class="caixa"><p class="fraco">Voos internos com bagagem</p><p class="v">${voos?brl(voos):"—"}</p>${voos?"":'<p class="fraco">aguardando pesquisa</p>'}</div>
+    <div class="caixa"><p class="fraco">Ingressos e passeios</p><p class="v">${brl(atr)}</p></div>
+    <div class="caixa total"><p class="fraco">Total para os 5${voos?"":" (sem voos)"}</p><p class="v">${brl(total)}</p><p class="fraco">${brl(total/5)} por pessoa</p></div>`;
 }
+document.getElementById("lista-orc").innerHTML = ATRACOES.map(([c,n,v],i) =>
+  `<label for="o${i}"><input type="checkbox" id="o${i}" checked><span class="n">${n} <span class="fraco">· ${c}</span></span><span>${v?eur(v):"grátis"}</span></label>`).join("");
+document.querySelectorAll("#lista-orc input").forEach(el => el.addEventListener("change", orcamento));
+orcamento();
 
-function desenharMapa(){
-  if (!window.L) { document.getElementById("mapa").innerHTML = '<p style="padding:20px">O mapa precisa de internet para carregar.</p>'; return; }
-  if (!mapa){
-    mapa = L.map("mapa", {scrollWheelZoom:false});
-    // Esri cinza-claro: não pede chave e deixa as linhas do roteiro em primeiro plano
-    const esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
-    L.tileLayer(esri + "World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
-      attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap", maxZoom:16
-    }).addTo(mapa);
-    L.tileLayer(esri + "World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {maxZoom:16}).addTo(mapa);
-  }
-  if (camada) camada.remove();
-  camada = L.layerGroup().addTo(mapa);
+// ---------- cidades ----------
+const RESUMO = {madri:"Chegada e volta: Retiro, Prado, Palácio, Rastro", roma:"5 noites: Roma Antiga, Vaticano, Trastevere, Borghese", verona:"Arena, Giulietta e bate-volta a Veneza", innsbruck:"Uma noite nos Alpes, com a Nordkette", viena:"Schönbrunn, Klimt, cafés e Ópera", budapeste:"Parlamento, Buda e banhos termais"};
+document.getElementById("lista-cidades").innerHTML = G.cidades.map(([k,n]) => {
+  const l = G.lugares[k]; const c = l.filter(x=>x.tipo==="comer").length, v = l.length - c;
+  return `<a class="cidade-card" href="cidade.html?c=${k}" style="--cor:${COR[k]}"><b>${n}</b><span>${RESUMO[k]}</span><span class="num">${v} para ver · ${c} para comer</span></a>`;
+}).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a>`;
 
-  const pl = PLANOS[plano];
-  pl.trechos.forEach(([a,b,modo,via]) => {
-    const pts = [P[a], ...via.map(v=>P[v]), P[b]];
-    if (modo==="voo"){
-      // arco leve: voo não segue estrada, e a curva deixa isso claro no mapa
-      const [la1,lo1] = P[a], [la2,lo2] = P[b];
-      const meio = [(la1+la2)/2 + Math.abs(lo2-lo1)*0.12, (lo1+lo2)/2];
-      const arco = [];
-      for (let t=0;t<=1.0001;t+=0.05){
-        arco.push([(1-t)**2*la1 + 2*(1-t)*t*meio[0] + t*t*la2, (1-t)**2*lo1 + 2*(1-t)*t*meio[1] + t*t*lo2]);
-      }
-      L.polyline(arco,{color:"#d97706",weight:3,dashArray:"8 8"}).addTo(camada);
-    } else {
-      L.polyline(pts,{color:"#1d4ed8",weight:4,opacity:.85}).addTo(camada);
-    }
-  });
-
-  const ordem = [];
-  pl.noites.forEach(([c]) => { if (!ordem.includes(c)) ordem.push(c); });
-  if (plano==="orig") ordem.splice(ordem.indexOf("Viena")+1,0,"Budapeste");
-  ordem.forEach((c,i) => {
-    const noites = pl.noites.filter(([x])=>x===c).reduce((s,[,n])=>s+n,0);
-    const txt = noites ? `${noites} ${noites>1?"noites":"noite"}` : "bate-volta";
-    const icone = L.divIcon({className:"", html:`<div class="pino" style="background:${HEX[c]}">${i+1}</div>`, iconSize:[28,28], iconAnchor:[14,14]});
-    L.marker(P[c],{icon:icone,title:c}).addTo(camada).bindTooltip(`<b>${c}</b><br>${txt}${c==="Madri"?" (chegada e volta)":""}`);
-  });
-
-  mapa.fitBounds(L.latLngBounds(Object.values(P).slice(0,6)), {padding:[30,30]});
-}
-
-document.getElementById("checks").innerHTML = CHECKS.map(([t,s],i)=>
-  `<li><input type="checkbox" id="c${i}"><label for="c${i}">${t}<span>${s}</span></label></li>`).join("");
+// ---------- checklist ----------
+const CHECKS = [
+  ["Hospedagens reservadas (cancelamento grátis)","A de Madri na chegada precisa de check-in autônomo à meia-noite."],
+  ["Mesmo apartamento em Madri na ida e na volta","É o que permite deixar as malas grandes guardadas."],
+  ["Trem Roma → Verona (Italo Friends)","Já à venda: €159,80 para os 5."],
+  ["Voos Madri → Roma e Budapeste → Madri","Com mala de mão para os 5 e 2 despachadas."],
+  ["Trens ÖBB (3 trechos)","Abrem ~meados de outubro."],
+  ["Museus Vaticanos (23/02)","Abrem ~2 meses antes."],
+  ["Galleria Borghese (25/02, 9h)","Reserva obrigatória."],
+  ["Coliseu (22/02, 8h30)","Vendas abrem 23/01/2027."],
+  ["Audiência do Papa (24/02)","Pedir ~1 mês antes; retirar terça 15h–19h."],
+  ["Casa di Giulietta (26/02)","Horário marcado."],
+  ["Parlamento de Budapeste (05/03)","1–2 semanas antes."],
+  ["Restaurantes reservados","Emma, Taverna dei Quaranta, Il Grottino, Rugantino, Peroni, Al Pompiere, Stiftskeller."],
+  ["Seguro viagem Schengen","Cobertura mínima de €30 mil."],
+  ["ETIAS, se já estiver valendo","€20 por pessoa, só no site oficial."],
+  ["Passaporte válido até junho/2027 ou depois","3 meses depois da saída."],
+  ["Van reservada para a chegada em Madri","22:35, 5 pessoas e malas."],
+  ["3 contas no site da Ópera de Viena","Máximo de 2 ingressos em pé por conta."],
+  ["eSIM europeu","Um plano de roaming na UE vale para os 4 países."],
+  ["Roupa de frio de verdade","Innsbruck abaixo de zero; Viena e Budapeste perto de 0 °C."],
+];
+document.getElementById("checks").innerHTML = CHECKS.map(([t,s],i) => `<li><input type="checkbox" id="k${i}"><label for="k${i}">${t}<span>${s}</span></label></li>`).join("");
 document.querySelectorAll("#checks input").forEach(el => {
-  try { el.checked = localStorage.getItem("roteiro-"+el.id)==="1"; } catch(e){}
-  el.addEventListener("change", () => { try { localStorage.setItem("roteiro-"+el.id, el.checked?"1":"0"); } catch(e){} });
+  try { el.checked = localStorage.getItem("guia-"+el.id)==="1"; } catch(e){}
+  el.addEventListener("change", () => { try { localStorage.setItem("guia-"+el.id, el.checked?"1":"0"); } catch(e){} });
 });
-
-document.getElementById("b-rec").onclick = () => { plano="rec"; render(); };
-document.getElementById("b-orig").onclick = () => { plano="orig"; render(); };
-render();
 </script>
 </body>
 </html>

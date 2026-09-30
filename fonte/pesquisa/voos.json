@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "group": "5 adultos; regra: os 5 com mala de mao ~10 kg no compartimento superior + 2 deles com 1 mala despachada 20-23 kg",
+    "checked_at": "2026-09-30 18:50-19:30 (horario local do PC)",
+    "fx": {
+      "EUR_BRL": 5.9145,
+      "HUF_BRL": 0.016115,
+      "source": "open.er-api.com, atualizado 2026-09-30 00:02 UTC (cambio medio). O Google Flights converte a ~5,87 BRL/EUR.",
+      "warning": "Pagar em cartao brasileiro soma IOF (3,5%) + spread do banco. NAO incluido nos totais."
+    },
+    "method": "Google Flights (Playwright + msedge, 5 adultos, so ida, BRL) para todas as tarifas e familias tarifarias (Iberia/ITA/BA mostram Basic/Optimal etc. direto no Google). Ryanair: site oficial via navegador real, captura das APIs availability + FareOptions (tarifa por pessoa + preco dos pacotes Regular/Plus para cada voo) -- AO VIVO. Wizz Air: busca bloqueada por anti-bot (HTTP 429/Kasada); so o farechart oficial (menor tarifa do dia) + Google. Precos avulsos de mala (Ryanair 20 kg, Wizz Priority/20 kg, Air Europa, Iberia avulsa) so aparecem depois de digitar nomes dos passageiros -> nao feito (regra de nao inserir dados pessoais); uso faixa oficial + estimativa, marcado como tal.",
+    "how_to_read": "base_fare_total_5_brl = tarifa mais barata para os 5. total_group_brl = base + o que falta para cumprir a regra de bagagem. Campo 'certainty': 'live' = tudo cotado ao vivo; 'estimate' = parte da bagagem estimada dentro da faixa oficial."
+  },
+  "routes": [
+    {
+      "route": "A. Madrid (MAD) -> Roma",
+      "date": "2027-02-21 (domingo)",
+      "preference": "saidas 07:00-12:00",
+      "options": [
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "08:45", "arr": "11:10",
+          "airports": "MAD T4 -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 2443, "base_fare_total_5_eur": 413,
+          "bags_needed": "Basic ja inclui mala de mao 10 kg (56x40x25) + item pessoal para os 5. Para as 2 malas despachadas: 2 pessoas em Economy Optimal (inclui 1a mala 23 kg) = +EUR 34/pessoa, em reserva separada (3 Basic + 2 Optimal). Alternativa: reserva unica Basic + 2 malas avulsas (EUR 20-95 cada, faixa oficial Europa).",
+          "bags_cost_brl": 402, "bags_cost_eur": 68,
+          "total_group_brl": 2845, "total_group_eur": 481,
+          "certainty": "live (Basic EUR 413 e Optimal EUR 583 para 5, lidos no Google Flights)",
+          "fare_includes": "Basic: 1 mala de mao 10 kg + item pessoal; sem despacho; assento pago; sem reembolso. Optimal: idem + 1a mala 23 kg.",
+          "source": "Google Flights, opcao 'Book with Iberia' com familias tarifarias",
+          "checked_at": "2026-09-30T18:5x"
+        },
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "11:30", "arr": "13:55",
+          "airports": "MAD T4 -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 2443, "base_fare_total_5_eur": 413,
+          "bags_needed": "igual ao voo das 08:45 (3 Basic + 2 Optimal)",
+          "bags_cost_brl": 402, "bags_cost_eur": 68,
+          "total_group_brl": 2845, "total_group_eur": 481,
+          "certainty": "live",
+          "fare_includes": "igual ao anterior",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T18:5x"
+        },
+        {
+          "airline": "Wizz Air",
+          "flight_no": null,
+          "dep": "09:25", "arr": "11:55",
+          "airports": "MAD T1 -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 1174,
+          "bags_needed": "Basic so da direito a bolsa 40x30x20 embaixo do assento. Os 5 precisam de WIZZ Priority (trolley 10 kg 55x40x23) e 2 precisam + mala 20 kg. (Pacote WIZZ Go inclui 20 kg mas NAO o trolley; WIZZ Smart inclui Priority.)",
+          "bags_cost_brl": 1005,
+          "bags_cost_note": "ESTIMATIVA: 5 x Priority ~EUR 20 + 2 x 20 kg ~EUR 35 = ~EUR 170. Faixa oficial: Priority EUR 10-60; 20 kg baixa temporada EUR 0-112,50 -> custo de bagagem pode ir de ~R$ 296 a ~R$ 3.105. Wizz tambem pode cobrar 'administration fee' EUR 8-13/pax.",
+          "total_group_brl": 2179,
+          "total_group_range_brl": [1470, 4279],
+          "certainty": "estimate (tarifa ao vivo via Google; bagagem nao cotada -- busca da Wizz bloqueia robo)",
+          "fare_includes": "so bolsa pequena embaixo do assento",
+          "source": "Google Flights; farechart wizzair.com confirma EUR 31,94/pax como menor tarifa do dia",
+          "checked_at": "2026-09-30T18:50"
+        },
+        {
+          "airline": "Ryanair (op. Malta Air)",
+          "flight_no": "FR 2436",
+          "dep": "09:35", "arr": "12:00",
+          "airports": "MAD T1 -> FCO (Fiumicino, nao Ciampino)", "stops": "direto",
+          "base_fare_total_5_brl": 1833, "base_fare_total_5_eur": 309.95,
+          "bags_needed": "Tipo de tarifa vale para todos da reserva. 5 x pacote Regular (+EUR 28/pax: Priority + mala 10 kg no bagageiro + assento) + 2 x mala 20 kg avulsa.",
+          "bags_cost_brl": 1183, "bags_cost_eur": 200,
+          "bags_cost_note": "Regular EUR 140 AO VIVO. 2 malas 20 kg ESTIMADAS em ~EUR 30 cada (faixa oficial EUR 21,49-59,99; o pacote Plus = assento + 20 kg sai EUR 34,49 neste voo, o que sugere ~EUR 25-30 pela mala).",
+          "total_group_brl": 3016, "total_group_eur": 509.95,
+          "total_group_range_brl": [2915, 3371],
+          "certainty": "live exceto as 2 malas de 20 kg",
+          "fare_includes": "Basic: so bolsa pequena 40x20x25",
+          "source": "ryanair.com (API availability + FareOptions capturadas no navegador)",
+          "checked_at": "2026-09-30T18:58"
+        },
+        {
+          "airline": "Ryanair",
+          "flight_no": "FR 5315",
+          "dep": "06:25", "arr": "08:50",
+          "airports": "MAD T1 -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 1863, "base_fare_total_5_eur": 314.95,
+          "bags_needed": "5 x Regular (+EUR 26/pax) + 2 x 20 kg (est. EUR 30)",
+          "bags_cost_brl": 1124, "bags_cost_eur": 190,
+          "total_group_brl": 2987, "total_group_eur": 504.95,
+          "certainty": "live exceto malas 20 kg; so restam 5 lugares nessa tarifa",
+          "fare_includes": "so bolsa pequena",
+          "source": "ryanair.com",
+          "checked_at": "2026-09-30T18:58",
+          "note": "fora da janela preferida (06:25)"
+        },
+        {
+          "airline": "Air Europa",
+          "flight_no": null,
+          "dep": "12:40", "arr": "15:05",
+          "airports": "MAD T1 -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 1644, "base_fare_total_5_eur": 278,
+          "bags_needed": "Economy ja inclui mala de mao 10 kg (55x35x25 -- 5 cm mais estreita que o padrao) + acessorio. Faltam 2 malas despachadas 23 kg avulsas.",
+          "bags_cost_brl": 473,
+          "bags_cost_note": "ESTIMATIVA 2 x ~EUR 30-50 (Air Europa nao publica tabela fixa de preco; so aparece na reserva). Totais R$ 1.999-2.236.",
+          "total_group_brl": 2118,
+          "total_group_range_brl": [1999, 2236],
+          "certainty": "tarifa live; malas estimadas",
+          "fare_includes": "mala de mao 10 kg + acessorio",
+          "source": "Google Flights ('Book with Air Europa' EUR 278 para 5); regra de mala de mao: aireuropa.com",
+          "checked_at": "2026-09-30T18:5x",
+          "note": "40 min depois da janela preferida, mas e a opcao full-service mais barata"
+        },
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "21:50", "arr": "00:15+1",
+          "airports": "MAD -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 1644, "base_fare_total_5_eur": 278,
+          "bags_needed": "3 Basic + 2 Optimal (Optimal EUR 448 para 5 => +EUR 34/pax)",
+          "bags_cost_brl": 402,
+          "total_group_brl": 2046, "total_group_eur": 346,
+          "certainty": "live",
+          "fare_includes": "mala de mao 10 kg",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T18:5x",
+          "note": "mais barato 100% cotado, mas chega meia-noite em FCO (sem Leonardo Express depois de ~23:30)"
+        },
+        {
+          "airline": "ITA Airways",
+          "flight_no": null,
+          "dep": "05:55", "arr": "08:15",
+          "airports": "MAD -> FCO", "stops": "direto",
+          "base_fare_total_5_brl": 1792, "base_fare_total_5_eur": 303,
+          "bags_needed": "Economy Light inclui mala de mao de apenas 8 kg (55x40x23). 2 pax em Economy Comfort (+EUR 37/pax, inclui 23 kg).",
+          "bags_cost_brl": 438,
+          "total_group_brl": 2230, "total_group_eur": 377,
+          "certainty": "live",
+          "fare_includes": "mao 8 kg + acessorio",
+          "source": "Google Flights (Light EUR 303 / Comfort EUR 488 para 5)",
+          "checked_at": "2026-09-30T18:5x",
+          "note": "05:55 muito cedo; limite de 8 kg"
+        }
+      ],
+      "other_seen_not_ranked": "Wizz 06:00 R$ 940 base (~R$ 1.945 est. com bagagem); Wizz 20:40 R$ 1.761; Ryanair 17:55 (EUR 77,24) e 19:45 (EUR 61,99); Iberia 13:05/15:45/17:05; Air Europa/ITA 07:00 EUR 548, 15:00 EUR 413; ITA 11:40 EUR 598 Light.",
+      "baggage_rules": {
+        "Iberia": {"cabin_included": "sim, 10 kg 56x40x25 + item pessoal 30x40x15 em todas as tarifas", "trolley_how": "incluso (Basic)", "checked_price_range": "1a mala 23 kg, zona Europa: online EUR 20-95; aeroporto EUR 45-110. Optimal/Comfort incluem 1 mala.", "source_url": "https://www.iberia.com/gb/luggage/hand-luggage/ ; https://www.iberia.com/gb/luggage/allowance-in-hold/"},
+        "Air Europa": {"cabin_included": "sim, 10 kg 55x35x25 + acessorio 40x30x15", "trolley_how": "incluso", "checked_price_range": "23 kg; preco so na reserva/Gestionar reserva (sem tabela publica); desconto se comprar online", "source_url": "https://www.aireuropa.com/es/en/aea/travel-information/baggage/carry-on-luggage.html ; https://www.aireuropa.com/es/en/aea/travel-information/baggage/checked-baggage.html"},
+        "ITA Airways": {"cabin_included": "sim, 8 kg 55x40x23 + acessorio", "trolley_how": "incluso (limite 8 kg!)", "checked_price_range": "Light sem despacho; Comfort inclui 23 kg (+EUR 37/pax neste voo)", "source_url": "https://www.ita-airways.com/xx/en/book-and-prepare/travel-information/baggage/carry-on-baggage"},
+        "Ryanair": {"cabin_included": "nao; so bolsa 40x20x25", "trolley_how": "Priority & 2 Cabin Bags EUR 12,49-36 na reserva (19,99-45,50 depois) OU pacote Regular (Priority + 10 kg + assento) = +EUR 26-28/pax nestes voos (live)", "checked_price_range": "20 kg: EUR 21,49-59,99 online na reserva; 39,99-75 depois/aeroporto. Pacote Plus = assento + 20 kg (sem Priority) +EUR 33-34,49", "source_url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees"},
+        "Wizz Air": {"cabin_included": "nao; so bolsa 40x30x20", "trolley_how": "WIZZ Priority EUR 10-60 online (EUR 65-75 no aeroporto) ou pacote WIZZ Smart/Plus", "checked_price_range": "20 kg baixa temporada EUR 0-112,50 online; aeroporto EUR 70-80. WIZZ Go = 20 kg + assento, SEM trolley. Taxa administrativa EUR 8-13/pax/voo.", "source_url": "https://www.wizzair.com/en-gb/information-and-services/prices-discounts/all-services-fees ; https://www.wizzair.com/en-gb/information-and-services/wizz-services/wizz-priority ; https://www.wizzair.com/en-gb/information-and-services/prices-discounts/fares-bundles"}
+      },
+      "recommendation": "Dentro da janela 07-12h: IBERIA 08:45 (ou 11:30) MAD->FCO, 3 bilhetes Basic + 2 Optimal = ~EUR 481 / R$ 2.845, tudo cotado, mala de mao inclusa, T4 e sem pegadinha de bagagem. Se aceitarem sair 12:40: AIR EUROPA ~R$ 2.000-2.240 com 2 malas (a mais barata full-service). Wizz 09:25 pode sair ~R$ 2.180, mas o custo da bagagem nao foi verificavel e pode passar de R$ 4.000 no pior caso -- so vale se o Lucas abrir o site e ver Priority + 20 kg abaixo de ~EUR 45 somados por pessoa. Ryanair (~R$ 3.000) perde para Iberia neste trecho. Quando: o Google diz que precos estao 'tipicos' e que a melhor epoca de compra costuma ser 15/out-29/dez; ligar alerta de preco agora e comprar ate meados de dezembro. Low-cost com grupo de 5: comprar cedo, pois o balde barato tem poucos lugares (Ryanair FR5315 ja mostra 'restam 5 lugares nesta tarifa').",
+      "notes": [
+        "Nenhum voo MAD->Ciampino nesta data: todos os voos (inclusive Ryanair e Wizz) chegam em Fiumicino. Leonardo Express FCO->Termini ~32 min, EUR 14; trem regional FL1 ~EUR 8 (nao vai a Termini).",
+        "Iberia/Air Europa/ITA dividem a tarifa por familia: 'reserva separada' para os 2 com mala e a forma mais barata cotada; pode dar diferenca de alguns euros se o balde mudar entre uma reserva e outra.",
+        "Na Iberia/Air Europa, voos lotados podem despachar a mala de mao de graca no portao."
+      ]
+    },
+    {
+      "route": "B. Budapeste (BUD) -> Madrid (MAD)",
+      "date": "2027-03-06 (sabado)",
+      "options": [
+        {
+          "airline": "Wizz Air",
+          "flight_no": null,
+          "dep": "15:45", "arr": "19:15",
+          "airports": "BUD T2 -> MAD T1", "stops": "direto",
+          "base_fare_total_5_brl": 1826,
+          "bags_needed": "5 x WIZZ Priority + 2 x 20 kg",
+          "bags_cost_brl": 1005,
+          "bags_cost_note": "ESTIMATIVA ~EUR 170 (5 x 20 + 2 x 35). Faixa oficial: R$ 296 a R$ 3.105.",
+          "total_group_brl": 2831,
+          "total_group_range_brl": [2122, 4931],
+          "certainty": "estimate (tarifa via Google; farechart oficial: HUF 20.851/pax ~EUR 57)",
+          "fare_includes": "so bolsa pequena",
+          "source": "Google Flights + wizzair.com farechart",
+          "checked_at": "2026-09-30T18:51"
+        },
+        {
+          "airline": "Ryanair (op. Ryanair Sun/Buzz)",
+          "flight_no": "FR 5712",
+          "dep": "16:15", "arr": "19:35",
+          "airports": "BUD T2 -> MAD T1", "stops": "direto",
+          "base_fare_total_5_brl": 2029, "base_fare_total_5_huf": 125895,
+          "bags_needed": "5 x Regular (+HUF 10.219/pax ~EUR 28) + 2 x 20 kg (est. ~EUR 30 cada)",
+          "bags_cost_brl": 1178,
+          "total_group_brl": 3207,
+          "total_group_range_brl": [3106, 3562],
+          "certainty": "live exceto malas 20 kg",
+          "fare_includes": "so bolsa pequena",
+          "source": "ryanair.com (API)",
+          "checked_at": "2026-09-30T18:59"
+        },
+        {
+          "airline": "Ryanair",
+          "flight_no": "FR 6712",
+          "dep": "06:10", "arr": "09:30",
+          "airports": "BUD -> MAD", "stops": "direto",
+          "base_fare_total_5_brl": 1999, "base_fare_total_5_huf": 124070,
+          "bags_needed": "5 x Regular (+HUF 9.854/pax) + 2 x 20 kg est.",
+          "bags_cost_brl": 1149,
+          "total_group_brl": 3148,
+          "certainty": "live exceto malas 20 kg",
+          "fare_includes": "so bolsa pequena",
+          "source": "ryanair.com",
+          "checked_at": "2026-09-30T18:59",
+          "note": "cedo demais (06:10)"
+        },
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "11:10", "arr": "14:30",
+          "airports": "BUD -> MAD T4", "stops": "direto",
+          "base_fare_total_5_brl": 3046, "base_fare_total_5_huf": 189000,
+          "bags_needed": "Basic inclui mao 10 kg; 2 pax em Optimal (+HUF 12.500/pax ~EUR 34)",
+          "bags_cost_brl": 403,
+          "total_group_brl": 3449, "total_group_huf": 214000,
+          "certainty": "live (Basic HUF 189.000, Optimal HUF 251.500 para 5)",
+          "fare_includes": "mao 10 kg + item pessoal",
+          "source": "Google Flights (familias Iberia)",
+          "checked_at": "2026-09-30T19:0x"
+        },
+        {
+          "airline": "KLM (via Amsterda)",
+          "flight_no": null,
+          "dep": "06:30 ou 13:55", "arr": "12:10 ou 19:35",
+          "airports": "BUD -> AMS -> MAD", "stops": "1 (50-55 min AMS)",
+          "base_fare_total_5_brl": 2996,
+          "bags_needed": "tarifa Light: mao inclusa; 2 malas despachadas avulsas (nao cotadas)",
+          "bags_cost_brl": null,
+          "total_group_brl": null,
+          "certainty": "tarifa live; bagagem nao cotada; conexao curta",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T19:0x"
+        }
+      ],
+      "baggage_rules": "mesmas regras da rota A (Wizz, Ryanair, Iberia). Ryanair aqui cobra em HUF.",
+      "recommendation": "Melhor custo-risco: IBERIA 11:10->14:30, 3 Basic + 2 Optimal = HUF 214.000 / ~R$ 3.450, 100% cotado e horario bom. Se quiser economizar ~R$ 600: WIZZ 15:45->19:15 (~R$ 2.830 estimado), mas so depois de conferir no site o preco real de 5 Priority + 2 x 20 kg -- se somar mais que ~EUR 270 (~R$ 1.600), Iberia empata. Ryanair 16:15 (~R$ 3.200) fica no meio e nao compensa frente a Iberia. Quando: mesma logica -- alerta de preco ja; compra entre out-dez; nao deixar low-cost para janeiro/fevereiro.",
+      "notes": [
+        "Ryanair: a tarifa escolhida vale para todos da reserva; nao da para misturar Regular e Plus na mesma reserva.",
+        "Iberia chega no T4; Wizz/Ryanair no T1 -- relevante se houver conexao ou hotel perto de um terminal."
+      ]
+    },
+    {
+      "route": "C. Viena (VIE) -> Madrid (MAD) -- plano alternativo",
+      "date": "2027-03-06 (sabado)",
+      "options": [
+        {
+          "airline": "Ryanair (op. Lauda Europe)",
+          "flight_no": "FR 689",
+          "dep": "06:00", "arr": "09:10",
+          "airports": "VIE T1 -> MAD T1", "stops": "direto",
+          "base_fare_total_5_brl": 1360, "base_fare_total_5_eur": 229.95,
+          "bags_needed": "5 x Regular (+EUR 26/pax) + 2 x 20 kg (est. EUR 30)",
+          "bags_cost_brl": 1124, "bags_cost_eur": 190,
+          "total_group_brl": 2484, "total_group_eur": 419.95,
+          "total_group_range_brl": [2383, 2839],
+          "certainty": "live exceto malas 20 kg",
+          "fare_includes": "so bolsa pequena",
+          "source": "ryanair.com (API)",
+          "checked_at": "2026-09-30T18:59",
+          "note": "unico voo Ryanair no dia e as 06:00 (chegar em VIE ~04:30)"
+        },
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "12:20 ou 19:45", "arr": "15:30 ou 22:55",
+          "airports": "VIE -> MAD T4", "stops": "direto",
+          "base_fare_total_5_brl": 2573, "base_fare_total_5_eur": 435,
+          "bags_needed": "3 Basic + 2 Optimal (+EUR 34/pax)",
+          "bags_cost_brl": 402,
+          "total_group_brl": 2975, "total_group_eur": 503,
+          "certainty": "live (Basic EUR 435 / Optimal EUR 605 para 5)",
+          "fare_includes": "mao 10 kg + item pessoal",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T19:0x"
+        },
+        {
+          "airline": "KLM (via Amsterda)",
+          "flight_no": null,
+          "dep": "06:50", "arr": "12:10",
+          "airports": "VIE -> AMS -> MAD", "stops": "1",
+          "base_fare_total_5_brl": 3123, "base_fare_total_5_eur": 528,
+          "bags_needed": "2 malas despachadas avulsas (nao cotadas)",
+          "bags_cost_brl": null, "total_group_brl": null,
+          "certainty": "tarifa live; bagagem nao cotada",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T19:0x"
+        },
+        {
+          "airline": "Iberia",
+          "flight_no": null,
+          "dep": "07:05", "arr": "10:15",
+          "airports": "VIE -> MAD", "stops": "direto",
+          "base_fare_total_5_brl": 2935,
+          "bags_needed": "3 Basic + 2 Optimal (assumido +EUR 34/pax como nos outros voos Iberia)",
+          "bags_cost_brl": 402,
+          "total_group_brl": 3359,
+          "certainty": "base live; diferenca Optimal assumida",
+          "source": "Google Flights",
+          "checked_at": "2026-09-30T18:51"
+        }
+      ],
+      "baggage_rules": "Iberia e Ryanair: ver rota A. Austrian nao aparece com voo direto VIE-MAD neste sabado no Google (so conexoes via ZRH/MUC a partir de R$ 4.044 sem mala). Wizz nao voa VIE-MAD (flightDates vazio).",
+      "recommendation": "Se o plano for Viena: IBERIA 12:20->15:30 (3 Basic + 2 Optimal, ~EUR 503 / R$ 2.975) e a escolha sensata. Ryanair 06:00 economiza ~R$ 500 mas obriga a sair do hotel ~03:45-04:00. Comparando com Budapeste: VIE-MAD Iberia (R$ 2.975) sai ~R$ 470 mais barato que BUD-MAD Iberia (R$ 3.449); a Wizz de Budapeste (estimada) ainda pode ser a mais barata de todas.",
+      "notes": []
+    }
+  ],
+  "not_live_summary": [
+    "Wizz Air: preco de Priority e mala 20 kg nao obtido (busca bloqueada por anti-robo); valores sao estimativa dentro da faixa oficial.",
+    "Ryanair: preco exato da mala 20 kg avulsa so aparece apos nomes dos passageiros; estimado em EUR 30 (faixa oficial 21,49-59,99).",
+    "Air Europa: preco da mala despachada avulsa nao publicado; estimado EUR 30-50.",
+    "Numeros de voo so disponiveis para Ryanair (API). Demais: horario + companhia.",
+    "Totais sem IOF/spread de cartao."
+  ]
+}

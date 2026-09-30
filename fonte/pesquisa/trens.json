@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "group": "5 adults, no discount cards, carry-on luggage",
+    "checked_at": "2026-09-30",
+    "fx_eur_brl": 5.95,
+    "method": "Live: Trenitalia lefrecce.it BFF API (ticket/solutions, adults=5); Italo public website biglietti.italotreno.com via Playwright/msedge (captured api-biglietti booking/status JSON, prices in EUR); ÖBB anonymous shop API shop.oebbtickets.at (init / hafas stations / hafas v4 timetable / offer v1 prices, 5 adults). Blocked/unavailable: int.bahn.de (Akamai 403 OPS_BLOCKED), MÁV jegy-a.mav.hu API (connection closed), ÖBB website (Cloudflare bot check; not bypassed). No bookings, no accounts, no personal data.",
+    "key_finding": "Italy domestic (Roma-Verona, 26 Feb 2027) is ON SALE now at both Trenitalia and Italo. Every Austria/cross-border leg (Verona-Innsbruck, Innsbruck-Wien, Wien-Budapest) is NOT on sale yet: ÖBB and Trenitalia systems only carry the 2026 timetable up to Sat 12 Dec 2026 (probed: 12 Dec returns trains, 13 Dec onwards returns nothing except Nightjets). The 2027 timetable starts Sun 13 Dec 2026. ÖBB's normal horizon is 180 days, so the only thing blocking sales is the loading of the 2027 timetable.",
+    "reference_data_note": "For the not-yet-open legs, times and prices come from the SAME trains on an equivalent weekday in the current timetable (Sun 29 Nov, Mon 30 Nov, Thu 3 Dec 2026), fetched live on 2026-09-30. They are labelled 'reference, not a live quote for 2027'. Times of the 2027 timetable can shift by a few minutes, and prices can change."
+  },
+  "legs": [
+    {
+      "leg": "1. Roma Termini -> Verona Porta Nuova",
+      "date": "2027-02-26 (Fri)",
+      "preferred_window": "08:00-11:30 departure",
+      "sales_open": true,
+      "sales_open_date_if_not": null,
+      "options": [
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8956 (EVO), stops Firenze SMN, Bologna",
+          "dep": "08:20", "arr": "11:38", "duration_min": 198, "changes": 0,
+          "fare_name": "Italo Friends (Smart) - group offer for 3-5 people on the same booking",
+          "price_per_person_eur": 31.96, "total_5_eur": 159.80,
+          "price_per_person_brl": 190.16, "total_5_brl": 950.81,
+          "conditions": "Non-refundable. Changeable for a fee (percentage top-up + any fare difference) up to 72 h before departure. 81 seats left at this fare at check time.",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8956",
+          "dep": "08:20", "arr": "11:38", "duration_min": 198, "changes": 0,
+          "fare_name": "Low Cost (Smart)",
+          "price_per_person_eur": 39.90, "total_5_eur": 199.50,
+          "price_per_person_brl": 237.41, "total_5_brl": 1187.03,
+          "conditions": "Non-refundable, changeable for a fee up to 72 h before (percentage top-up + difference). 23 seats left.",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8956",
+          "dep": "08:20", "arr": "11:38", "duration_min": 198, "changes": 0,
+          "fare_name": "Economy (Smart)",
+          "price_per_person_eur": 45.90, "total_5_eur": 229.50,
+          "price_per_person_brl": 273.11, "total_5_brl": 1365.53,
+          "conditions": "Changeable unlimited times up to 3 min before departure with a 20% top-up + fare difference; refundable with deduction (per Italo fare text).",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8956",
+          "dep": "08:20", "arr": "11:38", "duration_min": 198, "changes": 0,
+          "fare_name": "Flex (Smart)",
+          "price_per_person_eur": 79.90, "total_5_eur": 399.50,
+          "price_per_person_brl": 475.41, "total_5_brl": 2377.03,
+          "conditions": "Free changes until 3 min before departure (pay difference); refundable with deduction.",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8956",
+          "dep": "08:20", "arr": "11:38", "duration_min": 198, "changes": 0,
+          "fare_name": "Italo Friends (Prima)",
+          "price_per_person_eur": 35.96, "total_5_eur": 179.80,
+          "price_per_person_brl": 213.96, "total_5_brl": 1069.81,
+          "conditions": "Same as Italo Friends Smart (non-refundable, change for a fee up to 72 h before). 26 seats left.",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia",
+          "train": "Frecciarossa FR 8506",
+          "dep": "08:50", "arr": "12:08", "duration_min": 198, "changes": 0,
+          "fare_name": "Super Economy (Standard)",
+          "price_per_person_eur": 39.90, "total_5_eur": 199.50,
+          "price_per_person_brl": 237.41, "total_5_brl": 1187.03,
+          "conditions": "No changes, no refund. 180 seats at this level.",
+          "seat_reservation_included": true,
+          "source": "live api (lefrecce.it)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia",
+          "train": "Frecciarossa FR 8506",
+          "dep": "08:50", "arr": "12:08", "duration_min": 198, "changes": 0,
+          "fare_name": "FrecciaFRIENDS (Standard) - groups of 3-5",
+          "price_per_person_eur": 42.50, "total_5_eur": 212.50,
+          "price_per_person_brl": 252.88, "total_5_brl": 1264.38,
+          "conditions": "No changes, no refund. More expensive than Super Economy on this train.",
+          "seat_reservation_included": true,
+          "source": "live api (lefrecce.it)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia",
+          "train": "Frecciarossa FR 8506",
+          "dep": "08:50", "arr": "12:08", "duration_min": 198, "changes": 0,
+          "fare_name": "Economy (Standard)",
+          "price_per_person_eur": 65.90, "total_5_eur": 329.50,
+          "price_per_person_brl": 392.11, "total_5_brl": 1960.53,
+          "conditions": "Changeable before departure paying the difference; non-refundable.",
+          "seat_reservation_included": true,
+          "source": "live api (lefrecce.it)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia",
+          "train": "Frecciarossa FR 8506",
+          "dep": "08:50", "arr": "12:08", "duration_min": 198, "changes": 0,
+          "fare_name": "Base (Standard)",
+          "price_per_person_eur": 85.00, "total_5_eur": 425.00,
+          "price_per_person_brl": 505.75, "total_5_brl": 2528.75,
+          "conditions": "Unlimited changes before departure; refundable with deduction.",
+          "seat_reservation_included": true,
+          "source": "live api (lefrecce.it)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia",
+          "train": "Frecciarossa FR 9416 + FR 9736 (change at Padova 14:04/14:16)",
+          "dep": "10:30", "arr": "15:00", "duration_min": 270, "changes": 1,
+          "fare_name": "cheapest combination (FrecciaDAYS on both, Standard)",
+          "price_per_person_eur": 43.80, "total_5_eur": 219.00,
+          "price_per_person_brl": 260.61, "total_5_brl": 1303.05,
+          "conditions": "No changes, no refund. Longer and with a change - not recommended.",
+          "seat_reservation_included": true,
+          "source": "live api (lefrecce.it)", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Italo",
+          "train": "Italo AV 8954 (outside window, for reference)",
+          "dep": "07:20", "arr": "10:38", "duration_min": 198, "changes": 0,
+          "fare_name": "eXtra Magic (Smart)",
+          "price_per_person_eur": 29.90, "total_5_eur": 149.50,
+          "price_per_person_brl": 177.91, "total_5_brl": 889.53,
+          "conditions": "No changes, no refund. Only 10 seats left at this fare.",
+          "seat_reservation_included": true,
+          "source": "live website (Italo booking API JSON)", "checked_at": "2026-09-30"
+        }
+      ],
+      "where_to_buy": "https://www.italotreno.com (Italo) / https://www.trenitalia.com (Trenitalia)",
+      "recommendation": "Italo 8956, dep 08:20 -> arr 11:38, direct, fare Italo Friends in Smart: EUR 159.80 for all 5 (EUR 31.96 each, about BRL 951 in total). It is the cheapest option in the window, gets you to Verona before noon, and can still be changed for a fee up to 72 h before departure. That is more flexible than Trenitalia's Super Economy (EUR 199.50, no change at all). Put all 5 on ONE booking, because the fare only applies to groups of 3-5. If you want free changes, Italo Flex costs EUR 399.50. The Trenitalia FR 8506 at 08:50 is the backup if Italo sells out. Buy now: prices only go up closer to the date.",
+      "notes": "Both trains leave from Roma Termini and arrive at Verona Porta Nuova. You don't validate Italo/Frecce e-tickets (they are tied to the train and seat); keep the PDF/QR and ID. Carry-on is fine on both; there are luggage racks at the car ends and overhead. Italo returned fareTypes='foreignFares' and its site showed USD because the search came from Brazil. The JSON prices are in EUR. Pay in EUR on italotreno.com (it/en site) to avoid DCC conversion. Italo Friends seats go fast (81 left at check time)."
+    },
+    {
+      "leg": "2. Verona Porta Nuova -> Innsbruck Hbf",
+      "date": "2027-02-28 (Sun)",
+      "preferred_window": "morning departure, arrive early afternoon",
+      "sales_open": false,
+      "sales_open_date_if_not": "Not bookable yet (verified 2026-09-30 in both Trenitalia and ÖBB systems: the 2027 timetable, valid from 13 Dec 2026, is not loaded; last bookable date is 12 Dec 2026). Expected to open when ÖBB/DB/Trenitalia load the 2027 timetable, usually around mid-October; check from ~15 Oct 2026. This is an estimate, not an official date.",
+      "options": [
+        {
+          "operator": "ÖBB/DB (Railjet on the Verona-Brenner-Innsbruck-München line; also sold by Trenitalia)",
+          "train": "RJ 88 (reference timetable)",
+          "dep": "09:01", "arr": "12:32", "duration_min": 211, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 31.80, "total_5_eur": 159.00,
+          "price_per_person_brl": 189.21, "total_5_brl": 946.05,
+          "price_range_note": "Reference Sun 29 Nov 2026: EUR 159.00 for 5 in 2nd class, and EUR 105.00 for 5 in 1st-class Sparschiene (yes, 1st was cheaper). Sat 12 Dec 2026: EUR 91.00 for 5. Expect about EUR 13-32 per person if bought early.",
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (Trenitalia + ÖBB APIs), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/DB via Trenitalia",
+          "train": "RJ 88 (reference timetable)",
+          "dep": "09:01", "arr": "12:32", "duration_min": 211, "changes": 0,
+          "fare_name": "Semi Flex (Trenitalia sale, 2nd class)",
+          "price_per_person_eur": 40.00, "total_5_eur": 200.00,
+          "price_per_person_brl": 238.00, "total_5_brl": 1190.00,
+          "conditions": "Limited availability; refundable with deduction up to 1 day before departure.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (lefrecce.it, 29 Nov 2026), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/DB via Trenitalia",
+          "train": "RJ 88 (reference timetable)",
+          "dep": "09:01", "arr": "12:32", "duration_min": 211, "changes": 0,
+          "fare_name": "Standard adult (2nd class, flexible)",
+          "price_per_person_eur": 60.80, "total_5_eur": 304.00,
+          "price_per_person_brl": 361.76, "total_5_brl": 1808.80,
+          "conditions": "Full-flex standard fare.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (lefrecce.it), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/DB (Railjet)",
+          "train": "RJ 86 (reference timetable)",
+          "dep": "11:01", "arr": "14:32", "duration_min": 211, "changes": 0,
+          "fare_name": "Semi Flex / Sparschiene (2nd class)",
+          "price_per_person_eur": 17.90, "total_5_eur": 89.50,
+          "price_per_person_brl": 106.51, "total_5_brl": 532.53,
+          "conditions": "Semi Flex: refundable with deduction up to 1 day before. Sparschiene (EUR 91.00 for 5): no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (lefrecce.it, 29 Nov 2026), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "Trenitalia regional + ÖBB S-Bahn",
+          "train": "R 3462 to Brennero + S3 to Innsbruck (reference timetable)",
+          "dep": "07:50", "arr": "12:13", "duration_min": 263, "changes": 1,
+          "fare_name": "regional fares (Brenner-Innsbruck part at EUR 45.50 for 5 via ÖBB; Italian part bought separately)",
+          "price_per_person_eur": null, "total_5_eur": null,
+          "conditions": "Slower, with a change, not cheaper once the Italian part is added. Listed only as a fallback.",
+          "seat_reservation_included": false,
+          "source": "reference: current timetable (ÖBB API)", "checked_at": "2026-09-30"
+        }
+      ],
+      "where_to_buy": "https://shop.oebbtickets.at (ÖBB, Sparschiene) or https://www.trenitalia.com (sells the same Railjet with Sparschiene and Semi Flex fares). Compare both on the day sales open.",
+      "recommendation": "RJ 88, dep 09:01 -> arr 12:32 (reference timetable), direct, fare Sparschiene. Expect about EUR 90-160 for 5 (BRL 535-950) if you buy in the first days of sales. Check 1st class as well, because it was cheaper than 2nd on the reference date. If you want a way out, Trenitalia's Semi Flex (refundable until the day before) often costs little more. Add seat reservations (about EUR 3-3.50 each via ÖBB): Sunday Brenner trains get full. Check the 2027 times when sales open; the 09:01 departure could move a few minutes.",
+      "notes": "It leaves from Verona Porta Nuova and arrives at Innsbruck Hbf. Since Dec 2025 the EuroCity DB-ÖBB service on this line runs as Railjet (RJ). The ÖBB API returns the RJ 11:01 at EUR 111.60 for 5, more than Trenitalia (EUR 89.50). Nothing to validate on this train (the e-ticket is tied to the train). The Innsbruck Hbf station is central."
+    },
+    {
+      "leg": "3. Innsbruck Hbf -> Wien Hbf",
+      "date": "2027-03-01 (Mon)",
+      "preferred_window": "11:00-14:30 departure",
+      "sales_open": false,
+      "sales_open_date_if_not": "Not bookable yet (ÖBB API returns only Nightjets for 1 Mar 2027; daytime 2027 timetable not loaded). ÖBB horizon is 180 days (per oebb.at), so it opens as soon as the 2027 timetable is loaded, expected around mid-October 2026 (estimate).",
+      "options": [
+        {
+          "operator": "ÖBB",
+          "train": "Railjet Xpress RJX 13477 (reference Mon 30 Nov 2026)",
+          "dep": "12:56", "arr": "17:32", "duration_min": 276, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 39.90, "total_5_eur": 199.50,
+          "price_per_person_brl": 237.41, "total_5_brl": 1187.03,
+          "conditions": "Only valid on the booked train; no refund, no exchange. Seat reservation not included (about EUR 3-3.50 each).",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB",
+          "train": "Railjet Xpress RJX 165 (reference Mon 30 Nov 2026)",
+          "dep": "13:58", "arr": "18:32", "duration_min": 274, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 24.90, "total_5_eur": 124.50,
+          "price_per_person_brl": 148.16, "total_5_brl": 740.78,
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB",
+          "train": "Railjet Xpress RJX 13479 (reference; departs just after the window)",
+          "dep": "14:56", "arr": "19:32", "duration_min": 276, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 24.90, "total_5_eur": 124.50,
+          "price_per_person_brl": 148.16, "total_5_brl": 740.78,
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB",
+          "train": "any Railjet Innsbruck-Wien",
+          "dep": "any", "arr": "-", "duration_min": 275, "changes": 0,
+          "fare_name": "Standard-Ticket (2nd class, flexible, not train-bound)",
+          "price_per_person_eur": 86.80, "total_5_eur": 434.00,
+          "price_per_person_brl": 516.46, "total_5_brl": 2582.30,
+          "conditions": "Flexible, not tied to a train; refundable per ÖBB rules. Price observed live for 2 Oct 2026 on the current tariff; 2027 tariff may differ.",
+          "seat_reservation_included": false,
+          "source": "live api (ÖBB, current tariff, 2 Oct 2026 train) - not a 2027 quote", "checked_at": "2026-09-30"
+        }
+      ],
+      "where_to_buy": "https://shop.oebbtickets.at (or the ÖBB app)",
+      "recommendation": "RJX around 13:58 -> 18:32 (reference RJX 165), direct, fare Sparschiene. On the reference date it was the cheapest in the window at EUR 124.50 for 5 (EUR 24.90 each, about BRL 741), and it leaves the whole morning free in Innsbruck. If you prefer to arrive earlier, take the 12:56 -> 17:32 (EUR 199.50 for 5 on the reference date). Add seat reservations for 5 (about EUR 15-17.50 in total). A Monday midday train is manageable without them, but they make sure the group sits together. Buy on the first days of sales; Sparschiene prices go up in steps as seats sell.",
+      "notes": "It leaves from Innsbruck Hbf and arrives at Wien Hbf. No departure between 11:00 and 12:42 on the reference date (the 10:56 RJX is just before the window). The 12:42 RJ 88 via Germany (753.50 for 5) should be avoided. WESTbahn: no WESTbahn departures from Innsbruck appeared in the ÖBB timetable data, and WESTbahn cannot be booked through ÖBB. As far as I know it runs Wien-Salzburg only, so you would need a change in Salzburg for no gain. Not checked live. Nothing to validate; show the QR plus ID."
+    },
+    {
+      "leg": "4. Wien Hbf -> Budapest Keleti",
+      "date": "2027-03-04 (Thu)",
+      "preferred_window": "morning departure",
+      "sales_open": false,
+      "sales_open_date_if_not": "Not bookable yet (ÖBB API returns no connections for 4 Mar 2027). Expected to open when the 2027 timetable is loaded, around mid-October 2026 (estimate). The MÁV API could not be reached.",
+      "options": [
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "Railjet Xpress RJX 267 (reference Thu 3 Dec 2026)",
+          "dep": "07:40", "arr": "10:35", "duration_min": 175, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 16.12, "total_5_eur": 80.60,
+          "price_per_person_brl": 95.91, "total_5_brl": 479.57,
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "EuroCity EC 463 (reference)",
+          "dep": "06:40", "arr": "09:29", "duration_min": 169, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 16.12, "total_5_eur": 80.60,
+          "price_per_person_brl": 95.91, "total_5_brl": 479.57,
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "EuroCity EC 141 (reference)",
+          "dep": "08:40", "arr": "11:29", "duration_min": 169, "changes": 0,
+          "fare_name": "cheapest available (Sparschiene sold out on reference date)",
+          "price_per_person_eur": 22.40, "total_5_eur": 112.00,
+          "price_per_person_brl": 133.28, "total_5_brl": 666.40,
+          "conditions": "Depends on the fare shown.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "Railjet Xpress RJX 269 (reference)",
+          "dep": "09:40", "arr": "12:35", "duration_min": 175, "changes": 0,
+          "fare_name": "Sparschiene (2nd class)",
+          "price_per_person_eur": 29.40, "total_5_eur": 147.00,
+          "price_per_person_brl": 174.93, "total_5_brl": 874.65,
+          "conditions": "Only valid on the booked train; no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB",
+          "train": "any Wien-Budapest train",
+          "dep": "any", "arr": "-", "duration_min": 170, "changes": 0,
+          "fare_name": "Standard-Ticket (2nd class, flexible)",
+          "price_per_person_eur": 53.30, "total_5_eur": 266.50,
+          "price_per_person_brl": 317.14, "total_5_brl": 1585.68,
+          "conditions": "Flexible, not tied to a train. Observed live for 2 Oct 2026 on the current tariff.",
+          "seat_reservation_included": false,
+          "source": "live api (ÖBB, current tariff, 2 Oct 2026 train) - not a 2027 quote", "checked_at": "2026-09-30"
+        }
+      ],
+      "where_to_buy": "https://shop.oebbtickets.at (ÖBB). MÁV (https://jegy.mav.hu) also sells this route but could not be checked.",
+      "recommendation": "RJX around 07:40 -> 10:35 (reference RJX 267), direct, fare Sparschiene. Expect about EUR 80 for 5 (EUR 16 each, about BRL 480). It gives a full morning plus the day in Budapest. The EC at 06:40 costs the same and arrives an hour earlier. Buy as soon as the 2027 timetable opens (expected mid-October 2026).",
+      "notes": "It leaves from Wien Hbf, and the reference trains end at Budapest-Keleti. After the change, check that your train really ends at Keleti and not only at Kelenföld. No seat reservation is needed on Railjet/EC Wien-Budapest (optional, about EUR 3). Nothing to validate."
+    },
+    {
+      "leg": "4-ALT. Wien Hbf <-> Budapest Keleti same-day return",
+      "date": "2027-03-04 (Thu)",
+      "preferred_window": "out early morning, back ~18:00-20:00",
+      "sales_open": false,
+      "sales_open_date_if_not": "Same as leg 4 (expected mid-October 2026, estimate).",
+      "options": [
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "OUT RJX 267 07:40->10:35 + BACK RJX 68 15:30->18:20 (reference)",
+          "dep": "07:40", "arr": "18:20 (back in Wien)", "duration_min": 345, "changes": 0,
+          "fare_name": "Sparschiene both ways (2nd class)",
+          "price_per_person_eur": 31.02, "total_5_eur": 155.10,
+          "price_per_person_brl": 184.57, "total_5_brl": 922.85,
+          "conditions": "Two separate train-bound tickets; no refund, no exchange. The return leg was EUR 74.50 for 5 on every afternoon/evening train on the reference date.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "OUT RJX 267 07:40->10:35 + BACK EC 148 16:30->19:20 (reference)",
+          "dep": "07:40", "arr": "19:20 (back in Wien)", "duration_min": 345, "changes": 0,
+          "fare_name": "Sparschiene both ways (2nd class)",
+          "price_per_person_eur": 31.02, "total_5_eur": 155.10,
+          "price_per_person_brl": 184.57, "total_5_brl": 922.85,
+          "conditions": "Train-bound, no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB/MÁV",
+          "train": "OUT RJX 267 07:40->10:35 + BACK RJX 264 17:30->20:20 (reference)",
+          "dep": "07:40", "arr": "20:20 (back in Wien)", "duration_min": 345, "changes": 0,
+          "fare_name": "Sparschiene both ways (2nd class)",
+          "price_per_person_eur": 31.02, "total_5_eur": 155.10,
+          "price_per_person_brl": 184.57, "total_5_brl": 922.85,
+          "conditions": "Train-bound, no refund, no exchange.",
+          "seat_reservation_included": false,
+          "source": "reference: live price on the current timetable (ÖBB API), NOT a live 2027 quote", "checked_at": "2026-09-30"
+        },
+        {
+          "operator": "ÖBB",
+          "train": "any trains, both directions",
+          "dep": "any", "arr": "any", "duration_min": null, "changes": 0,
+          "fare_name": "Standard-Ticket both ways (flexible)",
+          "price_per_person_eur": 106.60, "total_5_eur": 533.00,
+          "price_per_person_brl": 634.27, "total_5_brl": 3171.35,
+          "conditions": "Flexible; current tariff.",
+          "seat_reservation_included": false,
+          "source": "live api (ÖBB, current tariff) - not a 2027 quote", "checked_at": "2026-09-30"
+        }
+      ],
+      "where_to_buy": "https://shop.oebbtickets.at",
+      "recommendation": "Go out on the 07:40 RJX (arr 10:35) and come back on the 16:30 EC 148 (back in Wien 19:20), both on Sparschiene. Expect about EUR 155 for 5 in total (about BRL 923). That gives about 6 h in Budapest with a comfortable evening arrival. If you want the latest train that still arrives by 20:20, take the 17:30. Buy both tickets together on the opening days. Sparschiene is train-bound, so a missed return means buying a new ticket. Anyone who wants a buffer should take the standard fare only for the return.",
+      "notes": "Departure and return are at Budapest-Keleti. The return leg is the cheap one (EUR 14.90 each on the reference date)."
+    }
+  ]
+}

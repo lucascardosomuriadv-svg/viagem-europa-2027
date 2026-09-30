@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cidade · Europa 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<nav class="nav" aria-label="Cidades">
+  <div class="trilho" id="nav-cidades"><a class="marca" href="index.html">← Guia</a></div>
+</nav>
+<div class="miolo">
+  <header>
+    <h1 id="titulo"></h1>
+    <p class="sub" id="resumo" style="margin-top:12px"></p>
+  </header>
+
+  <section>
+    <h2>Os dias aqui</h2>
+    <div id="dias" class="grade2"></div>
+  </section>
+
+  <section>
+    <h2>No mapa</h2>
+    <div id="mapa" class="mapa" role="img" aria-label="Mapa dos lugares"></div>
+    <div class="leg-mapa">
+      <span><i style="background:#1d4ed8"></i>para ver</span>
+      <span><i style="background:#c2410c"></i>para comer</span>
+      <span>ponto maior = está no dia a dia · toque para ver</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Todos os lugares</h2>
+    <div class="filtros">
+      <label for="f-tipo">O quê<select id="f-tipo"><option value="">tudo</option><option value="ver">para ver</option><option value="comer">para comer</option></select></label>
+      <label for="f-roteiro">Onde entra<select id="f-roteiro"><option value="">tudo</option><option value="sim">no dia a dia</option><option value="nao">fora do dia a dia</option></select></label>
+      <label for="f-origem">De onde veio<select id="f-origem"><option value="">tudo</option><option value="seu">sua lista ou seu mapa</option><option value="sugestão">sugestão da pesquisa</option></select></label>
+      <span class="contagem num" id="contagem"></span>
+    </div>
+    <div class="lugares" id="lugares"></div>
+  </section>
+
+  <section id="fora-sec">
+    <h2>Da sua lista, mas fora do dia a dia</h2>
+    <div id="fora" class="grade2"></div>
+  </section>
+
+  <section id="pratico-sec">
+    <h2>Como se virar</h2>
+    <div id="pratico" class="grade2"></div>
+  </section>
+
+  <footer>Pesquisa de 30/09/2026. "Confiança média/baixa" significa que o horário ou o endereço veio de uma fonte só ou antiga: confirmem no Google Maps perto da data.</footer>
+</div>
+
+<script src="dados/guia.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const G = window.GUIA;
+const NOME = Object.fromEntries(G.cidades);
+const k = new URLSearchParams(location.search).get("c") || "roma";
+const c = NOME[k] ? k : "roma";
+const COR = {madri:"var(--madri)",roma:"var(--roma)",verona:"var(--verona)",innsbruck:"var(--innsbruck)",viena:"var(--viena)",budapeste:"var(--budapeste)"};
+const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
+const dm = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
+const sem = iso => DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const usados = new Set(G.usados);
+const lug = G.lugares[c];
+const quandoUsado = {};
+G.dias.forEach(d => d.blocos.forEach(b => b.ids.forEach(id => { (quandoUsado[id] ||= []).push(`${sem(d.data)} ${dm(d.data)}`); })));
+
+document.title = `${NOME[c]} · Europa 2027`;
+document.documentElement.style.setProperty("--destaque", getComputedStyle(document.documentElement).getPropertyValue("--"+c));
+document.getElementById("nav-cidades").innerHTML += G.cidades.map(([kk,n]) => `<a href="cidade.html?c=${kk}" ${kk===c?'style="color:var(--tinta);border-color:var(--linha)"':""}>${n}</a>`).join("") + `<a href="hospedagens.html">Hospedagem</a>`;
+document.getElementById("titulo").innerHTML = `${NOME[c]}<span class="ponto">.</span>`;
+const nVer = lug.filter(x=>x.tipo==="ver").length, nCom = lug.length - nVer;
+document.getElementById("resumo").textContent = `${nVer} lugares para ver e ${nCom} para comer, com horário, dia em que fecha, reserva e o que pedir. Os que estão no dia a dia aparecem com a data.`;
+
+// dias
+const dias = G.dias.filter(d => d.cidade === c || d.blocos.some(b => b.ids.some(id => id.startsWith(c+"-"))));
+document.getElementById("dias").innerHTML = dias.map(d => `
+  <a class="cartao" href="index.html#dia-${d.data}" style="text-decoration:none;color:inherit;display:grid;gap:4px">
+    <span class="fraco num">${sem(d.data)} ${dm(d.data)}</span><b>${d.titulo}</b>
+    <span class="fraco">${d.blocos.map(b=>b.quando).join(" · ")}</span>
+  </a>`).join("");
+
+// cartões
+function cartao(x){
+  const quando = quandoUsado[x.id];
+  const gmaps = x.lat ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.nome.replace(/\s*\(.*$/,"") + " " + (x.endereco||NOME[c]))}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.nome+" "+NOME[c])}`;
+  const campo = (rot, v) => v && v !== "—" ? `<dt>${rot}</dt><dd>${esc(v)}</dd>` : "";
+  return `<article class="lugar" id="${x.id}">
+    <div class="topo">
+      <span class="chip ${x.tipo==="comer"?"espera":"info"}">${x.tipo==="comer"?"comer":"ver"}</span>
+      ${quando ? `<span class="chip ok">no roteiro: ${quando.join(", ")}</span>` : ""}
+      ${x.origem==="sua lista"||x.origem==="seu mapa" ? `<span class="chip">${x.origem}</span>` : ""}
+      ${x.confianca && x.confianca!=="alta" ? `<span class="chip alerta">confiança ${esc(x.confianca)}</span>` : ""}
+    </div>
+    <h3>${esc(x.nome)}</h3>
+    ${x.categoria && !/^atra/.test(x.categoria) ? `<p class="fraco">${esc(x.categoria)}${x.bairro?" · "+esc(x.bairro):""}</p>` : (x.bairro?`<p class="fraco">${esc(x.bairro)}</p>`:"")}
+    <dl>
+      ${campo("Pedir", x.pedir)}${campo("Preço", x.preco)}${campo("Horário", x.horario)}${campo("Fecha", x.fecha)}${campo("Reserva", x.reserva)}${campo("Tempo", x.tempo)}${campo("Dica", x.dica)}
+    </dl>
+    <div class="acoes"><a href="${gmaps}" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>${x.endereco?`<span class="fraco">${esc(x.endereco)}</span>`:""}</div>
+  </article>`;
+}
+function lista(){
+  const t = document.getElementById("f-tipo").value, r = document.getElementById("f-roteiro").value, o = document.getElementById("f-origem").value;
+  const l = lug.filter(x => (!t || x.tipo===t) && (!r || (r==="sim") === usados.has(x.id)) &&
+    (!o || (o==="seu" ? /sua lista|seu mapa/.test(x.origem) : x.origem===o)))
+    .sort((a,b) => (usados.has(b.id)-usados.has(a.id)) || a.tipo.localeCompare(b.tipo) || a.nome.localeCompare(b.nome));
+  document.getElementById("contagem").textContent = `${l.length} de ${lug.length}`;
+  document.getElementById("lugares").innerHTML = l.map(cartao).join("") || '<p class="fraco">Nada com esses filtros.</p>';
+}
+["f-tipo","f-roteiro","f-origem"].forEach(id => document.getElementById(id).addEventListener("change", lista));
+lista();
+if (location.hash) setTimeout(() => document.querySelector(location.hash)?.scrollIntoView({block:"start"}), 60);
+
+// fora do roteiro
+const fora = (G.fora[c]||[]).filter(f => f.motivo);
+if (!fora.length) document.getElementById("fora-sec").remove();
+else document.getElementById("fora").innerHTML = fora.map(f => { const x = lug.find(y=>y.id===f.id);
+  return `<a class="cartao" href="#${f.id}" style="text-decoration:none;color:inherit;display:grid;gap:4px"><b>${esc(x.nome)}</b><span class="fraco">${esc(f.motivo)}</span></a>`; }).join("");
+
+// prático
+const ex = G.extras[c];
+const prat = [...(ex?.transporte||[]).map(t=>["Transporte",t]), ...(ex?.observacoes||[]).map(t=>["Bom saber",t])];
+if (!prat.length) document.getElementById("pratico-sec").remove();
+else document.getElementById("pratico").innerHTML = prat.map(([r,t]) => `<div class="cartao"><p class="fraco">${r}</p><p style="margin-top:4px;color:var(--tinta-2)">${esc(typeof t==="string"?t:JSON.stringify(t))}</p></div>`).join("");
+
+// mapa
+if (window.L) {
+  const pts = lug.filter(x => x.lat && x.lng);
+  const mapa = L.map("mapa",{scrollWheelZoom:false});
+  const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(mapa);
+  L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(mapa);
+  const centro = [];
+  pts.forEach(x => {
+    const u = usados.has(x.id);
+    L.circleMarker([x.lat,x.lng],{radius:u?8:5,weight:u?2:1,color:"#fff",fillColor:x.tipo==="comer"?"#c2410c":"#1d4ed8",fillOpacity:u?.95:.6}).addTo(mapa)
+      .bindPopup(`<b>${esc(x.nome)}</b>${quandoUsado[x.id]?`<br>${quandoUsado[x.id].join(", ")}`:""}<br><a href="#${x.id}">Ver detalhes</a>`);
+    if (u) centro.push([x.lat,x.lng]);
+  });
+  // enquadra no que está no roteiro; o que fica longe (Forattini, Bernabéu) aparece ao afastar
+  mapa.fitBounds(centro.length > 1 ? centro : pts.map(x=>[x.lat,x.lng]), {padding:[30,30], maxZoom:15});
+}
+</script>
+</body>
+</html>
