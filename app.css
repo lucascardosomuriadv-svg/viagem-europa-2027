@@ -55,7 +55,7 @@ button{font:inherit;color:inherit}
 .atalhos svg{width:17px;height:17px}
 
 /* linha do tempo */
-.linha{margin:18px 18px 0}
+#d-linha{margin:18px 18px 0}
 .passo{display:grid;grid-template-columns:62px 1fr;gap:10px;position:relative;padding-bottom:14px}
 .passo:before{content:"";position:absolute;left:30px;top:32px;bottom:0;width:2px;background:var(--line)}
 .passo:last-child:before{display:none}
