@@ -418,5 +418,29 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg",
   "autor": "Oursana",
   "licenca": "CC0"
+ },
+ "Graben (Vienna)": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Graben_%282%29.JPG/960px-Wien_-_Graben_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Graben_(2).JPG",
+  "autor": "C.Stadler/Bwag",
+  "licenca": "CC BY-SA 4.0"
+ },
+ "Kohlmarkt": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Wien_-_Kohlmarkt_%2843898351574%29.jpg/960px-Wien_-_Kohlmarkt_%2843898351574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Kohlmarkt_(43898351574).jpg",
+  "autor": "Fred Romero from Paris, France",
+  "licenca": "CC BY 2.0"
+ },
+ "Peterskirche, Vienna": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Wien_-_Peterskirche_%281%29.JPG/960px-Wien_-_Peterskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Peterskirche_(1).JPG",
+  "autor": "C.Stadler/Bwag",
+  "licenca": "CC BY-SA 4.0"
+ },
+ "Vienna City Hall": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg/960px-Wien_Rathaus_hochaufl%C3%B6send.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wien_Rathaus_hochaufl%C3%B6send.jpg",
+  "autor": "Thomas Ledl",
+  "licenca": "CC BY-SA 4.0"
  }
 }

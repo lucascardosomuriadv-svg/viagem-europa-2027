@@ -66,6 +66,19 @@ def lugares():
         for l in cd["comer"]:
             out[c].append(item(c, "comer", l, "sugestão"))
         extras[c] = {"transporte": cd.get("transporte", []), "observacoes": cd.get("observacoes", [])}
+    # A LISTA DE VIENA DO LUCAS: o que ja existia na pesquisa so ganha o selo
+    # "sua lista"; o que e' novo entra como item proprio.
+    vl = PESQ / "viena-lista.json"
+    if vl.exists():
+        ja = {"Stephansplatz": "Catedral de Santo Estêvão", "Hofburg:": "Museu Sisi", "Demel": "Demel",
+              "Palácio de Schönbrunn": "Schönbrunn", "Belvedere": "Belvedere"}
+        for l in json.load(open(vl, encoding="utf-8"))["lugares"]:
+            chave = next((k for k in ja if l["nome"].startswith(k)), None)
+            if chave:
+                for x in out["viena"]:
+                    if ja[chave] in x["nome"]: x["origem"] = "sua lista"
+                continue
+            out["viena"].append(item("viena", l["tipo"], l, "sua lista"))
     # ids unicos
     for c, l in out.items():
         vistos = {}
