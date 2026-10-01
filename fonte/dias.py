@@ -33,12 +33,14 @@ DIAS = [
       ("Tarde", "Passeio pelo Barrio de las Letras (as ruas com citações no chão). Café no Acid Café. Às 17h30, fila do Prado: a entrada é <b>grátis de segunda a sábado das 18h às 20h</b>, o que economiza €75 para os 5.", ["Acid Café", "Prado"]),
       ("Noite", "La Casa del Abuelo (gambas al ajillo, balcão) perto de Sol.", ["Casa del Abuelo"]),
     ]),
-  dict(data="2027-02-20", cidade="madri", titulo="Madri dos Áustrias, Palácio e pôr do sol", noite="Madri",
+  dict(data="2027-02-20", cidade="madri", titulo="Gran Vía de manhã, Palácio e Madri dos Áustrias", noite="Madri",
     blocos=[
-      ("Manhã", "Puerta del Sol → Calle Mayor → Plaza Mayor → Plaza de la Villa → Catedral de la Almudena. Estejam no Palácio Real antes das 11h: <b>sábado tem a troca da guarda (11h–14h)</b>. Ingresso ~€18. Depois, os Jardines de Sabatini.", ["Puerta del Sol", "Almudena", "Palacio Real", "Sabatini"]),
-      ("Almoço", "Cava Baja, em La Latina: Taberna La Concha para tapas. Se quiserem o clássico, o Botín (o restaurante mais antigo do mundo, cochinillo) pede reserva com semanas de antecedência.", ["Taberna La Concha", "Botín"]),
-      ("Tarde", "Plaza de España e o Templo de Debod no pôr do sol (~18h50). Depois, Gran Vía: Primark, Zara e o terraço do El Corte Inglés de Callao (Gourmet Experience), com vista para a Gran Vía.", ["Templo de Debod", "Gran Vía (+", "Callao — terraço"]),
-      ("Noite", "Mercado de San Miguel para petiscar em pé, a 2 minutos da Plaza Mayor.", ["Mercado de San Miguel"]),
+      ("Manhã", "<b>Gran Vía é programa de dia</b>: Primark (Gran Vía 32), Zara e o terraço do El Corte Inglés de Callao (Gourmet Experience), com a vista da avenida. As lojas abrem às 10h. À noite a região fica cheia demais para ficar dando bobeira.", ["Gran Vía (+", "Callao — terraço"]),
+      ("Meio-dia", "Plaza de España e, antes das 13h, o Palácio Real: <b>sábado tem a troca da guarda (11h–14h)</b>. Ingresso ~€18. Depois, os Jardines de Sabatini e a Catedral de la Almudena, ao lado.", ["Palacio Real", "Sabatini", "Almudena"]),
+      ("Almoço", "Almoço no horário espanhol (14h–15h), na Cava Baja, em La Latina: tapas na Taberna La Concha. Se quiserem o clássico, o Botín (o restaurante mais antigo do mundo, cochinillo) pede reserva com semanas de antecedência.", ["Taberna La Concha", "Botín"]),
+      ("Tarde", "Plaza de la Villa → Calle Mayor → Plaza Mayor → Puerta del Sol, e o Mercado de San Miguel para petiscar.", ["Puerta del Sol", "Mercado de San Miguel"]),
+      ("Pôr do sol (opcional)", "Templo de Debod às ~18h50, a 15 min a pé da Plaza Mayor. Depois voltem pelo Palácio, não pela Gran Vía.", ["Templo de Debod"]),
+      ("Noite", "Jantar em La Latina ou Huertas, longe da Gran Vía: La Casa del Abuelo (gambas al ajillo) ou as opções de sexta em Huertas.", ["Casa del Abuelo"]),
     ]),
   dict(data="2027-02-21", cidade="roma", titulo="Voo para Roma e o centro a pé", noite="Roma",
     blocos=[
@@ -188,6 +190,7 @@ DICAS = {
     "O Rastro, no domingo, é uma feira gigantesca que conecta quase a cidade inteira.",
     "A cidade é rápida de atravessar a pé: olhando em volta, quando você vê, já atravessou.",
     "O vento é frio nessa época.",
+    "A Gran Vía é de manhã e à tarde (Primark etc.). À noite a região é movimentada demais para ficar dando bobeira.",
     "O tour do Santiago Bernabéu não compensa: caro demais para levar todo mundo.",
   ],
 }
