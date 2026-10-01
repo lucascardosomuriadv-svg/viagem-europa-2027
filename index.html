@@ -82,7 +82,7 @@
 
 <section id="orcamento">
   <h2>Quanto custa</h2>
-  <p class="sub">Somando o que já foi pesquisado. Desmarque o que vocês não forem fazer e o total se ajusta. Não inclui comida nem compras.</p>
+  <p class="sub">Somando tudo o que já foi pesquisado. Não inclui comida nem compras.</p>
   <div class="orc num" id="orc"></div>
   <details class="cartao" style="margin-top:14px">
     <summary style="cursor:pointer;font-weight:600">Ingressos e passeios, por pessoa</summary>
@@ -98,7 +98,6 @@
 
 <section id="checklist">
   <h2>Checklist</h2>
-  <p class="sub">As marcações ficam salvas neste aparelho.</p>
   <ul class="checks" id="checks"></ul>
 </section>
 
@@ -146,7 +145,8 @@ const COMPRAS = [
   ["~20/01/2027", "~1 mês antes", [
     `<b>Audiência do Papa</b> (quarta, 24/02): ingressos grátis pedidos à Prefeitura da Casa Pontifícia (formulário no vatican.va ou fax +39 06 6988 5863).`,
     `<b>Seguro viagem Schengen</b> e <b>ETIAS</b>, se já estiver valendo (€20 por pessoa, só no site oficial).`,
-    `Conferir o calendário 2027 da <b>taxa de acesso a Veneza</b> (27/02).`
+    `Conferir o calendário 2027 da <b>taxa de acesso a Veneza</b> (27/02).`,
+    `<b>Futebol</b>: a Serie A marca dia e hora em meados de janeiro, e a LaLiga no fim de janeiro (para 19–22/02) e em ~10–15/02 (para 05–08/03). Na Itália, cada comprador leva no máximo 4 ingressos, então são 2 compradores para os 5. <a href="futebol.html">Jogos</a>`
   ]],
   ["23/01/2027", "às 5h de Brasília", [
     `<b>Coliseu</b> para 22/02, 8h30: as vendas abrem 30 dias antes, de manhã em Roma. Só em <a href="https://ticketing.colosseo.it" target="_blank" rel="noopener">ticketing.colosseo.it</a>.`
@@ -315,8 +315,7 @@ const ATRACOES = [
   ["Budapeste","Parlamento",35],["Budapeste","Banhos Széchenyi",37],
 ];
 function orcamento(){
-  const marc = [...document.querySelectorAll("#lista-orc input")].map(i => i.checked);
-  const atr = ATRACOES.reduce((s,a,i) => s + (marc[i] === false ? 0 : a[2]), 0) * 5 * G.cambio;
+  const atr = ATRACOES.reduce((s,a) => s + a[2], 0) * 5 * G.cambio;
   let hosp = 0; HOSP.forEach(c => { const e = c.itens.filter(x => x.escolha && x.tipo==="airbnb"); if (e.length) hosp += Math.min(...e.map(x=>x.total)); });
   hosp += 150 * G.cambio; // taxa turística de Roma
   const trens = (159.80 + 125 + 124.50 + 80.60) * G.cambio;
@@ -333,9 +332,8 @@ function orcamento(){
     <div class="caixa"><p class="fraco">Metrô, ônibus e aeroportos</p><p class="v">${brl(loc)}</p><p class="fraco">bilhete mais barato em cada cidade + táxis de aeroporto</p></div>
     <div class="caixa total"><p class="fraco">Total para os 5${voos?"":" (sem voos)"}</p><p class="v">${brl(total)}</p><p class="fraco">${brl(total/5)} por pessoa</p></div>`;
 }
-document.getElementById("lista-orc").innerHTML = ATRACOES.map(([c,n,v],i) =>
-  `<label for="o${i}"><input type="checkbox" id="o${i}" checked><span class="n">${n} <span class="fraco">· ${c}</span></span><span>${v?eur(v):"grátis"}</span></label>`).join("");
-document.querySelectorAll("#lista-orc input").forEach(el => el.addEventListener("change", orcamento));
+document.getElementById("lista-orc").innerHTML = ATRACOES.map(([c,n,v]) =>
+  `<div class="linha-orc"><span class="n">${n} <span class="fraco">· ${c}</span></span><span>${v?eur(v):"grátis"}</span></div>`).join("");
 orcamento();
 
 // ---------- cidades ----------
@@ -367,11 +365,7 @@ const CHECKS = [
   ["eSIM europeu","Um plano de roaming na UE vale para os 4 países."],
   ["Roupa de frio de verdade","Innsbruck abaixo de zero; Viena e Budapeste perto de 0 °C."],
 ];
-document.getElementById("checks").innerHTML = CHECKS.map(([t,s],i) => `<li><input type="checkbox" id="k${i}"><label for="k${i}">${t}<span>${s}</span></label></li>`).join("");
-document.querySelectorAll("#checks input").forEach(el => {
-  try { el.checked = localStorage.getItem("guia-"+el.id)==="1"; } catch(e){}
-  el.addEventListener("change", () => { try { localStorage.setItem("guia-"+el.id, el.checked?"1":"0"); } catch(e){} });
-});
+document.getElementById("checks").innerHTML = CHECKS.map(([t,s]) => `<li><b>${t}</b><span>${s}</span></li>`).join("");
 </script>
 </body>
 </html>

@@ -66,10 +66,12 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;
 const NOME = {...Object.fromEntries(G.cidades), veneza:"Veneza"};
 const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
 const rot = iso => `${DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()]} ${iso.slice(8,10)}/${iso.slice(5,7)}`;
+// a etiqueta é curta; a explicação do status vai para a linha "Situação"
 const statusChip = s => { s = (s||"").toLowerCase();
-  if (s.startsWith("confirm")) return '<span class="chip ok">confirmado</span>';
-  if (s.includes("provis")) return '<span class="chip espera">data provisória</span>';
-  return `<span class="chip alerta">${esc(s||"possível")}</span>`; };
+  if (s.startsWith("confirm") && !s.includes("provis")) return '<span class="chip ok">confirmado</span>';
+  if (s.includes("provis") || s.startsWith("confronto confirmado")) return '<span class="chip espera">data provisória</span>';
+  return '<span class="chip alerta">possível</span>'; };
+const situacao = s => (s && s.length > 22) ? s.charAt(0).toUpperCase() + s.slice(1) : "";
 document.getElementById("consulta").textContent = F.meta?.consultado_em ? `Consultado em ${F.meta.consultado_em}.` : "";
 
 const jogos = [...F.jogos].sort((a,b) => (a.data+(a.hora||"")).localeCompare(b.data+(b.hora||"")));
@@ -87,7 +89,7 @@ else {
           <div class="placar"><b>${esc(j.mandante)}</b><span class="x">×</span><b>${esc(j.visitante)}</b></div>
           <p class="fraco">${esc(j.competicao)}${j.rodada?" · "+esc(j.rodada):""} · ${esc(j.estadio)}</p>
           <dl class="lugar" style="border:0;padding:0;background:none">
-            ${campo("Como chegar", j.como_chegar)}${campo("Ingressos", i.onde)}${campo("Venda abre", i.abre)}${campo("Exigências", i.requisitos)}
+            ${campo("Situação", situacao(j.status))}${campo("Como chegar", j.como_chegar)}${campo("Ingressos", i.onde)}${campo("Venda abre", i.abre)}${campo("Exigências", i.requisitos)}
             ${campo("Preço (5)", i.preco_5_eur!=null && i.preco_5_eur!=="" ? (typeof i.preco_5_eur==="number" ? "€"+i.preco_5_eur : i.preco_5_eur) : "")}${campo("Dicas", i.dicas)}${campo("No roteiro", j.encaixe)}
           </dl>
           ${j.fonte?`<a class="fraco" href="${esc(String(j.fonte).split(/[ ;]/)[0])}" target="_blank" rel="noopener">fonte ↗</a>`:""}

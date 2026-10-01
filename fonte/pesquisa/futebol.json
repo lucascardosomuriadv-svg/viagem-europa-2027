@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "consultado_em": "2026-10-01",
+    "observacoes": [
+      "Filtro aplicado: só jogos em que o MANDANTE é clube da 1ª divisão em 2026/27 (LaLiga, Serie A, Bundesliga austríaca, NB I húngara). Jogos de copa e da UEFA entram só se o mandante for de 1ª divisão.",
+      "Todos os calendários de liga 2026/27 já foram sorteados (LaLiga em jun/2026, Serie A em 05/06/2026, Bundesliga austríaca em jun/2026, NB I em jun/2026). O que ainda NÃO existe é o dia e a hora exatos: a data que aparece nos sites (sábado ou domingo) é só um marcador do fim de semana da rodada.",
+      "Quando sai dia/hora: a LaLiga divulga em blocos, de 2 a 4 semanas antes (para 19–22/02 deve sair no fim de janeiro de 2027; para 5–8/03, por volta de 10–15/02). A Serie A divulga em blocos de 4 a 6 semanas antes (para fim de fevereiro, por volta de meados de janeiro de 2027). A Bundesliga austríaca costuma fixar a fase de primavera em dez/jan. A NB I húngara divulga de 3 a 5 semanas antes.",
+      "Na Espanha e na Itália, cada rodada vai de sexta a segunda. Na Áustria, de sexta a domingo, e a 22ª rodada (a última da fase regular) costuma ter os 6 jogos simultâneos no domingo às 17:00. Na Hungria, de sexta a domingo, normalmente com só 1 jogo na sexta.",
+      "Datas UEFA 2026/27: Champions, play-off de mata-mata em 16–17/02 e 23–24/02/2027 e oitavas em 9–10/03 e 16–17/03. Europa League e Conference League, play-off em 18 e 25/02 e oitavas em 11 e 18/03. Nenhuma data UEFA cai em Madri nas janelas do grupo. A única chance UEFA é a Roma (Champions, 23–24/02), e só se terminar a fase de liga entre o 9º e o 16º lugar. Isso só se define no fim de janeiro de 2027: última rodada da fase de liga ~27–28/01 e sorteio do play-off em 29/01.",
+      "Copa del Rey 2026/27: semifinais em 10/02 e 03/03, fora das janelas de Madri. Coppa Italia: quartas em 03 e 10/02 e semifinal de ida em 03/03, nada em Roma entre 21 e 26/02. ÖFB-Cup (Áustria): semifinais em 2–4/03/2027, DENTRO da janela de Viena; os confrontos dependem dos sorteios (oitavas em 27–29/10/2026, quartas em 9–11/02/2027). Magyar Kupa (Hungria): datas de 2026/27 não encontradas; em 2025/26 as quartas foram em 3–5/03.",
+      "Real Madrid NÃO joga no Bernabéu em nenhuma das janelas: J25 fora contra o Sevilla e J27 fora contra o Villarreal. O jogo em casa mais próximo é Real Madrid x Valencia (J26, 27–28/02), quando o grupo está em Verona/Innsbruck. O Getafe também não joga em casa nas janelas.",
+      "Verona e Veneza: NENHUM jogo de 1ª divisão. O Hellas Verona foi rebaixado e está na Serie B 2026/27. O Venezia está na Serie A, mas em 27–28/02 joga FORA (Roma x Venezia). Em Innsbruck só conta o WSG Tirol.",
+      "Itália (regra geral, vale para estrangeiros): o ingresso é nominal. Na compra informa-se nome, data de nascimento e número do passaporte de cada um, e na entrada há conferência de documento com foto (levar o passaporte original). A 'tessera del tifoso' (cartão de torcedor) NÃO é exigida nos setores de mandante em venda livre, mas pode ser exigida no setor visitante ou em jogos classificados como de risco. Pela regra do Osservatorio, em geral cada comprador leva no máximo 4 ingressos, então o grupo de 5 precisa de 2 compradores, comprando ao mesmo tempo para ficarem lado a lado.",
+      "Hungria: no Ferencváros, para comprar ingresso é preciso o Fan Card (szurkolói kártya), feito pessoalmente na bilheteria da Groupama Aréna com passaporte. Custa 1.500 HUF (2.000 HUF em dia de jogo); a bilheteria abre de ter a sex 10–18h e sáb 9–13h.",
+      "Áustria: compra simples, pelo site do clube ou na bilheteria. Não há exigência de sócio e os preços são baixos.",
+      "Comprar só nos canais oficiais (site/app do clube ou bilheteria do estádio). Revendedores como Viagogo e StubHub cobram de 3 a 5 vezes mais, e o ingresso nominal pode ser recusado na catraca se o nome não bater com o documento.",
+      "Fora da janela por pouco (só 1ª divisão): Roma x Venezia (Serie A, 27–28/02; o grupo sai de Roma na sex 26 às 08:20). Austria Wien x SV Ried (dom 28/02, ~17:00; o grupo está em Innsbruck). Real Madrid x Valencia (27–28/02). Oitavas da Champions, 1º jogo em 9–10/03 (o grupo voa de Madri na seg 08/03 às 22:30). Lazio x Frosinone (6–7/03). NB I, 23ª rodada (27/02). Ferencváros nas oitavas da Europa League (11/03, se avançar).",
+      "Coordenadas aproximadas (WGS84), boas para pin de mapa. Os preços para 5 pessoas são estimativas a partir de jogos parecidos das últimas temporadas, com cadeiras de arquibancada lateral ou de fundo fora das curvas organizadas, e não são preços oficiais 2026/27."
+    ]
+  },
+  "jogos": [
+    {
+      "cidade": "madri",
+      "data": "2027-02-21",
+      "hora": "a definir (fim de semana 19–22/02; dia e hora saem ~2–4 semanas antes)",
+      "mandante": "Atlético de Madrid",
+      "visitante": "Elche CF",
+      "competicao": "LaLiga EA Sports 2026/27",
+      "rodada": "Jornada 25",
+      "estadio": "Riyadh Air Metropolitano",
+      "lat": 40.4362,
+      "lng": -3.5995,
+      "como_chegar": "Metrô L7 até a estação Estadio Metropolitano, que sai na porta do estádio. Do centro (Sol), pegar a L2 até Ventas ou a L1 até Gran Vía/Tribunal e chegar à L7. Total de ~35–40 min. Na volta, a saída é muito cheia: conte 20–30 min de fila.",
+      "status": "confronto confirmado no calendário oficial (laliga.com mostra 'dom 21/02' como marcador). Data provisória: pode ir para sexta 19, sábado 20, domingo 21 ou segunda 22. Se o Atlético jogar o play-off da Champions na ter 23 ou qua 24, o mais provável é sábado 20 ou domingo 21.",
+      "ingressos": {
+        "onde": "atleticodemadrid.com/entradas (site e app oficiais; ingresso no celular)",
+        "abre": "Venda geral costuma abrir ~1–2 semanas antes, depois que o dia e a hora são fixados; antes há uma pré-venda de 24–72 h para sócios e cadastrados.",
+        "requisitos": "Não precisa ser sócio. Basta criar conta gratuita no site do clube; cada conta compra vários lugares juntos. Leve documento com foto.",
+        "preco_5_eur": "200–550 (≈ €40–110 por pessoa; contra o Elche a demanda é média)",
+        "dicas": "Evitar o Fondo Sur (setor da torcida organizada, em pé e cantando). Para ver o jogo, a Lateral Este/Oeste em anel baixo ou médio. Bolsas pequenas apenas. Chegar 1 h antes por causa da revista."
+      },
+      "encaixe": "Só encaixa se for marcado para sexta 19 ou sábado 20: o grupo chega na qui 18 às 22:35 e voa no dom 21 às 08:45. Se cair no domingo ou na segunda, não dá, e não vale mudar o voo para Roma por isso. Esperar a divulgação do horário (fim de janeiro) antes de comprar.",
+      "fonte": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-elche-cf-25 ; https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/atletico-madrid/"
+    },
+    {
+      "cidade": "madri",
+      "data": "2027-02-21",
+      "hora": "a definir (fim de semana 19–22/02)",
+      "mandante": "Rayo Vallecano",
+      "visitante": "Getafe CF",
+      "competicao": "LaLiga EA Sports 2026/27",
+      "rodada": "Jornada 25 (dérbi do sul de Madri)",
+      "estadio": "Estadio de Vallecas",
+      "lat": 40.392,
+      "lng": -3.6588,
+      "como_chegar": "Metrô L1 (azul-clara) até Portazgo, que sai colado ao estádio. Do centro (Sol), ~20 min direto na L1.",
+      "status": "confronto confirmado no calendário oficial. Data provisória: sex 19, sáb 20, dom 21 ou seg 22. Nenhum dos dois times está em competição europeia, então qualquer dia é possível.",
+      "ingressos": {
+        "onde": "rayovallecano.es (bilheteria online) e bilheterias do estádio",
+        "abre": "Geralmente 5–10 dias antes; o estádio é pequeno (~14 mil) e muito tomado por sócios.",
+        "requisitos": "Não precisa ser sócio, mas a oferta para o público geral é limitada. Documento com foto.",
+        "preco_5_eur": "150–350 (≈ €30–70 por pessoa)",
+        "dicas": "Estádio antigo e de bairro, com clima autêntico. Evitar a Grada de Animación (Bukaneros, ultras). A lateral (Tribuna) é a mais tranquila. Pode esgotar rápido por ser dérbi."
+      },
+      "encaixe": "Mesma lógica do Atlético x Elche: serve só se cair na sex 19 ou no sáb 20. Se os dois jogos caírem em dias diferentes (por ex. sexta e sábado), dá para ver os dois.",
+      "fonte": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-getafe-cf-25 ; https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/rayo-vallecano/"
+    },
+    {
+      "cidade": "roma",
+      "data": "2027-02-21",
+      "hora": "a definir (fim de semana 19–22/02; dia e hora devem sair em meados de janeiro de 2027)",
+      "mandante": "SS Lazio",
+      "visitante": "SSC Napoli",
+      "competicao": "Serie A Enilive 2026/27",
+      "rodada": "Giornata 25",
+      "estadio": "Stadio Olimpico",
+      "lat": 41.9341,
+      "lng": 12.4547,
+      "como_chegar": "Metrô A até Flaminio, depois bonde 2 até o ponto final Mancini e ~10 min a pé pela Ponte Duca d'Aosta. Também há o ônibus 32 a partir de Ottaviano (Metrô A). Do centro, ~35–45 min. Em dia de jogo, a área é fechada ao trânsito.",
+      "status": "confronto confirmado no calendário (Turismo Roma/Lega Serie A, giornata 25 em 20–21/02). Data provisória: sex 19, sáb 20, dom 21 ou seg 22. O Napoli está na Champions: se jogar o play-off na ter 23 ou qua 24, a tendência é a Lega pôr Lazio x Napoli no sábado 20, o que não serve; se o Napoli ficar entre os 8 primeiros, domingo e segunda ficam mais prováveis.",
+      "ingressos": {
+        "onde": "sslazio.it > Biglietteria (venda oficial online) e pontos de venda autorizados",
+        "abre": "Venda livre costuma abrir ~7–10 dias antes do jogo, depois de uma pré-venda para quem tem a Fidelity Card do clube.",
+        "requisitos": "Ingresso nominal: nome, data de nascimento e passaporte de cada um. Máximo de 4 ingressos por comprador em venda livre, então o grupo de 5 precisa de 2 compradores. Conferência de documento na catraca. Lazio x Napoli é jogo de risco: a prefeitura de polícia pode restringir a venda, por exemplo só para quem tem fidelity card ou com proibição para residentes da Campania. Estrangeiros neutros normalmente conseguem comprar na Tribuna, mas confirme a regra publicada na semana do jogo.",
+        "preco_5_eur": "250–625 (Tribuna Tevere ≈ €50–80 por pessoa; Monte Mario ≈ €90–125)",
+        "dicas": "NUNCA comprar Curva Nord (ultras da Lazio) nem setores perto do setor visitante. Preferir Tribuna Tevere (lateral, mais barata) ou Monte Mario (lateral coberta, melhor vista). Garrafas e objetos rígidos são proibidos; bolsa pequena. Chegar 1h30 antes por causa da revista dupla. Evitar camisa do Napoli ou da Roma."
+      },
+      "encaixe": "Encaixa se for no domingo 21 à tarde ou à noite (o grupo chega a Roma ~11:10) ou na segunda 22. Se cair no sábado 20, o grupo ainda está em Madri: aí a troca é ver Atlético ou Rayo em Madri nesse sábado. É o jogo mais forte do roteiro todo.",
+      "fonte": "https://www.turismoroma.it/en/events/ss-lazio-calendario-serie-enilive-2026-2027 ; https://turismoroma.it/it/node/172966"
+    },
+    {
+      "cidade": "roma",
+      "data": "2027-02-23",
+      "hora": "a definir (ter 23 ou qua 24/02, 18:45 ou 21:00)",
+      "mandante": "AS Roma (somente se terminar a fase de liga entre 9º e 16º)",
+      "visitante": "a definir (adversário classificado entre 17º e 24º)",
+      "competicao": "UEFA Champions League 2026/27",
+      "rodada": "Play-off de mata-mata, jogo de volta",
+      "estadio": "Stadio Olimpico",
+      "lat": 41.9341,
+      "lng": 12.4547,
+      "como_chegar": "Metrô A até Flaminio + bonde 2 até Mancini, ~10 min a pé (igual ao jogo da Lazio).",
+      "status": "possível. Depende da classificação final da fase de liga (última rodada ~27–28/01/2027) e do sorteio de 29/01/2027. Se a Roma ficar entre os 8 primeiros, não joga em fevereiro; se ficar entre 17º e 24º, joga em casa a ida (16–17/02, fora da janela).",
+      "ingressos": {
+        "onde": "asroma.com > Biglietti (bilheteria oficial da AS Roma)",
+        "abre": "Logo após o sorteio (fim de janeiro): prioridade para sócios com carnê de temporada e membros, e venda livre do que sobrar ~1 semana antes.",
+        "requisitos": "Ingresso nominal com passaporte e conferência na entrada. Em geral, no máximo 4 por comprador.",
+        "preco_5_eur": "250–750 (≈ €50–150 por pessoa)",
+        "dicas": "Evitar a Curva Sud (ultras da Roma). Tribuna Tevere ou Monte Mario. Champions à noite: o retorno de transporte é lento, então combine táxi ou app."
+      },
+      "encaixe": "Se acontecer, encaixa perfeitamente (o grupo fica em Roma de 21 a 26/02). Fica marcado como opção para ser conferida em 29/01/2027.",
+      "fonte": "https://groundhopperguides.com/champions-league-dates/ ; https://cryptobriefing.com/as-roma-champions-league-opponents-2026-27/"
+    },
+    {
+      "cidade": "innsbruck",
+      "data": "2027-02-28",
+      "hora": "provável 17:00 (a última rodada da fase regular costuma ter os 6 jogos simultâneos no domingo às 17:00); confirmar",
+      "mandante": "WSG Tirol",
+      "visitante": "Wolfsberger AC",
+      "competicao": "ADMIRAL Bundesliga (Áustria) 2026/27",
+      "rodada": "22ª rodada, a última da fase regular (Grunddurchgang)",
+      "estadio": "Tivoli Stadion Tirol (Innsbruck)",
+      "lat": 47.2559,
+      "lng": 11.4106,
+      "como_chegar": "Da Innsbruck Hauptbahnhof, ~20 min a pé para sudeste ou ônibus/bonde da IVB até a parada Olympiaworld/Tivoli (~10 min). O estádio fica ao lado da Olympiaworld.",
+      "status": "confronto confirmado (sportschau mostra '27/02/2027' como marcador da 22ª rodada). Pelo histórico (ex.: 2024/25, 22ª rodada no domingo 16/03 às 17:00, simultânea), o provável é domingo 28/02 às 17:00. A confirmação deve sair em dez/2026–jan/2027.",
+      "ingressos": {
+        "onde": "wsg-tirol.at (Tickets) e bilheteria do Tivoli no dia",
+        "abre": "Costuma estar à venda semanas antes; raramente esgota.",
+        "requisitos": "Nenhum; venda livre, sem cadastro especial.",
+        "preco_5_eur": "75–175 (≈ €15–35 por pessoa)",
+        "dicas": "Público pequeno, compra na hora possível. A última rodada antes da divisão em grupo do título e grupo do rebaixamento costuma ter jogo decisivo. Faz frio: casaco. Bolsas grandes não entram."
+      },
+      "encaixe": "Encaixa muito bem: o trem chega às 12:32 de domingo, dá para deixar as malas e ir a pé ao jogo das 17:00. Se for antecipado para o sábado 27, perde-se (o grupo está em Verona).",
+      "fonte": "https://www.sportschau.de/live-und-ergebnisse/fussball/oesterreich-bundesliga/ma12168634/wsg-tirol_wolfsberger-ac/blitztabelle ; https://fk-austria.at/en/news/match-dates-for-grunddurchgang-confirmed"
+    },
+    {
+      "cidade": "viena",
+      "data": "2027-03-02",
+      "hora": "a definir (janela de ter 02 a qui 04/03)",
+      "mandante": "a definir (SK Rapid Wien ou FK Austria Wien, se chegarem à semifinal e forem sorteados como mandantes)",
+      "visitante": "a definir",
+      "competicao": "UNIQA ÖFB-Cup 2026/27 (Copa da Áustria)",
+      "rodada": "Semifinal",
+      "estadio": "Allianz Stadion (Rapid) ou Generali Arena (Austria Wien), conforme o sorteio",
+      "lat": 48.1983,
+      "lng": 16.2665,
+      "como_chegar": "Allianz Stadion: U4 até Hütteldorf (~25 min do centro), saindo ao lado. Generali Arena (48.1624, 16.3874): U1 até Altes Landgut (~15 min do centro).",
+      "status": "possível. As semifinais estão marcadas para 2–4/03/2027, mas os times ainda estão sendo definidos (oitavas em 27–29/10/2026, quartas em 9–11/02/2027, sorteio da semifinal logo depois). Só haverá jogo em Viena se Rapid ou Austria Wien avançarem e forem mandantes.",
+      "ingressos": {
+        "onde": "skrapid.at (Tickets) / fk-austria.at (Tickets)",
+        "abre": "~2 semanas antes, logo após o sorteio da semifinal (meados de fevereiro)",
+        "requisitos": "Nenhum; venda livre.",
+        "preco_5_eur": "100–250 (≈ €20–50 por pessoa)",
+        "dicas": "No Allianz Stadion, evitar a Westtribüne (Block West, ultras do Rapid); preferir as laterais Nord ou Süd. Na Generali Arena, evitar a Osttribüne (Fanatics). Conferir em fevereiro."
+      },
+      "encaixe": "Encaixaria na ter 02 ou na qua 03 à noite (o grupo fica em Viena de seg 01 às 18:32 até qui 04 às 07:40). Na qui 04 não dá. Não há jogo da Bundesliga em Viena nesses dias.",
+      "fonte": "https://www.regionalsuche.at/?p=42419"
+    },
+    {
+      "cidade": "budapeste",
+      "data": "2027-03-04",
+      "hora": "a definir",
+      "mandante": "a definir (Ferencváros, Újpest, MTK, Honvéd ou Vasas, se mandante)",
+      "visitante": "a definir",
+      "competicao": "MOL Magyar Kupa 2026/27 (Copa da Hungria)",
+      "rodada": "Quartas de final (data provável; não publicada)",
+      "estadio": "a definir",
+      "lat": 47.4979,
+      "lng": 19.0402,
+      "como_chegar": "Depende do estádio (ver os jogos da NB I abaixo).",
+      "status": "possível e incerto. O calendário 2026/27 da copa não foi encontrado; em 2025/26 as quartas foram em 3–5/03/2026. Só interessa se um clube de Budapeste da NB I for mandante na qui 04/03 à noite.",
+      "ingressos": {
+        "onde": "Site do clube mandante",
+        "abre": "~1–2 semanas antes",
+        "requisitos": "Ingresso nominal; no Ferencváros, Fan Card obrigatório (ver clubes).",
+        "preco_5_eur": "30–100",
+        "dicas": "Conferir no mlsz.hu em janeiro/fevereiro de 2027."
+      },
+      "encaixe": "Se cair na qui 04 à noite, é viável (o grupo chega às 10:35).",
+      "fonte": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Magyar_Kupa"
+    },
+    {
+      "cidade": "budapeste",
+      "data": "2027-03-06",
+      "hora": "a definir (rodada de 5–7/03; costuma haver 1 jogo na sexta ~20:00 e os demais no sábado e no domingo)",
+      "mandante": "Ferencváros",
+      "visitante": "Vasas FC",
+      "competicao": "NB I (Fizz Liga) 2026/27",
+      "rodada": "24ª rodada (dérbi de Budapeste)",
+      "estadio": "Groupama Aréna",
+      "lat": 47.4813,
+      "lng": 19.0985,
+      "como_chegar": "Metrô M3 (azul) até Népliget, com saída a ~2 min a pé do estádio. Do centro (Deák Ferenc tér), ~10 min.",
+      "status": "confronto confirmado no calendário (marcador sáb 06/03 17:00). Data provisória: sex 05, sáb 06 ou dom 07. O Fradi está na fase de liga da Europa League: se avançar às oitavas (qui 11/03), o jogo tende a não ser na sexta.",
+      "ingressos": {
+        "onde": "meccsjegy.fradi.hu (online) ou bilheteria da Groupama Aréna",
+        "abre": "~1–2 semanas antes",
+        "requisitos": "OBRIGATÓRIO o Fradi Fan Card (szurkolói kártya) para cada pessoa: emitido PESSOALMENTE na bilheteria da Groupama Aréna, com passaporte. Custa 1.500 HUF (2.000 HUF em dia de jogo). A bilheteria abre de ter a sex 10–18h e sáb 9–13h. Depois, o ingresso é comprado online vinculado ao cartão ou no próprio guichê.",
+        "preco_5_eur": "50–110 de ingresso (3.900–8.400 HUF por pessoa) + ~€20–25 dos 5 Fan Cards",
+        "dicas": "Dá para fazer os cartões na qui 04 à tarde (o metrô M3 vai direto). Evitar o setor B-közép (ultras do Fradi, atrás do gol); preferir as laterais 1 ou 2. Ingresso nominal; leve o passaporte. Ambiente forte e preço muito baixo."
+      },
+      "encaixe": "Só encaixa se for na sexta 05 à noite: o grupo voa no sáb 06 às 11:10. Se for no sábado ou no domingo, não dá (trocar o voo para Madri não compensa, porque o grupo perderia o Atlético x Celta).",
+      "fonte": "https://www.betexplorer.com/football/hungary/nb-i/fixtures/ ; https://www.fotmob.com/teams/8222/fixtures/ferencvaros ; https://meccsjegy.fradi.hu/jegyarak"
+    },
+    {
+      "cidade": "budapeste",
+      "data": "2027-03-06",
+      "hora": "a definir (5–7/03)",
+      "mandante": "Kispest Honvéd",
+      "visitante": "MTK Budapest",
+      "competicao": "NB I (Fizz Liga) 2026/27",
+      "rodada": "24ª rodada (dérbi de Budapeste)",
+      "estadio": "Bozsik Aréna (Kispest)",
+      "lat": 47.4578,
+      "lng": 19.1458,
+      "como_chegar": "Metrô M3 até Határ út e depois ~15–20 min a pé ou bonde 42 por algumas paradas. Do centro, ~30 min.",
+      "status": "confronto confirmado (marcador sáb 06/03). Data provisória: sex 05, sáb 06 ou dom 07.",
+      "ingressos": {
+        "onde": "Site oficial do Honvéd (jegyek) e bilheteria do estádio",
+        "abre": "~1 semana antes",
+        "requisitos": "Ingresso nominal com cadastro e documento; não há Fan Card como no Fradi.",
+        "preco_5_eur": "30–75",
+        "dicas": "Estádio novo e pequeno, no bairro onde Puskás nasceu. Tranquilo para turistas."
+      },
+      "encaixe": "Só se for na sexta 05 à noite.",
+      "fonte": "https://www.betexplorer.com/football/hungary/nb-i/fixtures/"
+    },
+    {
+      "cidade": "budapeste",
+      "data": "2027-03-06",
+      "hora": "a definir (5–7/03)",
+      "mandante": "Újpest FC",
+      "visitante": "Debreceni VSC",
+      "competicao": "NB I (Fizz Liga) 2026/27",
+      "rodada": "24ª rodada",
+      "estadio": "Szusza Ferenc Stadion (Újpest)",
+      "lat": 47.565,
+      "lng": 19.0867,
+      "como_chegar": "Metrô M3 até Újpest-Városkapu ou Újpest-Központ e depois ~15 min a pé. Do centro, ~30 min.",
+      "status": "confronto confirmado (marcador sáb 06/03). Data provisória: sex 05, sáb 06 ou dom 07.",
+      "ingressos": {
+        "onde": "Site oficial do Újpest (jegyvásárlás) e bilheteria",
+        "abre": "~1 semana antes",
+        "requisitos": "Ingresso nominal com cadastro e documento.",
+        "preco_5_eur": "30–75",
+        "dicas": "Clube rival histórico do Fradi; evitar a curva dos organizados."
+      },
+      "encaixe": "Só se for na sexta 05 à noite. Só 1 dos 6 jogos da rodada costuma ser na sexta, então a chance de um dos 3 jogos de Budapeste cair na sexta é de ~1 em 2.",
+      "fonte": "https://www.betexplorer.com/football/hungary/nb-i/fixtures/"
+    },
+    {
+      "cidade": "madri",
+      "data": "2027-03-07",
+      "hora": "a definir (fim de semana 5–8/03; dia e hora devem sair por volta de 10–15/02)",
+      "mandante": "Atlético de Madrid",
+      "visitante": "RC Celta de Vigo",
+      "competicao": "LaLiga EA Sports 2026/27",
+      "rodada": "Jornada 27",
+      "estadio": "Riyadh Air Metropolitano",
+      "lat": 40.4362,
+      "lng": -3.5995,
+      "como_chegar": "Metrô L7 até Estadio Metropolitano (~35–40 min do centro).",
+      "status": "confronto confirmado no calendário oficial (laliga.com: 'dom 07/03' como marcador). Data provisória: sex 05 a seg 08. O Atlético pode ter oitavas da Champions em 9–10/03 e o Celta pode ter oitavas da Europa League em 11/03; com isso, a tendência é sábado 06 ou domingo 07 (segunda é improvável).",
+      "ingressos": {
+        "onde": "atleticodemadrid.com/entradas",
+        "abre": "~1–2 semanas antes (pré-venda para cadastrados de 24 a 72 h antes da venda geral)",
+        "requisitos": "Não precisa ser sócio; só conta gratuita no site. Documento com foto.",
+        "preco_5_eur": "200–550 (≈ €40–110 por pessoa)",
+        "dicas": "Lateral, em anel baixo ou médio; evitar o Fondo Sur. Jogo de fim de semana à noite tem metrô cheio na volta."
+      },
+      "encaixe": "MELHOR ENCAIXE de Madri: serve no sábado 06 à noite (o grupo chega a Barajas às 14:30; qualquer horário a partir de ~18:30 é confortável) ou em qualquer horário de domingo 07. Na segunda 08 só se for antes de ~17:00 (voo às 22:30), o que é raro.",
+      "fonte": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-rc-celta-27 ; https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/atletico-madrid/"
+    },
+    {
+      "cidade": "madri",
+      "data": "2027-03-07",
+      "hora": "a definir (fim de semana 5–8/03)",
+      "mandante": "Rayo Vallecano",
+      "visitante": "CA Osasuna",
+      "competicao": "LaLiga EA Sports 2026/27",
+      "rodada": "Jornada 27",
+      "estadio": "Estadio de Vallecas",
+      "lat": 40.392,
+      "lng": -3.6588,
+      "como_chegar": "Metrô L1 até Portazgo (~20 min do centro).",
+      "status": "confronto confirmado no calendário oficial ('dom 07/03' como marcador). Data provisória: sex 05 a seg 08.",
+      "ingressos": {
+        "onde": "rayovallecano.es e bilheterias do estádio",
+        "abre": "~5–10 dias antes",
+        "requisitos": "Não precisa ser sócio; oferta limitada. Documento com foto.",
+        "preco_5_eur": "150–300 (≈ €30–60 por pessoa)",
+        "dicas": "Contra o Osasuna a procura é menor que no dérbi, então é mais fácil achar 5 lugares juntos. Tribuna lateral."
+      },
+      "encaixe": "Serve no sáb 06 à noite, em qualquer horário de dom 07 ou na seg 08 se for cedo. Se o Atlético x Celta e o Rayo x Osasuna caírem em dias diferentes, dá para ver os dois.",
+      "fonte": "https://www.laliga.com/en-GB/match/temporada-2026-2027-laliga-ea-sports-rayo-vallecano-ca-osasuna-27 ; https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/rayo-vallecano/"
+    }
+  ],
+  "clubes": [
+    {
+      "cidade": "madri",
+      "clube": "Real Madrid",
+      "estadio": "Santiago Bernabéu (Metrô L10 Santiago Bernabéu)",
+      "como_comprar": "realmadrid.com > Entradas. Venda geral normalmente de poucos dias a 1 semana antes, depois dos sócios e do Madridista Premium; ingresso no celular. NÃO há jogo em casa nas janelas do grupo (J25 fora no Sevilla, J27 fora no Villarreal). Para conhecer o estádio, o Tour do Bernabéu é vendido no mesmo site.",
+      "requisitos_estrangeiro": "Conta gratuita no site; pagamento com cartão internacional. Preços de €70 a €250+ por pessoa na LaLiga.",
+      "fonte": "https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/real-madrid/ ; https://www.si.com/soccer/real-madrid-2026-27-la-liga-fixtures-dates-full-schedule"
+    },
+    {
+      "cidade": "madri",
+      "clube": "Atlético de Madrid",
+      "estadio": "Riyadh Air Metropolitano (Metrô L7 Estadio Metropolitano)",
+      "como_comprar": "atleticodemadrid.com/entradas ou app oficial. Pré-venda para cadastrados e depois venda geral, ~1–2 semanas antes.",
+      "requisitos_estrangeiro": "Não precisa ser sócio; conta gratuita. Ingresso no celular. Documento com foto.",
+      "fonte": "https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/atletico-madrid/"
+    },
+    {
+      "cidade": "madri",
+      "clube": "Rayo Vallecano",
+      "estadio": "Estadio de Vallecas (Metrô L1 Portazgo)",
+      "como_comprar": "rayovallecano.es e bilheterias; venda ~5–10 dias antes.",
+      "requisitos_estrangeiro": "Venda livre, mas com poucos ingressos para o público geral; comprar assim que abrir.",
+      "fonte": "https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/rayo-vallecano/"
+    },
+    {
+      "cidade": "madri",
+      "clube": "Getafe CF",
+      "estadio": "Coliseum (Cercanías C-4 até Las Margaritas-Universidad)",
+      "como_comprar": "getafecf.com. NÃO joga em casa nas janelas: J25 fora no Rayo e J27 fora no Deportivo. Em casa joga contra o Alavés em 27–28/02, fora da janela.",
+      "requisitos_estrangeiro": "Venda livre e barata.",
+      "fonte": "https://3ddigitalvenue.com/3dmap/clients/laliga/fixtures/getafe/"
+    },
+    {
+      "cidade": "roma",
+      "clube": "AS Roma",
+      "estadio": "Stadio Olimpico",
+      "como_comprar": "asroma.com > Biglietti (bilheteria oficial). Na Serie A em casa: G24 contra o Parma (13–14/02) e G26 contra o Venezia (27–28/02), ambos fora da janela. A G25 é fora, contra o Sassuolo. Possível jogo de Champions em 23–24/02.",
+      "requisitos_estrangeiro": "Ingresso nominal com passaporte; conferência na catraca. Tessera não é necessária nos setores de mandante em venda livre. Em geral, no máximo 4 por comprador.",
+      "fonte": "https://www.turismoroma.it/es/node/172684"
+    },
+    {
+      "cidade": "roma",
+      "clube": "SS Lazio",
+      "estadio": "Stadio Olimpico",
+      "como_comprar": "sslazio.it > Biglietteria (venda oficial) e pontos autorizados. Pré-venda para quem tem Fidelity Card e depois venda livre ~7–10 dias antes. Fora das copas europeias em 2026/27.",
+      "requisitos_estrangeiro": "Nominal com passaporte. Máximo de 4 ingressos por comprador em venda livre; para os outros nomes basta cópia do documento. Jogos de risco, como contra o Napoli, podem ter restrições da prefeitura de polícia.",
+      "fonte": "https://turismoroma.it/it/node/172966"
+    },
+    {
+      "cidade": "veneza",
+      "clube": "Venezia FC",
+      "estadio": "Stadio Pier Luigi Penzo (Sant'Elena, acesso de vaporetto)",
+      "como_comprar": "veneziafc.it > Tickets. Em 27–28/02 joga FORA (Roma x Venezia), então não há jogo em Veneza no sábado 27.",
+      "requisitos_estrangeiro": "Nominal com passaporte.",
+      "fonte": "https://www.turismoroma.it/es/node/172684"
+    },
+    {
+      "cidade": "innsbruck",
+      "clube": "WSG Tirol",
+      "estadio": "Tivoli Stadion Tirol",
+      "como_comprar": "wsg-tirol.at (Tickets) ou bilheteria no dia.",
+      "requisitos_estrangeiro": "Nenhum.",
+      "fonte": "https://www.sportschau.de/live-und-ergebnisse/fussball/oesterreich-bundesliga/ma12168634/wsg-tirol_wolfsberger-ac/blitztabelle"
+    },
+    {
+      "cidade": "viena",
+      "clube": "SK Rapid Wien",
+      "estadio": "Allianz Stadion (U4 Hütteldorf)",
+      "como_comprar": "skrapid.at > Tickets. Sem jogo da Bundesliga entre 1 e 4/03; só a possível semifinal da copa.",
+      "requisitos_estrangeiro": "Nenhum; venda livre.",
+      "fonte": "https://www.regionalsuche.at/?p=42419"
+    },
+    {
+      "cidade": "viena",
+      "clube": "FK Austria Wien",
+      "estadio": "Generali Arena (U1 Altes Landgut)",
+      "como_comprar": "fk-austria.at > Tickets. Em casa contra o Ried na 22ª rodada (dom 28/02, ~17:00), quando o grupo está em Innsbruck.",
+      "requisitos_estrangeiro": "Nenhum.",
+      "fonte": "https://www.sportschau.de/live-und-ergebnisse/fussball/oesterreich-bundesliga/ma12168628/austria-wien_sv-ried/blitztabelle"
+    },
+    {
+      "cidade": "budapeste",
+      "clube": "Ferencváros (Fradi)",
+      "estadio": "Groupama Aréna (M3 Népliget)",
+      "como_comprar": "meccsjegy.fradi.hu ou bilheteria do estádio, sempre com Fan Card.",
+      "requisitos_estrangeiro": "Fan Card obrigatório, feito pessoalmente com passaporte na bilheteria da Groupama Aréna (1.500 HUF; 2.000 HUF em dia de jogo). Contato: jegypenztar@fradi.hu.",
+      "fonte": "https://meccsjegy.fradi.hu/jegyarak ; https://ultimatebudapest.com/city-guide/tips-and-recommendations/ferencvaros-tickets-general-information"
+    },
+    {
+      "cidade": "budapeste",
+      "clube": "Kispest Honvéd",
+      "estadio": "Bozsik Aréna (M3 Határ út + bonde 42 ou caminhada)",
+      "como_comprar": "Site do clube e bilheteria.",
+      "requisitos_estrangeiro": "Ingresso nominal; passaporte.",
+      "fonte": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Nemzeti_Bajnoks%C3%A1g_I"
+    },
+    {
+      "cidade": "budapeste",
+      "clube": "Újpest FC",
+      "estadio": "Szusza Ferenc Stadion (M3 Újpest-Városkapu/Központ)",
+      "como_comprar": "Site do clube e bilheteria.",
+      "requisitos_estrangeiro": "Ingresso nominal; passaporte.",
+      "fonte": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Nemzeti_Bajnoks%C3%A1g_I"
+    },
+    {
+      "cidade": "budapeste",
+      "clube": "MTK Budapest",
+      "estadio": "Hidegkuti Nándor Stadion",
+      "como_comprar": "Site do clube. Na 24ª rodada joga FORA (Honvéd x MTK).",
+      "requisitos_estrangeiro": "Ingresso nominal; passaporte.",
+      "fonte": "https://www.betexplorer.com/football/hungary/nb-i/fixtures/"
+    },
+    {
+      "cidade": "budapeste",
+      "clube": "Vasas FC",
+      "estadio": "Illovszky Rudolf Stadion",
+      "como_comprar": "Site do clube. Na 24ª rodada joga FORA (Ferencváros x Vasas).",
+      "requisitos_estrangeiro": "Ingresso nominal; passaporte.",
+      "fonte": "https://www.betexplorer.com/football/hungary/nb-i/fixtures/"
+    }
+  ]
+}
