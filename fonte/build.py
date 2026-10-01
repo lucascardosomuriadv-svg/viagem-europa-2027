@@ -79,6 +79,23 @@ def lugares():
                     if ja[chave] in x["nome"]: x["origem"] = "sua lista"
                 continue
             out["viena"].append(item("viena", l["tipo"], l, "sua lista"))
+    # MAIS RESTAURANTES EM MADRI (pesquisa de 30/09/2026), cada um com o seu
+    # "slot" — o momento do roteiro em que ele cabe
+    mr = PESQ / "madri-restaurantes.json"
+    if mr.exists():
+        for l in json.load(open(mr, encoding="utf-8"))["lugares"]:
+            l = {**l, "pedir": l.get("o_que_pedir") or l.get("pedir")}
+            it = item("madri", "comer", l, "sugestão")
+            it["slot"] = l.get("slot")
+            out["madri"].append(it)
+    # MATCHA DA CAMILA: entram nos lugares de Madri e no dia sugerido
+    mj = PESQ / "matcha.json"
+    if mj.exists():
+        for l in json.load(open(mj, encoding="utf-8"))["lugares"]:
+            it = item("madri", "comer" if l.get("categoria") != "extra" else "ver", l, "lista da Camila")
+            it.update(matcha="extra" if l.get("categoria") == "extra" else True, dia=l.get("dia_sugerido"),
+                      porque=l.get("por_que") or "", instagram=l.get("instagram") or "")
+            out["madri"].append(it)
     # ids unicos
     for c, l in out.items():
         vistos = {}
@@ -121,6 +138,52 @@ def main():
         dias.append({**{k: v for k, v in d.items() if k != "blocos"}, "blocos": blocos})
     if erros:
         raise SystemExit("\n".join(erros))
+    # bloco "Matcha da Camila" no dia sugerido de cada lugar
+    por_dia = {}
+    for x in lug["madri"]:
+        if x.get("matcha") and x.get("dia"):
+            por_dia.setdefault(x["dia"], []).append(x)
+    for d in dias:
+        l = por_dia.get(d["data"])
+        if not l:
+            continue
+        nomes = [x for x in l if x["matcha"] is True]
+        extra = [x for x in l if x["matcha"] == "extra"]
+        if nomes:
+            d["blocos"].append({"quando": "Matcha da Camila", "ids": [x["id"] for x in nomes],
+                "texto": "Perto do caminho de hoje: " + "; ".join(f"<b>{x['nome']}</b>" + (f" ({x['bairro']})" if x["bairro"] else "") for x in nomes)
+                         + '. <a href="matcha.html">Todos os lugares de matcha</a>.'})
+        if extra:
+            d["blocos"].append({"quando": "Extra", "ids": [x["id"] for x in extra],
+                "texto": "; ".join(f"<b>{x['nome']}</b>: {x['dica'] or x['categoria']}" for x in extra) + "."})
+    # "Mais opções": os restaurantes novos de Madri entram logo DEPOIS do bloco
+    # do mesmo momento (almoço depois do almoço), não no fim do dia
+    SLOTS = {"chegada": ("Abertos depois da meia-noite", "Se bater fome"), "almoco": ("Mais opções de almoço", "Almoço"),
+             "jantar": ("Mais opções de jantar", "Noite"), "lanche": ("Lanche antes do aeroporto", "Tarde")}
+    grupos = {}
+    for x in lug["madri"]:
+        if x.get("slot"):
+            grupos.setdefault(x["slot"], []).append(x)
+    for slot, l in grupos.items():
+        tipo, dm_ = slot.split("-")
+        data = f"2027-{dm_[3:5]}-{dm_[0:2]}"
+        rotulo, depois = SLOTS[tipo]
+        d = next((d for d in dias if d["data"] == data), None)
+        if not d:
+            print("  aviso: slot sem dia:", slot); continue
+        curto = lambda s: (s or "").split(";")[0].split(",")[0][:55]
+        bloco = {"quando": rotulo, "ids": [x["id"] for x in l],
+                 "texto": "; ".join(f"<b>{x['nome'].split(' (')[0]}</b>" + (f": {curto(x['pedir'])}" if x["pedir"] else "") for x in l) + "."}
+        pos = next((i for i, b in enumerate(d["blocos"]) if b["quando"].startswith(depois)), None)
+        if pos is None and tipo == "almoco":
+            pos = next((i for i, b in enumerate(d["blocos"]) if b["quando"] == "Manhã"), None)
+        d["blocos"].insert(pos + 1 if pos is not None else len(d["blocos"]), bloco)
+
+    transporte = {}
+    tj = PESQ / "transporte.json"
+    if tj.exists():
+        transporte = {c["chave"]: c for c in json.load(open(tj, encoding="utf-8"))["cidades"]}
+
     fora = {}
     for c, itens in FORA.items():
         fora[c] = []
@@ -174,7 +237,7 @@ def main():
         voos = json.load(open(PESQ / "voos.json", encoding="utf-8"))
 
     dados = {"cambio": CAMBIO, "cidades": CIDADES, "lugares": lug, "extras": extras, "dias": dias,
-             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "trens": trens, "voos": voos}
+             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "transporte": transporte, "trens": trens, "voos": voos}
     SAIDA.parent.mkdir(exist_ok=True)
     SAIDA.write_text("// gerado por fonte/build.py — nao edite a mao\nwindow.GUIA = "
                      + json.dumps(dados, ensure_ascii=False) + ";\n", encoding="utf-8")

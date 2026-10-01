@@ -21,6 +21,7 @@
     <a href="#orcamento">Orçamento</a>
     <a href="#cidades">Cidades</a>
     <a href="hospedagens.html">Hospedagem</a>
+    <a href="matcha.html">Matcha da Camila</a>
     <a href="#checklist">Checklist</a>
   </div>
 </nav>
@@ -70,7 +71,7 @@
       <thead><tr><th>Onde</th><th>Mais barato</th><th>Mais cômodo</th></tr></thead>
       <tbody>
         <tr><td><b>Madri</b> na chegada (22:35)</td><td>Ônibus Exprés Aeropuerto (24h) até Cibeles/Atocha, ~€5 por pessoa</td><td>Van ou Uber/Cabify XL reservado: é meia-noite, e táxi comum leva só 4</td></tr>
-        <tr><td><b>Roma</b> (FCO)</td><td>Leonardo Express até Termini, 32 min, ~€14 por pessoa</td><td>Transfer de van para 5 com malas</td></tr>
+        <tr><td><b>Roma</b> (FCO)</td><td>Trem regional FL1 + metrô, ~€47,50 para os 5</td><td>Leonardo Express direto até Termini, 32 min, ~€70 para os 5; ou van</td></tr>
         <tr><td><b>Budapeste</b> (BUD)</td><td>Ônibus 100E, 2.500 HUF por pessoa (o passe comum não vale nele)</td><td>Bolt ou Főtaxi</td></tr>
         <tr><td><b>Madri</b> na volta (08/03)</td><td>Metrô: saiam ~17h30, as marchas do Dia da Mulher fecham o centro</td><td>Carro XL, mas o trânsito vai estar ruim</td></tr>
       </tbody>
@@ -309,8 +310,8 @@ const ATRACOES = [
   ["Roma","Coliseu + Fórum + Palatino",20],["Roma","Museus Vaticanos",25],["Roma","Cúpula de São Pedro",10],["Roma","Galleria Borghese",17],["Roma","Panteão",7],["Roma","Trevi (perto da fonte)",2],["Roma","Castel Sant'Angelo",16],
   ["Verona","Arena",12],["Verona","Casa di Giulietta (completa)",12],["Verona","Torre dei Lamberti",6],["Verona","Trem ida e volta a Veneza",26],
   ["Innsbruck","Hofburg",15],["Innsbruck","Nordkette (Seegrube)",50.4],
-  ["Viena","Schönbrunn",42],["Viena","Belvedere",23],["Viena","Kunsthistorisches",22],["Viena","Museu Sisi",20],["Viena","Torre da Stephansdom",8],["Viena","Patinação na Rathausplatz",10.5],["Viena","Passe 24h × 2 dias",19.4],
-  ["Budapeste","Parlamento",35],["Budapeste","Banhos Széchenyi",37],["Budapeste","Passe 24h + ônibus 100E",13],
+  ["Viena","Schönbrunn",42],["Viena","Belvedere",23],["Viena","Kunsthistorisches",22],["Viena","Museu Sisi",20],["Viena","Torre da Stephansdom",8],["Viena","Patinação na Rathausplatz",10.5],
+  ["Budapeste","Parlamento",35],["Budapeste","Banhos Széchenyi",37],
 ];
 function orcamento(){
   const marc = [...document.querySelectorAll("#lista-orc input")].map(i => i.checked);
@@ -319,12 +320,15 @@ function orcamento(){
   hosp += 150 * G.cambio; // taxa turística de Roma
   const trens = (159.80 + 125 + 124.50 + 80.60) * G.cambio;
   const voos = window.TOTAL_VOOS_BRL || null;
-  const total = hosp + trens + atr + (voos || 0);
+  // transporte local: o bilhete recomendado em cada cidade, já para os 5
+  const loc = Object.values(G.transporte||{}).reduce((s,t) => s + (t.recomendado?.total_5_eur || 0), 0) * G.cambio;
+  const total = hosp + trens + atr + loc + (voos || 0);
   document.getElementById("orc").innerHTML = `
     <div class="caixa"><p class="fraco">Hospedagem (Airbnb bom mais barato + taxa de Roma)</p><p class="v">${brl(hosp)}</p></div>
     <div class="caixa"><p class="fraco">Trens (4 trechos)</p><p class="v">${brl(trens)}</p><p class="fraco">1 ao vivo, 3 por referência</p></div>
     <div class="caixa"><p class="fraco">Voos internos com bagagem</p><p class="v">${voos?brl(voos):"—"}</p>${voos?"":'<p class="fraco">aguardando pesquisa</p>'}</div>
     <div class="caixa"><p class="fraco">Ingressos e passeios</p><p class="v">${brl(atr)}</p></div>
+    <div class="caixa"><p class="fraco">Metrô, ônibus e aeroportos</p><p class="v">${brl(loc)}</p><p class="fraco">o bilhete mais barato em cada cidade</p></div>
     <div class="caixa total"><p class="fraco">Total para os 5${voos?"":" (sem voos)"}</p><p class="v">${brl(total)}</p><p class="fraco">${brl(total/5)} por pessoa</p></div>`;
 }
 document.getElementById("lista-orc").innerHTML = ATRACOES.map(([c,n,v],i) =>
@@ -338,7 +342,7 @@ document.getElementById("lista-cidades").innerHTML = G.cidades.map(([k,n]) => {
   const l = G.lugares[k]; const c = l.filter(x=>x.tipo==="comer").length, v = l.length - c;
   const capa = l.find(x => x.foto && x.tipo==="ver" && G.usados.includes(x.id));
   return `<a class="cidade-card" href="cidade.html?c=${k}" style="--cor:${COR[k]}">${capa?`<div class="capa"><img src="${capa.foto.url}" alt="" loading="lazy"></div>`:""}<b>${n}</b><span>${RESUMO[k]}</span><span class="num">${v} para ver · ${c} para comer</span></a>`;
-}).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a>`;
+}).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a><a class="cidade-card" href="matcha.html" style="--cor:#4d7c0f"><b>Matcha da Camila</b><span>Os lugares de matcha de Madri</span></a>`;
 
 // ---------- checklist ----------
 const CHECKS = [

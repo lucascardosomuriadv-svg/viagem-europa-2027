@@ -180,3 +180,7 @@ footer{margin-top:64px;color:var(--tinta-3);font-size:.85rem;border-top:1px soli
 .leg-dia i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .dicas{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px}
 .dicas li{background:var(--papel);border:1px solid var(--linha);border-left:4px solid var(--destaque);border-radius:10px;padding:11px 16px;color:var(--tinta-2)}
+
+/* etiqueta longa quebra linha em vez de empurrar o cartao para fora da tela */
+.lugar{min-width:0}
+.lugar .topo .chip,.lugs .chip{white-space:normal;max-width:100%}

@@ -37,12 +37,12 @@ DIAS = [
     blocos=[
       ("Manhã", "Puerta del Sol → Calle Mayor → Plaza Mayor → Plaza de la Villa → Catedral de la Almudena. Estejam no Palácio Real antes das 11h: <b>sábado tem a troca da guarda (11h–14h)</b>. Ingresso ~€18. Depois, os Jardines de Sabatini.", ["Puerta del Sol", "Almudena", "Palacio Real", "Sabatini"]),
       ("Almoço", "Cava Baja, em La Latina: Taberna La Concha para tapas. Se quiserem o clássico, o Botín (o restaurante mais antigo do mundo, cochinillo) pede reserva com semanas de antecedência.", ["Taberna La Concha", "Botín"]),
-      ("Tarde", "Plaza de España e o Templo de Debod no pôr do sol (~18h50). Depois, Gran Vía: Primark, Zara e o terraço do El Corte Inglés de Callao (Gourmet Experience), com vista para a Gran Vía.", ["Templo de Debod", "Gran Vía", "Callao — terraço"]),
+      ("Tarde", "Plaza de España e o Templo de Debod no pôr do sol (~18h50). Depois, Gran Vía: Primark, Zara e o terraço do El Corte Inglés de Callao (Gourmet Experience), com vista para a Gran Vía.", ["Templo de Debod", "Gran Vía (+", "Callao — terraço"]),
       ("Noite", "Mercado de San Miguel para petiscar em pé, a 2 minutos da Plaza Mayor.", ["Mercado de San Miguel"]),
     ]),
   dict(data="2027-02-21", cidade="roma", titulo="Voo para Roma e o centro a pé", noite="Roma",
     blocos=[
-      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30. De Fiumicino, o Leonardo Express leva 32 min até Termini (~€14 por pessoa).", []),
+      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30 (o metrô abre ~6h). De Fiumicino: trem regional FL1 + metrô sai ~€47,50 para os 5; o Leonardo Express, direto até Termini em 32 min, ~€70.", []),
       ("Atenção", "<b>Domingo muita coisa fecha</b>: Vaticano, mercado de Testaccio, CasaManco, Supplì Roma, Roscioli, Peroni e Formula 1. Por isso hoje é dia de rua e praça.", []),
       ("Tarde", "Panteão (€7), Piazza Navona com sorvete na Gelateria del Teatro, e a Fontana di Trevi. <b>A Trevi cobra €2 para chegar perto da fonte das 9h às 22h</b>; depois das 22h é grátis e mais vazia.", ["Panteão", "Piazza Navona", "Gelateria del Teatro", "Trevi"]),
       ("Noite", "Emma Pizzeria (reserve) ou Osteria da Fortunata no Panteão, onde fazem a massa na vitrine. Ambas abrem no domingo.", ["Emma", "Fortunata"]),
@@ -151,7 +151,7 @@ DIAS = [
     ]),
   dict(data="2027-03-08", cidade="madri", titulo="Último dia e voo para casa", noite=None,
     blocos=[
-      ("Manhã", "Checkout com as malas guardadas. Museu Reina Sofía, onde está a Guernica (aberto na segunda). Compras no El Corte Inglés de Preciados.", ["Reina Sofía", "Corte Inglés Preciados +"]),
+      ("Manhã", "Checkout com as malas guardadas. Museu Reina Sofía, onde está a Guernica (aberto na segunda). Compras no El Corte Inglés de Preciados.", ["Museo Reina Sofía", "Corte Inglés Preciados +"]),
       ("Tarde", "O Palácio Real é grátis para brasileiros de segunda a quinta das 16h às 18h (com passaporte, fila ~1h antes). Só vale se as malas já estiverem com vocês: <b>hoje é o Dia da Mulher, as marchas fecham o centro à noite</b>.", ["Palacio Real"]),
       ("Noite", "Saiam para o aeroporto por volta das 17h30, de metrô. CA897 às 22:30 → Guarulhos 05:30.", []),
     ]),
