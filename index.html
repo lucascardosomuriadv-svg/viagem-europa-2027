@@ -22,6 +22,7 @@
     <a href="#cidades">Cidades</a>
     <a href="hospedagens.html">Hospedagem</a>
     <a href="matcha.html">Matcha da Camila</a>
+    <a href="futebol.html">Futebol</a>
     <a href="#checklist">Checklist</a>
   </div>
 </nav>
@@ -343,7 +344,7 @@ document.getElementById("lista-cidades").innerHTML = G.cidades.map(([k,n]) => {
   const l = G.lugares[k]; const c = l.filter(x=>x.tipo==="comer").length, v = l.length - c;
   const capa = l.find(x => x.foto && x.tipo==="ver" && G.usados.includes(x.id));
   return `<a class="cidade-card" href="cidade.html?c=${k}" style="--cor:${COR[k]}">${capa?`<div class="capa"><img src="${capa.foto.url}" alt="" loading="lazy"></div>`:""}<b>${n}</b><span>${RESUMO[k]}</span><span class="num">${v} para ver · ${c} para comer</span></a>`;
-}).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a><a class="cidade-card" href="matcha.html" style="--cor:#4d7c0f"><b>Matcha da Camila</b><span>Os lugares de matcha de Madri</span></a>`;
+}).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a><a class="cidade-card" href="matcha.html" style="--cor:#4d7c0f"><b>Matcha da Camila</b><span>Os lugares de matcha de Madri</span></a><a class="cidade-card" href="futebol.html" style="--cor:#15803d"><b>Futebol</b><span>Jogos nas cidades, nos dias em que vocês estão lá</span></a>`;
 
 // ---------- checklist ----------
 const CHECKS = [

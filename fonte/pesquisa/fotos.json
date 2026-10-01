@@ -78,10 +78,11 @@
   "licenca": "CC BY-SA 3.0"
  },
  "El Rastro": {
-  "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/RastroinMadrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-  "pagina": "https://commons.wikimedia.org/wiki/File:RastroinMadrid.jpg",
-  "autor": "Msoltanolkotabii",
-  "licenca": "CC BY-SA 4.0"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Rastro_-_Plaza_de_Cascorro_-_Madrid_03.jpg/960px-Rastro_-_Plaza_de_Cascorro_-_Madrid_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rastro_-_Plaza_de_Cascorro_-_Madrid_03.jpg",
+  "autor": "Javier Perez Montes",
+  "licenca": "CC BY-SA 4.0",
+  "escolhida": true
  },
  "Fisherman's Bastion": {
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hal%C3%A1szb%C3%A1stya_2017.jpg/960px-Hal%C3%A1szb%C3%A1stya_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",

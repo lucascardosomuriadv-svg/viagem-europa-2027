@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futebol na viagem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  :root{--destaque:#15803d}
+  .jogo{display:grid;gap:10px}
+  .placar{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+  .placar b{font-size:1.25rem}
+  .placar .x{color:var(--tinta-3)}
+  .quando{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .pino-bola{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#15803d;color:#fff;font:700 12px/1 "Outfit",sans-serif;border:2px solid #fff;box-shadow:0 1px 3px rgb(0 0 0/.4)}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Seções">
+  <div class="trilho">
+    <a class="marca" href="index.html">← Guia</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#mapa-sec">Estádios</a>
+    <a href="#clubes">Como comprar</a>
+  </div>
+</nav>
+<div class="miolo">
+  <header>
+    <h1>Futebol na viagem<span class="ponto">.</span></h1>
+    <p class="sub" style="margin-top:12px">Os jogos que acontecem nas cidades do roteiro, nos dias em que vocês estão lá. <b>Dia e hora exatos só são confirmados umas 3 a 5 semanas antes</b>: a etiqueta de cada jogo diz se a data já é firme ou se ainda pode mudar.</p>
+    <p class="fraco" id="consulta" style="margin-top:8px"></p>
+  </header>
+
+  <section id="jogos">
+    <h2>Os jogos</h2>
+    <div id="lista"></div>
+  </section>
+
+  <section id="mapa-sec">
+    <h2>Os estádios</h2>
+    <div id="mapa" class="mapa" role="img" aria-label="Mapa dos estádios"></div>
+  </section>
+
+  <section id="clubes">
+    <h2>Como comprar, clube a clube</h2>
+    <div class="grade2" id="lista-clubes"></div>
+  </section>
+
+  <section id="obs-sec">
+    <h2>Bom saber</h2>
+    <ul class="dicas" id="obs"></ul>
+  </section>
+
+  <footer>Pesquisa de 30/09/2026 nos sites oficiais das ligas e dos clubes. Comprem só nos canais oficiais: ingresso de revenda costuma ser nominal e pode ser barrado na entrada.</footer>
+</div>
+<script src="dados/guia.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const G = window.GUIA, F = G.futebol || {jogos:[],clubes:[],meta:{}};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const NOME = {...Object.fromEntries(G.cidades), veneza:"Veneza"};
+const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
+const rot = iso => `${DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()]} ${iso.slice(8,10)}/${iso.slice(5,7)}`;
+const statusChip = s => { s = (s||"").toLowerCase();
+  if (s.startsWith("confirm")) return '<span class="chip ok">confirmado</span>';
+  if (s.includes("provis")) return '<span class="chip espera">data provisória</span>';
+  return `<span class="chip alerta">${esc(s||"possível")}</span>`; };
+document.getElementById("consulta").textContent = F.meta?.consultado_em ? `Consultado em ${F.meta.consultado_em}.` : "";
+
+const jogos = [...F.jogos].sort((a,b) => (a.data+(a.hora||"")).localeCompare(b.data+(b.hora||"")));
+if (!jogos.length) document.getElementById("lista").innerHTML = '<p class="cartao">A pesquisa dos jogos ainda está sendo feita. Esta página se atualiza quando ela terminar.</p>';
+else {
+  const porCidade = [];
+  jogos.forEach(j => { const u = porCidade[porCidade.length-1]; if (u && u.c===j.cidade) u.l.push(j); else porCidade.push({c:j.cidade, l:[j]}); });
+  document.getElementById("lista").innerHTML = porCidade.map(g => `
+    <div class="cidade-bloco" style="--cor:var(--${g.c==="veneza"?"verona":g.c})">
+      <div class="cab"><h3>${esc(NOME[g.c]||g.c)}</h3></div>
+      <div class="grade2">${g.l.map(j => { const i = j.ingressos || {};
+        const campo = (r,v) => v ? `<dt>${r}</dt><dd>${esc(v)}</dd>` : "";
+        return `<article class="cartao jogo">
+          <div class="quando num"><b>${rot(j.data)}</b><span class="fraco">${esc(j.hora||"a definir")}</span>${statusChip(j.status)}</div>
+          <div class="placar"><b>${esc(j.mandante)}</b><span class="x">×</span><b>${esc(j.visitante)}</b></div>
+          <p class="fraco">${esc(j.competicao)}${j.rodada?" · "+esc(j.rodada):""} · ${esc(j.estadio)}</p>
+          <dl class="lugar" style="border:0;padding:0;background:none">
+            ${campo("Como chegar", j.como_chegar)}${campo("Ingressos", i.onde)}${campo("Venda abre", i.abre)}${campo("Exigências", i.requisitos)}
+            ${campo("Preço (5)", i.preco_5_eur!=null && i.preco_5_eur!=="" ? (typeof i.preco_5_eur==="number" ? "€"+i.preco_5_eur : i.preco_5_eur) : "")}${campo("Dicas", i.dicas)}${campo("No roteiro", j.encaixe)}
+          </dl>
+          ${j.fonte?`<a class="fraco" href="${esc(String(j.fonte).split(/[ ;]/)[0])}" target="_blank" rel="noopener">fonte ↗</a>`:""}
+        </article>`; }).join("")}</div>
+    </div>`).join("");
+}
+
+const cl = F.clubes || [];
+if (!cl.length) document.getElementById("clubes").remove();
+else document.getElementById("lista-clubes").innerHTML = cl.map(c => `<div class="cartao"><p class="fraco">${esc(NOME[c.cidade]||c.cidade)} · ${esc(c.estadio)}</p><h3 style="margin-top:2px">${esc(c.clube)}</h3>
+  <p style="margin-top:8px;color:var(--tinta-2)">${esc(c.como_comprar)}</p>${c.requisitos_estrangeiro?`<p class="fraco" style="margin-top:6px">${esc(c.requisitos_estrangeiro)}</p>`:""}</div>`).join("");
+
+const obs = F.meta?.observacoes || [];
+if (!obs.length) document.getElementById("obs-sec").remove();
+else document.getElementById("obs").innerHTML = obs.map(o => `<li>${esc(o)}</li>`).join("");
+
+if (window.L && jogos.some(j => j.lat)) {
+  const m = L.map("mapa",{scrollWheelZoom:false});
+  const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(m);
+  L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(m);
+  const pts = [];
+  jogos.filter(j=>j.lat).forEach((j,i) => { pts.push([j.lat,j.lng]);
+    L.marker([j.lat,j.lng],{icon:L.divIcon({className:"",html:`<div class="pino-bola">${i+1}</div>`,iconSize:[26,26],iconAnchor:[13,13]})}).addTo(m)
+      .bindPopup(`<b>${esc(j.mandante)} × ${esc(j.visitante)}</b><br>${rot(j.data)} · ${esc(j.hora||"a definir")}<br>${esc(j.estadio)}`); });
+  m.fitBounds(pts, {padding:[30,30], maxZoom:12});
+} else document.getElementById("mapa-sec").remove();
+</script>
+</body>
+</html>

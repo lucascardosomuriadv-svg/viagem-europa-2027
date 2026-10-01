@@ -179,6 +179,8 @@ def main():
             pos = next((i for i, b in enumerate(d["blocos"]) if b["quando"] == "Manhã"), None)
         d["blocos"].insert(pos + 1 if pos is not None else len(d["blocos"]), bloco)
 
+    futebol = json.load(open(PESQ / "futebol.json", encoding="utf-8")) if (PESQ / "futebol.json").exists() else None
+
     transporte = {}
     tj = PESQ / "transporte.json"
     if tj.exists():
@@ -237,7 +239,7 @@ def main():
         voos = json.load(open(PESQ / "voos.json", encoding="utf-8"))
 
     dados = {"cambio": CAMBIO, "cidades": CIDADES, "lugares": lug, "extras": extras, "dias": dias,
-             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "transporte": transporte, "trens": trens, "voos": voos}
+             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "transporte": transporte, "futebol": futebol, "trens": trens, "voos": voos}
     SAIDA.parent.mkdir(exist_ok=True)
     SAIDA.write_text("// gerado por fonte/build.py — nao edite a mao\nwindow.GUIA = "
                      + json.dumps(dados, ensure_ascii=False) + ";\n", encoding="utf-8")

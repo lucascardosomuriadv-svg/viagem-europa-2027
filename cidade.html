@@ -89,7 +89,7 @@ G.dias.forEach(d => d.blocos.forEach(b => b.ids.forEach(id => { (quandoUsado[id]
 
 document.title = `${NOME[c]} · Europa 2027`;
 document.documentElement.style.setProperty("--destaque", getComputedStyle(document.documentElement).getPropertyValue("--"+c));
-document.getElementById("nav-cidades").innerHTML += G.cidades.map(([kk,n]) => `<a href="cidade.html?c=${kk}" ${kk===c?'style="color:var(--tinta);border-color:var(--linha)"':""}>${n}</a>`).join("") + `<a href="hospedagens.html">Hospedagem</a><a href="matcha.html">Matcha da Camila</a>`;
+document.getElementById("nav-cidades").innerHTML += G.cidades.map(([kk,n]) => `<a href="cidade.html?c=${kk}" ${kk===c?'style="color:var(--tinta);border-color:var(--linha)"':""}>${n}</a>`).join("") + `<a href="hospedagens.html">Hospedagem</a><a href="matcha.html">Matcha da Camila</a><a href="futebol.html">Futebol</a>`;
 document.getElementById("titulo").innerHTML = `${NOME[c]}<span class="ponto">.</span>`;
 const nVer = lug.filter(x=>x.tipo==="ver").length, nCom = lug.length - nVer;
 document.getElementById("resumo").textContent = `${nVer} lugares para ver e ${nCom} para comer, com horário, dia em que fecha, reserva e o que pedir. Os que estão no dia a dia aparecem com a data.`;
