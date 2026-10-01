@@ -42,7 +42,7 @@ DIAS = [
     ]),
   dict(data="2027-02-21", cidade="roma", titulo="Voo para Roma e o centro a pé", noite="Roma",
     blocos=[
-      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30 (o metrô abre ~6h). De Fiumicino: trem regional FL1 + metrô sai ~€47,50 para os 5; o Leonardo Express, direto até Termini em 32 min, ~€70.", []),
+      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30 de táxi ou Uber (tarifa fixa ~€33 por carro). De Fiumicino: trem regional FL1 + metrô sai ~€47,50 para os 5; o Leonardo Express, direto até Termini em 32 min, ~€70.", []),
       ("Atenção", "<b>Domingo muita coisa fecha</b>: Vaticano, mercado de Testaccio, CasaManco, Supplì Roma, Roscioli, Peroni e Formula 1. Por isso hoje é dia de rua e praça.", []),
       ("Tarde", "Panteão (€7), Piazza Navona com sorvete na Gelateria del Teatro, e a Fontana di Trevi. <b>A Trevi cobra €2 para chegar perto da fonte das 9h às 22h</b>; depois das 22h é grátis e mais vazia.", ["Panteão", "Piazza Navona", "Gelateria del Teatro", "Trevi"]),
       ("Noite", "Emma Pizzeria (reserve) ou Osteria da Fortunata no Panteão, onde fazem a massa na vitrine. Ambas abrem no domingo.", ["Emma", "Fortunata"]),
@@ -139,7 +139,7 @@ DIAS = [
   dict(data="2027-03-06", cidade="madri", titulo="Voo de volta a Madri", noite="Madri",
     blocos=[
       ("Manhã", "Iberia 11:10 → Madri 14:30. Saiam ~8h30 com o ônibus 100E até o aeroporto (2.500 HUF por pessoa, o passe comum não vale nele).", []),
-      ("Tarde", "Chegada às 14:30. Recolham as malas grandes e descansem: amanhã é dia cheio.", []),
+      ("Tarde", "Chegada às 14:30. Táxi ou Uber até a hospedagem (tarifa fixa ~€33). Recolham as malas grandes e descansem: amanhã é dia cheio.", []),
       ("Noite", "Jantar leve perto de casa: tapas em La Latina ou o Mercado de San Fernando, em Lavapiés.", ["San Fernando"]),
     ]),
   dict(data="2027-03-07", cidade="madri", titulo="Rastro, montaditos a €1 e Toledo", noite="Madri",
@@ -153,7 +153,7 @@ DIAS = [
     blocos=[
       ("Manhã", "Checkout com as malas guardadas. Museu Reina Sofía, onde está a Guernica (aberto na segunda). Compras no El Corte Inglés de Preciados.", ["Museo Reina Sofía", "Corte Inglés Preciados +"]),
       ("Tarde", "O Palácio Real é grátis para brasileiros de segunda a quinta das 16h às 18h (com passaporte, fila ~1h antes). Só vale se as malas já estiverem com vocês: <b>hoje é o Dia da Mulher, as marchas fecham o centro à noite</b>.", ["Palacio Real"]),
-      ("Noite", "Saiam para o aeroporto por volta das 17h30, de metrô. CA897 às 22:30 → Guarulhos 05:30.", []),
+      ("Noite", "Saiam para o aeroporto por volta das 17h, de táxi ou Uber: com as marchas do Dia da Mulher o centro fica fechado e o trânsito pesa, então peçam o carro numa rua fora do trajeto das marchas. CA897 às 22:30 → Guarulhos 05:30.", []),
     ]),
 ]
 

@@ -70,10 +70,10 @@
     <table>
       <thead><tr><th>Onde</th><th>Mais barato</th><th>Mais cômodo</th></tr></thead>
       <tbody>
-        <tr><td><b>Madri</b> na chegada (22:35)</td><td>Ônibus Exprés Aeropuerto (24h) até Cibeles/Atocha, ~€5 por pessoa</td><td>Van ou Uber/Cabify XL reservado: é meia-noite, e táxi comum leva só 4</td></tr>
+        <tr><td><b>Madri</b> (todos os trechos)</td><td colspan="2">Táxi ou Uber. Táxi: tarifa fixa ~€33 por carro até o centro, e na saída dá para pedir carro para os 5. Uber: subam a rampa à direita antes da rua, até o estacionamento.</td></tr>
         <tr><td><b>Roma</b> (FCO)</td><td>Trem regional FL1 + metrô, ~€47,50 para os 5</td><td>Leonardo Express direto até Termini, 32 min, ~€70 para os 5; ou van</td></tr>
         <tr><td><b>Budapeste</b> (BUD)</td><td>Ônibus 100E, 2.500 HUF por pessoa (o passe comum não vale nele)</td><td>Bolt ou Főtaxi</td></tr>
-        <tr><td><b>Madri</b> na volta (08/03)</td><td>Metrô: saiam ~17h30, as marchas do Dia da Mulher fecham o centro</td><td>Carro XL, mas o trânsito vai estar ruim</td></tr>
+        <tr><td><b>Madri</b> na volta (08/03)</td><td colspan="2">Táxi ou Uber às ~17h: as marchas do Dia da Mulher fecham o centro, então peçam o carro fora do trajeto delas.</td></tr>
       </tbody>
     </table>
   </div>
@@ -321,14 +321,15 @@ function orcamento(){
   const trens = (159.80 + 125 + 124.50 + 80.60) * G.cambio;
   const voos = window.TOTAL_VOOS_BRL || null;
   // transporte local: o bilhete recomendado em cada cidade, já para os 5
-  const loc = Object.values(G.transporte||{}).reduce((s,t) => s + (t.recomendado?.total_5_eur || 0), 0) * G.cambio;
+  // + os 4 táxis de aeroporto em Madri (tarifa fixa ~€33 por carro): o grupo não usa metrô para o aeroporto
+  const loc = (Object.values(G.transporte||{}).reduce((s,t) => s + (t.recomendado?.total_5_eur || 0), 0) + 4 * 33) * G.cambio;
   const total = hosp + trens + atr + loc + (voos || 0);
   document.getElementById("orc").innerHTML = `
     <div class="caixa"><p class="fraco">Hospedagem (Airbnb bom mais barato + taxa de Roma)</p><p class="v">${brl(hosp)}</p></div>
     <div class="caixa"><p class="fraco">Trens (4 trechos)</p><p class="v">${brl(trens)}</p><p class="fraco">1 ao vivo, 3 por referência</p></div>
     <div class="caixa"><p class="fraco">Voos internos com bagagem</p><p class="v">${voos?brl(voos):"—"}</p>${voos?"":'<p class="fraco">aguardando pesquisa</p>'}</div>
     <div class="caixa"><p class="fraco">Ingressos e passeios</p><p class="v">${brl(atr)}</p></div>
-    <div class="caixa"><p class="fraco">Metrô, ônibus e aeroportos</p><p class="v">${brl(loc)}</p><p class="fraco">o bilhete mais barato em cada cidade</p></div>
+    <div class="caixa"><p class="fraco">Metrô, ônibus e aeroportos</p><p class="v">${brl(loc)}</p><p class="fraco">bilhete mais barato em cada cidade + táxis de aeroporto em Madri</p></div>
     <div class="caixa total"><p class="fraco">Total para os 5${voos?"":" (sem voos)"}</p><p class="v">${brl(total)}</p><p class="fraco">${brl(total/5)} por pessoa</p></div>`;
 }
 document.getElementById("lista-orc").innerHTML = ATRACOES.map(([c,n,v],i) =>

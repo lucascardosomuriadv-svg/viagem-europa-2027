@@ -1,313 +1,651 @@
 {
-  "meta": {
-    "pesquisado_em": "2026-09-30",
-    "observacao": "Preços oficiais de 2026. Nenhuma das 7 cidades publicou tarifas de 2027 até esta data; Viena já anunciou reajuste anual automático e o desconto de 40% do bilhete de 10 viagens de Madri só está garantido até 31/12/2026. Contas feitas para 5 adultos, uma viagem estimada a partir do roteiro (eles andam muito). Câmbio usado em Budapeste: €1 ≈ 365 Ft (set/2026)."
-  },
-  "cidades": [
+ "meta": {
+  "pesquisado_em": "2026-09-30",
+  "observacao": "Preços oficiais de 2026. Nenhuma das 7 cidades publicou tarifas de 2027 até esta data; Viena já anunciou reajuste anual automático e o desconto de 40% do bilhete de 10 viagens de Madri só está garantido até 31/12/2026. Contas feitas para 5 adultos, uma viagem estimada a partir do roteiro (eles andam muito). Câmbio usado em Budapeste: €1 ≈ 365 Ft (set/2026)."
+ },
+ "cidades": [
+  {
+   "chave": "madri",
+   "resumo": "Um cartão Multi só para os 5, carregado com bilhetes de 10 viagens (Metrobús). Aeroporto de táxi ou Uber, nunca de metrô.",
+   "bilhetes": [
     {
-      "chave": "madri",
-      "resumo": "Usar o bilhete de 10 viagens (Metrobús, €7,30) carregado na Tarjeta Multi, mais o suplemento de aeroporto de €3 por pessoa em cada um dos 4 trechos de aeroporto. O Abono Turístico custa o dobro para o roteiro deles, que é feito quase todo a pé.",
-      "bilhetes": [
-        {"nome": "Tarjeta Multi (cartão vermelho recarregável)", "preco_eur": 2.50, "vale": "Suporte obrigatório para sencillo e 10 viagens; dura 10 anos. Se ainda tiverem os cartões da viagem de 2026, servem.", "onde_comprar": "Máquinas de todas as estações de metrô (inclusive aeroporto), tabacarias"},
-        {"nome": "Billete sencillo Metro zona A", "preco_eur": 1.50, "vale": "1 viagem de metrô; €1,50 até 5 estações, +€0,10 por estação extra até €2,00", "onde_comprar": "Máquinas do metrô (na Tarjeta Multi)"},
-        {"nome": "Pagamento por aproximação (cartão de banco/celular) direto na catraca", "preco_eur": 1.50, "vale": "1 viagem. Desde 01/06/2026 funciona nas 303 estações. Na fase promocional, qualquer viagem na zona A sai pelo preço de 5 estações (€1,50); no aeroporto cobra também o suplemento. Cada pessoa precisa do próprio cartão.", "onde_comprar": "Na catraca (pelo menos 2 catracas por estação)"},
-        {"nome": "Billete 10 viajes (Metrobús: Metro zona A + ônibus EMT + ML1)", "preco_eur": 7.30, "vale": "10 viagens; pode ser usado por várias pessoas juntas (passa o cartão na catraca e devolve). Já com 40% de desconto, válido até 31/12/2026; sem o desconto custa €12,20", "onde_comprar": "Máquinas do metrô, tabacarias"},
-        {"nome": "Suplemento Aeropuerto", "preco_eur": 3.00, "vale": "Exigido por pessoa ao entrar ou sair nas estações Aeropuerto T1-T2-T3 e Aeropuerto T4 com sencillo ou 10 viagens; válido para 1 uso no dia da compra", "onde_comprar": "Máquinas do metrô, carregado na Tarjeta Multi"},
-        {"nome": "Abono Turístico zona A", "preco_eur": 10.30, "vale": "1 dia €10,30; 2 dias €17,50; 3 dias €23,10; 4 dias €27,80; 5 dias €33,40; 7 dias €43,20. Dias corridos (calendário) a partir da 1ª validação; inclui o aeroporto sem suplemento; pessoal e intransferível", "onde_comprar": "Máquinas do metrô, escritórios do Consorcio, aeroporto"},
-        {"nome": "Abono Turístico zona T (toda a Comunidad de Madrid)", "preco_eur": 15.40, "vale": "1 dia €15,40; 2 dias €26,20; 3 dias €35,00; 4 dias €43,20; 5 dias €50,40; 7 dias €62,80. Não cobre Toledo (que fica em outra comunidade autônoma)", "onde_comprar": "Idem"},
-        {"nome": "Ônibus Exprés Aeropuerto (EMT)", "preco_eur": 5.00, "vale": "1 viagem aeroporto–Cibeles/Atocha, 24 h. Não aceita os 10 viajes. Paga-se a bordo com cartão de aproximação", "onde_comprar": "A bordo"},
-        {"nome": "Táxi tarifa fixa aeroporto–dentro da M-30", "preco_eur": 33.00, "vale": "Preço por carro (Tarifa 4, 2026). Carro comum leva 4 pessoas; para 5, pedir táxi de 7 lugares ou usar 2 carros", "onde_comprar": "Fila de táxi do terminal"}
-      ],
-      "conta": "Viagens por pessoa no roteiro: 1ª estada (18–21/fev): aeroporto→apto (qui à noite), ~2 trechos na sex e ~2 no sáb (o resto a pé), apto→aeroporto no dom de manhã = 6 viagens, 2 delas no aeroporto. 2ª estada (6–8/mar): aeroporto→apto, ~2–3 no dom (Bernabéu pela L10, ou ida e volta até Atocha/Plaza Elíptica para Toledo), ~2 na seg + metrô ao aeroporto = ~7 viagens, 2 no aeroporto. Total ≈ 13 viagens e 4 suplementos por pessoa, ou 65 viagens e 20 suplementos para o grupo. (A) RECOMENDADO, 10 viagens + suplemento: 7 bilhetes × €7,30 = €51,10 (70 viagens, sobram 5) + 20 suplementos × €3 = €60 + 5 Tarjetas Multi × €2,50 = €12,50, total €123,60. Se reaproveitarem os cartões de 2026, €111,10. (B) Só aproximação: 13 × €1,50 + 4 × €3 = €31,50 por pessoa, €157,50 para 5. É mais prático no aeroporto porque não tem fila na máquina. (C) Abono Turístico zona A: 4 dias (18–21) €27,80 + 3 dias (6–8) €23,10 = €50,90 por pessoa, €254,50 para 5. Só valeria se cada um fizesse mais de 30 viagens. (D) Exprés Aeropuerto nos 4 trechos: €5 × 4 × 5 = €100 só de aeroporto, contra €74,60 de metrô com 10 viagens + suplemento. Se o desconto de 40% acabar em 2027 (10 viagens a €12,20), a opção (A) sobe para cerca de €157,90 e continua sendo a mais barata.",
-      "recomendado": {"bilhete": "Billete 10 viajes (Metrobús) na Tarjeta Multi + Suplemento Aeropuerto em cada trecho de aeroporto", "quantos": "7 bilhetes de 10 viagens + 20 suplementos (+ até 5 Tarjetas Multi)", "total_5_eur": 123.60},
-      "linhas": [
-        {"linha": "L8 (rosa): Aeropuerto T1-T2-T3 / Aeropuerto T4 ↔ Nuevos Ministerios", "para que serve no roteiro": "Chegada qui 22:35 (o metrô funciona até ~01:30; a estação fica no T2, ligada ao T1 por corredor de ~10 min a pé), ida dom 21 cedo (o metrô abre ~06:00), chegada sáb 6/mar e ida seg 8/mar. Em Nuevos Ministerios faz baldeação para L6/L10 e Cercanías"},
-        {"linha": "L10 (azul-escuro): Nuevos Ministerios – Santiago Bernabéu – Tribunal – Plaza de España", "para que serve no roteiro": "Tour do Bernabéu (estação Santiago Bernabéu) e ligação aeroporto↔centro via L8"},
-        {"linha": "L1 (azul-claro): Sol – Atocha/Estación del Arte – Atocha Renfe", "para que serve no roteiro": "Reina Sofía (Estación del Arte), Atocha (trem Avant para Toledo)"},
-        {"linha": "L2 (vermelha): Ópera – Sol – Sevilla – Banco de España – Retiro", "para que serve no roteiro": "Cibeles (Banco de España), Retiro e Palacio Real (Ópera)"},
-        {"linha": "L3/L5: Callao, Gran Vía, Sol, Lavapiés/La Latina", "para que serve no roteiro": "Gran Vía, El Corte Inglés Callao/Preciados e o Rastro (La Latina, L5). Para Toledo de ônibus, L6/L11 até Plaza Elíptica"},
-        {"linha": "Dica: El Corte Inglés Castellana fica em cima da estação Nuevos Ministerios", "para que serve no roteiro": "Na seg 8, terminando as compras ali, é só pegar a L8 direto para o aeroporto"}
-      ],
-      "aeroporto": "Metrô L8 + suplemento: €0,73 (1 viagem dos 10) + €3 = €3,73 por pessoa, ou €4,50 por aproximação. Leva ~15 min até Nuevos Ministerios e ~35–45 min até Sol, com baldeação. Exprés Aeropuerto: €5, 24 h, sai do T1 (de dia vai até Atocha; à noite, entre ~23:30 e 06:00, termina em Cibeles); é a opção segura para o voo de 08:45 do dom 21 se quiserem sair antes de o metrô abrir. Táxi: €33 fixos por carro até dentro da M-30; 5 pessoas = van de 7 lugares ou 2 carros. Toledo (dom 7, opcional) NÃO entra em nenhum passe de Madri: trem Avant a partir de Atocha (~33 min) ou ônibus ALSA a partir de Plaza Elíptica (~1 h); comprar à parte.",
-      "localizar": [
-        "Puerta del Sol é o 'km 0' e o centro de tudo. Gran Vía corre de leste a oeste logo ao norte de Sol, de Plaza de España (oeste) até Cibeles (leste).",
-        "O grande eixo norte–sul é Paseo del Prado → Recoletos → Castellana. Nele ficam Atocha (sul), Prado, Cibeles, Colón, Nuevos Ministerios (El Corte Inglés, L8) e o Bernabéu (norte).",
-        "Oeste do centro: Palacio Real, Catedral de la Almudena e, mais ao norte, Templo de Debod (ver o pôr do sol). Leste: Parque do Retiro, logo atrás do Prado.",
-        "Barrio de las Letras fica entre Sol e o Prado (descendo para sudeste). La Latina e Lavapiés ficam ao sul de Sol; o Rastro é só no domingo de manhã, na Ribera de Curtidores (La Latina).",
-        "La Elipa (onde ficaram em 2026) fica no leste, depois da M-30, a ~25 min de metrô (L2) do centro. Ficando central, quase tudo do roteiro de 19 e 20/fev é a pé.",
-        "Na saída do metrô, siga as placas 'Salida' com o nome da rua. Madri é plana no eixo Prado/Castellana, mas sobe bastante de Sol para o Palacio Real."
-      ],
-      "cuidados": [
-        "Batedores de carteira: Sol, Gran Vía, metrô L1/L2/L3 lotado, Rastro (o pior) e a L8 com malas. Mochila na frente e celular fora do bolso de trás.",
-        "Guarde o cartão até sair: na estação do aeroporto a catraca de SAÍDA também cobra/verifica o suplemento. Viajar sem bilhete válido: recargo de €80 (metade se pagar na hora).",
-        "Com a aproximação, cada pessoa encosta o próprio cartão ou celular, um por vez. Prefira um cartão sem IOF alto (conta global) e sempre pague em euro."
-      ],
-      "fontes": [
-        "https://www.crtm.es/billetes-y-tarifas/billetes-y-abonos/abono-turistico/",
-        "https://crtm.es/media/s1qi0nmo/bocm-20251231-precios_transporte.pdf",
-        "https://crtm.es/comunicacion/sala-de-prensa/noticias/noticias/29122025-la-comunidad-de-madrid-mantiene-los-precios-del-transporte-publico/",
-        "https://crtm.es/billetes-transporte-publico-aeropuerto-madrid",
-        "https://www.metromadrid.es/es/viaja-en-metro/titulos-y-tarifas/tarifas",
-        "https://www.metromadrid.es/es/viaja-en-metro/reglamentos/normas-de-uso-de-tarjetas-bancarias-contactless-compatibles-emv",
-        "https://www.comunidad.madrid/node/114673",
-        "https://www.redtransporte.com/madrid/precios-abonos.html",
-        "https://diario.madrid.es/blog/notas-de-prensa/madrid-actualiza-las-tarifas-para-el-taxi-con-una-subida-de-236-para-2026/"
-      ]
+     "nome": "Tarjeta Multi (cartão vermelho recarregável)",
+     "preco_eur": 2.5,
+     "vale": "Suporte obrigatório para sencillo e 10 viagens; dura 10 anos. Se ainda tiverem os cartões da viagem de 2026, servem.",
+     "onde_comprar": "Máquinas de todas as estações de metrô (inclusive aeroporto), tabacarias"
     },
     {
-      "chave": "roma",
-      "resumo": "Não comprar passe. Cada um paga viagem a viagem: tap&go com o próprio cartão por aproximação ou BIT de €1,50 (100 min). O próprio tap&go limita a cobrança do dia ao preço do Roma 24h. Do aeroporto, o trem regional FL1 + metrô sai mais barato que o Leonardo Express; para 5 pessoas com malas, o táxi de tarifa fixa pode empatar.",
-      "bilhetes": [
-        {"nome": "BIT – Biglietto Integrato a Tempo", "preco_eur": 1.50, "vale": "100 min em ônibus/bonde à vontade + 1 entrada no metrô (baldeação A↔B↔C dentro do metrô sem sair conta como a mesma entrada). O aumento para €2,00 foi discutido várias vezes mas não foi aplicado até set/2026", "onde_comprar": "Máquinas do metrô, tabacarias (T), app; ou tap&go"},
-        {"nome": "tap&go (cartão de banco/celular por aproximação)", "preco_eur": 1.50, "vale": "Encoste na catraca do metrô ou no validador do ônibus/bonde; cada toque = 1 BIT. Teto diário automático: a partir da ~5ª–6ª viagem no mesmo dia cobra no máximo o Roma 24h (€8,50). Use sempre o MESMO cartão; 1 cartão por pessoa", "onde_comprar": "Direto no validador"},
-        {"nome": "Roma 24h", "preco_eur": 8.50, "vale": "24 h a partir da 1ª validação (preço desde 01/07/2025)", "onde_comprar": "Máquinas, tabacarias, app"},
-        {"nome": "Roma 48h", "preco_eur": 15.00, "vale": "48 h", "onde_comprar": "Idem"},
-        {"nome": "Roma 72h", "preco_eur": 22.00, "vale": "72 h", "onde_comprar": "Idem"},
-        {"nome": "CIS – Carta Integrata Settimanale", "preco_eur": 29.00, "vale": "7 dias a partir da validação", "onde_comprar": "Idem"},
-        {"nome": "Leonardo Express (Trenitalia) FCO ↔ Termini", "preco_eur": 14.00, "vale": "Direto, 32 min, a cada 15 min (~05:38–23:27). Não entra no BIT nem nos passes", "onde_comprar": "Máquinas/bilheteria no aeroporto, app Trenitalia"},
-        {"nome": "Trem regional FL1 FCO → Trastevere/Ostiense/Tiburtina", "preco_eur": 8.00, "vale": "NÃO vai a Termini. Aos domingos passa a cada ~30 min. Para chegar a Termini: Ostiense (metrô B Piramide) ou Tiburtina + metrô B (+1 BIT)", "onde_comprar": "Máquinas no aeroporto, app Trenitalia"},
-        {"nome": "Táxi tarifa fixa FCO ↔ centro (dentro da Muralha Aureliana)", "preco_eur": 55.00, "vale": "Preço por corrida, não por pessoa (deliberação de jul/2024). Para 5 é preciso van; confirmar o preço na fila oficial antes de entrar", "onde_comprar": "Fila oficial de táxi branco no desembarque"},
-        {"nome": "Roma Pass 48h / 72h", "preco_eur": 36.50, "vale": "Transporte ATAC ilimitado + 1 (48h) ou 2 (72h) entradas grátis e descontos nas seguintes. Não cobre o Vaticano nem o trem do aeroporto. Preço oficial 2026 não confirmado: as fontes dão 48h €33–38 e 72h €52–63", "onde_comprar": "romapass.it, pontos de informação turística"}
-      ],
-      "conta": "Viagens por pessoa (hospedagem perto de Termini): seg Coliseu, metrô B ida e volta = 2 (ou a pé, ~25 min); ter Vaticano, metrô A Termini↔Ottaviano = 2, e San Lorenzo à noite fica a pé de Termini (+0–1); qua audiência (metrô A) + Testaccio (metrô até Piramide) + Trastevere (bonde 8) + volta = ~4; qui Borghese (metrô A Spagna/Flaminio) e volta de Campo de' Fiori de ônibus 40/64 = 2; sex até Termini a pé ou 1. Total ≈ 11–12 BIT, €16,50–18 por pessoa. Em nenhum dia passam do teto de €8,50, então o tap&go nunca fica mais caro. RECOMENDADO, avulso/tap&go: 12 × €1,50 × 5 = €90. Alternativas: Roma 72h (€22) + ~3 BIT nos outros dias = €26,50 por pessoa, €132,50; CIS €29 × 5 = €145; quatro Roma 24h = €34 por pessoa, €170. Roma Pass 72h (~€58,50): grátis Coliseu (€18) + Borghese (€18) + ~€15 de transporte = ~€51 de valor, menos do que custa. Roma Pass 48h (~€36,50): 1 entrada (€18) + ~€9 de transporte = €27. Não vale para eles. Aeroporto (dom 21): Leonardo 5 × €14 = €70; FL1 + BIT 5 × €9,50 = €47,50 (mais lento, com baldeação); táxi fixo €55 por carro, mas para 5 pessoas precisa de van ou 2 carros (€110). Total do grupo na opção recomendada: €90 na cidade + €47,50 (FL1) = €137,50, ou €160 com o Leonardo.",
-      "recomendado": {"bilhete": "BIT €1,50 avulso, de preferência por tap&go (1 cartão por pessoa)", "quantos": "~12 por pessoa (60 no grupo)", "total_5_eur": 90.00},
-      "linhas": [
-        {"linha": "Metrô A (laranja): Termini – Repubblica – Barberini – Spagna – Flaminio (Popolo) – Lepanto – Ottaviano – Cipro", "para que serve no roteiro": "Vaticano/Prati (Ottaviano para a Praça São Pedro; Cipro para os Museus Vaticanos), Piazza di Spagna, Piazza del Popolo (Flaminio) e Borghese (Spagna/Flaminio + caminhada pelo parque)"},
-        {"linha": "Metrô B (azul): Termini – Cavour – Colosseo – Circo Massimo – Piramide", "para que serve no roteiro": "Coliseu/Fórum (seg) e Testaccio (Piramide, qua)"},
-        {"linha": "Metrô C (verde): estação Colosseo/Fori Imperiali (aberta em 16/12/2025, baldeação com a B)", "para que serve no roteiro": "Pouco útil para eles, exceto se ficarem para os lados de San Giovanni"},
-        {"linha": "Bonde 8: Largo di Torre Argentina – Trastevere (Viale Trastevere)", "para que serve no roteiro": "Ida e volta do Trastevere (qua) e ligação Campo de' Fiori/Argentina"},
-        {"linha": "Ônibus 40 (expresso) e 64: Termini – Piazza Venezia – Argentina – Corso Vittorio – perto do Vaticano", "para que serve no roteiro": "Volta de Campo de' Fiori/Navona para Termini (qui) e alternativa ao metrô para o Vaticano. Atenção: o 64 é famoso por batedores de carteira"},
-        {"linha": "Bonde 19 / ônibus 71 / a pé", "para que serve no roteiro": "San Lorenzo (jantar de ter), a 10–15 min a pé do lado leste de Termini"}
-      ],
-      "aeroporto": "FCO (chegada dom 21 ~11:10): (1) Leonardo Express, €14, 32 min, direto a Termini, mais simples com malas; (2) FL1, €8, não para em Termini: descer em Ostiense (metrô B Piramide → Termini) ou Tiburtina (metrô B) + BIT €1,50, e aos domingos passa só a cada ~30 min; (3) táxi oficial branco, €55 fixos por carro até dentro da Muralha Aureliana, mas 5 pessoas = van (confirmar se a tarifa fixa vale para van) ou 2 carros. Partida sex 26 de trem saindo de Termini: a pé ou 1 BIT. O ATAC anunciou o fim dos bilhetes de papel com tarja magnética a partir de 2027 (troca por tap&go ou pelo cartão com chip '+Roma in tasca'), então em fev/2027 o tap&go deve ser o caminho natural.",
-      "localizar": [
-        "Termini fica no leste do centro histórico. A Via Nazionale desce dali até a Piazza Venezia (o 'bolo de noiva' branco do Vittoriano), que é o grande nó de ônibus. Da Piazza Venezia, a Via del Corso sobe reta para o norte até a Piazza del Popolo.",
-        "O Coliseu fica ao sul de Termini e a sudeste da Piazza Venezia, ligado a ela pela Via dei Fori Imperiali. O Circo Massimo e Testaccio (Piramide) ficam mais ao sul.",
-        "O rio Tibre faz uma curva a oeste. Na margem oeste ficam o Vaticano/Prati (noroeste) e o Trastevere (sudoeste). Na 'barriga' da curva, do lado de cá, ficam Navona, Panteão e Campo de' Fiori, tudo a pé um do outro.",
-        "Borghese é o grande parque no norte, logo acima da Piazza di Spagna (subindo a escadaria) e da Piazza del Popolo.",
-        "O metrô quase não passa pelo centro histórico (Navona, Panteão, Trevi, Campo de' Fiori). Ali é a pé ou de ônibus/bonde.",
-        "San Lorenzo é o bairro universitário colado ao lado leste de Termini, depois da linha do trem."
-      ],
-      "cuidados": [
-        "Batedores de carteira: Termini (dentro e em volta), ônibus 64 e 40, metrô A entre Termini e Ottaviano/Spagna, Fontana di Trevi e Coliseu. Mochila na frente e zíper fechado; desconfie de 'ajudantes' na máquina de bilhete.",
-        "Validar SEMPRE: papel na máquina amarela ao subir no ônibus/bonde, tap&go encostando o mesmo cartão em cada embarque. Multa: €50 + bilhete se pagar em até 5 dias; €115 + bilhete depois disso (o valor previsto em lei vai até €500).",
-        "Greves (sciopero) costumam cair em sexta-feira. Na véspera, olhe o app/site do ATAC e da Trenitalia, principalmente na sex 26 (trem para Verona)."
-      ],
-      "fontes": [
-        "https://www.atac.roma.it/biglietti-e-abbonamenti/biglietti",
-        "https://www.turismoroma.it/it/node/159622",
-        "https://www.turismoroma.it/it/node/40264",
-        "https://quifinanza.it/attualita/roma-biglietti-atac-bus-tram-metro/1012935/",
-        "https://www.ilpost.it/2025/12/16/metro-c-aperte-fermate-colosseo-fori-imperiali-metronia/",
-        "https://www.adr.it/pax-fco-taxi",
-        "https://www.sicurauto.it/news/attualita-e-curiosita/taxi-roma-per-fiumicino-e-ciampino-quanto-costa/",
-        "https://bluekeys.it/blog/fiumicino-rome-transfer-leonardo-express-train",
-        "https://www.romapass.it/",
-        "https://www.artvisitguide.com/roma-pass-worth-it-2026/"
-      ]
+     "nome": "Billete sencillo Metro zona A",
+     "preco_eur": 1.5,
+     "vale": "1 viagem de metrô; €1,50 até 5 estações, +€0,10 por estação extra até €2,00",
+     "onde_comprar": "Máquinas do metrô (na Tarjeta Multi)"
     },
     {
-      "chave": "verona",
-      "resumo": "Ir a pé. Porta Nuova → Arena são ~1,5 km (15–20 min) em linha reta pelo Corso Porta Nuova. Só vale pegar ônibus com as malas, com o bilhete urbano de 90 min (€1,50 comprado antes, €2,00 a bordo).",
-      "bilhetes": [
-        {"nome": "Biglietto urbano 90 minuti (ATV)", "preco_eur": 1.50, "vale": "90 min na rede urbana com baldeações; €2,00 se comprar a bordo; pessoal; validar a cada embarque", "onde_comprar": "Tabacarias/bancas, máquinas, bilheteria ATV em Porta Nuova, app ATV"},
-        {"nome": "Carnet 10 viagens", "preco_eur": 13.50, "vale": "10 × 90 min; NÃO pode ser usado por várias pessoas ao mesmo tempo", "onde_comprar": "Bilheteria/app ATV"},
-        {"nome": "Biglietto giornaliero urbano", "preco_eur": 5.00, "vale": "24 h a partir da validação (1 adulto + 1 menor de 14)", "onde_comprar": "Bilheteria/app ATV, revendedores"},
-        {"nome": "Biglietto gruppo", "preco_eur": 8.00, "vale": "4 pessoas, ida e volta (máx. 90 min cada sentido); só no app e na bilheteria", "onde_comprar": "App ATV / bilheteria"},
-        {"nome": "VeronaCard 24h / 48h", "preco_eur": 27.00, "vale": "Entradas grátis (Arena, Casa di Giulietta, Torre dei Lamberti, Castelvecchio, San Zeno etc.) + ônibus urbanos ATV durante a validade. Preço 2026 não confirmado em fonte oficial (há valores entre €20 e €32)", "onde_comprar": "Pontos de informação turística, museus, site oficial"}
-      ],
-      "conta": "Viagens: sex 26 chegada (estação→hotel), sáb 27 hotel→estação e volta (bate-volta a Veneza), dom 28 hotel→estação 09:01. A pé = €0. RECOMENDADO: ônibus só nos 2 trechos com mala (chegada e saída): 2 × €1,50 × 5 = €15. Se também quiserem ônibus no sábado de manhã e à noite: 4 × €1,50 × 5 = €30. O passe diário (€5/pessoa/dia, €25 por dia para o grupo) não compensa. O ingresso de grupo (€8 para 4 pessoas ida e volta) só ajuda se o 'ida e volta' for no mesmo dia, o que não é o caso das malas. VeronaCard: só se forem entrar em 3 ou mais atrações pagas na sex à tarde; o ônibus incluído é irrelevante para eles.",
-      "recomendado": {"bilhete": "Ir a pé; bilhete urbano 90 min só nos trechos com mala", "quantos": "10 (2 por pessoa)", "total_5_eur": 15.00},
-      "linhas": [
-        {"linha": "Ônibus 11, 12, 13 (dias úteis/sábado) e 51; aos domingos/feriados as linhas mudam (série 90)", "para que serve no roteiro": "Porta Nuova ↔ Piazza Bra (Arena)/Corso Porta Nuova. No dom 28 cedo, confira o horário festivo no app ATV ou Moovit, ou vá a pé"},
-        {"linha": "Trem Verona Porta Nuova ↔ Venezia Santa Lucia", "para que serve no roteiro": "Bate-volta de sáb 27 (regional ~1h25–2h10; Frecciarossa/Italo ~1h10). Bilhete à parte, Trenitalia/Italo"}
-      ],
-      "aeroporto": "Não se aplica (chegam e saem de trem por Porta Nuova).",
-      "localizar": [
-        "A estação Porta Nuova fica a sudoeste do centro. É só sair e seguir reto para nordeste pelo Corso Porta Nuova, passar pelos Portoni della Bra e chegar à Piazza Bra, onde está a Arena.",
-        "Da Piazza Bra, a Via Mazzini (rua de compras, só pedestres) leva à Piazza delle Erbe e à Piazza dei Signori. A Casa di Giulietta fica na Via Cappello, a 2 min da Erbe.",
-        "O rio Adige abraça o centro histórico numa curva em forma de 'S'. O Castelvecchio e a ponte Scaligera ficam a oeste; a Ponte Pietra, o Teatro Romano e o mirante de Castel San Pietro ficam do outro lado do rio, a nordeste.",
-        "O centro inteiro cabe em 20–25 min a pé de ponta a ponta. A Torre dei Lamberti (na Piazza delle Erbe) é a melhor referência visual."
-      ],
-      "cuidados": [
-        "Ônibus: valide o bilhete na máquina a bordo assim que subir; o fiscal multa quem não validou, mesmo tendo o bilhete na mão.",
-        "Na Piazza delle Erbe e na Casa di Giulietta (pátio lotado), atenção a bolsas e celulares.",
-        "Para o bate-volta a Veneza: bilhete regional de papel tem que ser validado antes de embarcar (máquinas verdes/brancas na plataforma); o digital, com horário marcado, não precisa."
-      ],
-      "fontes": [
-        "https://www.atv.verona.it/biglietti-abbonamenti/urbano-verona",
-        "https://www.atv.verona.it/Biglietti_e_abbonamenti_autobus",
-        "https://www.veronacard.it/"
-      ]
+     "nome": "Pagamento por aproximação (cartão de banco/celular) direto na catraca",
+     "preco_eur": 1.5,
+     "vale": "1 viagem. Desde 01/06/2026 funciona nas 303 estações. Na fase promocional, qualquer viagem na zona A sai pelo preço de 5 estações (€1,50); no aeroporto cobra também o suplemento. Cada pessoa precisa do próprio cartão.",
+     "onde_comprar": "Na catraca (pelo menos 2 catracas por estação)"
     },
     {
-      "chave": "veneza",
-      "resumo": "No bate-volta, andar a pé e pegar no máximo um vaporetto de 75 min (€9,50) pelo Grande Canal. O passe de 24 h (€25) só compensa com 3 ou mais trajetos (por exemplo, Murano/Burano).",
-      "bilhetes": [
-        {"nome": "ACTV Biglietto ordinario 75'", "preco_eur": 9.50, "vale": "75 min em toda a rede urbana (vaporetto, ônibus do Lido/Mestre, bonde, People Mover); validar antes de cada embarque", "onde_comprar": "Máquinas e bilheterias nas paradas (Ferrovia, Piazzale Roma, Rialto, San Marco), app/site Venezia Unica; aceita cartão por aproximação no validador"},
-        {"nome": "ACTV 24 ore", "preco_eur": 25.00, "vale": "24 h a partir da 1ª validação", "onde_comprar": "Idem"},
-        {"nome": "ACTV 48 / 72 ore / 7 giorni", "preco_eur": 35.00, "vale": "48 h €35; 72 h €45; 7 dias €65", "onde_comprar": "Idem"},
-        {"nome": "Traghetto (gôndola de travessia do Grande Canal)", "preco_eur": 2.00, "vale": "1 travessia curta (preço aproximado para turista; pagar em dinheiro ao gondoleiro)", "onde_comprar": "Na hora"},
-        {"nome": "Contributo di accesso (taxa de entrada para quem vai e volta no dia)", "preco_eur": 0.00, "vale": "Em 2026 valeu só em 60 dias, de abril a julho (fins de semana/feriados, 8:30–16:30), a €5 (com 4+ dias de antecedência) ou €10. Sáb 27/02/2027 provavelmente não terá cobrança, mas o calendário de 2027 ainda não saiu; conferir em cda.veneziaunica.it", "onde_comprar": "cda.veneziaunica.it"}
-      ],
-      "conta": "Roteiro típico do dia: Santa Lucia → Rialto → San Marco a pé (~45–50 min sem parar, seguindo as placas amarelas) e volta de vaporetto pelo Grande Canal (linha 1, ~45 min, ou linha 2, mais rápida) até Ferrovia. Também dá para fazer o contrário: ir de barco e voltar a pé. RECOMENDADO: 1 bilhete de 75 min por pessoa = 5 × €9,50 = €47,50. Alternativas: 2 trajetos de 75 min = €19 por pessoa (€95), ainda abaixo do 24 h; 24 h = 5 × €25 = €125, que só compensa com 3 ou mais trajetos (ida e volta de Murano/Burano + Grande Canal). Só a pé + 1 traghetto: €2 × 5 = €10.",
-      "recomendado": {"bilhete": "ACTV 75 minutos (uma vez, pelo Grande Canal)", "quantos": "5", "total_5_eur": 47.50},
-      "linhas": [
-        {"linha": "Vaporetto linha 1", "para que serve no roteiro": "Lenta, para em todas as paradas do Grande Canal: Ferrovia – Rialto – Accademia – San Marco (Vallaresso/San Zaccaria). É o 'passeio' clássico"},
-        {"linha": "Vaporetto linha 2", "para que serve no roteiro": "Mais rápida, menos paradas: Ferrovia – Rialto – Accademia – San Marco. Boa para voltar à estação com tempo apertado"},
-        {"linha": "Linhas 4.1/4.2 e 12", "para que serve no roteiro": "Murano (4.1/4.2 a partir de Ferrovia/Fondamente Nove) e Burano (12 a partir de Fondamente Nove). Só se trocarem o roteiro para as ilhas; aí o 24 h compensa"}
-      ],
-      "aeroporto": "Não se aplica (bate-volta de trem a partir de Verona; desembarcam em Venezia Santa Lucia, NÃO em Venezia Mestre).",
-      "localizar": [
-        "A estação Santa Lucia fica no noroeste da ilha, de frente para o Grande Canal. A Piazzale Roma (ônibus) fica ao lado, do outro lado da Ponte della Costituzione.",
-        "O Grande Canal corta a cidade em forma de 'S' invertido. A Ponte di Rialto fica no meio do caminho e a Praça San Marco no sudeste, perto de onde o canal deságua na laguna.",
-        "Siga as placas amarelas pintadas nos muros: 'Per Rialto', 'Per S. Marco', 'Alla Ferrovia' (para a estação). O GPS se perde nas vielas, mas as placas não.",
-        "Do lado oposto ao de San Marco, atravessando a Ponte dell'Accademia, ficam Dorsoduro e a Accademia. A Strada Nova (Cannaregio) é o caminho mais reto da estação até Rialto."
-      ],
-      "cuidados": [
-        "Valide o bilhete (encoste no leitor) ANTES de entrar no pontão do vaporetto; fiscal a bordo multa quem não validou.",
-        "Não sente nem faça piquenique em degraus, pontes e na Praça San Marco: dá multa municipal. Não coma andando em San Marco.",
-        "Rialto e San Marco lotados: cuidado com batedores de carteira. Café sentado em San Marco custa caro (cobram couvert e música); tome em pé no balcão."
-      ],
-      "fontes": [
-        "https://actv.avmspa.it/en/content/prezzi-vigore",
-        "https://actv.avmspa.it/it/content/urbano-venezia-0",
-        "https://www.veneziaunica.it/en/buy-tickets/public-trasport-in-venice/actv-ticket-75",
-        "https://actv.avmspa.it/it/content/pagamenti-europay-mastercard-e-visa",
-        "https://cda.veneziaunica.it/",
-        "https://tg24.sky.it/economia/2026/04/04/nuovo-contributo-accesso-venezia-come-funziona"
-      ]
+     "nome": "Billete 10 viajes (Metrobús: Metro zona A + ônibus EMT + ML1)",
+     "preco_eur": 7.3,
+     "vale": "10 viagens; pode ser usado por várias pessoas juntas (passa o cartão na catraca e devolve). Já com 40% de desconto, válido até 31/12/2026; sem o desconto custa €12,20",
+     "onde_comprar": "Máquinas do metrô, tabacarias"
     },
     {
-      "chave": "innsbruck",
-      "resumo": "Não precisam de bilhete IVB: Hbf → Altstadt → estação Congress (Hungerburgbahn) é tudo a pé, 10–15 min. O gasto real é o teleférico da Nordkette. Com 1 noite só, não ganham a Welcome Card (precisa de 2+ noites).",
-      "bilhetes": [
-        {"nome": "IVB Einzelticket (zona central de Innsbruck)", "preco_eur": 3.30, "vale": "90 min comprado antes (máquina/app); comprado a bordo vale 45 min", "onde_comprar": "Máquinas nas paradas, app IVB/VVT, a bordo"},
-        {"nome": "IVB 24h-Ticket Innsbruck", "preco_eur": 7.30, "vale": "24 h em todas as linhas da cidade", "onde_comprar": "Idem"},
-        {"nome": "IVB 24h 2Plus", "preco_eur": 10.80, "vale": "24 h para 2 adultos + até 3 crianças (não serve para 5 adultos)", "onde_comprar": "Idem"},
-        {"nome": "IVB 8 viagens / semanal", "preco_eur": 19.10, "vale": "8 viagens €19,10; semanal €28,40", "onde_comprar": "Idem"},
-        {"nome": "Innsbruck Card 24h", "preco_eur": 59.00, "vale": "Transporte IVB + ônibus Sightseer + 1 ida e volta na Nordkette (Congress → Hafelekar) + 20+ museus (Hofburg, Goldenes Dachl, Bergisel, Alpenzoo, Ambras). Conta 24 h a partir do 1º uso. Preço 2026 não confirmado no site oficial (fontes dão €55–59)", "onde_comprar": "Posto de turismo (inclusive na Hbf), hotéis, innsbruck.info"},
-        {"nome": "Nordkettenbahnen Congress ↔ Hafelekar ida e volta (Hungerburgbahn + Seegrube + Hafelekar)", "preco_eur": 44.00, "vale": "Ida e volta no dia, pode descer em Hungerburg/Seegrube e seguir. NÃO é IVB. Preço aproximado de 2026 (fonte não oficial; até Seegrube ~€38)", "onde_comprar": "Bilheteria da estação Congress, nordkette.com"},
-        {"nome": "Welcome Card (de graça para hóspedes)", "preco_eur": 0.00, "vale": "Transporte grátis na cidade e região, MAS só para quem fica 2 noites ou mais em hospedagem parceira. Com 1 noite não vale", "onde_comprar": "Na hospedagem"}
-      ],
-      "conta": "Transporte: Hbf → hotel a pé (~1 km), Altstadt a pé, Congress a ~5 min do Goldenes Dachl, volta à Hbf a pé = €0. Se precisarem de 1 ônibus/bonde com mala: €3,30 × 5 = €16,50 (o 24 h de €7,30 só compensa com 3 ou mais viagens). A conta que importa é a da Nordkette: bilhete avulso ~€44 × 5 = ~€220, contra Innsbruck Card 24h ~€59 × 5 = ~€295. A Card só compensa se, além da Nordkette, entrarem em pelo menos 2 museus pagos (ex.: Hofburg + Goldenes Dachl/Bergisel, ~€10–12 cada) no dom 28 à tarde. Ativando no domingo por volta das 13:00, ela vale até seg ~13:00, o que cobre a Nordkette de manhã, com o trem às 13:58. RECOMENDADO para transporte: nenhum bilhete (€0).",
-      "recomendado": {"bilhete": "Nenhum (a pé). Nordkette com bilhete próprio ou Innsbruck Card 24h se forem a 2+ museus no domingo", "quantos": "0", "total_5_eur": 0.00},
-      "linhas": [
-        {"linha": "Hungerburgbahn (funicular, estação Congress, desenho de Zaha Hadid) → Hungerburg → Seegrubenbahn → Hafelekarbahn", "para que serve no roteiro": "Nordkette na seg 1/mar de manhã. No inverno, Hungerburgbahn seg–sex a partir das 07:15; Seegrube a partir das 08:30; Hafelekar a partir das 09:00. Subindo ~08:30, voltam ao centro até ~12:30"},
-        {"linha": "Bonde/ônibus IVB (ex.: bonde 1 ou 3 até Hbf; Sightseer)", "para que serve no roteiro": "Só se quiserem poupar a caminhada com mala Hbf ↔ hotel"}
-      ],
-      "aeroporto": "Não se aplica (chegam dom 28 às 12:32 e saem seg 1/mar ~13:58 pela Hauptbahnhof).",
-      "localizar": [
-        "A Hauptbahnhof fica a sudeste da Altstadt. Saindo pela frente (Südtiroler Platz), siga pela Salurner Straße até a Maria-Theresien-Straße (com a Annasäule, a coluna no meio) e vire à direita (norte): ela termina na Altstadt e no Goldenes Dachl. São 10–12 min.",
-        "Bússola natural: a parede de montanhas da Nordkette está sempre ao NORTE, atrás do rio Inn. O Bergisel (trampolim de esqui) fica ao sul.",
-        "A estação Congress da Hungerburgbahn fica na borda leste da Altstadt, ao lado da Hofburg e do Congress Innsbruck, a ~5 min a pé do Goldenes Dachl.",
-        "O rio Inn passa logo ao norte da Altstadt. A ponte (Innbrücke) leva às casas coloridas de Mariahilf, o cartão-postal com as montanhas atrás."
-      ],
-      "cuidados": [
-        "Em cima (Hafelekar, 2.256 m) faz -10 °C ou menos no inverno, com vento: luvas, gorro e calçado com sola boa. Às vezes o Hafelekar fecha por vento ou avalanche: ver o status ao vivo em nordkette.com antes de comprar.",
-        "No ônibus/bonde, comprar e validar antes; bilhete comprado a bordo vale só 45 min.",
-        "Como o trem sai às 13:58, deixem as malas guardadas no hotel ou nos armários da Hbf e voltem da montanha até ~12:30."
-      ],
-      "fontes": [
-        "https://www.ivb.at/en/passenger/tickets/overview-of-tickets/",
-        "https://www.ivb.at/fahrgast/tickets/uebersicht-tickets/",
-        "https://www.innsbruck.info/en/sightseeing/innsbruck-card.html",
-        "https://www.innsbruck.info/en/destinations/accommodation/welcome-card.html",
-        "https://nordkette.com/en/lifts-slopes",
-        "https://nomadepicureans.com/europe/is-the-innsbruck-card-worth-it-in-2026/"
-      ]
+     "nome": "Abono Turístico zona A",
+     "preco_eur": 10.3,
+     "vale": "1 dia €10,30; 2 dias €17,50; 3 dias €23,10; 4 dias €27,80; 5 dias €33,40; 7 dias €43,20. Dias corridos (calendário) a partir da 1ª validação; inclui o aeroporto sem suplemento; pessoal e intransferível",
+     "onde_comprar": "Máquinas do metrô, escritórios do Consorcio, aeroporto"
     },
     {
-      "chave": "viena",
-      "resumo": "A 'Wochenkarte' de segunda a segunda não existe mais. Desde 2026 é o '7 Tage WIEN', com início livre, a €25,20 no digital. Mesmo assim, para eles sai mais barato: 1 bilhete simples na seg à noite + dois '24 Stunden WIEN' digitais (€9,70 cada), começando ter e qua de manhã. Dá €22,40 por pessoa. Os passes de 48 h e 72 h acabaram em 01/01/2026.",
-      "bilhetes": [
-        {"nome": "1 Fahrt WIEN (bilhete simples)", "preco_eur": 3.00, "vale": "1 viagem em um sentido, com baldeações e sem interrupção. €3,00 digital (app WienMobil); €3,20 na máquina/papel", "onde_comprar": "App WienMobil, máquinas do U-Bahn, tabacarias (Trafik)"},
-        {"nome": "24 Stunden WIEN", "preco_eur": 9.70, "vale": "24 h a partir do início escolhido. €9,70 digital; €10,20 em papel", "onde_comprar": "App WienMobil, máquinas"},
-        {"nome": "7 Tage WIEN (substituiu a Wochenkarte)", "preco_eur": 25.20, "vale": "7 dias a partir do dia de início escolhido, até 00:59 do 8º dia; NÃO é mais 'seg 00h → seg 09h'. €25,20 digital; €28,90 em papel (validar)", "onde_comprar": "App WienMobil, máquinas"},
-        {"nome": "48 h / 72 h WIEN", "preco_eur": 0.00, "vale": "EXTINTOS em 01/01/2026 (junto com as Vienna City Card de 48/72 h)", "onde_comprar": "—"},
-        {"nome": "Vienna City Card 24h / 7 dias", "preco_eur": 19.00, "vale": "24 h de transporte + descontos em museus. 24 h €19; 7 dias €39; 'só descontos' 7 dias €9", "onde_comprar": "Postos de turismo, máquinas, viennacitycard.at"}
-      ],
-      "conta": "Viagens por pessoa: seg 1/mar 18:32 Hbf → hotel = 1; ter Schönbrunn (U4 ida e volta) + Naschmarkt (U4 Kettenbrückengasse) + Ópera (Karlsplatz) = ~3; qua Belvedere (bonde D ou a pé de Hbf) + Innere Stadt e Rathaus (a pé) + Prater (U1 Praterstern) + volta = ~3; qui 1 viagem cedo até a Hbf (trem 07:40) = 1. Total ≈ 8. Opções por pessoa (digital): (a) 8 simples × €3 = €24; (b) RECOMENDADO: simples na seg (€3) + 24 h começando ter ~09:00 (vale até qua ~09:00) + 24 h começando na 1ª viagem de qua depois das 09:00 (vale até qui ~09:30, cobrindo a ida à Hbf às 07:00) = €3 + 2 × €9,70 = €22,40; (c) 7 Tage WIEN digital = €25,20 (cobre tudo de seg a qui sem pensar); (d) Vienna City Card 24h €19 × 2 + €3 = €41, só vale se forem usar muitos descontos. Para o grupo: (b) €112; (a) €120; (c) €126. Com bilhetes de papel: (b) €23,60 × 5 = €118; (c) €28,90 × 5 = €144,50. Se andarem mais e usarem 7 viagens ou menos, os simples empatam ou ganham (7 × €3 × 5 = €105). Os preços de 2027 devem subir um pouco: o Wiener Linien passou a reajustar todo ano.",
-      "recomendado": {"bilhete": "1 Fahrt WIEN digital (seg) + 2 × 24 Stunden WIEN digital (início ter e qua de manhã)", "quantos": "5 simples + 10 de 24 h", "total_5_eur": 112.00},
-      "linhas": [
-        {"linha": "U1 (vermelha): Hauptbahnhof – Taubstummengasse – Karlsplatz – Stephansplatz – Schwedenplatz – Praterstern", "para que serve no roteiro": "Chegada e saída pela Hbf, centro (Stephansplatz), Ópera (Karlsplatz) e Prater (Praterstern)"},
-        {"linha": "U4 (verde): Schwedenplatz – Karlsplatz – Kettenbrückengasse – Schönbrunn – Hietzing", "para que serve no roteiro": "Schönbrunn (estação Schönbrunn ou Hietzing) e Naschmarkt (Kettenbrückengasse ou Karlsplatz)"},
-        {"linha": "U2 (roxa): Karlsplatz – Museumsquartier – Volkstheater – Rathaus – Schottentor – Praterstern", "para que serve no roteiro": "Rathaus/Parlamento e MuseumsQuartier"},
-        {"linha": "U3 (laranja): Westbahnhof – Volkstheater – Stephansplatz – Landstraße", "para que serve no roteiro": "Ligação rápida ao centro se o hotel ficar na Mariahilfer Straße"},
-        {"linha": "Bonde D: Hauptbahnhof Ost – Schloss Belvedere – Schwarzenbergplatz – Oper – Parlament – Schottentor", "para que serve no roteiro": "Belvedere de Hbf (ou ~10 min a pé) e passeio pelo Ring"},
-        {"linha": "Bondes 1, 2 e 71 no Ring", "para que serve no roteiro": "Dar a volta no Ring vendo Ópera, Hofburg, Parlamento, Rathaus, Burgtheater"}
-      ],
-      "aeroporto": "Não se aplica (chegam e saem de trem pela Hauptbahnhof). O aeroporto fica FORA da zona central: nenhum dos passes de Viena cobre o trecho até Schwechat.",
-      "localizar": [
-        "O Ring (avenida circular onde antes ficava a muralha) contorna o 1º distrito, a Innere Stadt. A catedral de Santo Estêvão (Stephansplatz) é o centro, e a Kärntner Straße liga a catedral à Ópera, ao sul.",
-        "A Hauptbahnhof fica ao sul do centro, a 3 estações da Stephansplatz pela U1. O Belvedere fica logo ao norte da Hbf, entre ela e o Ring.",
-        "Schönbrunn fica a sudoeste, a ~15 min de U4. O Naschmarkt é uma faixa comprida entre as duas Wienzeile, saindo da Karlsplatz para sudoeste.",
-        "O Rathaus, o Parlamento e o Burgtheater ficam no lado oeste do Ring. O Canal do Danúbio fica no nordeste do centro; atravessando, no 2º distrito, estão o Prater e a roda-gigante (U1/U2 Praterstern).",
-        "No U-Bahn, guie-se pela cor da linha e pela estação final ('Richtung ...'). As saídas têm placas com nome de rua e ponto turístico."
-      ],
-      "cuidados": [
-        "Não há catraca, mas a fiscalização é frequente e à paisana. Papel comprado em tabacaria TEM que ser carimbado na maquininha azul antes de embarcar; o digital já sai válido. Multa em 2026: €135 se pagar na hora (€145 por boleto).",
-        "Digital: confira no app se o ticket está em nome de quem viaja (as passagens por tempo são pessoais); se o app não deixar comprar para os outros, cada um compra o seu ou usa a máquina (papel).",
-        "Fique à direita nas escadas rolantes, deixe sair antes de entrar e não coma no U-Bahn (é proibido comer comida quente/com cheiro)."
-      ],
-      "fontes": [
-        "https://www.behindertenrat.at/wp-content/uploads/2025/09/WL_2025_Factsheet_A4_3seitig_Tarifanpassungen_web.pdf",
-        "https://www.wienerlinien.at/web/wl-en/news/new-fare-structure-from-1-january-2026",
-        "https://www.wienerlinien.at/tickets",
-        "https://www.wienerlinien.at/7-tage-wien",
-        "https://www.wienerlinien.at/24-stunden-wien",
-        "https://www.wienerlinien.at/tickets/viennacitycard",
-        "https://www.wien.info/resource/blob/1052080/2aa99cbe69e651d03f058a386db9357a/vcc-broschuere-2026-data.pdf",
-        "https://www.vienna.at/?p=9640706"
-      ]
+     "nome": "Abono Turístico zona T (toda a Comunidad de Madrid)",
+     "preco_eur": 15.4,
+     "vale": "1 dia €15,40; 2 dias €26,20; 3 dias €35,00; 4 dias €43,20; 5 dias €50,40; 7 dias €62,80. Não cobre Toledo (que fica em outra comunidade autônoma)",
+     "onde_comprar": "Idem"
     },
     {
-      "chave": "budapeste",
-      "resumo": "Comprar blocos de 10 bilhetes simples (4.500 Ft, 450 Ft por viagem; o grupo pode usar o mesmo bloco viajando junto) e, à parte, o bilhete do ônibus 100E (2.500 Ft por pessoa), que nenhum passe de 24 h/72 h cobre. O passe de 72 h e o Budapest Card saem bem mais caros.",
-      "bilhetes": [
-        {"nome": "Vonaljegy (bilhete simples)", "preco_eur": 1.37, "vale": "500 Ft (700 Ft se comprar a bordo, onde é aceito). 1 viagem sem baldeação, exceto metrô→metrô no mesmo sentido. Validar em cada veículo", "onde_comprar": "Máquinas roxas BKK (aceitam cartão), bilheterias, app BudapestGO; Pay&GO por aproximação nos validadores do metrô"},
-        {"nome": "Bloco de 10 bilhetes (10 db-os gyűjtőjegy)", "preco_eur": 12.33, "vale": "4.500 Ft = 10 viagens simples. Várias pessoas viajando juntas podem usar o mesmo bloco (um bilhete validado por pessoa)", "onde_comprar": "Máquinas e bilheterias BKK"},
-        {"nome": "Bilhete de 30 / 90 min", "preco_eur": 1.64, "vale": "30 min 600 Ft; 90 min 850 Ft, com baldeações", "onde_comprar": "BudapestGO, máquinas"},
-        {"nome": "Budapest 24 órás jegy", "preco_eur": 7.53, "vale": "2.750 Ft; 24 h ilimitado (exceto 100E e Sikló). O 24 h de grupo para 5 foi extinto em jan/2025", "onde_comprar": "Máquinas, BudapestGO"},
-        {"nome": "Budapest 72 órás jegy", "preco_eur": 15.75, "vale": "5.750 Ft; 72 h. Não existe mais semanal turístico (só passes de 15 dias e mensais)", "onde_comprar": "Idem"},
-        {"nome": "Repülőtéri vonaljegy (bilhete do 100E)", "preco_eur": 6.85, "vale": "2.500 Ft; 1 viagem no 100E. Passes de 24/72 h NÃO valem. O complemento de 1.000 Ft é só para quem tem passe MENSAL", "onde_comprar": "Máquinas na parada (Deák/aeroporto), BudapestGO"},
-        {"nome": "Budapest Card 24/48/72 h (desde 01/05/2026)", "preco_eur": 82.16, "vale": "24 h 17.990 Ft; 48 h 23.990 Ft; 72 h 29.990 Ft (€82); 72 h PLUS 39.990 Ft (€110, inclui o 100E na ida e na volta). Transporte + museus/descontos", "onde_comprar": "budapestinfo.hu, postos de turismo"}
-      ],
-      "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.000 Ft (≈ €49) + 100E 5 × 2.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft.",
-      "recomendado": {"bilhete": "Bloco de 10 bilhetes simples (compartilhado) + bilhete do 100E por pessoa", "quantos": "4 blocos de 10 + 5 bilhetes 100E", "total_5_eur": 84.00},
-      "linhas": [
-        {"linha": "M2 (vermelha): Déli – Batthyány tér – Kossuth Lajos tér – Deák Ferenc tér – Astoria – Keleti", "para que serve no roteiro": "Chegada em Keleti, Parlamento (Kossuth Lajos tér), bairro judeu/Dohány (Astoria)"},
-        {"linha": "M4 (verde): Keleti – Rákóczi tér – Kálvin tér – Fővám tér – Szent Gellért tér", "para que serve no roteiro": "Keleti → centro, Mercado Central (Fővám tér)"},
-        {"linha": "M1 (amarela, metrô de 1896 sob a Andrássy út): Vörösmarty tér – Deák – Opera – Oktogon – Hősök tere – Széchenyi fürdő", "para que serve no roteiro": "Banhos Széchenyi (Széchenyi fürdő) e Praça dos Heróis"},
-        {"linha": "M3 (azul): Deák – Ferenciek tere – Kálvin tér", "para que serve no roteiro": "Ligação Kálvin tér ↔ Deák"},
-        {"linha": "Ônibus 16: Deák Ferenc tér – Ponte das Correntes – Clark Ádám tér – Dísz tér (Castelo)", "para que serve no roteiro": "Subir ao Castelo de Buda com bilhete normal. O funicular Sikló (Clark Ádám tér) é cobrado à parte, ~4.000 Ft só a subida, e não entra nos passes"},
-        {"linha": "Bonde 2 (margem de Peste, ao longo do Danúbio)", "para que serve no roteiro": "Parlamento ↔ Vigadó tér (cruzeiros) ↔ Fővám tér, com vista do rio"},
-        {"linha": "Ônibus 100E: Deák Ferenc tér – Kálvin tér – Aeroporto T2", "para que serve no roteiro": "Sáb 6 para o voo de 11:10. Leva ~35–45 min; sair de Deák até ~08:15"}
-      ],
-      "aeroporto": "Saída sáb 6/mar, voo 11:10: ônibus 100E, 24 h por dia, de Deák Ferenc tér (passa por Kálvin tér) até o Terminal 2, ~35–45 min; pegar até ~08:15. Bilhete próprio de 2.500 Ft por pessoa (12.500 Ft ≈ €34 para 5), comprado na máquina da parada ou no app BudapestGO e validado ao embarcar. Passes de 24/72 h não valem no 100E, e o complemento de 1.000 Ft é só para passe mensal. Chegada em Keleti de trem (qui 10:35): M2 ou M4 até o centro.",
-      "localizar": [
-        "O Danúbio corre de norte a sul. A OESTE fica Buda (morros: Castelo, Bastião dos Pescadores, Gellért); a LESTE fica Peste (plana: Parlamento, Basílica, bairro judeu, Andrássy).",
-        "Deák Ferenc tér é o nó central (M1, M2 e M3 se cruzam ali, e é de onde sai o 100E). A Basílica de Santo Estêvão fica a 5 min ao norte; o bairro judeu (distrito VII, sinagoga Dohány na Astoria) fica a leste.",
-        "Pontes de referência: Ponte das Correntes (Lánchíd), em frente ao Castelo; Ponte da Liberdade (Szabadság, a verde), em frente ao Mercado Central e ao Gellért; Ponte Margarida, ao norte do Parlamento.",
-        "A Andrássy út sai de Deák/Basílica em direção nordeste até a Praça dos Heróis e o Városliget (parque), onde estão os banhos Széchenyi. A M1 corre por baixo dela.",
-        "Keleti fica no leste de Peste, a ~10 min de metrô do centro. O Parlamento fica na margem de Peste, ao norte do centro (M2 Kossuth tér ou bonde 2)."
-      ],
-      "cuidados": [
-        "Valide CADA bilhete em CADA veículo (perfuradora no bonde/ônibus; na entrada do metrô). Há fiscais nas entradas do metrô. Multa: 12.000 Ft na hora (≈ €33), 25.000 Ft se pagar depois, 50.000 Ft se atrasar.",
-        "Dinheiro: pague SEMPRE em forint. Recuse a 'conversão para real/euro' (DCC) no cartão e no caixa eletrônico e evite caixas Euronet. Nada de câmbio na rua.",
-        "Táxi só oficial (amarelo, com tarifa fixa por km) ou app (Bolt). Nos bares do bairro judeu e na Váci utca, desconfie de convites de estranhos para bares (golpe da conta altíssima)."
-      ],
-      "fontes": [
-        "https://bkk.hu/jegyek-es-berletek/arak/",
-        "https://bkk.hu/en/tickets-and-passes/prices/",
-        "https://bkk.hu/en/tickets-and-passes/prices/block-of-10-tickets/",
-        "https://bkk.hu/hirek/2025/09/oktobertol-a-berletesek-kedvezmenyesen-hasznalhatjak-a-100e-repuloteri-jaratot.15350/",
-        "https://bkk.hu/jegyek-es-berletek/arak/kiegeszito-repuloteri-vonaljegy/",
-        "https://bkk.hu/hirek/2025/05/ne-feledje-tobb-alkalmi-bkk-jegytipus-ara-is-valtozik-junius-1-tol.14374/",
-        "https://bkk.hu/en/tickets-and-passes/budapest-card/places-of-acceptance/city-transport/100e-airport-express-transfer.16521/",
-        "https://welovebudapest.com/en/article/2026/08/11/how-to-get-around-budapest-a-complete-guide-to-public-transport-in-2026/",
-        "https://longforecast.com/eur-huf"
-      ]
+     "nome": "Táxi tarifa fixa aeroporto–dentro da M-30",
+     "preco_eur": 33.0,
+     "vale": "Preço por carro (Tarifa 4, 2026). Carro comum leva 4 pessoas; para 5, pedir táxi de 7 lugares ou usar 2 carros",
+     "onde_comprar": "Fila de táxi do terminal"
     }
-  ]
+   ],
+   "conta": "O roteiro em Madri é quase todo a pé. Metrô só para trechos longos: umas 4 viagens por pessoa em cada estadia (por exemplo, a ida e a volta até Atocha para o trem de Toledo, ou voltar para casa no fim do dia). São ~8 por pessoa, ~40 para o grupo, ou seja, 4 bilhetes de 10 viagens. O bilhete de 10 viagens pode ser usado por várias pessoas viajando juntas: passem o mesmo cartão na catraca, uma vez por pessoa. Total: 4 × €7,30 + 1 cartão de €2,50 = €31,70. Se o desconto de 40% acabar em 31/12/2026, o bilhete volta a €12,20 e o total vai a €51,30. Se sobrarem viagens na primeira estadia, o cartão vale para a segunda. Não vale a pena o Abono Turístico (passe ilimitado por pessoa), nem pagar cada viagem por aproximação.",
+   "recomendado": {
+    "bilhete": "Billete 10 viajes (Metrobús) num cartão Multi para o grupo",
+    "quantos": "4 bilhetes de 10 viagens + 1 cartão",
+    "total_5_eur": 31.7
+   },
+   "linhas": [
+    {
+     "linha": "L1 (azul-claro): Sol – Atocha/Estación del Arte – Atocha Renfe",
+     "para que serve no roteiro": "Reina Sofía (Estación del Arte), Atocha (trem Avant para Toledo)"
+    },
+    {
+     "linha": "L2 (vermelha): Ópera – Sol – Sevilla – Banco de España – Retiro",
+     "para que serve no roteiro": "Cibeles (Banco de España), Retiro e Palacio Real (Ópera)"
+    },
+    {
+     "linha": "L3/L5: Callao, Gran Vía, Sol, Lavapiés/La Latina",
+     "para que serve no roteiro": "Gran Vía, El Corte Inglés Callao/Preciados e o Rastro (La Latina, L5). Para Toledo de ônibus, L6/L11 até Plaza Elíptica"
+    }
+   ],
+   "aeroporto": "Táxi ou Uber, como vocês já fazem: o táxi tem tarifa fixa de ~€33 por carro entre o aeroporto e o centro (dentro da M-30), e na saída dá para pedir um carro para os 5. O Uber pega no estacionamento (subam a rampa à direita antes de sair para a rua). São 4 trechos de aeroporto (18/02, 21/02, 06/03 e 08/03): ~€130 de táxi para o grupo, fora do metrô.",
+   "localizar": [
+    "Puerta del Sol é o 'km 0' e o centro de tudo. Gran Vía corre de leste a oeste logo ao norte de Sol, de Plaza de España (oeste) até Cibeles (leste).",
+    "Oeste do centro: Palacio Real, Catedral de la Almudena e, mais ao norte, Templo de Debod (ver o pôr do sol). Leste: Parque do Retiro, logo atrás do Prado.",
+    "Barrio de las Letras fica entre Sol e o Prado (descendo para sudeste). La Latina e Lavapiés ficam ao sul de Sol; o Rastro é só no domingo de manhã, na Ribera de Curtidores (La Latina).",
+    "La Elipa (onde ficaram em 2026) fica no leste, depois da M-30, a ~25 min de metrô (L2) do centro. Ficando central, quase tudo do roteiro de 19 e 20/fev é a pé.",
+    "Na saída do metrô, siga as placas 'Salida' com o nome da rua. Madri é plana no eixo Prado/Castellana, mas sobe bastante de Sol para o Palacio Real."
+   ],
+   "cuidados": [
+    "Batedores de carteira: Sol, Gran Vía, metrô L1/L2/L3 lotado, Rastro (o pior). Mochila na frente e celular fora do bolso de trás.",
+    "Com a aproximação, cada pessoa encosta o próprio cartão ou celular, um por vez. Prefira um cartão sem IOF alto (conta global) e sempre pague em euro."
+   ],
+   "fontes": [
+    "https://www.crtm.es/billetes-y-tarifas/billetes-y-abonos/abono-turistico/",
+    "https://crtm.es/media/s1qi0nmo/bocm-20251231-precios_transporte.pdf",
+    "https://crtm.es/comunicacion/sala-de-prensa/noticias/noticias/29122025-la-comunidad-de-madrid-mantiene-los-precios-del-transporte-publico/",
+    "https://crtm.es/billetes-transporte-publico-aeropuerto-madrid",
+    "https://www.metromadrid.es/es/viaja-en-metro/titulos-y-tarifas/tarifas",
+    "https://www.metromadrid.es/es/viaja-en-metro/reglamentos/normas-de-uso-de-tarjetas-bancarias-contactless-compatibles-emv",
+    "https://www.comunidad.madrid/node/114673",
+    "https://www.redtransporte.com/madrid/precios-abonos.html",
+    "https://diario.madrid.es/blog/notas-de-prensa/madrid-actualiza-las-tarifas-para-el-taxi-con-una-subida-de-236-para-2026/"
+   ]
+  },
+  {
+   "chave": "roma",
+   "resumo": "Não comprar passe. Cada um paga viagem a viagem: tap&go com o próprio cartão por aproximação ou BIT de €1,50 (100 min). O próprio tap&go limita a cobrança do dia ao preço do Roma 24h. Do aeroporto, o trem regional FL1 + metrô sai mais barato que o Leonardo Express; para 5 pessoas com malas, o táxi de tarifa fixa pode empatar.",
+   "bilhetes": [
+    {
+     "nome": "BIT – Biglietto Integrato a Tempo",
+     "preco_eur": 1.5,
+     "vale": "100 min em ônibus/bonde à vontade + 1 entrada no metrô (baldeação A↔B↔C dentro do metrô sem sair conta como a mesma entrada). O aumento para €2,00 foi discutido várias vezes mas não foi aplicado até set/2026",
+     "onde_comprar": "Máquinas do metrô, tabacarias (T), app; ou tap&go"
+    },
+    {
+     "nome": "tap&go (cartão de banco/celular por aproximação)",
+     "preco_eur": 1.5,
+     "vale": "Encoste na catraca do metrô ou no validador do ônibus/bonde; cada toque = 1 BIT. Teto diário automático: a partir da ~5ª–6ª viagem no mesmo dia cobra no máximo o Roma 24h (€8,50). Use sempre o MESMO cartão; 1 cartão por pessoa",
+     "onde_comprar": "Direto no validador"
+    },
+    {
+     "nome": "Roma 24h",
+     "preco_eur": 8.5,
+     "vale": "24 h a partir da 1ª validação (preço desde 01/07/2025)",
+     "onde_comprar": "Máquinas, tabacarias, app"
+    },
+    {
+     "nome": "Roma 48h",
+     "preco_eur": 15.0,
+     "vale": "48 h",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "Roma 72h",
+     "preco_eur": 22.0,
+     "vale": "72 h",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "CIS – Carta Integrata Settimanale",
+     "preco_eur": 29.0,
+     "vale": "7 dias a partir da validação",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "Leonardo Express (Trenitalia) FCO ↔ Termini",
+     "preco_eur": 14.0,
+     "vale": "Direto, 32 min, a cada 15 min (~05:38–23:27). Não entra no BIT nem nos passes",
+     "onde_comprar": "Máquinas/bilheteria no aeroporto, app Trenitalia"
+    },
+    {
+     "nome": "Trem regional FL1 FCO → Trastevere/Ostiense/Tiburtina",
+     "preco_eur": 8.0,
+     "vale": "NÃO vai a Termini. Aos domingos passa a cada ~30 min. Para chegar a Termini: Ostiense (metrô B Piramide) ou Tiburtina + metrô B (+1 BIT)",
+     "onde_comprar": "Máquinas no aeroporto, app Trenitalia"
+    },
+    {
+     "nome": "Táxi tarifa fixa FCO ↔ centro (dentro da Muralha Aureliana)",
+     "preco_eur": 55.0,
+     "vale": "Preço por corrida, não por pessoa (deliberação de jul/2024). Para 5 é preciso van; confirmar o preço na fila oficial antes de entrar",
+     "onde_comprar": "Fila oficial de táxi branco no desembarque"
+    },
+    {
+     "nome": "Roma Pass 48h / 72h",
+     "preco_eur": 36.5,
+     "vale": "Transporte ATAC ilimitado + 1 (48h) ou 2 (72h) entradas grátis e descontos nas seguintes. Não cobre o Vaticano nem o trem do aeroporto. Preço oficial 2026 não confirmado: as fontes dão 48h €33–38 e 72h €52–63",
+     "onde_comprar": "romapass.it, pontos de informação turística"
+    }
+   ],
+   "conta": "Viagens por pessoa (hospedagem perto de Termini): seg Coliseu, metrô B ida e volta = 2 (ou a pé, ~25 min); ter Vaticano, metrô A Termini↔Ottaviano = 2, e San Lorenzo à noite fica a pé de Termini (+0–1); qua audiência (metrô A) + Testaccio (metrô até Piramide) + Trastevere (bonde 8) + volta = ~4; qui Borghese (metrô A Spagna/Flaminio) e volta de Campo de' Fiori de ônibus 40/64 = 2; sex até Termini a pé ou 1. Total ≈ 11–12 BIT, €16,50–18 por pessoa. Em nenhum dia passam do teto de €8,50, então o tap&go nunca fica mais caro. RECOMENDADO, avulso/tap&go: 12 × €1,50 × 5 = €90. Alternativas: Roma 72h (€22) + ~3 BIT nos outros dias = €26,50 por pessoa, €132,50; CIS €29 × 5 = €145; quatro Roma 24h = €34 por pessoa, €170. Roma Pass 72h (~€58,50): grátis Coliseu (€18) + Borghese (€18) + ~€15 de transporte = ~€51 de valor, menos do que custa. Roma Pass 48h (~€36,50): 1 entrada (€18) + ~€9 de transporte = €27. Não vale para eles. Aeroporto (dom 21): Leonardo 5 × €14 = €70; FL1 + BIT 5 × €9,50 = €47,50 (mais lento, com baldeação); táxi fixo €55 por carro, mas para 5 pessoas precisa de van ou 2 carros (€110). Total do grupo na opção recomendada: €90 na cidade + €47,50 (FL1) = €137,50, ou €160 com o Leonardo.",
+   "recomendado": {
+    "bilhete": "BIT €1,50 avulso, de preferência por tap&go (1 cartão por pessoa)",
+    "quantos": "~12 por pessoa (60 no grupo)",
+    "total_5_eur": 90.0
+   },
+   "linhas": [
+    {
+     "linha": "Metrô A (laranja): Termini – Repubblica – Barberini – Spagna – Flaminio (Popolo) – Lepanto – Ottaviano – Cipro",
+     "para que serve no roteiro": "Vaticano/Prati (Ottaviano para a Praça São Pedro; Cipro para os Museus Vaticanos), Piazza di Spagna, Piazza del Popolo (Flaminio) e Borghese (Spagna/Flaminio + caminhada pelo parque)"
+    },
+    {
+     "linha": "Metrô B (azul): Termini – Cavour – Colosseo – Circo Massimo – Piramide",
+     "para que serve no roteiro": "Coliseu/Fórum (seg) e Testaccio (Piramide, qua)"
+    },
+    {
+     "linha": "Metrô C (verde): estação Colosseo/Fori Imperiali (aberta em 16/12/2025, baldeação com a B)",
+     "para que serve no roteiro": "Pouco útil para eles, exceto se ficarem para os lados de San Giovanni"
+    },
+    {
+     "linha": "Bonde 8: Largo di Torre Argentina – Trastevere (Viale Trastevere)",
+     "para que serve no roteiro": "Ida e volta do Trastevere (qua) e ligação Campo de' Fiori/Argentina"
+    },
+    {
+     "linha": "Ônibus 40 (expresso) e 64: Termini – Piazza Venezia – Argentina – Corso Vittorio – perto do Vaticano",
+     "para que serve no roteiro": "Volta de Campo de' Fiori/Navona para Termini (qui) e alternativa ao metrô para o Vaticano. Atenção: o 64 é famoso por batedores de carteira"
+    },
+    {
+     "linha": "Bonde 19 / ônibus 71 / a pé",
+     "para que serve no roteiro": "San Lorenzo (jantar de ter), a 10–15 min a pé do lado leste de Termini"
+    }
+   ],
+   "aeroporto": "FCO (chegada dom 21 ~11:10): (1) Leonardo Express, €14, 32 min, direto a Termini, mais simples com malas; (2) FL1, €8, não para em Termini: descer em Ostiense (metrô B Piramide → Termini) ou Tiburtina (metrô B) + BIT €1,50, e aos domingos passa só a cada ~30 min; (3) táxi oficial branco, €55 fixos por carro até dentro da Muralha Aureliana, mas 5 pessoas = van (confirmar se a tarifa fixa vale para van) ou 2 carros. Partida sex 26 de trem saindo de Termini: a pé ou 1 BIT. O ATAC anunciou o fim dos bilhetes de papel com tarja magnética a partir de 2027 (troca por tap&go ou pelo cartão com chip '+Roma in tasca'), então em fev/2027 o tap&go deve ser o caminho natural.",
+   "localizar": [
+    "Termini fica no leste do centro histórico. A Via Nazionale desce dali até a Piazza Venezia (o 'bolo de noiva' branco do Vittoriano), que é o grande nó de ônibus. Da Piazza Venezia, a Via del Corso sobe reta para o norte até a Piazza del Popolo.",
+    "O Coliseu fica ao sul de Termini e a sudeste da Piazza Venezia, ligado a ela pela Via dei Fori Imperiali. O Circo Massimo e Testaccio (Piramide) ficam mais ao sul.",
+    "O rio Tibre faz uma curva a oeste. Na margem oeste ficam o Vaticano/Prati (noroeste) e o Trastevere (sudoeste). Na 'barriga' da curva, do lado de cá, ficam Navona, Panteão e Campo de' Fiori, tudo a pé um do outro.",
+    "Borghese é o grande parque no norte, logo acima da Piazza di Spagna (subindo a escadaria) e da Piazza del Popolo.",
+    "O metrô quase não passa pelo centro histórico (Navona, Panteão, Trevi, Campo de' Fiori). Ali é a pé ou de ônibus/bonde.",
+    "San Lorenzo é o bairro universitário colado ao lado leste de Termini, depois da linha do trem."
+   ],
+   "cuidados": [
+    "Batedores de carteira: Termini (dentro e em volta), ônibus 64 e 40, metrô A entre Termini e Ottaviano/Spagna, Fontana di Trevi e Coliseu. Mochila na frente e zíper fechado; desconfie de 'ajudantes' na máquina de bilhete.",
+    "Validar SEMPRE: papel na máquina amarela ao subir no ônibus/bonde, tap&go encostando o mesmo cartão em cada embarque. Multa: €50 + bilhete se pagar em até 5 dias; €115 + bilhete depois disso (o valor previsto em lei vai até €500).",
+    "Greves (sciopero) costumam cair em sexta-feira. Na véspera, olhe o app/site do ATAC e da Trenitalia, principalmente na sex 26 (trem para Verona)."
+   ],
+   "fontes": [
+    "https://www.atac.roma.it/biglietti-e-abbonamenti/biglietti",
+    "https://www.turismoroma.it/it/node/159622",
+    "https://www.turismoroma.it/it/node/40264",
+    "https://quifinanza.it/attualita/roma-biglietti-atac-bus-tram-metro/1012935/",
+    "https://www.ilpost.it/2025/12/16/metro-c-aperte-fermate-colosseo-fori-imperiali-metronia/",
+    "https://www.adr.it/pax-fco-taxi",
+    "https://www.sicurauto.it/news/attualita-e-curiosita/taxi-roma-per-fiumicino-e-ciampino-quanto-costa/",
+    "https://bluekeys.it/blog/fiumicino-rome-transfer-leonardo-express-train",
+    "https://www.romapass.it/",
+    "https://www.artvisitguide.com/roma-pass-worth-it-2026/"
+   ]
+  },
+  {
+   "chave": "verona",
+   "resumo": "Ir a pé. Porta Nuova → Arena são ~1,5 km (15–20 min) em linha reta pelo Corso Porta Nuova. Só vale pegar ônibus com as malas, com o bilhete urbano de 90 min (€1,50 comprado antes, €2,00 a bordo).",
+   "bilhetes": [
+    {
+     "nome": "Biglietto urbano 90 minuti (ATV)",
+     "preco_eur": 1.5,
+     "vale": "90 min na rede urbana com baldeações; €2,00 se comprar a bordo; pessoal; validar a cada embarque",
+     "onde_comprar": "Tabacarias/bancas, máquinas, bilheteria ATV em Porta Nuova, app ATV"
+    },
+    {
+     "nome": "Carnet 10 viagens",
+     "preco_eur": 13.5,
+     "vale": "10 × 90 min; NÃO pode ser usado por várias pessoas ao mesmo tempo",
+     "onde_comprar": "Bilheteria/app ATV"
+    },
+    {
+     "nome": "Biglietto giornaliero urbano",
+     "preco_eur": 5.0,
+     "vale": "24 h a partir da validação (1 adulto + 1 menor de 14)",
+     "onde_comprar": "Bilheteria/app ATV, revendedores"
+    },
+    {
+     "nome": "Biglietto gruppo",
+     "preco_eur": 8.0,
+     "vale": "4 pessoas, ida e volta (máx. 90 min cada sentido); só no app e na bilheteria",
+     "onde_comprar": "App ATV / bilheteria"
+    },
+    {
+     "nome": "VeronaCard 24h / 48h",
+     "preco_eur": 27.0,
+     "vale": "Entradas grátis (Arena, Casa di Giulietta, Torre dei Lamberti, Castelvecchio, San Zeno etc.) + ônibus urbanos ATV durante a validade. Preço 2026 não confirmado em fonte oficial (há valores entre €20 e €32)",
+     "onde_comprar": "Pontos de informação turística, museus, site oficial"
+    }
+   ],
+   "conta": "Viagens: sex 26 chegada (estação→hotel), sáb 27 hotel→estação e volta (bate-volta a Veneza), dom 28 hotel→estação 09:01. A pé = €0. RECOMENDADO: ônibus só nos 2 trechos com mala (chegada e saída): 2 × €1,50 × 5 = €15. Se também quiserem ônibus no sábado de manhã e à noite: 4 × €1,50 × 5 = €30. O passe diário (€5/pessoa/dia, €25 por dia para o grupo) não compensa. O ingresso de grupo (€8 para 4 pessoas ida e volta) só ajuda se o 'ida e volta' for no mesmo dia, o que não é o caso das malas. VeronaCard: só se forem entrar em 3 ou mais atrações pagas na sex à tarde; o ônibus incluído é irrelevante para eles.",
+   "recomendado": {
+    "bilhete": "Ir a pé; bilhete urbano 90 min só nos trechos com mala",
+    "quantos": "10 (2 por pessoa)",
+    "total_5_eur": 15.0
+   },
+   "linhas": [
+    {
+     "linha": "Ônibus 11, 12, 13 (dias úteis/sábado) e 51; aos domingos/feriados as linhas mudam (série 90)",
+     "para que serve no roteiro": "Porta Nuova ↔ Piazza Bra (Arena)/Corso Porta Nuova. No dom 28 cedo, confira o horário festivo no app ATV ou Moovit, ou vá a pé"
+    },
+    {
+     "linha": "Trem Verona Porta Nuova ↔ Venezia Santa Lucia",
+     "para que serve no roteiro": "Bate-volta de sáb 27 (regional ~1h25–2h10; Frecciarossa/Italo ~1h10). Bilhete à parte, Trenitalia/Italo"
+    }
+   ],
+   "aeroporto": "Não se aplica (chegam e saem de trem por Porta Nuova).",
+   "localizar": [
+    "A estação Porta Nuova fica a sudoeste do centro. É só sair e seguir reto para nordeste pelo Corso Porta Nuova, passar pelos Portoni della Bra e chegar à Piazza Bra, onde está a Arena.",
+    "Da Piazza Bra, a Via Mazzini (rua de compras, só pedestres) leva à Piazza delle Erbe e à Piazza dei Signori. A Casa di Giulietta fica na Via Cappello, a 2 min da Erbe.",
+    "O rio Adige abraça o centro histórico numa curva em forma de 'S'. O Castelvecchio e a ponte Scaligera ficam a oeste; a Ponte Pietra, o Teatro Romano e o mirante de Castel San Pietro ficam do outro lado do rio, a nordeste.",
+    "O centro inteiro cabe em 20–25 min a pé de ponta a ponta. A Torre dei Lamberti (na Piazza delle Erbe) é a melhor referência visual."
+   ],
+   "cuidados": [
+    "Ônibus: valide o bilhete na máquina a bordo assim que subir; o fiscal multa quem não validou, mesmo tendo o bilhete na mão.",
+    "Na Piazza delle Erbe e na Casa di Giulietta (pátio lotado), atenção a bolsas e celulares.",
+    "Para o bate-volta a Veneza: bilhete regional de papel tem que ser validado antes de embarcar (máquinas verdes/brancas na plataforma); o digital, com horário marcado, não precisa."
+   ],
+   "fontes": [
+    "https://www.atv.verona.it/biglietti-abbonamenti/urbano-verona",
+    "https://www.atv.verona.it/Biglietti_e_abbonamenti_autobus",
+    "https://www.veronacard.it/"
+   ]
+  },
+  {
+   "chave": "veneza",
+   "resumo": "No bate-volta, andar a pé e pegar no máximo um vaporetto de 75 min (€9,50) pelo Grande Canal. O passe de 24 h (€25) só compensa com 3 ou mais trajetos (por exemplo, Murano/Burano).",
+   "bilhetes": [
+    {
+     "nome": "ACTV Biglietto ordinario 75'",
+     "preco_eur": 9.5,
+     "vale": "75 min em toda a rede urbana (vaporetto, ônibus do Lido/Mestre, bonde, People Mover); validar antes de cada embarque",
+     "onde_comprar": "Máquinas e bilheterias nas paradas (Ferrovia, Piazzale Roma, Rialto, San Marco), app/site Venezia Unica; aceita cartão por aproximação no validador"
+    },
+    {
+     "nome": "ACTV 24 ore",
+     "preco_eur": 25.0,
+     "vale": "24 h a partir da 1ª validação",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "ACTV 48 / 72 ore / 7 giorni",
+     "preco_eur": 35.0,
+     "vale": "48 h €35; 72 h €45; 7 dias €65",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "Traghetto (gôndola de travessia do Grande Canal)",
+     "preco_eur": 2.0,
+     "vale": "1 travessia curta (preço aproximado para turista; pagar em dinheiro ao gondoleiro)",
+     "onde_comprar": "Na hora"
+    },
+    {
+     "nome": "Contributo di accesso (taxa de entrada para quem vai e volta no dia)",
+     "preco_eur": 0.0,
+     "vale": "Em 2026 valeu só em 60 dias, de abril a julho (fins de semana/feriados, 8:30–16:30), a €5 (com 4+ dias de antecedência) ou €10. Sáb 27/02/2027 provavelmente não terá cobrança, mas o calendário de 2027 ainda não saiu; conferir em cda.veneziaunica.it",
+     "onde_comprar": "cda.veneziaunica.it"
+    }
+   ],
+   "conta": "Roteiro típico do dia: Santa Lucia → Rialto → San Marco a pé (~45–50 min sem parar, seguindo as placas amarelas) e volta de vaporetto pelo Grande Canal (linha 1, ~45 min, ou linha 2, mais rápida) até Ferrovia. Também dá para fazer o contrário: ir de barco e voltar a pé. RECOMENDADO: 1 bilhete de 75 min por pessoa = 5 × €9,50 = €47,50. Alternativas: 2 trajetos de 75 min = €19 por pessoa (€95), ainda abaixo do 24 h; 24 h = 5 × €25 = €125, que só compensa com 3 ou mais trajetos (ida e volta de Murano/Burano + Grande Canal). Só a pé + 1 traghetto: €2 × 5 = €10.",
+   "recomendado": {
+    "bilhete": "ACTV 75 minutos (uma vez, pelo Grande Canal)",
+    "quantos": "5",
+    "total_5_eur": 47.5
+   },
+   "linhas": [
+    {
+     "linha": "Vaporetto linha 1",
+     "para que serve no roteiro": "Lenta, para em todas as paradas do Grande Canal: Ferrovia – Rialto – Accademia – San Marco (Vallaresso/San Zaccaria). É o 'passeio' clássico"
+    },
+    {
+     "linha": "Vaporetto linha 2",
+     "para que serve no roteiro": "Mais rápida, menos paradas: Ferrovia – Rialto – Accademia – San Marco. Boa para voltar à estação com tempo apertado"
+    },
+    {
+     "linha": "Linhas 4.1/4.2 e 12",
+     "para que serve no roteiro": "Murano (4.1/4.2 a partir de Ferrovia/Fondamente Nove) e Burano (12 a partir de Fondamente Nove). Só se trocarem o roteiro para as ilhas; aí o 24 h compensa"
+    }
+   ],
+   "aeroporto": "Não se aplica (bate-volta de trem a partir de Verona; desembarcam em Venezia Santa Lucia, NÃO em Venezia Mestre).",
+   "localizar": [
+    "A estação Santa Lucia fica no noroeste da ilha, de frente para o Grande Canal. A Piazzale Roma (ônibus) fica ao lado, do outro lado da Ponte della Costituzione.",
+    "O Grande Canal corta a cidade em forma de 'S' invertido. A Ponte di Rialto fica no meio do caminho e a Praça San Marco no sudeste, perto de onde o canal deságua na laguna.",
+    "Siga as placas amarelas pintadas nos muros: 'Per Rialto', 'Per S. Marco', 'Alla Ferrovia' (para a estação). O GPS se perde nas vielas, mas as placas não.",
+    "Do lado oposto ao de San Marco, atravessando a Ponte dell'Accademia, ficam Dorsoduro e a Accademia. A Strada Nova (Cannaregio) é o caminho mais reto da estação até Rialto."
+   ],
+   "cuidados": [
+    "Valide o bilhete (encoste no leitor) ANTES de entrar no pontão do vaporetto; fiscal a bordo multa quem não validou.",
+    "Não sente nem faça piquenique em degraus, pontes e na Praça San Marco: dá multa municipal. Não coma andando em San Marco.",
+    "Rialto e San Marco lotados: cuidado com batedores de carteira. Café sentado em San Marco custa caro (cobram couvert e música); tome em pé no balcão."
+   ],
+   "fontes": [
+    "https://actv.avmspa.it/en/content/prezzi-vigore",
+    "https://actv.avmspa.it/it/content/urbano-venezia-0",
+    "https://www.veneziaunica.it/en/buy-tickets/public-trasport-in-venice/actv-ticket-75",
+    "https://actv.avmspa.it/it/content/pagamenti-europay-mastercard-e-visa",
+    "https://cda.veneziaunica.it/",
+    "https://tg24.sky.it/economia/2026/04/04/nuovo-contributo-accesso-venezia-come-funziona"
+   ]
+  },
+  {
+   "chave": "innsbruck",
+   "resumo": "Não precisam de bilhete IVB: Hbf → Altstadt → estação Congress (Hungerburgbahn) é tudo a pé, 10–15 min. O gasto real é o teleférico da Nordkette. Com 1 noite só, não ganham a Welcome Card (precisa de 2+ noites).",
+   "bilhetes": [
+    {
+     "nome": "IVB Einzelticket (zona central de Innsbruck)",
+     "preco_eur": 3.3,
+     "vale": "90 min comprado antes (máquina/app); comprado a bordo vale 45 min",
+     "onde_comprar": "Máquinas nas paradas, app IVB/VVT, a bordo"
+    },
+    {
+     "nome": "IVB 24h-Ticket Innsbruck",
+     "preco_eur": 7.3,
+     "vale": "24 h em todas as linhas da cidade",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "IVB 24h 2Plus",
+     "preco_eur": 10.8,
+     "vale": "24 h para 2 adultos + até 3 crianças (não serve para 5 adultos)",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "IVB 8 viagens / semanal",
+     "preco_eur": 19.1,
+     "vale": "8 viagens €19,10; semanal €28,40",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "Innsbruck Card 24h",
+     "preco_eur": 59.0,
+     "vale": "Transporte IVB + ônibus Sightseer + 1 ida e volta na Nordkette (Congress → Hafelekar) + 20+ museus (Hofburg, Goldenes Dachl, Bergisel, Alpenzoo, Ambras). Conta 24 h a partir do 1º uso. Preço 2026 não confirmado no site oficial (fontes dão €55–59)",
+     "onde_comprar": "Posto de turismo (inclusive na Hbf), hotéis, innsbruck.info"
+    },
+    {
+     "nome": "Nordkettenbahnen Congress ↔ Hafelekar ida e volta (Hungerburgbahn + Seegrube + Hafelekar)",
+     "preco_eur": 44.0,
+     "vale": "Ida e volta no dia, pode descer em Hungerburg/Seegrube e seguir. NÃO é IVB. Preço aproximado de 2026 (fonte não oficial; até Seegrube ~€38)",
+     "onde_comprar": "Bilheteria da estação Congress, nordkette.com"
+    },
+    {
+     "nome": "Welcome Card (de graça para hóspedes)",
+     "preco_eur": 0.0,
+     "vale": "Transporte grátis na cidade e região, MAS só para quem fica 2 noites ou mais em hospedagem parceira. Com 1 noite não vale",
+     "onde_comprar": "Na hospedagem"
+    }
+   ],
+   "conta": "Transporte: Hbf → hotel a pé (~1 km), Altstadt a pé, Congress a ~5 min do Goldenes Dachl, volta à Hbf a pé = €0. Se precisarem de 1 ônibus/bonde com mala: €3,30 × 5 = €16,50 (o 24 h de €7,30 só compensa com 3 ou mais viagens). A conta que importa é a da Nordkette: bilhete avulso ~€44 × 5 = ~€220, contra Innsbruck Card 24h ~€59 × 5 = ~€295. A Card só compensa se, além da Nordkette, entrarem em pelo menos 2 museus pagos (ex.: Hofburg + Goldenes Dachl/Bergisel, ~€10–12 cada) no dom 28 à tarde. Ativando no domingo por volta das 13:00, ela vale até seg ~13:00, o que cobre a Nordkette de manhã, com o trem às 13:58. RECOMENDADO para transporte: nenhum bilhete (€0).",
+   "recomendado": {
+    "bilhete": "Nenhum (a pé). Nordkette com bilhete próprio ou Innsbruck Card 24h se forem a 2+ museus no domingo",
+    "quantos": "0",
+    "total_5_eur": 0.0
+   },
+   "linhas": [
+    {
+     "linha": "Hungerburgbahn (funicular, estação Congress, desenho de Zaha Hadid) → Hungerburg → Seegrubenbahn → Hafelekarbahn",
+     "para que serve no roteiro": "Nordkette na seg 1/mar de manhã. No inverno, Hungerburgbahn seg–sex a partir das 07:15; Seegrube a partir das 08:30; Hafelekar a partir das 09:00. Subindo ~08:30, voltam ao centro até ~12:30"
+    },
+    {
+     "linha": "Bonde/ônibus IVB (ex.: bonde 1 ou 3 até Hbf; Sightseer)",
+     "para que serve no roteiro": "Só se quiserem poupar a caminhada com mala Hbf ↔ hotel"
+    }
+   ],
+   "aeroporto": "Não se aplica (chegam dom 28 às 12:32 e saem seg 1/mar ~13:58 pela Hauptbahnhof).",
+   "localizar": [
+    "A Hauptbahnhof fica a sudeste da Altstadt. Saindo pela frente (Südtiroler Platz), siga pela Salurner Straße até a Maria-Theresien-Straße (com a Annasäule, a coluna no meio) e vire à direita (norte): ela termina na Altstadt e no Goldenes Dachl. São 10–12 min.",
+    "Bússola natural: a parede de montanhas da Nordkette está sempre ao NORTE, atrás do rio Inn. O Bergisel (trampolim de esqui) fica ao sul.",
+    "A estação Congress da Hungerburgbahn fica na borda leste da Altstadt, ao lado da Hofburg e do Congress Innsbruck, a ~5 min a pé do Goldenes Dachl.",
+    "O rio Inn passa logo ao norte da Altstadt. A ponte (Innbrücke) leva às casas coloridas de Mariahilf, o cartão-postal com as montanhas atrás."
+   ],
+   "cuidados": [
+    "Em cima (Hafelekar, 2.256 m) faz -10 °C ou menos no inverno, com vento: luvas, gorro e calçado com sola boa. Às vezes o Hafelekar fecha por vento ou avalanche: ver o status ao vivo em nordkette.com antes de comprar.",
+    "No ônibus/bonde, comprar e validar antes; bilhete comprado a bordo vale só 45 min.",
+    "Como o trem sai às 13:58, deixem as malas guardadas no hotel ou nos armários da Hbf e voltem da montanha até ~12:30."
+   ],
+   "fontes": [
+    "https://www.ivb.at/en/passenger/tickets/overview-of-tickets/",
+    "https://www.ivb.at/fahrgast/tickets/uebersicht-tickets/",
+    "https://www.innsbruck.info/en/sightseeing/innsbruck-card.html",
+    "https://www.innsbruck.info/en/destinations/accommodation/welcome-card.html",
+    "https://nordkette.com/en/lifts-slopes",
+    "https://nomadepicureans.com/europe/is-the-innsbruck-card-worth-it-in-2026/"
+   ]
+  },
+  {
+   "chave": "viena",
+   "resumo": "A 'Wochenkarte' de segunda a segunda não existe mais. Desde 2026 é o '7 Tage WIEN', com início livre, a €25,20 no digital. Mesmo assim, para eles sai mais barato: 1 bilhete simples na seg à noite + dois '24 Stunden WIEN' digitais (€9,70 cada), começando ter e qua de manhã. Dá €22,40 por pessoa. Os passes de 48 h e 72 h acabaram em 01/01/2026.",
+   "bilhetes": [
+    {
+     "nome": "1 Fahrt WIEN (bilhete simples)",
+     "preco_eur": 3.0,
+     "vale": "1 viagem em um sentido, com baldeações e sem interrupção. €3,00 digital (app WienMobil); €3,20 na máquina/papel",
+     "onde_comprar": "App WienMobil, máquinas do U-Bahn, tabacarias (Trafik)"
+    },
+    {
+     "nome": "24 Stunden WIEN",
+     "preco_eur": 9.7,
+     "vale": "24 h a partir do início escolhido. €9,70 digital; €10,20 em papel",
+     "onde_comprar": "App WienMobil, máquinas"
+    },
+    {
+     "nome": "7 Tage WIEN (substituiu a Wochenkarte)",
+     "preco_eur": 25.2,
+     "vale": "7 dias a partir do dia de início escolhido, até 00:59 do 8º dia; NÃO é mais 'seg 00h → seg 09h'. €25,20 digital; €28,90 em papel (validar)",
+     "onde_comprar": "App WienMobil, máquinas"
+    },
+    {
+     "nome": "48 h / 72 h WIEN",
+     "preco_eur": 0.0,
+     "vale": "EXTINTOS em 01/01/2026 (junto com as Vienna City Card de 48/72 h)",
+     "onde_comprar": "—"
+    },
+    {
+     "nome": "Vienna City Card 24h / 7 dias",
+     "preco_eur": 19.0,
+     "vale": "24 h de transporte + descontos em museus. 24 h €19; 7 dias €39; 'só descontos' 7 dias €9",
+     "onde_comprar": "Postos de turismo, máquinas, viennacitycard.at"
+    }
+   ],
+   "conta": "Viagens por pessoa: seg 1/mar 18:32 Hbf → hotel = 1; ter Schönbrunn (U4 ida e volta) + Naschmarkt (U4 Kettenbrückengasse) + Ópera (Karlsplatz) = ~3; qua Belvedere (bonde D ou a pé de Hbf) + Innere Stadt e Rathaus (a pé) + Prater (U1 Praterstern) + volta = ~3; qui 1 viagem cedo até a Hbf (trem 07:40) = 1. Total ≈ 8. Opções por pessoa (digital): (a) 8 simples × €3 = €24; (b) RECOMENDADO: simples na seg (€3) + 24 h começando ter ~09:00 (vale até qua ~09:00) + 24 h começando na 1ª viagem de qua depois das 09:00 (vale até qui ~09:30, cobrindo a ida à Hbf às 07:00) = €3 + 2 × €9,70 = €22,40; (c) 7 Tage WIEN digital = €25,20 (cobre tudo de seg a qui sem pensar); (d) Vienna City Card 24h €19 × 2 + €3 = €41, só vale se forem usar muitos descontos. Para o grupo: (b) €112; (a) €120; (c) €126. Com bilhetes de papel: (b) €23,60 × 5 = €118; (c) €28,90 × 5 = €144,50. Se andarem mais e usarem 7 viagens ou menos, os simples empatam ou ganham (7 × €3 × 5 = €105). Os preços de 2027 devem subir um pouco: o Wiener Linien passou a reajustar todo ano.",
+   "recomendado": {
+    "bilhete": "1 Fahrt WIEN digital (seg) + 2 × 24 Stunden WIEN digital (início ter e qua de manhã)",
+    "quantos": "5 simples + 10 de 24 h",
+    "total_5_eur": 112.0
+   },
+   "linhas": [
+    {
+     "linha": "U1 (vermelha): Hauptbahnhof – Taubstummengasse – Karlsplatz – Stephansplatz – Schwedenplatz – Praterstern",
+     "para que serve no roteiro": "Chegada e saída pela Hbf, centro (Stephansplatz), Ópera (Karlsplatz) e Prater (Praterstern)"
+    },
+    {
+     "linha": "U4 (verde): Schwedenplatz – Karlsplatz – Kettenbrückengasse – Schönbrunn – Hietzing",
+     "para que serve no roteiro": "Schönbrunn (estação Schönbrunn ou Hietzing) e Naschmarkt (Kettenbrückengasse ou Karlsplatz)"
+    },
+    {
+     "linha": "U2 (roxa): Karlsplatz – Museumsquartier – Volkstheater – Rathaus – Schottentor – Praterstern",
+     "para que serve no roteiro": "Rathaus/Parlamento e MuseumsQuartier"
+    },
+    {
+     "linha": "U3 (laranja): Westbahnhof – Volkstheater – Stephansplatz – Landstraße",
+     "para que serve no roteiro": "Ligação rápida ao centro se o hotel ficar na Mariahilfer Straße"
+    },
+    {
+     "linha": "Bonde D: Hauptbahnhof Ost – Schloss Belvedere – Schwarzenbergplatz – Oper – Parlament – Schottentor",
+     "para que serve no roteiro": "Belvedere de Hbf (ou ~10 min a pé) e passeio pelo Ring"
+    },
+    {
+     "linha": "Bondes 1, 2 e 71 no Ring",
+     "para que serve no roteiro": "Dar a volta no Ring vendo Ópera, Hofburg, Parlamento, Rathaus, Burgtheater"
+    }
+   ],
+   "aeroporto": "Não se aplica (chegam e saem de trem pela Hauptbahnhof). O aeroporto fica FORA da zona central: nenhum dos passes de Viena cobre o trecho até Schwechat.",
+   "localizar": [
+    "O Ring (avenida circular onde antes ficava a muralha) contorna o 1º distrito, a Innere Stadt. A catedral de Santo Estêvão (Stephansplatz) é o centro, e a Kärntner Straße liga a catedral à Ópera, ao sul.",
+    "A Hauptbahnhof fica ao sul do centro, a 3 estações da Stephansplatz pela U1. O Belvedere fica logo ao norte da Hbf, entre ela e o Ring.",
+    "Schönbrunn fica a sudoeste, a ~15 min de U4. O Naschmarkt é uma faixa comprida entre as duas Wienzeile, saindo da Karlsplatz para sudoeste.",
+    "O Rathaus, o Parlamento e o Burgtheater ficam no lado oeste do Ring. O Canal do Danúbio fica no nordeste do centro; atravessando, no 2º distrito, estão o Prater e a roda-gigante (U1/U2 Praterstern).",
+    "No U-Bahn, guie-se pela cor da linha e pela estação final ('Richtung ...'). As saídas têm placas com nome de rua e ponto turístico."
+   ],
+   "cuidados": [
+    "Não há catraca, mas a fiscalização é frequente e à paisana. Papel comprado em tabacaria TEM que ser carimbado na maquininha azul antes de embarcar; o digital já sai válido. Multa em 2026: €135 se pagar na hora (€145 por boleto).",
+    "Digital: confira no app se o ticket está em nome de quem viaja (as passagens por tempo são pessoais); se o app não deixar comprar para os outros, cada um compra o seu ou usa a máquina (papel).",
+    "Fique à direita nas escadas rolantes, deixe sair antes de entrar e não coma no U-Bahn (é proibido comer comida quente/com cheiro)."
+   ],
+   "fontes": [
+    "https://www.behindertenrat.at/wp-content/uploads/2025/09/WL_2025_Factsheet_A4_3seitig_Tarifanpassungen_web.pdf",
+    "https://www.wienerlinien.at/web/wl-en/news/new-fare-structure-from-1-january-2026",
+    "https://www.wienerlinien.at/tickets",
+    "https://www.wienerlinien.at/7-tage-wien",
+    "https://www.wienerlinien.at/24-stunden-wien",
+    "https://www.wienerlinien.at/tickets/viennacitycard",
+    "https://www.wien.info/resource/blob/1052080/2aa99cbe69e651d03f058a386db9357a/vcc-broschuere-2026-data.pdf",
+    "https://www.vienna.at/?p=9640706"
+   ]
+  },
+  {
+   "chave": "budapeste",
+   "resumo": "Comprar blocos de 10 bilhetes simples (4.500 Ft, 450 Ft por viagem; o grupo pode usar o mesmo bloco viajando junto) e, à parte, o bilhete do ônibus 100E (2.500 Ft por pessoa), que nenhum passe de 24 h/72 h cobre. O passe de 72 h e o Budapest Card saem bem mais caros.",
+   "bilhetes": [
+    {
+     "nome": "Vonaljegy (bilhete simples)",
+     "preco_eur": 1.37,
+     "vale": "500 Ft (700 Ft se comprar a bordo, onde é aceito). 1 viagem sem baldeação, exceto metrô→metrô no mesmo sentido. Validar em cada veículo",
+     "onde_comprar": "Máquinas roxas BKK (aceitam cartão), bilheterias, app BudapestGO; Pay&GO por aproximação nos validadores do metrô"
+    },
+    {
+     "nome": "Bloco de 10 bilhetes (10 db-os gyűjtőjegy)",
+     "preco_eur": 12.33,
+     "vale": "4.500 Ft = 10 viagens simples. Várias pessoas viajando juntas podem usar o mesmo bloco (um bilhete validado por pessoa)",
+     "onde_comprar": "Máquinas e bilheterias BKK"
+    },
+    {
+     "nome": "Bilhete de 30 / 90 min",
+     "preco_eur": 1.64,
+     "vale": "30 min 600 Ft; 90 min 850 Ft, com baldeações",
+     "onde_comprar": "BudapestGO, máquinas"
+    },
+    {
+     "nome": "Budapest 24 órás jegy",
+     "preco_eur": 7.53,
+     "vale": "2.750 Ft; 24 h ilimitado (exceto 100E e Sikló). O 24 h de grupo para 5 foi extinto em jan/2025",
+     "onde_comprar": "Máquinas, BudapestGO"
+    },
+    {
+     "nome": "Budapest 72 órás jegy",
+     "preco_eur": 15.75,
+     "vale": "5.750 Ft; 72 h. Não existe mais semanal turístico (só passes de 15 dias e mensais)",
+     "onde_comprar": "Idem"
+    },
+    {
+     "nome": "Repülőtéri vonaljegy (bilhete do 100E)",
+     "preco_eur": 6.85,
+     "vale": "2.500 Ft; 1 viagem no 100E. Passes de 24/72 h NÃO valem. O complemento de 1.000 Ft é só para quem tem passe MENSAL",
+     "onde_comprar": "Máquinas na parada (Deák/aeroporto), BudapestGO"
+    },
+    {
+     "nome": "Budapest Card 24/48/72 h (desde 01/05/2026)",
+     "preco_eur": 82.16,
+     "vale": "24 h 17.990 Ft; 48 h 23.990 Ft; 72 h 29.990 Ft (€82); 72 h PLUS 39.990 Ft (€110, inclui o 100E na ida e na volta). Transporte + museus/descontos",
+     "onde_comprar": "budapestinfo.hu, postos de turismo"
+    }
+   ],
+   "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.000 Ft (≈ €49) + 100E 5 × 2.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft.",
+   "recomendado": {
+    "bilhete": "Bloco de 10 bilhetes simples (compartilhado) + bilhete do 100E por pessoa",
+    "quantos": "4 blocos de 10 + 5 bilhetes 100E",
+    "total_5_eur": 84.0
+   },
+   "linhas": [
+    {
+     "linha": "M2 (vermelha): Déli – Batthyány tér – Kossuth Lajos tér – Deák Ferenc tér – Astoria – Keleti",
+     "para que serve no roteiro": "Chegada em Keleti, Parlamento (Kossuth Lajos tér), bairro judeu/Dohány (Astoria)"
+    },
+    {
+     "linha": "M4 (verde): Keleti – Rákóczi tér – Kálvin tér – Fővám tér – Szent Gellért tér",
+     "para que serve no roteiro": "Keleti → centro, Mercado Central (Fővám tér)"
+    },
+    {
+     "linha": "M1 (amarela, metrô de 1896 sob a Andrássy út): Vörösmarty tér – Deák – Opera – Oktogon – Hősök tere – Széchenyi fürdő",
+     "para que serve no roteiro": "Banhos Széchenyi (Széchenyi fürdő) e Praça dos Heróis"
+    },
+    {
+     "linha": "M3 (azul): Deák – Ferenciek tere – Kálvin tér",
+     "para que serve no roteiro": "Ligação Kálvin tér ↔ Deák"
+    },
+    {
+     "linha": "Ônibus 16: Deák Ferenc tér – Ponte das Correntes – Clark Ádám tér – Dísz tér (Castelo)",
+     "para que serve no roteiro": "Subir ao Castelo de Buda com bilhete normal. O funicular Sikló (Clark Ádám tér) é cobrado à parte, ~4.000 Ft só a subida, e não entra nos passes"
+    },
+    {
+     "linha": "Bonde 2 (margem de Peste, ao longo do Danúbio)",
+     "para que serve no roteiro": "Parlamento ↔ Vigadó tér (cruzeiros) ↔ Fővám tér, com vista do rio"
+    },
+    {
+     "linha": "Ônibus 100E: Deák Ferenc tér – Kálvin tér – Aeroporto T2",
+     "para que serve no roteiro": "Sáb 6 para o voo de 11:10. Leva ~35–45 min; sair de Deák até ~08:15"
+    }
+   ],
+   "aeroporto": "Saída sáb 6/mar, voo 11:10: ônibus 100E, 24 h por dia, de Deák Ferenc tér (passa por Kálvin tér) até o Terminal 2, ~35–45 min; pegar até ~08:15. Bilhete próprio de 2.500 Ft por pessoa (12.500 Ft ≈ €34 para 5), comprado na máquina da parada ou no app BudapestGO e validado ao embarcar. Passes de 24/72 h não valem no 100E, e o complemento de 1.000 Ft é só para passe mensal. Chegada em Keleti de trem (qui 10:35): M2 ou M4 até o centro.",
+   "localizar": [
+    "O Danúbio corre de norte a sul. A OESTE fica Buda (morros: Castelo, Bastião dos Pescadores, Gellért); a LESTE fica Peste (plana: Parlamento, Basílica, bairro judeu, Andrássy).",
+    "Deák Ferenc tér é o nó central (M1, M2 e M3 se cruzam ali, e é de onde sai o 100E). A Basílica de Santo Estêvão fica a 5 min ao norte; o bairro judeu (distrito VII, sinagoga Dohány na Astoria) fica a leste.",
+    "Pontes de referência: Ponte das Correntes (Lánchíd), em frente ao Castelo; Ponte da Liberdade (Szabadság, a verde), em frente ao Mercado Central e ao Gellért; Ponte Margarida, ao norte do Parlamento.",
+    "A Andrássy út sai de Deák/Basílica em direção nordeste até a Praça dos Heróis e o Városliget (parque), onde estão os banhos Széchenyi. A M1 corre por baixo dela.",
+    "Keleti fica no leste de Peste, a ~10 min de metrô do centro. O Parlamento fica na margem de Peste, ao norte do centro (M2 Kossuth tér ou bonde 2)."
+   ],
+   "cuidados": [
+    "Valide CADA bilhete em CADA veículo (perfuradora no bonde/ônibus; na entrada do metrô). Há fiscais nas entradas do metrô. Multa: 12.000 Ft na hora (≈ €33), 25.000 Ft se pagar depois, 50.000 Ft se atrasar.",
+    "Dinheiro: pague SEMPRE em forint. Recuse a 'conversão para real/euro' (DCC) no cartão e no caixa eletrônico e evite caixas Euronet. Nada de câmbio na rua.",
+    "Táxi só oficial (amarelo, com tarifa fixa por km) ou app (Bolt). Nos bares do bairro judeu e na Váci utca, desconfie de convites de estranhos para bares (golpe da conta altíssima)."
+   ],
+   "fontes": [
+    "https://bkk.hu/jegyek-es-berletek/arak/",
+    "https://bkk.hu/en/tickets-and-passes/prices/",
+    "https://bkk.hu/en/tickets-and-passes/prices/block-of-10-tickets/",
+    "https://bkk.hu/hirek/2025/09/oktobertol-a-berletesek-kedvezmenyesen-hasznalhatjak-a-100e-repuloteri-jaratot.15350/",
+    "https://bkk.hu/jegyek-es-berletek/arak/kiegeszito-repuloteri-vonaljegy/",
+    "https://bkk.hu/hirek/2025/05/ne-feledje-tobb-alkalmi-bkk-jegytipus-ara-is-valtozik-junius-1-tol.14374/",
+    "https://bkk.hu/en/tickets-and-passes/budapest-card/places-of-acceptance/city-transport/100e-airport-express-transfer.16521/",
+    "https://welovebudapest.com/en/article/2026/08/11/how-to-get-around-budapest-a-complete-guide-to-public-transport-in-2026/",
+    "https://longforecast.com/eur-huf"
+   ]
+  }
+ ]
 }
