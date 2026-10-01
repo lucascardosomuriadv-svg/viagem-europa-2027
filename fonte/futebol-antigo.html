@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futebol na viagem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  :root{--destaque:#15803d}
+  .jogo{display:grid;gap:10px}
+  .placar{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+  .placar b{font-size:1.25rem}
+  .placar .x{color:var(--tinta-3)}
+  .quando{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .pino-bola{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#15803d;color:#fff;font:700 12px/1 "Outfit",sans-serif;border:2px solid #fff;box-shadow:0 1px 3px rgb(0 0 0/.4)}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Seções">
+  <div class="trilho">
+    <a class="marca" href="index.html">← Guia</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#mapa-sec">Estádios</a>
+  </div>
+</nav>
+<div class="miolo">
+  <header>
+    <h1>Futebol na viagem<span class="ponto">.</span></h1>
+    <p class="sub" style="margin-top:12px">Os jogos que acontecem nas cidades do roteiro, nos dias em que vocês estão lá. <b>Dia e hora exatos só são confirmados umas 3 a 5 semanas antes</b>: a etiqueta de cada jogo diz se a data já é firme ou se ainda pode mudar.</p>
+    <p class="fraco" id="consulta" style="margin-top:8px"></p>
+  </header>
+
+  <section id="jogos">
+    <h2>Os jogos</h2>
+    <div id="lista"></div>
+  </section>
+
+  <section id="mapa-sec">
+    <h2>Os estádios</h2>
+    <div id="mapa" class="mapa" role="img" aria-label="Mapa dos estádios"></div>
+  </section>
+
+
+
+  <footer>Pesquisa de 30/09/2026. Dia e hora exatos saem 3 a 5 semanas antes de cada jogo.</footer>
+</div>
+<script src="dados/guia.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const G = window.GUIA, F = G.futebol || {jogos:[],clubes:[],meta:{}};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const NOME = {...Object.fromEntries(G.cidades), veneza:"Veneza"};
+const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
+const rot = iso => `${DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()]} ${iso.slice(8,10)}/${iso.slice(5,7)}`;
+// a etiqueta é curta; a explicação do status vai para a linha "Situação"
+const statusChip = s => { s = (s||"").toLowerCase();
+  if (s.startsWith("confirm") && !s.includes("provis")) return '<span class="chip ok">confirmado</span>';
+  if (s.includes("provis") || s.startsWith("confronto confirmado")) return '<span class="chip espera">data provisória</span>';
+  return '<span class="chip alerta">possível</span>'; };
+const situacao = s => (s && s.length > 22) ? s.charAt(0).toUpperCase() + s.slice(1) : "";
+document.getElementById("consulta").textContent = F.meta?.consultado_em ? `Consultado em ${F.meta.consultado_em}.` : "";
+
+const jogos = [...F.jogos].sort((a,b) => (a.data+(a.hora||"")).localeCompare(b.data+(b.hora||"")));
+if (!jogos.length) document.getElementById("lista").innerHTML = '<p class="cartao">A pesquisa dos jogos ainda está sendo feita. Esta página se atualiza quando ela terminar.</p>';
+else {
+  const porCidade = [];
+  jogos.forEach(j => { const u = porCidade[porCidade.length-1]; if (u && u.c===j.cidade) u.l.push(j); else porCidade.push({c:j.cidade, l:[j]}); });
+  document.getElementById("lista").innerHTML = porCidade.map(g => `
+    <div class="cidade-bloco" style="--cor:var(--${g.c==="veneza"?"verona":g.c})">
+      <div class="cab"><h3>${esc(NOME[g.c]||g.c)}</h3></div>
+      <div class="grade2">${g.l.map(j => { const i = j.ingressos || {};
+        const campo = (r,v) => v ? `<dt>${r}</dt><dd>${esc(v)}</dd>` : "";
+        return `<article class="cartao jogo">
+          <div class="quando num"><b>${rot(j.data)}</b><span class="fraco">${esc(j.hora||"a definir")}</span>${statusChip(j.status)}</div>
+          <div class="placar"><b>${esc(j.mandante)}</b><span class="x">×</span><b>${esc(j.visitante)}</b></div>
+          <p class="fraco">${esc(j.competicao)}${j.rodada?" · "+esc(j.rodada):""} · ${esc(j.estadio)}</p>
+          ${j.encaixe?`<p class="fraco" style="margin-top:2px">${esc(String(j.encaixe).split(/(?<=\.)\s/)[0])}</p>`:""}
+        </article>`; }).join("")}</div>
+    </div>`).join("");
+}
+
+
+if (window.L && jogos.some(j => j.lat)) {
+  const m = L.map("mapa",{scrollWheelZoom:false});
+  const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(m);
+  L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(m);
+  const pts = [];
+  jogos.filter(j=>j.lat).forEach((j,i) => { pts.push([j.lat,j.lng]);
+    L.marker([j.lat,j.lng],{icon:L.divIcon({className:"",html:`<div class="pino-bola">${i+1}</div>`,iconSize:[26,26],iconAnchor:[13,13]})}).addTo(m)
+      .bindPopup(`<b>${esc(j.mandante)} × ${esc(j.visitante)}</b><br>${rot(j.data)} · ${esc(j.hora||"a definir")}<br>${esc(j.estadio)}`); });
+  m.fitBounds(pts, {padding:[30,30], maxZoom:12});
+} else document.getElementById("mapa-sec").remove();
+</script>
+
+<!-- menu fixo, igual ao do guia -->
+<nav class="tabbar" aria-label="Menu">
+  <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
+  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
+  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
+  <a href="index.html#/comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
+  <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
+</nav>
+</body>
+</html>

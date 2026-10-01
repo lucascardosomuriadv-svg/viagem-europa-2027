@@ -1,72 +1,73 @@
-// Abas "Comprar" e "Cidades" do guia. Enxuto de propósito: uma linha por item,
-// o que importa em destaque, o detalhe só ao tocar.
+// Abas "Comprar" e "Cidades" do guia.
+// Comprar = AGENDA (jeito A, escolhido pelo Lucas em 01/10/2026): o que falta
+// comprar ou reservar, mês a mês, dizendo EXATAMENTE o que comprar, com botão
+// para o site oficial e lembrete no calendário do celular. Sem total da viagem.
 // Usa G, NOME, dm, esc (definidos no index.html).
 
-// ---------- o que falta comprar ----------
-// Sem total de viagem de propósito: somar tantas estimativas daria um número
-// aproximado demais. Aqui é só o que falta comprar ou reservar, e quando.
 const HOJE = new Date(new Date().toISOString().slice(0,10)+"T12:00:00Z");
 const faltam = iso => Math.round((new Date(iso+"T12:00:00Z") - HOJE) / 86400000);
-const quandoAbre = iso => { const n = faltam(iso); return n <= 0 ? "já abriu" : n === 1 ? "abre amanhã" : `abre em ${n} dias`; };
+const MES = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+const MES3 = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 
-// AGORA: dá para comprar hoje. [título, linha de baixo, preço, detalhe]
-const AGORA = [
-  ["Hospedagens", "com cancelamento grátis", "", `Opções pesquisadas em cada cidade. <a href="hospedagens.html">Ver</a>`],
-  ["Trem Roma → Verona", "Italo 8956 · sex 26/02 · 08:20", "€159,80", "Tarifa Italo Friends, os 5 na mesma reserva."],
-  ["Voos Madri → Roma e Budapeste → Madri", "Iberia, em 2 reservas", "", "3 Basic + 2 Optimal (as 2 malas despachadas). Janela mais barata até ~15/12."],
-  ["Seguro viagem", "os 5, Schengen", "", "Cobertura mínima de €30 mil."],
+// [data em que dá para comprar (ISO, null = já), hora do lembrete (Brasília), título, o que comprar, site, rótulo do site, quando é na viagem]
+const AGENDA = [
+  [null, null, "Hospedagens", "7 estadias, com cancelamento grátis", "hospedagens.html", "Ver opções", ""],
+  [null, null, "Trem Roma → Verona", "5 bilhetes · Italo 8956 · sex 26/02 · 08:20 · tarifa Italo Friends · €159,80", "https://www.italotreno.com", "Site do Italo", ""],
+  [null, null, "Voos Madri → Roma e Budapeste → Madri", "Iberia dom 21/02 08:45 e sáb 06/03 11:10 · em 2 reservas: 3 Basic + 2 Optimal (as 2 malas)", "https://www.iberia.com", "Iberia", "mais barato até 15/12"],
+  [null, null, "Palácio Real de Madri", "5 ingressos · sáb 20/02 · ~€18 cada", "https://tickets.patrimonionacional.es", "Site oficial", ""],
+  [null, null, "Seguro viagem", "os 5 · Schengen, mínimo €30 mil de cobertura", "", "", ""],
+  ["2026-10-15", "09:00", "3 trens na Áustria e Hungria", "5 bilhetes Sparschiene em cada: RJ 88 dom 28/02 09:01 · Railjet seg 01/03 13:58 · Railjet qui 04/03 07:40", "https://www.oebb.at", "Site da ÖBB", "data prevista; confiram no dia"],
+  ["2026-12-01", "09:00", "Lembrete: voos Iberia", "Se ainda não compraram, comprem até 15/12 (janela mais barata)", "https://www.iberia.com", "Iberia", ""],
+  ["2026-12-23", "09:00", "Museus Vaticanos", "5 ingressos · ter 23/02 · primeiro horário", "https://tickets.museivaticani.va", "Site oficial", "abre ~2 meses antes"],
+  ["2026-12-25", "09:00", "Galleria Borghese", "5 ingressos · qui 25/02 · turno das 9h", "https://galleriaborghese.beniculturali.it", "Site oficial", "reserva obrigatória"],
+  ["2027-01-15", "09:00", "Datas dos jogos de futebol", "Lazio × Napoli e os outros: dia e hora saem a partir de meados de janeiro", "futebol.html", "Jogos", ""],
+  ["2027-01-20", "09:00", "ETIAS", "os 5 · €20 cada, só se já estiver valendo", "https://travel-europe.europa.eu/etias_en", "Site oficial", ""],
+  ["2027-01-23", "04:50", "Coliseu", "5 ingressos · seg 22/02 · 8h30 · a venda abre às 5h de Brasília", "https://ticketing.colosseo.it", "Site oficial", "esgota rápido"],
+  ["2027-01-24", "09:00", "Audiência do Papa", "pedido grátis para 5 · qua 24/02", "https://www.vatican.va/various/prefettura/index_it.html", "Prefeitura", ""],
+  ["2027-02-07", "09:00", "Restaurantes para 5", "Emma 21/02 · Taverna dei Quaranta e Il Grottino 22/02 · Rugantino 24/02 · Peroni 25/02 · Al Pompiere 27/02 · Stiftskeller 28/02 · Landtmann 02/03", "", "", ""],
+  ["2027-02-12", "09:00", "Casa di Giulietta", "5 ingressos · sex 26/02 · horário marcado", "https://museiverona.com", "Site oficial", ""],
+  ["2027-02-19", "09:00", "Parlamento de Budapeste", "5 ingressos · sex 05/03 · manhã", "https://jegymester.hu/parlament", "Site oficial", ""],
+  ["2027-02-19", "09:00", "Banhos Széchenyi", "5 ingressos · sex 05/03 · Fast Track", "https://www.szechenyibath.hu", "Site oficial", ""],
+  ["2027-02-27", "09:00", "Schönbrunn", "5 ingressos Palace Ticket · ter 02/03 · 8h30", "https://www.schoenbrunn.at", "Site oficial", ""],
+  ["2027-02-28", "09:00", "Belvedere e Museu Sisi", "5 + 5 ingressos · qua 03/03 · Belvedere às 9h, Sisi às 15h45", "https://www.belvedere.at", "Belvedere", ""],
 ];
-// INGRESSOS com reserva. [atração, cidade, dia no roteiro, abre (ISO ou null = já dá), quando abre, preço por pessoa]
-const INGRESSOS = [
-  ["Palácio Real", "Madri", "sáb 20/02", null, "online", "€18"],
-  ["Museus Vaticanos", "Roma", "ter 23/02", "2026-12-23", "~2 meses antes", "€25"],
-  ["Galleria Borghese", "Roma", "qui 25/02 · 9h", "2026-12-25", "reserva obrigatória", "€17"],
-  ["Coliseu", "Roma", "seg 22/02 · 8h30", "2027-01-23", "23/01, às 5h de Brasília", "€20"],
-  ["Audiência do Papa", "Roma", "qua 24/02", "2027-01-24", "pedir ~1 mês antes", "grátis"],
-  ["Casa di Giulietta", "Verona", "sex 26/02", "2027-02-12", "horário marcado", "€12"],
-  ["Parlamento", "Budapeste", "sex 05/03", "2027-02-19", "1–2 semanas antes", "€35"],
-  ["Banhos Széchenyi", "Budapeste", "sex 05/03", "2027-02-19", "online, evita fila", "€37"],
-  ["Schönbrunn", "Viena", "ter 02/03", "2027-02-27", "1–3 dias antes", "€42"],
-  ["Belvedere", "Viena", "qua 03/03", "2027-02-28", "1–3 dias antes", "€23"],
-  ["Museu Sisi", "Viena", "qua 03/03", "2027-02-28", "horário marcado", "€20"],
-];
-const NA_HORA = [["Panteão","€7"],["Trevi (perto da fonte)","€2"],["Arena di Verona","€12"],["Nordkette","€50"],["Prado, das 18h às 20h","grátis"]];
-const RESTAURANTES = ["Emma · dom 21/02","Taverna dei Quaranta e Il Grottino · seg 22/02","Rugantino · qua 24/02","Peroni · qui 25/02","Al Pompiere · sáb 27/02","Stiftskeller · dom 28/02","Landtmann · ter 02/03"];
+const NA_HORA = "Panteão €7 · Trevi €2 · Arena €12 · Nordkette €50 · Prado grátis das 18h às 20h";
 
-// VOOS E TRENS. [trecho, dia, como, horário, preço, à venda?, abre (ISO), detalhe]
-const TRECHOS = [
-  ["Madri → Roma", "dom 21/02", "Iberia", "08:45 → 11:10", "R$ 2.845", true, null, "3 Basic + 2 Optimal. A Air Europa das 12:40 sai uns R$ 700 mais barata."],
-  ["Roma → Verona", "sex 26/02", "Italo 8956", "08:20 → 11:38", "€159,80", true, null, "Plano B: Frecciarossa 8506, 08:50 → 12:08, €199,50."],
-  ["Verona → Innsbruck", "dom 28/02", "Railjet 88", "09:01 → 12:32", "~€90–160", false, "2026-10-15", "Comparem ÖBB e Trenitalia."],
-  ["Innsbruck → Viena", "seg 01/03", "Railjet", "13:58 → 18:32", "~€125", false, "2026-10-15", "Ou 12:56 → 17:32. Evitem o das 12:42 (via Alemanha)."],
-  ["Viena → Budapeste", "qui 04/03", "Railjet", "07:40 → 10:35", "~€81", false, "2026-10-15", "Confiram que termina em Budapest-Keleti."],
-  ["Budapeste → Madri", "sáb 06/03", "Iberia", "11:10 → 14:30", "R$ 3.449", true, null, "3 Basic + 2 Optimal."],
-];
+// lembrete: arquivo .ics com alarme, que o celular abre direto no calendário
+function ics(data, hora, titulo, texto, site){
+  const [h, m] = (hora || "09:00").split(":").map(Number);
+  // Brasília = UTC−3, sem horário de verão
+  const ini = new Date(Date.UTC(+data.slice(0,4), +data.slice(5,7)-1, +data.slice(8,10), h + 3, m));
+  const fim = new Date(ini.getTime() + 30*60000);
+  const f = d => d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+  const limpa = s => String(s).replace(/[,;\\]/g, m => "\\" + m).replace(/\n/g, "\\n");
+  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Europa 2027//PT","BEGIN:VEVENT",
+    `UID:${data}-${titulo.replace(/\W+/g,"")}@europa2027`, `DTSTAMP:${f(new Date())}`, `DTSTART:${f(ini)}`, `DTEND:${f(fim)}`,
+    `SUMMARY:${limpa("Comprar: " + titulo)}`, `DESCRIPTION:${limpa(texto + (site ? "\n" + site : ""))}`, site && /^https/.test(site) ? `URL:${site}` : "",
+    "BEGIN:VALARM","ACTION:DISPLAY","TRIGGER:-PT10M",`DESCRIPTION:${limpa(titulo)}`,"END:VALARM","END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
+}
+function baixarLembrete(i){
+  const [data, hora, titulo, texto, site] = AGENDA[i];
+  const url = URL.createObjectURL(new Blob([ics(data, hora, titulo, texto, site)], {type:"text/calendar"}));
+  const a = document.createElement("a"); a.href = url; a.download = `lembrete-${titulo.toLowerCase().replace(/[^a-z0-9]+/g,"-")}.ics`;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
 
 function renderComprar(){
-  const datas = [...INGRESSOS.filter(i => i[3]).map(i => i[3]), ...TRECHOS.filter(t => !t[5]).map(t => t[6])].filter(d => faltam(d) > 0).sort();
-  const prox = datas[0];
-  const jaDa = AGORA.length + INGRESSOS.filter(i => !i[3] || faltam(i[3]) <= 0).length;
-  const oQue = prox ? [...INGRESSOS.filter(i=>i[3]===prox).map(i=>i[0]), ...TRECHOS.filter(t=>t[6]===prox).map(t=>t[0])] : [];
-  document.getElementById("c-kpi").innerHTML = `
-    <div class="k"><small>Dá para comprar já</small><b>${jaDa} itens</b></div>
-    <div class="k"><small>Ingressos com reserva</small><b>${INGRESSOS.length}</b></div>
-    <div class="k t"><small>Próxima venda que abre</small><b>${prox ? `${dm(prox)} · ${quandoAbre(prox).replace("abre ","")}` : "tudo aberto"}</b><small>${oQue.length > 2 ? oQue.length + " trens" : oQue.join(", ")}</small></div>`;
-  document.getElementById("c-agora").innerHTML = `<div class="lista">${AGORA.map(([t,s,pr,d]) => `<details class="it"><summary><span class="ck ja">✓</span><span class="tx"><b>${t}</b><small>${s}</small></span><span class="pr num">${pr}</span></summary><p class="det">${d}</p></details>`).join("")}</div>`;
-  const ing = [...INGRESSOS].sort((a,b) => (a[3]||"0").localeCompare(b[3]||"0"));
-  document.getElementById("c-ingressos").innerHTML = `<div class="lista">${ing.map(([n,cid,dia,abre,como,pr]) => { const aberto = !abre || faltam(abre) <= 0;
-      return `<div class="it linha"><span class="ck ${aberto?"ja":"br"}">${aberto?"✓":"!"}</span><span class="tx"><b>${n}</b><small>${cid} · ${dia} · ${como}</small></span><span class="pr num">${pr}<em class="${aberto?"ok":"br"}">${aberto?"já dá":quandoAbre(abre)}</em></span></div>`; }).join("")}</div>
-    <h3 class="sub-h">Na hora, sem reservar</h3>
-    <div class="lista">${NA_HORA.map(([n,pr]) => `<div class="it simples"><span class="tx"><b>${n}</b></span><span class="pr num">${pr}</span></div>`).join("")}</div>
-    <h3 class="sub-h">Restaurantes para reservar (1–2 semanas antes)</h3>
-    <div class="lista">${RESTAURANTES.map(r => `<div class="it simples"><span class="tx"><b>${r}</b></span></div>`).join("")}</div>`;
-  document.getElementById("c-trechos").innerHTML = `<div class="lista">${TRECHOS.map(([t,dia,como,h,pr,venda,abre,d]) => `
-      <details class="it"><summary><span class="ico">${/Iberia/.test(como)?"✈":"🚆"}</span><span class="tx"><b>${t}</b><small>${dia} · ${como} · ${h}</small></span><span class="pr num">${pr}<em class="${venda?"ok":"br"}">${venda?"à venda":quandoAbre(abre)}</em></span></summary><p class="det">${d}</p></details>`).join("")}</div>
-    <h3 class="sub-h">Aeroportos (sempre táxi ou Uber)</h3><div class="lista">${[["Madri","táxi ~€33 por carro · Uber no estacionamento"],["Roma","táxi €55 fixo · peçam de 6–7 lugares"],["Budapeste","Bolt XL ou Főtaxi · ~€35"]].map(([c,t]) => `<div class="it simples"><span class="tx"><b>${c}</b><small>${t}</small></span></div>`).join("")}</div>`;
-  document.querySelectorAll("#c-seg button").forEach(b => b.onclick = () => {
-    document.querySelectorAll("#c-seg button").forEach(x => x.classList.toggle("on", x===b));
-    ["agora","ingressos","trechos"].forEach(p => document.getElementById("c-"+p).hidden = p !== b.dataset.p);
-  });
+  const itens = AGENDA.map((x,i) => ({i, data:x[0], hora:x[1], titulo:x[2], oque:x[3], site:x[4], rot:x[5], obs:x[6], ja: !x[0] || faltam(x[0]) <= 0}));
+  const futuros = itens.filter(x => !x.ja).sort((a,b) => a.data.localeCompare(b.data));
+  const prox = futuros[0];
+  document.getElementById("c-topo").innerHTML = prox
+    ? `<div class="proxima"><small>Próxima ação · ${faltam(prox.data) === 1 ? "amanhã" : `faltam ${faltam(prox.data)} dias`}</small><b>${dm(prox.data)} · ${esc(prox.titulo)}</b></div>` : "";
+  const ev = x => `<div class="ev"><div class="dt ${x.ja?"ja":""}">${x.ja?`<b>✓</b><small>já</small>`:`<b>${+x.data.slice(8)}</b><small>${MES3[+x.data.slice(5,7)-1]}</small>`}</div>
+    <div class="ev-c"><h3>${esc(x.titulo)}</h3><p>${esc(x.oque)}</p>${!x.ja ? `<span class="f">faltam ${faltam(x.data)} dias${x.obs?" · "+esc(x.obs):""}</span>` : (x.obs?`<span class="f">${esc(x.obs)}</span>`:"")}
+      <div class="bts">${x.site?`<a class="bt p" href="${x.site}" ${/^https/.test(x.site)?'target="_blank" rel="noopener"':""}>${esc(x.rot)}</a>`:""}${!x.ja?`<button type="button" class="bt" data-lembrete="${x.i}">Lembrete</button>`:""}</div></div></div>`;
+  const grupos = []; futuros.forEach(x => { const k = x.data.slice(0,7); const u = grupos[grupos.length-1]; if (u && u.k===k) u.l.push(x); else grupos.push({k, l:[x]}); });
+  document.getElementById("c-agenda").innerHTML =
+    `<div class="mes">Já dá para comprar</div>${itens.filter(x=>x.ja).map(ev).join("")}`
+    + grupos.map(g => `<div class="mes">${MES[+g.k.slice(5,7)-1]}</div>${g.l.map(ev).join("")}`).join("")
+    + `<div class="mes">Na hora, sem reservar</div><p class="na-hora">${NA_HORA}</p>`;
+  document.querySelectorAll("[data-lembrete]").forEach(b => b.onclick = () => baixarLembrete(+b.dataset.lembrete));
 }
 
 // ---------- cidades ----------

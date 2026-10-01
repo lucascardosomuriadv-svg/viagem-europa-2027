@@ -151,11 +151,10 @@ def main():
         extra = [x for x in l if x["matcha"] == "extra"]
         if nomes:
             d["blocos"].append({"quando": "Matcha da Camila", "ids": [x["id"] for x in nomes],
-                "texto": "Perto do caminho de hoje: " + "; ".join(f"<b>{x['nome']}</b>" + (f" ({x['bairro']})" if x["bairro"] else "") for x in nomes)
-                         + '. <a href="matcha.html">Todos os lugares de matcha</a>.'})
+                "texto": "Perto do caminho de hoje. " + '<a href="matcha.html">Todos os matchas</a>'})
         if extra:
             d["blocos"].append({"quando": "Extra", "ids": [x["id"] for x in extra],
-                "texto": "; ".join(f"<b>{x['nome']}</b>: {x['dica'] or x['categoria']}" for x in extra) + "."})
+                "texto": "Cabine de fotos de €5, perto do caminho de hoje."})
     # "Mais opções": os restaurantes novos de Madri entram logo DEPOIS do bloco
     # do mesmo momento (almoço depois do almoço), não no fim do dia
     SLOTS = {"chegada": ("Abertos depois da meia-noite", "Se bater fome"), "almoco": ("Mais opções de almoço", "Almoço"),

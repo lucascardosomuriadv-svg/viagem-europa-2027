@@ -256,3 +256,35 @@ tr.recomendado td{background:var(--ok-bg)}
 .cidade-card.extra b,.cidade-card.extra span{padding:0}
 
 .lista .tx small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ===== Comprar: agenda (jeito A) ===== */
+.proxima{margin:6px 18px 0;background:var(--ink);color:var(--card);border-radius:18px;padding:14px 16px}
+.proxima small{color:color-mix(in srgb,var(--card) 72%,transparent);font-size:.84rem}
+.proxima b{display:block;font-size:1.25rem;line-height:1.25;margin-top:2px}
+.agenda{padding:0 18px}
+.agenda .mes{margin:20px 2px 8px;font-weight:700;font-size:.85rem;color:var(--ink3);text-transform:capitalize}
+.ev{display:grid;grid-template-columns:52px 1fr;gap:12px;background:var(--card);border:1px solid var(--soft);border-radius:18px;margin-bottom:10px;padding:12px}
+.ev .dt{border-radius:12px;background:var(--warn-bg);color:var(--warn);text-align:center;padding:7px 0;line-height:1.05;height:fit-content}
+.ev .dt b{display:block;font-size:1.35rem}
+.ev .dt small{font-size:.72rem;font-weight:600}
+.ev .dt.ja{background:var(--ok-bg);color:var(--ok)}
+.ev-c{min-width:0}
+.ev-c h3{margin:0;font-size:1rem;line-height:1.25}
+.ev-c p{margin:3px 0 0;color:var(--ink2);font-size:.88rem;line-height:1.45}
+.ev-c .f{display:inline-block;margin-top:6px;font-size:.76rem;font-weight:700;color:var(--warn)}
+.ev-c .bts{display:flex;gap:8px;margin-top:10px}
+.ev-c .bt{flex:1;text-align:center;border:0;border-radius:12px;padding:9px 6px;font:600 .85rem "Outfit",sans-serif;text-decoration:none;color:var(--ink);background:var(--soft);cursor:pointer}
+.ev-c .bt.p{background:var(--ink);color:var(--card)}
+.na-hora{margin:0;background:var(--card);border:1px solid var(--soft);border-radius:18px;padding:12px 14px;color:var(--ink2);font-size:.9rem}
+
+.lista .th{color:var(--ink2)}
+.lista .th svg{width:20px;height:20px}
+.lista .th.restaurante{background:color-mix(in srgb,var(--comer) 13%,var(--card));color:var(--comer)}
+.lista .th.rapido{background:var(--warn-bg);color:var(--warn)}
+.lista .th.cafe{background:color-mix(in srgb,#7c4a1e 14%,var(--card));color:#7c4a1e}
+.lista .th.matcha{background:var(--matcha-bg);color:var(--matcha)}
+.lista .th.ver{background:color-mix(in srgb,var(--ver) 13%,var(--card));color:var(--ver)}
+.lista .th.extra{background:color-mix(in srgb,#be185d 13%,var(--card));color:#be185d}
+
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lista .th.cafe{color:#e0a872;background:#2a1d12}}
+:root[data-theme="dark"] .lista .th.cafe{color:#e0a872;background:#2a1d12}

@@ -15,6 +15,16 @@ function tipoComida(x){
   if (/taglio|pizzarium|bocadillo|montadit|lángos|langos|würstel|wurst|imbiss|sanduí|panin|schiacciata|trapizz|suppl|street|balcão|kebab|bosna|burger|hambúrg|sandwich|tostas?\b/.test(t)) return "rapido";
   return "restaurante";
 }
+// ícones desenhados (emoji muda de cara em cada celular)
+const SVG_COMIDA = {
+  restaurante:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>',
+  rapido:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 5 0 0 1 18 0zM3 15h18M4 15l1 4h14l1-4"/></svg>',
+  cafe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2v3M12 2v3"/></svg>',
+  matcha:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 10 11 4 20 4c0 9-6 15-15 15zM5 19l8-8"/></svg>',
+  extra:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/></svg>',
+  ver:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+};
+const iconeComida = tp => SVG_COMIDA[tp] || SVG_COMIDA.restaurante;
 const umaFrase = s => { s = (s||"").replace(/<[^>]+>/g,"").trim(); if (!s || s==="—") return ""; const m = s.match(/^.{0,90}?[.;](\s|$)/); return (m ? m[0] : s.slice(0,90)).replace(/[.;]\s*$/,""); };
 const quandoNoRoteiro = {}; G.dias.forEach(d => d.blocos.forEach(b => b.ids.forEach(id => { (quandoNoRoteiro[id] ||= []).includes(d.data) || quandoNoRoteiro[id].push(d.data); })));
 const rotDia = iso => `${sem(iso)} ${dm(iso)}`;
@@ -54,9 +64,11 @@ document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.
 document.addEventListener("click", e => { const a = e.target.closest("[data-ficha]"); if (!a) return; e.preventDefault(); abrirFicha(a.dataset.ficha); });
 
 // ---------- aba Comer ----------
-let kCidade = "todas", kTipo = "todos";
+let kCidade = null, kTipo = "todos";
 function renderComer(param){
   if (param && NOME[param]) kCidade = param;
+  if (!kCidade) { let d = null; try { d = sessionStorage.getItem("dia"); } catch(e){}
+    const dia = G.dias.find(x => x.data === d); kCidade = dia ? dia.cidade : "todas"; }
   const todos = Object.values(G.lugares).flat().filter(x => x.tipo === "comer");
   const filtro = (l, c, t) => l.filter(x => (c==="todas" || x.cidade===c) && (t==="todos" || tipoComida(x)===t));
   const cidades = [["todas","Todas"], ...G.cidades];
@@ -73,9 +85,8 @@ function renderComer(param){
   const ordemCid = Object.fromEntries(G.cidades.map(([k],i) => [k,i]));
   const ord = [...l].sort((a,b) => (ordemCid[a.cidade]-ordemCid[b.cidade]) || primeiro(a).localeCompare(primeiro(b)) || curto(a.nome).localeCompare(curto(b.nome)));
   const grupos = []; ord.forEach(x => { const u = grupos[grupos.length-1]; if (u && u.c===x.cidade) u.l.push(x); else grupos.push({c:x.cidade, l:[x]}); });
-  const ICON = {restaurante:"🍽", rapido:"🥪", cafe:"☕", matcha:"🍵"};
   document.getElementById("k-lista").innerHTML = grupos.map(g => `${kCidade==="todas"?`<div class="grupo"><b>${NOME[g.c]}</b></div>`:""}
     <div class="lista">${g.l.map(x => { const d = quandoNoRoteiro[x.id]; const tp = tipoComida(x);
-      return `<button type="button" class="it linha" data-ficha="${x.id}"><span class="th ${tp}">${ICON[tp]}</span><span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria))}</small></span>${d?`<span class="dia-tag">${rotDia(d[0])}</span>`:""}</button>`; }).join("")}</div>`).join("")
+      return `<button type="button" class="it linha" data-ficha="${x.id}"><span class="th ${tp}">${iconeComida(tp)}</span><span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria))}</small></span>${d?`<span class="dia-tag">${rotDia(d[0])}</span>`:""}</button>`; }).join("")}</div>`).join("")
     || '<p class="fraco">Nada com esse filtro.</p>';
 }

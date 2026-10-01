@@ -101,10 +101,9 @@ const ver = lug.filter(x => x.tipo==="ver").sort(ordem);
 const comer = lug.filter(x => x.tipo==="comer").sort(ordem);
 const dicas = (G.dicas||{})[c] || [];
 const ABAS = [["ver","Para ver"],["comer","Para comer"],["dias","Dias"]].concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
-const ICON = {restaurante:"🍽", rapido:"🥪", cafe:"☕", matcha:"🍵"};
 const tag = x => quando[x.id] ? `<span class="dia-tag">${sem(quando[x.id])} ${dm(quando[x.id])}</span>` : "";
 function linha(x){ const tp = x.tipo==="comer" ? tipoComida(x) : null;
-  return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||""}">${tp?ICON[tp]:"◎"}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span>${tag(x)}</button>`; }
+  return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||"ver"}">${iconeComida(tp||"ver")}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span>${tag(x)}</button>`; }
 function painel(aba){
   document.querySelectorAll("#seg button").forEach(b => b.classList.toggle("on", b.dataset.a===aba));
   const el = document.getElementById("painel");

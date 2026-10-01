@@ -3,97 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matcha da Camila</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matcha da Camila · Europa 2027</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="estilo.css">
-<style>
-  :root{--destaque:#4d7c0f;--matcha:#4d7c0f;--matcha-claro:#eef5e1}
-  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--destaque:#a3e635;--matcha:#a3e635;--matcha-claro:#1c2a10}}
-  :root[data-theme="dark"]{--destaque:#a3e635;--matcha:#a3e635;--matcha-claro:#1c2a10}
-  .chip.matcha{background:var(--matcha-claro);color:var(--matcha);border-color:transparent}
-  .pino-matcha{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#4d7c0f;color:#fff;font:700 12px/1 "Outfit",sans-serif;border:2px solid #fff;box-shadow:0 1px 3px rgb(0 0 0/.4)}
-</style>
+<link rel="stylesheet" href="app.css">
+<style>.voltar{display:inline-flex;margin:14px 18px 0;font-size:.9rem;color:var(--ink2);text-decoration:none}</style>
 </head>
 <body>
-<nav class="nav" aria-label="Seções">
-  <div class="trilho">
-    <a class="marca" href="index.html">← Guia</a>
-    <a href="cidade.html?c=madri">Madri</a>
-    <a href="#lista">Os lugares</a>
-    <a href="#extra">Extra</a>
-  </div>
-</nav>
-<div class="miolo">
-  <header>
-    <h1>Matcha da Camila<span class="ponto">.</span></h1>
-    <p class="sub" style="margin-top:12px">Os lugares de matcha de Madri que a Camila salvou, conferidos um por um: endereço, o que pedir, horário, o dia em que fecham e em qual dia do roteiro cada um encaixa melhor. Também aparecem no mapa de cada dia do guia.</p>
-  </header>
-
-  <section>
-    <h2>No mapa</h2>
-    <div id="mapa" class="mapa" role="img" aria-label="Mapa dos lugares de matcha em Madri"></div>
-    <div class="leg-mapa"><span><i style="background:#4d7c0f"></i>matcha</span><span><i style="background:#be185d"></i>extra</span><span><b style="background:#0f172a;color:#fff;border-radius:3px;padding:0 4px">M</b> metrô</span></div>
-  </section>
-
-  <section id="lista">
-    <h2>Os lugares</h2>
-    <div class="lugares" id="lugares"></div>
-  </section>
-
-  <section id="extra">
-    <h2>Extra</h2>
-    <div class="lugares" id="extras"></div>
-  </section>
-
-  <footer>Pesquisa de 30/09/2026. Cafés pequenos mudam de horário com frequência: confiram no Instagram ou no Google Maps antes de ir.</footer>
+<div class="app">
+  <a class="voltar" href="index.html#/cidades">‹ Cidades</a>
+  <header class="topo"><div><small>Madri · os lugares que ela salvou</small><h1>Matcha da Camila</h1></div></header>
+  <div class="sec" id="painel"></div>
+  <p class="rodape">Cafés pequenos mudam de horário: confiram no Instagram antes de ir.</p>
 </div>
-<script src="dados/guia.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>
-const G = window.GUIA;
-const L_ = (G.lugares.madri || []).filter(x => x.matcha);
-const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
-const rot = iso => iso ? `${DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()]} ${iso.slice(8,10)}/${iso.slice(5,7)}` : "";
-function cartao(x){
-  const campo = (r,v) => v && v !== "—" ? `<dt>${r}</dt><dd>${esc(v)}</dd>` : "";
-  const gm = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.nome + " " + (x.endereco || "Madrid"))}`;
-  return `<article class="lugar" id="${x.id}">
-    <div class="topo">
-      <span class="chip ${x.matcha==="extra"?"alerta":"matcha"}">${x.matcha==="extra"?"extra":"matcha"}</span>
-      ${x.dia ? `<a class="chip ok" href="index.html#dia-${x.dia}">no roteiro: ${rot(x.dia)}</a>` : ""}
-      ${x.metro ? `<span class="chip">Ⓜ ${esc(x.metro.nome)} · ${x.metro.min} min</span>` : ""}
-      ${x.confianca && x.confianca!=="alta" ? `<span class="chip alerta">confiança ${esc(x.confianca)}</span>` : ""}
-    </div>
-    <h3>${esc(x.nome)}</h3>
-    ${x.bairro ? `<p class="fraco">${esc(x.categoria||"")}${x.categoria?" · ":""}${esc(x.bairro)}</p>` : ""}
-    <dl>${campo("Pedir",x.pedir)}${campo("Preço",x.preco)}${campo("Horário",x.horario)}${campo("Fecha",x.fecha)}${campo("Por que nesse dia",x.porque)}${campo("Dica",x.dica)}</dl>
-    <div class="acoes"><a href="${gm}" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>${x.instagram?`<a href="https://instagram.com/${esc(x.instagram.replace(/^@/,""))}" target="_blank" rel="noopener">${esc(x.instagram)}</a>`:""}<span class="fraco">${esc(x.endereco)}</span></div>
-  </article>`;
-}
-document.getElementById("lugares").innerHTML = L_.filter(x=>x.matcha!=="extra").map(cartao).join("") || '<p class="fraco">Pesquisa em andamento.</p>';
-const ex = L_.filter(x=>x.matcha==="extra");
-if (ex.length) document.getElementById("extras").innerHTML = ex.map(cartao).join(""); else document.getElementById("extra").remove();
-if (window.L && L_.some(x=>x.lat)) {
-  const m = L.map("mapa",{scrollWheelZoom:false});
-  const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
-  L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(m);
-  L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(m);
-  const pts = L_.filter(x=>x.lat).map(x=>[x.lat,x.lng]);
-  const dist = (a,b) => { const r=Math.PI/180, X=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r), Y=(b[0]-a[0])*r; return Math.sqrt(X*X+Y*Y)*6371000; };
-  (G.estacoes.madri||[]).forEach(([n,la,lo]) => { if (pts.some(p=>dist(p,[la,lo])<700))
-    L.marker([la,lo],{icon:L.divIcon({className:"",html:'<div class="pino-metro">M</div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(m).bindTooltip(n); });
-  L_.filter(x=>x.lat).forEach((x,i) => L.marker([x.lat,x.lng],{zIndexOffset:1000,icon:L.divIcon({className:"",html:`<div class="pino-matcha" style="background:${x.matcha==="extra"?"#be185d":"#4d7c0f"}">${i+1}</div>`,iconSize:[26,26],iconAnchor:[13,13]})})
-    .addTo(m).bindPopup(`<b>${esc(x.nome)}</b>${x.dia?`<br>${rot(x.dia)}`:""}<br><a href="#${x.id}">Detalhes</a>`));
-  m.fitBounds(pts.length>1?pts:[pts[0],pts[0]],{padding:[30,30],maxZoom:15});
-} else document.getElementById("mapa").innerHTML = '<p style="padding:20px">Mapa aparece quando a pesquisa terminar.</p>';
-</script>
-
-<!-- menu fixo, igual ao do guia -->
 <nav class="tabbar" aria-label="Menu">
   <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
   <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
@@ -101,5 +25,27 @@ if (window.L && L_.some(x=>x.lat)) {
   <a href="index.html#/comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
   <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
 </nav>
+<div class="ficha-fundo" id="ficha-fundo" hidden></div>
+<div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-label="Detalhes do lugar" hidden></div>
+<script src="dados/guia.js"></script>
+<script>
+const G = window.GUIA;
+const NOME = {...Object.fromEntries(G.cidades), veneza:"Veneza"};
+const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"], MES3 = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const dm = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
+const sem = iso => DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const curto = n => n.replace(/\s*\(.*$/,"").replace(/\s+[—–]\s+.*$/,"").replace(/\s+\+\s+.*$/,"");
+const porId = {}; Object.values(G.lugares).flat().forEach(x => porId[x.id] = x);
+</script>
+<script src="comer.js"></script>
+<script>
+document.documentElement.style.setProperty("--cor", "#4d7c0f");
+const L_ = G.lugares.madri.filter(x => x.matcha);
+const ordem = (a,b) => (a.dia||"9").localeCompare(b.dia||"9") || curto(a.nome).localeCompare(curto(b.nome));
+const linha = x => `<button type="button" class="it linha" data-ficha="${x.id}"><span class="th ${x.matcha===true?"matcha":""}">${iconeComida(x.matcha===true?"matcha":"extra")}</span><span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria))}</small></span>${x.dia?`<span class="dia-tag">${sem(x.dia)} ${dm(x.dia)}</span>`:""}</button>`;
+document.getElementById("painel").innerHTML = `<div class="grupo"><b>Matcha</b></div><div class="lista">${L_.filter(x=>x.matcha===true).sort(ordem).map(linha).join("")}</div>
+  <div class="grupo"><b>Extra</b></div><div class="lista">${L_.filter(x=>x.matcha==="extra").map(linha).join("")}</div>`;
+</script>
 </body>
 </html>
