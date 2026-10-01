@@ -154,8 +154,7 @@ const COMPRAS = [
     `<b>Reservas de restaurante</b> para 5: Emma (21/02), Taverna dei Quaranta e Il Grottino (22/02), Rugantino (24/02), Peroni (25/02), Al Pompiere (27/02), Stiftskeller ou Gasthaus Goldenes Dachl (28/02), Café Landtmann (02/03).`
   ]],
   ["Na viagem", "1–3 dias antes ou no dia", [
-    `<b>Schönbrunn</b> e <b>Belvedere</b> em Viena: horário marcado, 1–3 dias antes.`,
-    `<b>Ópera de Viena em pé</b>, Norma na quarta 03/03: venda só no dia, online a partir das 10h. Cada um compra o seu no celular.`
+    `<b>Schönbrunn</b> e <b>Belvedere</b> em Viena: horário marcado, 1–3 dias antes.`
   ]],
 ];
 document.getElementById("lista-compras").innerHTML = COMPRAS.map(([q,s,l]) =>
@@ -310,7 +309,7 @@ const ATRACOES = [
   ["Roma","Coliseu + Fórum + Palatino",20],["Roma","Museus Vaticanos",25],["Roma","Cúpula de São Pedro",10],["Roma","Galleria Borghese",17],["Roma","Panteão",7],["Roma","Trevi (perto da fonte)",2],["Roma","Castel Sant'Angelo",16],
   ["Verona","Arena",12],["Verona","Casa di Giulietta (completa)",12],["Verona","Torre dei Lamberti",6],["Verona","Trem ida e volta a Veneza",26],
   ["Innsbruck","Hofburg",15],["Innsbruck","Nordkette (Seegrube)",50.4],
-  ["Viena","Schönbrunn",42],["Viena","Belvedere",23],["Viena","Kunsthistorisches",22],["Viena","Museu Sisi",20],["Viena","Torre da Stephansdom",8],["Viena","Ópera em pé (Norma)",13],["Viena","Patinação na Rathausplatz",10.5],["Viena","Passe 24h × 2 dias",19.4],
+  ["Viena","Schönbrunn",42],["Viena","Belvedere",23],["Viena","Kunsthistorisches",22],["Viena","Museu Sisi",20],["Viena","Torre da Stephansdom",8],["Viena","Patinação na Rathausplatz",10.5],["Viena","Passe 24h × 2 dias",19.4],
   ["Budapeste","Parlamento",35],["Budapeste","Banhos Széchenyi",37],["Budapeste","Passe 24h + ônibus 100E",13],
 ];
 function orcamento(){
@@ -334,7 +333,7 @@ document.querySelectorAll("#lista-orc input").forEach(el => el.addEventListener(
 orcamento();
 
 // ---------- cidades ----------
-const RESUMO = {madri:"Chegada e volta: Retiro, Prado, Palácio, Rastro, Toledo", roma:"5 noites: Roma Antiga, Vaticano, Trastevere, Borghese", verona:"Arena, Giulietta e bate-volta a Veneza", innsbruck:"Uma noite nos Alpes, com a Nordkette", viena:"Kipferl, Schönbrunn, Klimt, Sisi e Norma na Ópera", budapeste:"Parlamento, Buda e banhos termais"};
+const RESUMO = {madri:"Chegada e volta: Retiro, Prado, Palácio, Rastro, Toledo", roma:"5 noites: Roma Antiga, Vaticano, Trastevere, Borghese", verona:"Arena, Giulietta e bate-volta a Veneza", innsbruck:"Uma noite nos Alpes, com a Nordkette", viena:"Kipferl, Schönbrunn, Klimt, Sisi e Kaiserschmarrn", budapeste:"Parlamento, Buda e banhos termais"};
 document.getElementById("lista-cidades").innerHTML = G.cidades.map(([k,n]) => {
   const l = G.lugares[k]; const c = l.filter(x=>x.tipo==="comer").length, v = l.length - c;
   const capa = l.find(x => x.foto && x.tipo==="ver" && G.usados.includes(x.id));
@@ -359,7 +358,6 @@ const CHECKS = [
   ["ETIAS, se já estiver valendo","€20 por pessoa, só no site oficial."],
   ["Passaporte válido até junho/2027 ou depois","3 meses depois da saída."],
   ["Van reservada para a chegada em Madri","22:35, 5 pessoas e malas."],
-  ["Contas no site da Ópera de Viena","Norma, 03/03: cada um compra o ingresso em pé às 10h do dia."],
   ["eSIM europeu","Um plano de roaming na UE vale para os 4 países."],
   ["Roupa de frio de verdade","Innsbruck abaixo de zero; Viena e Budapeste perto de 0 °C."],
 ];
