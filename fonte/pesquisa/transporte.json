@@ -192,7 +192,7 @@
      "para que serve no roteiro": "San Lorenzo (jantar de ter), a 10–15 min a pé do lado leste de Termini"
     }
    ],
-   "aeroporto": "FCO (chegada dom 21 ~11:10): (1) Leonardo Express, €14, 32 min, direto a Termini, mais simples com malas; (2) FL1, €8, não para em Termini: descer em Ostiense (metrô B Piramide → Termini) ou Tiburtina (metrô B) + BIT €1,50, e aos domingos passa só a cada ~30 min; (3) táxi oficial branco, €55 fixos por carro até dentro da Muralha Aureliana, mas 5 pessoas = van (confirmar se a tarifa fixa vale para van) ou 2 carros. Partida sex 26 de trem saindo de Termini: a pé ou 1 BIT. O ATAC anunciou o fim dos bilhetes de papel com tarja magnética a partir de 2027 (troca por tap&go ou pelo cartão com chip '+Roma in tasca'), então em fev/2027 o tap&go deve ser o caminho natural.",
+   "aeroporto": "Regra do grupo: aeroporto sempre de táxi ou Uber. De Fiumicino ao centro (dentro das Muralhas Aurelianas) o táxi branco oficial tem tarifa fixa de €55 por carro, com bagagem incluída. Para 5 com malas: táxi de 6–7 lugares (peçam na fila ou pelo app FreeNow/itTaxi e confirmem a tarifa fixa antes de entrar) ou 2 táxis comuns (€110). O Uber em Roma só tem carros de luxo/van, mais caros que o táxi. Recusem quem oferecer corrida dentro do terminal: é táxi pirata.",
    "localizar": [
     "Termini fica no leste do centro histórico. A Via Nazionale desce dali até a Piazza Venezia (o 'bolo de noiva' branco do Vittoriano), que é o grande nó de ônibus. Da Piazza Venezia, a Via del Corso sobe reta para o norte até a Piazza del Popolo.",
     "O Coliseu fica ao sul de Termini e a sudeste da Piazza Venezia, ligado a ela pela Via dei Fori Imperiali. O Circo Massimo e Testaccio (Piramide) ficam mais ao sul.",
@@ -574,23 +574,17 @@
      "onde_comprar": "Idem"
     },
     {
-     "nome": "Repülőtéri vonaljegy (bilhete do 100E)",
-     "preco_eur": 6.85,
-     "vale": "2.500 Ft; 1 viagem no 100E. Passes de 24/72 h NÃO valem. O complemento de 1.000 Ft é só para quem tem passe MENSAL",
-     "onde_comprar": "Máquinas na parada (Deák/aeroporto), BudapestGO"
-    },
-    {
      "nome": "Budapest Card 24/48/72 h (desde 01/05/2026)",
      "preco_eur": 82.16,
      "vale": "24 h 17.990 Ft; 48 h 23.990 Ft; 72 h 29.990 Ft (€82); 72 h PLUS 39.990 Ft (€110, inclui o 100E na ida e na volta). Transporte + museus/descontos",
      "onde_comprar": "budapestinfo.hu, postos de turismo"
     }
    ],
-   "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.000 Ft (≈ €49) + 100E 5 × 2.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft.",
+   "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft. O aeroporto vai de Bolt/táxi (regra do grupo), então o ônibus 100E sai da conta: ficam 4 blocos de 10 bilhetes, 18.000 Ft (~€49).",
    "recomendado": {
-    "bilhete": "Bloco de 10 bilhetes simples (compartilhado) + bilhete do 100E por pessoa",
-    "quantos": "4 blocos de 10 + 5 bilhetes 100E",
-    "total_5_eur": 84.0
+    "bilhete": "Bloco de 10 bilhetes (o grupo usa o mesmo bloco viajando junto)",
+    "quantos": "4 blocos",
+    "total_5_eur": 49.3
    },
    "linhas": [
     {
@@ -616,13 +610,9 @@
     {
      "linha": "Bonde 2 (margem de Peste, ao longo do Danúbio)",
      "para que serve no roteiro": "Parlamento ↔ Vigadó tér (cruzeiros) ↔ Fővám tér, com vista do rio"
-    },
-    {
-     "linha": "Ônibus 100E: Deák Ferenc tér – Kálvin tér – Aeroporto T2",
-     "para que serve no roteiro": "Sáb 6 para o voo de 11:10. Leva ~35–45 min; sair de Deák até ~08:15"
     }
    ],
-   "aeroporto": "Saída sáb 6/mar, voo 11:10: ônibus 100E, 24 h por dia, de Deák Ferenc tér (passa por Kálvin tér) até o Terminal 2, ~35–45 min; pegar até ~08:15. Bilhete próprio de 2.500 Ft por pessoa (12.500 Ft ≈ €34 para 5), comprado na máquina da parada ou no app BudapestGO e validado ao embarcar. Passes de 24/72 h não valem no 100E, e o complemento de 1.000 Ft é só para passe mensal. Chegada em Keleti de trem (qui 10:35): M2 ou M4 até o centro.",
+   "aeroporto": "Regra do grupo: aeroporto sempre de táxi ou Uber. Em Budapeste o Uber não funciona; usem o Bolt (peçam XL para 5 com malas) ou o Főtaxi, táxi oficial do aeroporto. Do centro até o aeroporto são 30–40 min e ~€30–40 por carro. Saiam às 8h30 para o voo das 11:10.",
    "localizar": [
     "O Danúbio corre de norte a sul. A OESTE fica Buda (morros: Castelo, Bastião dos Pescadores, Gellért); a LESTE fica Peste (plana: Parlamento, Basílica, bairro judeu, Andrássy).",
     "Deák Ferenc tér é o nó central (M1, M2 e M3 se cruzam ali, e é de onde sai o 100E). A Basílica de Santo Estêvão fica a 5 min ao norte; o bairro judeu (distrito VII, sinagoga Dohány na Astoria) fica a leste.",

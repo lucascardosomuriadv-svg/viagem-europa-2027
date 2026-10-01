@@ -42,7 +42,7 @@ DIAS = [
     ]),
   dict(data="2027-02-21", cidade="roma", titulo="Voo para Roma e o centro a pé", noite="Roma",
     blocos=[
-      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30 de táxi ou Uber (tarifa fixa ~€33 por carro). De Fiumicino: trem regional FL1 + metrô sai ~€47,50 para os 5; o Leonardo Express, direto até Termini em 32 min, ~€70.", []),
+      ("Manhã", "Iberia 08:45 → Fiumicino 11:10 (ver Voos e trens). Saiam de casa ~6h30 de táxi ou Uber (tarifa fixa ~€33 por carro). De Fiumicino até o centro, táxi oficial branco com <b>tarifa fixa de €55 por carro</b>: para 5 com malas, peçam um de 6–7 lugares (ou 2 carros).", []),
       ("Atenção", "<b>Domingo muita coisa fecha</b>: Vaticano, mercado de Testaccio, CasaManco, Supplì Roma, Roscioli, Peroni e Formula 1. Por isso hoje é dia de rua e praça.", []),
       ("Tarde", "Panteão (€7), Piazza Navona com sorvete na Gelateria del Teatro, e a Fontana di Trevi. <b>A Trevi cobra €2 para chegar perto da fonte das 9h às 22h</b>; depois das 22h é grátis e mais vazia.", ["Panteão", "Piazza Navona", "Gelateria del Teatro", "Trevi"]),
       ("Noite", "Emma Pizzeria (reserve) ou Osteria da Fortunata no Panteão, onde fazem a massa na vitrine. Ambas abrem no domingo.", ["Emma", "Fortunata"]),
@@ -138,7 +138,7 @@ DIAS = [
     ]),
   dict(data="2027-03-06", cidade="madri", titulo="Voo de volta a Madri", noite="Madri",
     blocos=[
-      ("Manhã", "Iberia 11:10 → Madri 14:30. Saiam ~8h30 com o ônibus 100E até o aeroporto (2.500 HUF por pessoa, o passe comum não vale nele).", []),
+      ("Manhã", "Iberia 11:10 → Madri 14:30. Saiam ~8h30 de Bolt XL ou táxi oficial (Főtaxi) até o aeroporto: 30–40 min, ~€30–40.", []),
       ("Tarde", "Chegada às 14:30. Táxi ou Uber até a hospedagem (tarifa fixa ~€33). Recolham as malas grandes e descansem: amanhã é dia cheio.", []),
       ("Noite", "Jantar leve perto de casa: tapas em La Latina ou o Mercado de San Fernando, em Lavapiés.", ["San Fernando"]),
     ]),
