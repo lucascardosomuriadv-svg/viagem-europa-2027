@@ -90,7 +90,16 @@ G.dias.forEach(d => d.blocos.forEach(b => b.ids.forEach(id => { (quandoUsado[id]
 document.title = `${NOME[c]} · Europa 2027`;
 document.documentElement.style.setProperty("--destaque", getComputedStyle(document.documentElement).getPropertyValue("--"+c));
 document.getElementById("nav-cidades").innerHTML += G.cidades.map(([kk,n]) => `<a href="cidade.html?c=${kk}" ${kk===c?'style="color:var(--tinta);border-color:var(--linha)"':""}>${n}</a>`).join("") + `<a href="hospedagens.html">Hospedagem</a><a href="matcha.html">Matcha da Camila</a><a href="futebol.html">Futebol</a>`;
+const dias = G.dias.filter(d => d.cidade === c || d.blocos.some(b => b.ids.some(id => id.startsWith(c+"-"))));
 document.getElementById("titulo").innerHTML = `${NOME[c]}<span class="ponto">.</span>`;
+// capa: a foto do primeiro ponto turístico do roteiro nesta cidade
+(function(){
+  const capa = lug.find(x => x.foto && x.tipo==="ver" && usados.has(x.id)) || lug.find(x => x.foto);
+  if (!capa) return;
+  const h = document.querySelector("header");
+  h.insertAdjacentHTML("afterbegin", `<div class="capa-cidade"><img src="${capa.foto.url}" alt=""><span class="credito">Foto: ${esc(capa.foto.autor)} · ${esc(capa.foto.licenca)}</span><div><small>${dias.length} ${dias.length>1?"dias":"dia"} no roteiro</small><h1>${NOME[c]}</h1></div></div>`);
+  document.getElementById("titulo").remove();
+})();
 const nVer = lug.filter(x=>x.tipo==="ver").length, nCom = lug.length - nVer;
 document.getElementById("resumo").textContent = `${nVer} lugares para ver e ${nCom} para comer, com horário, dia em que fecha, reserva e o que pedir. Os que estão no dia a dia aparecem com a data.`;
 
@@ -121,8 +130,7 @@ const TR = G.transporte || {};
 if (!TR[c]) document.getElementById("transp-sec").remove();
 else document.getElementById("transp").innerHTML = blocoTransp(TR[c]) + (c==="verona" && TR.veneza ? blocoTransp(TR.veneza, "Veneza (bate-volta de 27/02)") : "");
 
-// dias
-const dias = G.dias.filter(d => d.cidade === c || d.blocos.some(b => b.ids.some(id => id.startsWith(c+"-"))));
+// dias (calculados lá em cima, antes da capa)
 document.getElementById("dias").innerHTML = dias.map(d => `
   <a class="cartao" href="index.html#dia-${d.data}" style="text-decoration:none;color:inherit;display:grid;gap:4px">
     <span class="fraco num">${sem(d.data)} ${dm(d.data)}</span><b>${d.titulo}</b>
@@ -195,5 +203,13 @@ if (window.L) {
   mapa.fitBounds(centro.length > 1 ? centro : pts.map(x=>[x.lat,x.lng]), {padding:[30,30], maxZoom:15});
 }
 </script>
+
+<!-- menu fixo, igual ao do guia -->
+<nav class="tabbar" aria-label="Menu">
+  <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
+  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
+  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
+  <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
+</nav>
 </body>
 </html>

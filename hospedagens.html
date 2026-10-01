@@ -92,6 +92,23 @@ section{margin-top:44px}
 .regras b{color:var(--tinta)}
 footer{margin-top:60px;color:var(--tinta-3);font-size:.85rem;border-top:1px solid var(--linha);padding-top:14px}
 @media (max-width:560px){#mapa{height:340px} #contagem{margin-left:0;width:100%}}
+
+/* ===== visual do app nas páginas internas ===== */
+:root{--fundo:#f4f5f7;--suave:#eef0f3}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--suave:#1a2438}}
+:root[data-theme="dark"]{--suave:#1a2438}
+body{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+.cartao,.lugar,.dia,.item,.cidade-card,.filtros,.caixa,.trecho,.bairro,.regras li,.notas li,.dicas li,.compra{border-radius:18px!important;border-color:var(--suave)!important}
+.rolagem{border-radius:14px;border-color:var(--suave)}
+.mapa,#mapa{border-radius:20px!important;border-color:var(--suave)!important}
+.foto{border-radius:18px 18px 0 0}
+.chip{border-color:transparent}
+h1{letter-spacing:-.025em}
+.tabbar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:600px;height:calc(76px + env(safe-area-inset-bottom));padding:10px 0 env(safe-area-inset-bottom);background:color-mix(in srgb,var(--papel, #fff) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--linha, #e4e7ec);display:flex;justify-content:space-around;align-items:flex-start;z-index:60;font-family:Outfit,system-ui,sans-serif}
+.tabbar a{display:grid;justify-items:center;gap:3px;font-size:.72rem;color:var(--tinta-3, #667085);text-decoration:none;min-width:64px}
+.tabbar a.on{color:var(--destaque, #b45309);font-weight:600}
+.tabbar svg{width:23px;height:23px}
+@media (min-width:760px){.tabbar{border-radius:18px 18px 0 0;border:1px solid var(--linha, #e4e7ec)}}
 </style>
 </head>
 <body>
@@ -252,5 +269,13 @@ function desenharMapa(c){
 }
 mostrar();
 </script>
+
+<!-- menu fixo, igual ao do guia -->
+<nav class="tabbar" aria-label="Menu">
+  <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
+  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
+  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
+  <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
+</nav>
 </body>
 </html>

@@ -97,7 +97,7 @@
   },
   {
    "chave": "roma",
-   "resumo": "Não comprar passe. Cada um paga viagem a viagem: tap&go com o próprio cartão por aproximação ou BIT de €1,50 (100 min). O próprio tap&go limita a cobrança do dia ao preço do Roma 24h. Do aeroporto, o trem regional FL1 + metrô sai mais barato que o Leonardo Express; para 5 pessoas com malas, o táxi de tarifa fixa pode empatar.",
+   "resumo": "Não comprar passe. Cada um paga viagem a viagem: tap&go com o próprio cartão por aproximação ou BIT de €1,50 (100 min). O próprio tap&go limita a cobrança do dia ao preço do Roma 24h.",
    "bilhetes": [
     {
      "nome": "BIT – Biglietto Integrato a Tempo",
@@ -160,7 +160,7 @@
      "onde_comprar": "romapass.it, pontos de informação turística"
     }
    ],
-   "conta": "Viagens por pessoa (hospedagem perto de Termini): seg Coliseu, metrô B ida e volta = 2 (ou a pé, ~25 min); ter Vaticano, metrô A Termini↔Ottaviano = 2, e San Lorenzo à noite fica a pé de Termini (+0–1); qua audiência (metrô A) + Testaccio (metrô até Piramide) + Trastevere (bonde 8) + volta = ~4; qui Borghese (metrô A Spagna/Flaminio) e volta de Campo de' Fiori de ônibus 40/64 = 2; sex até Termini a pé ou 1. Total ≈ 11–12 BIT, €16,50–18 por pessoa. Em nenhum dia passam do teto de €8,50, então o tap&go nunca fica mais caro. RECOMENDADO, avulso/tap&go: 12 × €1,50 × 5 = €90. Alternativas: Roma 72h (€22) + ~3 BIT nos outros dias = €26,50 por pessoa, €132,50; CIS €29 × 5 = €145; quatro Roma 24h = €34 por pessoa, €170. Roma Pass 72h (~€58,50): grátis Coliseu (€18) + Borghese (€18) + ~€15 de transporte = ~€51 de valor, menos do que custa. Roma Pass 48h (~€36,50): 1 entrada (€18) + ~€9 de transporte = €27. Não vale para eles. Aeroporto (dom 21): Leonardo 5 × €14 = €70; FL1 + BIT 5 × €9,50 = €47,50 (mais lento, com baldeação); táxi fixo €55 por carro, mas para 5 pessoas precisa de van ou 2 carros (€110). Total do grupo na opção recomendada: €90 na cidade + €47,50 (FL1) = €137,50, ou €160 com o Leonardo.",
+   "conta": "Viagens por pessoa (hospedagem perto de Termini): seg Coliseu, metrô B ida e volta = 2 (ou a pé, ~25 min); ter Vaticano, metrô A Termini↔Ottaviano = 2, e San Lorenzo à noite fica a pé de Termini (+0–1); qua audiência (metrô A) + Testaccio (metrô até Piramide) + Trastevere (bonde 8) + volta = ~4; qui Borghese (metrô A Spagna/Flaminio) e volta de Campo de' Fiori de ônibus 40/64 = 2; sex até Termini a pé ou 1. Total ≈ 11–12 BIT, €16,50–18 por pessoa. Em nenhum dia passam do teto de €8,50, então o tap&go nunca fica mais caro. RECOMENDADO, avulso/tap&go: 12 × €1,50 × 5 = €90. Alternativas: Roma 72h (€22) + ~3 BIT nos outros dias = €26,50 por pessoa, €132,50; CIS €29 × 5 = €145; quatro Roma 24h = €34 por pessoa, €170. Roma Pass 72h (~€58,50): grátis Coliseu (€18) + Borghese (€18) + ~€15 de transporte = ~€51 de valor, menos do que custa. Roma Pass 48h (~€36,50): 1 entrada (€18) + ~€9 de transporte = €27. Não vale para eles.",
    "recomendado": {
     "bilhete": "BIT €1,50 avulso, de preferência por tap&go (1 cartão por pessoa)",
     "quantos": "~12 por pessoa (60 no grupo)",
@@ -541,7 +541,7 @@
   },
   {
    "chave": "budapeste",
-   "resumo": "Comprar blocos de 10 bilhetes simples (4.500 Ft, 450 Ft por viagem; o grupo pode usar o mesmo bloco viajando junto) e, à parte, o bilhete do ônibus 100E (2.500 Ft por pessoa), que nenhum passe de 24 h/72 h cobre. O passe de 72 h e o Budapest Card saem bem mais caros.",
+   "resumo": "Comprar blocos de 10 bilhetes simples (4.500 Ft por pessoa), que nenhum passe de 24 h/72 h cobre. O passe de 72 h e o Budapest Card saem bem mais caros.",
    "bilhetes": [
     {
      "nome": "Vonaljegy (bilhete simples)",
@@ -580,7 +580,7 @@
      "onde_comprar": "budapestinfo.hu, postos de turismo"
     }
    ],
-   "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft. O aeroporto vai de Bolt/táxi (regra do grupo), então o ônibus 100E sai da conta: ficam 4 blocos de 10 bilhetes, 18.000 Ft (~€49).",
+   "conta": "Viagens por pessoa: qui 4 Keleti → hotel (M2 ou M4) = 1; Dohány, bairro judeu e Basílica a pé, volta do cruzeiro = ~1; sex Parlamento (M2 Kossuth tér) = 1, castelo (ônibus 16) = 1, castelo → Mercado Central (16 + bonde/M4) = 1–2, Mercado → Széchenyi (M4 Fővám tér → M3 Kálvin → M1 Deák → Széchenyi fürdő: baldeação metrô-metrô vale com 1 bilhete) = 1, volta = 1; sáb Deák a pé (ou 1 trecho). Total ≈ 8 por pessoa, 40 para o grupo. RECOMENDADO: 4 blocos de 10 × 4.500 = 18.500 = 12.500 Ft (≈ €34) = 30.500 Ft ≈ €84. Alternativas: 2 × 24 h por pessoa (qui 11h → sex 11h → sáb 11h) = 5.500 × 5 = 27.500 + 12.500 = 40.000 Ft ≈ €110; 72 h = 5.750 × 5 = 28.750 + 12.500 = 41.250 Ft ≈ €113; Budapest Card 72 h PLUS = 39.990 × 5 = 199.950 Ft ≈ €548 (só compensa se fossem usar muitos museus incluídos). O passe só empata com os blocos acima de ~12 viagens por pessoa. Câmbio usado: €1 ≈ 365 Ft.000 Ft (~€49).",
    "recomendado": {
     "bilhete": "Bloco de 10 bilhetes (o grupo usa o mesmo bloco viajando junto)",
     "quantos": "4 blocos",
