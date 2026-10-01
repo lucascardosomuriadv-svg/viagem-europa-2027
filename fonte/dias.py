@@ -22,8 +22,9 @@ Regras que moldaram a ordem (todas da pesquisa de 30/09/2026):
 DIAS = [
   dict(data="2027-02-18", cidade="madri", titulo="Voo e chegada", noite="Madri",
     blocos=[
-      ("Dia", "CA898 sai de Guarulhos às 08:25 e pousa em Madri às 22:35 (T1). Imigração com o registro biométrico novo (EES), malas, e direto para a hospedagem. Com 5 pessoas e malas, o mais simples a essa hora é uma van ou carro XL já reservado.", []),
-      ("Se bater fome", "A Chocolatería San Ginés, ao lado de Sol, não fecha. Churros com chocolate à meia-noite são quase uma tradição de chegada.", ["San Ginés"]),
+      ("Dia", "CA898 sai de Guarulhos às 08:25 e pousa em Madri às 22:35 (T1). Imigração com o registro biométrico novo (EES), malas, e direto para a hospedagem.", []),
+      ("Do aeroporto", "<b>Táxi:</b> peçam na saída, no ponto de táxi, para quantas pessoas forem; eles mandam carro grande. <b>Uber:</b> antes de sair para a rua, subam a rampa à direita até o estacionamento, que é onde os carros de aplicativo pegam passageiros.", []),
+      ("Se bater fome", "A essa hora quase tudo está fechado. O mais garantido é pedir no Uber Eats já no caminho, para chegar junto. Se a hospedagem for perto de Sol, a Chocolatería San Ginés não fecha.", ["San Ginés"]),
     ]),
   dict(data="2027-02-19", cidade="madri", titulo="Retiro, Letras e o Prado de graça", noite="Madri",
     blocos=[
@@ -134,11 +135,11 @@ DIAS = [
       ("Tarde", "Chegada às 14:30. Recolham as malas grandes e descansem: amanhã é dia cheio.", []),
       ("Noite", "Jantar leve perto de casa: tapas em La Latina ou o Mercado de San Fernando, em Lavapiés.", ["San Fernando"]),
     ]),
-  dict(data="2027-03-07", cidade="madri", titulo="Rastro, montaditos a €1 e Bernabéu", noite="Madri",
+  dict(data="2027-03-07", cidade="madri", titulo="Rastro, montaditos a €1 e Toledo", noite="Madri",
     blocos=[
-      ("Manhã", "El Rastro, a feira de domingo (9h–15h), em La Latina.", ["El Rastro"]),
+      ("Manhã", "El Rastro, a feira de domingo (9h–15h): é gigante e se espalha por La Latina e Embajadores, quase conectando um lado da cidade ao outro. Vale ir sem pressa.", ["El Rastro"]),
       ("Almoço", "<b>Domingo é dia de Euromanía no 100 Montaditos</b>: quase tudo a €1. A unidade da Calle San Millán 6 fica colada ao Rastro.", ["100 Montaditos"]),
-      ("Tarde", "Tour do Bernabéu (a partir de ~€37 online; o Real joga fora, então o tour funciona normal). Ou bate-volta a Toledo: trem Avant de Atocha, 33 min, €13–16 o trecho.", ["Bernabéu", "Toledo"]),
+      ("Tarde", "Bate-volta curto a Toledo (trem Avant de Atocha, 33 min, €13–16 o trecho; comprem antes, lota no fim de semana) ou tarde livre: Retiro de novo, compras na Gran Vía. O tour do Bernabéu ficou de fora: caro demais para 5.", ["Toledo"]),
       ("Noite", "Mercado de San Leopoldo ou Casa Dani, a tortilla famosa.", ["Mercado de San Leopoldo", "Casa Dani"]),
     ]),
   dict(data="2027-03-08", cidade="madri", titulo="Último dia e voo para casa", noite=None,
@@ -165,5 +166,21 @@ FORA = {
   "madri": [
     ("Kitchen 154", "Mercado de Vallehermoso (Chamberí). Fecha segunda e terça."),
     ("Hundred", "Hambúrguer em Chueca. Horário não confirmado."),
+  ],
+}
+
+
+# DICAS DE QUEM JA FOI — palavras do Lucas, da viagem de fevereiro de 2026.
+DICAS = {
+  "madri": [
+    "No aeroporto, dá para pedir táxi na saída para quantas pessoas precisar.",
+    "Para pegar Uber: na rampa à direita, antes de sair para a rua, subam até o estacionamento.",
+    "Chegando de noite, vai estar tudo fechado. Vejam algo perto ou peçam pelo Uber Eats.",
+    "O metrô é barato, tranquilo e tem muitas linhas. Um cartão só serve para todo mundo.",
+    "Tem muitos lockers (guarda-volumes) espalhados pela cidade.",
+    "O Rastro, no domingo, é uma feira gigantesca que conecta quase a cidade inteira.",
+    "A cidade é rápida de atravessar a pé: olhando em volta, quando você vê, já atravessou.",
+    "O vento é frio nessa época.",
+    "O tour do Santiago Bernabéu não compensa: caro demais para levar todo mundo.",
   ],
 }

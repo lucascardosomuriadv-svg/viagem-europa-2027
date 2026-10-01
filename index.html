@@ -100,7 +100,7 @@
   <ul class="checks" id="checks"></ul>
 </section>
 
-<footer>Pesquisas de 30/09/2026 (Airbnb, Booking, Trenitalia, Italo, ÖBB, Google Flights, sites oficiais). Horários, preços e regras mudam: confiram antes de pagar.</footer>
+<footer>Pesquisas de 30/09/2026 (Airbnb, Booking, Trenitalia, Italo, ÖBB, Google Flights, sites oficiais). Horários, preços e regras mudam: confiram antes de pagar.<br>Fotos: Wikimedia Commons, em licenças livres. O autor e a licença de cada foto estão na página da cidade (e ao passar o mouse sobre a foto).</footer>
 </div>
 
 <script src="dados/guia.js"></script>
@@ -195,6 +195,10 @@ document.getElementById("lista-compras").innerHTML = COMPRAS.map(([q,s,l]) =>
       ${g.dias.map(d => `
         <details class="dia" id="dia-${d.data}" ${d.data===hoje?"open":""}>
           <summary><span class="data num">${sem(d.data)} ${dm(d.data)}</span><span class="titulo">${d.titulo}</span><span class="dorme">${d.noite?"dorme em "+d.noite:"noite no avião"}</span></summary>
+          ${(() => { const fs = [...new Set(d.blocos.flatMap(b=>b.ids))].map(id=>porId[id]).filter(x=>x.foto && x.tipo==="ver").slice(0,3);
+             return fs.length ? `<div class="faixa-fotos">${fs.map(x=>`<figure><img src="${x.foto.url}" alt="${x.nome}" loading="lazy" title="Foto: ${x.foto.autor.replace(/"/g,"")} · ${x.foto.licenca} (Wikimedia Commons)"><figcaption>${x.nome.replace(/\s*\(.*$/,"").replace(/\s+[—–+-]\s+.*$/,"")}</figcaption></figure>`).join("")}</div>` : ""; })()}
+          ${[...new Set(d.blocos.flatMap(b=>b.ids))].some(id=>porId[id].lat) ? `<div class="mapa-dia" data-dia="${d.data}" role="img" aria-label="Mapa do dia ${dm(d.data)}"></div>
+          <div class="leg-dia"><span><i style="background:#1d4ed8"></i>ver</span><span><i style="background:#c2410c"></i>comer</span><span><b style="background:#0f172a;color:#fff;border-radius:3px;padding:0 4px">M</b> metrô${["verona","innsbruck"].includes(d.cidade)?" / estação de trem":""}</span><span>números = ordem do dia</span></div>` : ""}
           <div class="blocos">${d.blocos.map(b => `
             <div class="bloco"><span class="q">${b.quando}</span><div><p>${b.texto}</p>
               ${b.ids.length?`<div class="lugs">${b.ids.map(id => { const x = porId[id]; return `<a class="chip" href="cidade.html?c=${x.cidade}#${id}">${x.tipo==="comer"?"🍽":"◎"} ${x.nome.replace(/\s*\(.*$/,"").replace(/\s+[—–-]\s+.*$/,"")}</a>`; }).join("")}</div>`:""}
@@ -203,6 +207,34 @@ document.getElementById("lista-compras").innerHTML = COMPRAS.map(([q,s,l]) =>
         </details>`).join("")}
     </div>`).join("");
 })();
+
+// ---------- mapa de cada dia (criado ao abrir o dia) ----------
+function mapaDoDia(el){
+  if (!window.L || el.dataset.ok) return; el.dataset.ok = 1;
+  const d = G.dias.find(x => x.data === el.dataset.dia);
+  const ids = [...new Set(d.blocos.flatMap(b=>b.ids))].filter(id => porId[id].lat);
+  const m = L.map(el, {scrollWheelZoom:false});
+  const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
+  L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(m);
+  L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(m);
+  const dist = (a,b) => { const R=6371000, r=Math.PI/180, x=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r), y=(b[0]-a[0])*r; return Math.sqrt(x*x+y*y)*R; };
+  const pts = ids.map(id => [porId[id].lat, porId[id].lng]);
+  // estações perto (até ~800 m de algum lugar do dia)
+  const cidades = [...new Set(ids.map(id => porId[id].cidade))];
+  cidades.forEach(c => (G.estacoes[c]||[]).forEach(([n,la,lo]) => {
+    if (pts.some(p => dist(p,[la,lo]) < 800) || ["verona","innsbruck"].includes(c))
+      L.marker([la,lo],{icon:L.divIcon({className:"",html:'<div class="pino-metro">M</div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(m).bindTooltip(n);
+  }));
+  ids.forEach((id,i) => { const x = porId[id];
+    L.marker([x.lat,x.lng],{zIndexOffset:1000,icon:L.divIcon({className:"",html:`<div class="num-pino" style="background:${x.tipo==="comer"?"#c2410c":"#1d4ed8"}">${i+1}</div>`,iconSize:[24,24],iconAnchor:[12,12]})})
+      .addTo(m).bindPopup(`<b>${x.nome}</b>${x.metro?`<br>Ⓜ ${x.metro.nome} · ${x.metro.min} min a pé`:""}<br><a href="cidade.html?c=${x.cidade}#${id}">Detalhes</a>`);
+  });
+  m.fitBounds(pts.length > 1 ? pts : [pts[0], pts[0]], {padding:[28,28], maxZoom:15});
+}
+document.querySelectorAll(".dia").forEach(det => det.addEventListener("toggle", () => {
+  if (det.open) { const el = det.querySelector(".mapa-dia"); if (el) setTimeout(() => mapaDoDia(el), 30); }
+}));
+document.querySelectorAll(".dia[open] .mapa-dia").forEach(el => mapaDoDia(el));
 
 // ---------- voos ----------
 (function(){
@@ -274,7 +306,7 @@ const TRENS_PT = {
 
 // ---------- orçamento ----------
 const ATRACOES = [
-  ["Madri","Palácio Real",18],["Madri","Prado (grátis 18h–20h)",0],["Madri","Tour do Bernabéu",37],
+  ["Madri","Palácio Real",18],["Madri","Prado (grátis 18h–20h)",0],["Madri","Trem ida e volta a Toledo",30],
   ["Roma","Coliseu + Fórum + Palatino",20],["Roma","Museus Vaticanos",25],["Roma","Cúpula de São Pedro",10],["Roma","Galleria Borghese",17],["Roma","Panteão",7],["Roma","Trevi (perto da fonte)",2],["Roma","Castel Sant'Angelo",16],
   ["Verona","Arena",12],["Verona","Casa di Giulietta (completa)",12],["Verona","Torre dei Lamberti",6],["Verona","Trem ida e volta a Veneza",26],
   ["Innsbruck","Hofburg",15],["Innsbruck","Nordkette (Seegrube)",50.4],
@@ -302,10 +334,11 @@ document.querySelectorAll("#lista-orc input").forEach(el => el.addEventListener(
 orcamento();
 
 // ---------- cidades ----------
-const RESUMO = {madri:"Chegada e volta: Retiro, Prado, Palácio, Rastro", roma:"5 noites: Roma Antiga, Vaticano, Trastevere, Borghese", verona:"Arena, Giulietta e bate-volta a Veneza", innsbruck:"Uma noite nos Alpes, com a Nordkette", viena:"Schönbrunn, Klimt, cafés e Ópera", budapeste:"Parlamento, Buda e banhos termais"};
+const RESUMO = {madri:"Chegada e volta: Retiro, Prado, Palácio, Rastro, Toledo", roma:"5 noites: Roma Antiga, Vaticano, Trastevere, Borghese", verona:"Arena, Giulietta e bate-volta a Veneza", innsbruck:"Uma noite nos Alpes, com a Nordkette", viena:"Schönbrunn, Klimt, cafés e Ópera", budapeste:"Parlamento, Buda e banhos termais"};
 document.getElementById("lista-cidades").innerHTML = G.cidades.map(([k,n]) => {
   const l = G.lugares[k]; const c = l.filter(x=>x.tipo==="comer").length, v = l.length - c;
-  return `<a class="cidade-card" href="cidade.html?c=${k}" style="--cor:${COR[k]}"><b>${n}</b><span>${RESUMO[k]}</span><span class="num">${v} para ver · ${c} para comer</span></a>`;
+  const capa = l.find(x => x.foto && x.tipo==="ver" && G.usados.includes(x.id));
+  return `<a class="cidade-card" href="cidade.html?c=${k}" style="--cor:${COR[k]}">${capa?`<div class="capa"><img src="${capa.foto.url}" alt="" loading="lazy"></div>`:""}<b>${n}</b><span>${RESUMO[k]}</span><span class="num">${v} para ver · ${c} para comer</span></a>`;
 }).join("") + `<a class="cidade-card" href="hospedagens.html" style="--cor:var(--tinta)"><b>Hospedagem</b><span>Airbnb e hotéis pesquisados em cada parada</span></a>`;
 
 // ---------- checklist ----------

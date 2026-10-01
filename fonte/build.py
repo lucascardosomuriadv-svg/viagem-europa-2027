@@ -13,7 +13,7 @@ AQUI = pathlib.Path(__file__).parent
 PESQ = AQUI / "pesquisa"
 SAIDA = AQUI.parent / "dados" / "guia.js"
 sys.path.insert(0, str(AQUI))
-from dias import DIAS, FORA  # noqa: E402
+from dias import DIAS, FORA, DICAS  # noqa: E402
 
 CAMBIO = 5.95
 CIDADES = [("madri", "Madri"), ("roma", "Roma"), ("verona", "Verona"),
@@ -118,18 +118,55 @@ def main():
                 print("  aviso:", e)
     usados = {i for d in dias for b in d["blocos"] for i in b["ids"]}
 
+    # fotos: o prefixo mais longo do id que estiver em fotos.ARTIGO
+    from fotos import ARTIGO
+    fotos = json.load(open(PESQ / "fotos.json", encoding="utf-8")) if (PESQ / "fotos.json").exists() else {}
+    com_foto = 0
+    for l in lug.values():
+        for x in l:
+            pref = max((k for k in ARTIGO if x["id"].startswith(k)), key=len, default=None)
+            f = fotos.get(ARTIGO[pref]) if pref else None
+            if f:
+                x["foto"] = f; com_foto += 1
+
+    # METRO: estacoes do OpenStreetMap; varios nos por estacao viram um ponto so
+    import math
+    def hav(a, b):
+        la1, lo1, la2, lo2 = map(math.radians, (*a, *b))
+        h = math.sin((la2-la1)/2)**2 + math.cos(la1)*math.cos(la2)*math.sin((lo2-lo1)/2)**2
+        return 2*6371000*math.asin(math.sqrt(h))
+    estacoes = {}
+    for c in ("madri", "roma", "viena", "budapeste"):
+        arq = PESQ / f"metro-{c}.json"
+        if not arq.exists(): continue
+        grupos = {}
+        for e in json.load(open(arq, encoding="utf-8"))["elements"]:
+            n = e.get("tags", {}).get("name")
+            if n: grupos.setdefault(n, []).append((e["lat"], e["lon"]))
+        estacoes[c] = [[n, round(sum(p[0] for p in ps)/len(ps), 6), round(sum(p[1] for p in ps)/len(ps), 6)] for n, ps in grupos.items()]
+    # Verona e Innsbruck nao tem metro: a referencia e' a estacao de trem
+    estacoes["verona"] = [["Verona Porta Nuova (trem)", 45.4290, 10.9828]]
+    estacoes["innsbruck"] = [["Innsbruck Hauptbahnhof (trem)", 47.2633, 11.4008]]
+    for c, l in lug.items():
+        for x in l:
+            if x.get("lat") and estacoes.get(c) and c not in ("verona", "innsbruck"):
+                d, nome = min((hav((x["lat"], x["lng"]), (e[1], e[2])), e[0]) for e in estacoes[c])
+                minutos = round(d * 1.3 / 80)
+                if minutos <= 15:
+                    x["metro"] = {"nome": nome, "min": max(1, minutos)}
+
     trens = json.load(open(PESQ / "trens.json", encoding="utf-8"))
     voos = None
     if (PESQ / "voos.json").exists():
         voos = json.load(open(PESQ / "voos.json", encoding="utf-8"))
 
     dados = {"cambio": CAMBIO, "cidades": CIDADES, "lugares": lug, "extras": extras, "dias": dias,
-             "fora": fora, "usados": sorted(usados), "trens": trens, "voos": voos}
+             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "trens": trens, "voos": voos}
     SAIDA.parent.mkdir(exist_ok=True)
     SAIDA.write_text("// gerado por fonte/build.py — nao edite a mao\nwindow.GUIA = "
                      + json.dumps(dados, ensure_ascii=False) + ";\n", encoding="utf-8")
     tot = sum(len(v) for v in lug.values())
-    print(f"ok: {len(dias)} dias, {tot} lugares, {len(usados)} citados no dia a dia, voos={'sim' if voos else 'ainda nao'}"
+    print(f"ok: {len(dias)} dias, {tot} lugares, {com_foto} com foto, {len(usados)} citados no dia a dia, voos={'sim' if voos else 'ainda nao'}"
           f" -> {SAIDA.name} ({SAIDA.stat().st_size // 1024} KB)")
 
 

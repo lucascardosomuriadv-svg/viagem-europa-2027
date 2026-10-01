@@ -21,6 +21,11 @@
     <p class="sub" id="resumo" style="margin-top:12px"></p>
   </header>
 
+  <section id="dicas-sec">
+    <h2>Dicas de quem já foi</h2>
+    <ul class="dicas" id="dicas"></ul>
+  </section>
+
   <section>
     <h2>Os dias aqui</h2>
     <div id="dias" class="grade2"></div>
@@ -32,7 +37,7 @@
     <div class="leg-mapa">
       <span><i style="background:#1d4ed8"></i>para ver</span>
       <span><i style="background:#c2410c"></i>para comer</span>
-      <span>ponto maior = está no dia a dia · toque para ver</span>
+      <span><b style="background:#0f172a;color:#fff;border-radius:3px;padding:0 4px">M</b> metrô</span><span>ponto maior = está no dia a dia · toque para ver</span>
     </div>
   </section>
 
@@ -84,6 +89,11 @@ document.getElementById("titulo").innerHTML = `${NOME[c]}<span class="ponto">.</
 const nVer = lug.filter(x=>x.tipo==="ver").length, nCom = lug.length - nVer;
 document.getElementById("resumo").textContent = `${nVer} lugares para ver e ${nCom} para comer, com horário, dia em que fecha, reserva e o que pedir. Os que estão no dia a dia aparecem com a data.`;
 
+// dicas (as palavras do Lucas, da viagem de 2026)
+const dicas = (G.dicas||{})[c] || [];
+if (!dicas.length) document.getElementById("dicas-sec").remove();
+else document.getElementById("dicas").innerHTML = dicas.map(t => `<li>${esc(t)}</li>`).join("");
+
 // dias
 const dias = G.dias.filter(d => d.cidade === c || d.blocos.some(b => b.ids.some(id => id.startsWith(c+"-"))));
 document.getElementById("dias").innerHTML = dias.map(d => `
@@ -97,10 +107,13 @@ function cartao(x){
   const quando = quandoUsado[x.id];
   const gmaps = x.lat ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.nome.replace(/\s*\(.*$/,"") + " " + (x.endereco||NOME[c]))}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.nome+" "+NOME[c])}`;
   const campo = (rot, v) => v && v !== "—" ? `<dt>${rot}</dt><dd>${esc(v)}</dd>` : "";
+  const foto = x.foto ? `<div class="foto"><img src="${x.foto.url}" alt="${esc(x.nome)}" loading="lazy"><span class="credito">Foto: <a href="${x.foto.pagina}" target="_blank" rel="noopener">${esc(x.foto.autor)}</a> · ${esc(x.foto.licenca)}</span></div>` : "";
   return `<article class="lugar" id="${x.id}">
+    ${foto}
     <div class="topo">
       <span class="chip ${x.tipo==="comer"?"espera":"info"}">${x.tipo==="comer"?"comer":"ver"}</span>
       ${quando ? `<span class="chip ok">no roteiro: ${quando.join(", ")}</span>` : ""}
+      ${x.metro ? `<span class="chip">Ⓜ ${esc(x.metro.nome)} · ${x.metro.min} min</span>` : ""}
       ${x.origem==="sua lista"||x.origem==="seu mapa" ? `<span class="chip">${x.origem}</span>` : ""}
       ${x.confianca && x.confianca!=="alta" ? `<span class="chip alerta">confiança ${esc(x.confianca)}</span>` : ""}
     </div>
@@ -144,6 +157,7 @@ if (window.L) {
   L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Mapa &copy; Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(mapa);
   L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(mapa);
   const centro = [];
+  (G.estacoes[c]||[]).forEach(([n,la,lo]) => L.marker([la,lo],{icon:L.divIcon({className:"",html:'<div class="pino-metro">M</div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(mapa).bindTooltip(n));
   pts.forEach(x => {
     const u = usados.has(x.id);
     L.circleMarker([x.lat,x.lng],{radius:u?8:5,weight:u?2:1,color:"#fff",fillColor:x.tipo==="comer"?"#c2410c":"#1d4ed8",fillOpacity:u?.95:.6}).addTo(mapa)
