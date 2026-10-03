@@ -79,6 +79,20 @@ def lugares():
                     if ja[chave] in x["nome"]: x["origem"] = "sua lista"
                 continue
             out["viena"].append(item("viena", l["tipo"], l, "sua lista"))
+    # A LISTA DE INNSBRUCK DO LUCAS: "ja" marca o que a pesquisa ja tinha; o
+    # resto entra com coordenada do OpenStreetMap. Cafes que vieram de um post
+    # usam o print do post como foto (credito de quem postou).
+    il = PESQ / "innsbruck-lista.json"
+    if il.exists():
+        for l in json.load(open(il, encoding="utf-8"))["lugares"]:
+            if "ja" in l:
+                x = next(x for x in out["innsbruck"] if l["ja"] in x["nome"])
+                x["origem"] = "sua lista"
+                continue
+            it = item("innsbruck", l["tipo_lugar"], l, "sua lista")
+            if l.get("matcha"): it["matcha"] = True
+            if l.get("foto_ref"): it["foto"] = {"url": l["foto_ref"], "autor": "@gigisworldtour (TikTok)", "licenca": "print do post"}
+            out["innsbruck"].append(it)
     # MAIS RESTAURANTES EM MADRI (pesquisa de 30/09/2026), cada um com o seu
     # "slot" — o momento do roteiro em que ele cabe
     mr = PESQ / "madri-restaurantes.json"

@@ -99,7 +99,7 @@ DIAS = [
     ]),
   dict(data="2027-03-01", cidade="viena", titulo="Nordkette e trem para Viena", noite="Viena",
     blocos=[
-      ("Manhã", "Malas no guarda-volumes e Nordkette às 9h (~€50). Voltem até 11h45.", ["Nordkette"]),
+      ("Manhã", "Malas no guarda-volumes e manhã livre no centro. Voltem até 11h45.", []),
       ("Tarde", "Railjet: Innsbruck 13:58 → Viena 18:32.", []),
       ("Noite", "O schnitzel maior que o prato.", ["Figlmüller"]),
     ]),

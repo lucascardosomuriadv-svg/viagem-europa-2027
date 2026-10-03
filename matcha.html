@@ -13,17 +13,16 @@
 </head>
 <body>
 <div class="app">
-  <a class="voltar" href="index.html#/cidades">‹ Cidades</a>
+  <a class="voltar" href="index.html#/viagem">‹ Viagem</a>
   <header class="topo"><div><small>Madri · os lugares que ela salvou</small><h1>Matcha da Camila</h1></div></header>
   <div class="sec" id="painel"></div>
   <p class="rodape">Cafés pequenos mudam de horário: confiram no Instagram antes de ir.</p>
 </div>
 <nav class="tabbar" aria-label="Menu">
-  <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
+  <a href="index.html#/viagem" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
   <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
   <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
   <a href="index.html#/comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-  <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
 </nav>
 <div class="ficha-fundo" id="ficha-fundo" hidden></div>
 <div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-label="Detalhes do lugar" hidden></div>
@@ -42,8 +41,8 @@ const porId = {}; Object.values(G.lugares).flat().forEach(x => porId[x.id] = x);
 <script>
 document.documentElement.style.setProperty("--cor", "#4d7c0f");
 const L_ = G.lugares.madri.filter(x => x.matcha);
-const ordem = (a,b) => (a.dia||"9").localeCompare(b.dia||"9") || curto(a.nome).localeCompare(curto(b.nome));
-const linha = x => `<button type="button" class="it linha" data-ficha="${x.id}"><span class="th ${x.matcha===true?"matcha":""}">${iconeComida(x.matcha===true?"matcha":"extra")}</span><span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria))}</small></span>${x.dia?`<span class="dia-tag">${sem(x.dia)} ${dm(x.dia)}</span>`:""}</button>`;
+const ordem = (a,b) => curto(a.nome).localeCompare(curto(b.nome));
+const linha = x => `<button type="button" class="it linha" data-ficha="${x.id}"><span class="th ${x.matcha===true?"matcha":""}">${iconeComida(x.matcha===true?"matcha":"extra")}</span><span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria))}</small></span></button>`;
 document.getElementById("painel").innerHTML = `<div class="grupo"><b>Matcha</b></div><div class="lista">${L_.filter(x=>x.matcha===true).sort(ordem).map(linha).join("")}</div>
   <div class="grupo"><b>Extra</b></div><div class="lista">${L_.filter(x=>x.matcha==="extra").map(linha).join("")}</div>`;
 </script>

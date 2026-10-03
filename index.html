@@ -15,23 +15,27 @@
 <body>
 <div class="app">
 
-  <!-- DIA A DIA (A) -->
-  <section id="v-dia" class="view" aria-label="Dia a dia">
-    <header class="topo"><div><small id="d-sub"></small><h1 id="d-titulo"></h1></div></header>
-    <nav class="dias" id="d-dias" aria-label="Escolher o dia"></nav>
-    <div id="d-capa"></div>
-    <div class="atalhos" id="d-atalhos"></div>
-    <div class="linha" id="d-linha"></div>
-    <div class="navdia" id="d-nav"></div>
+  <!-- VIAGEM: só o que está fechado (noites e trechos); as ideias ficam em cada cidade -->
+  <section id="v-viagem" class="view" aria-label="Viagem">
+    <header class="topo"><div><small>18/02 → 08/03/2027 · 18 noites</small><h1>Europa em fevereiro</h1></div></header>
+    <div class="sec">
+      <div class="lista caminho" id="caminho"></div>
+      <h2>Também</h2>
+      <div class="cidades" id="extras"></div>
+      <h2>Antes de ir</h2>
+      <ul class="checks" id="checks"></ul>
+    </div>
+    <p class="rodape">Pesquisas de 30/09/2026. Fotos: Wikimedia Commons, licenças livres (autor em cada foto). Horários e preços mudam: confiram antes de pagar.</p>
   </section>
 
-  <!-- MAPA (D) -->
-  <section id="v-mapa" class="view" aria-label="Mapa do dia" hidden>
+  <!-- MAPA: todas as ideias de uma cidade -->
+  <section id="v-mapa" class="view" aria-label="Mapa" hidden>
     <div class="mapa-v">
-      <nav class="dias" id="m-dias" aria-label="Escolher o dia"></nav>
-      <div id="m-mapa" class="mapa" role="img" aria-label="Mapa do dia"></div>
+      <nav class="filtro" id="m-cidades" aria-label="Cidade"></nav>
+      <div id="m-mapa" class="mapa" role="img" aria-label="Mapa da cidade"></div>
     </div>
-    <div class="folha"><div class="alca"></div><h2 id="m-titulo"></h2><small id="m-sub"></small><div id="m-lista"></div></div>
+    <div class="folha"><div class="alca"></div><h2 id="m-titulo"></h2><small id="m-sub"></small>
+      <nav class="filtro m-tipos" id="m-tipos" aria-label="Tipo"></nav><div id="m-lista"></div></div>
   </section>
 
   <!-- COMPRAR -->
@@ -48,135 +52,71 @@
     <nav class="filtro" id="k-tipos" aria-label="Tipo"></nav>
     <div class="sec"><div id="k-lista"></div></div>
   </section>
-
-  <!-- CIDADES -->
-  <section id="v-cidades" class="view" aria-label="Cidades" hidden>
-    <header class="topo"><div><small>18/02 → 08/03/2027 · 18 noites</small><h1>Cidades</h1></div></header>
-    <div class="sec">
-      <div class="cidades" id="lista-cidades"></div>
-      <h2>Antes de ir</h2>
-      <ul class="checks" id="checks"></ul>
-    </div>
-    <p class="rodape">Pesquisas de 30/09/2026. Fotos: Wikimedia Commons, licenças livres (autor em cada foto). Horários e preços mudam: confiram antes de pagar.</p>
-  </section>
 </div>
 
 <nav class="tabbar" aria-label="Menu">
-  <a href="#/dia" data-v="dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
+  <a href="#/viagem" data-v="viagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
   <a href="#/mapa" data-v="mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
   <a href="#/comprar" data-v="comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
   <a href="#/comer" data-v="comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-  <a href="#/cidades" data-v="cidades"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
 </nav>
 
 <!-- FICHA (bottom sheet) -->
 <div class="ficha-fundo" id="ficha-fundo" hidden></div>
 <div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-label="Detalhes do lugar" hidden></div>
 
-<!-- STORIES (F) -->
-<div class="stories" id="stories" role="dialog" aria-modal="true" aria-label="O dia em stories">
-  <div class="palco" id="st-palco"></div>
-</div>
-
 <script src="dados/guia.js"></script>
-<script src="hospedagens-dados.js"></script>
+<script src="viagem.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const G = window.GUIA, HOSP = window.HOSP || [];
+const G = window.GUIA;
 const HEX = {madri:"#c2410c",roma:"#b45309",verona:"#9333ea",innsbruck:"#0e7490",viena:"#1d4ed8",budapeste:"#15803d"};
-const COR = Object.fromEntries(Object.keys(HEX).map(k => [k, `var(--${k})`]));
 const NOME = Object.fromEntries(G.cidades);
 const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"];
-const DIA_LONGO = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
 const dm = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
-const wd = iso => new Date(iso+"T12:00:00Z").getUTCDay();
-const sem = iso => DIA_SEM[wd(iso)];
-const eur = v => "€" + v.toLocaleString("pt-BR",{minimumFractionDigits:0,maximumFractionDigits:2});
-const brl = v => "R$ " + Math.round(v).toLocaleString("pt-BR");
+const sem = iso => DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const porId = {}; Object.values(G.lugares).flat().forEach(x => porId[x.id] = x);
 const curto = n => n.replace(/\s*\(.*$/,"").replace(/\s+[—–]\s+.*$/,"").replace(/\s+\+\s+.*$/,"");
-const DIAS = G.dias;
-const ICO = {
-  comer:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>',
-  ver:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
-  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>',
-  mapa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>',
-  cid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>',
-};
-// Tipos de bloco: "nota" vira aviso; "mais" entra recolhido dentro do passo anterior
-const NOTA = /^(Por que hoje|Atenção|Dinheiro|Do aeroporto)/;
-const MAIS = /^(Mais opções|Abertos depois|Lanche antes)/;
+const usados = new Set(G.usados);
+const ideias = c => [...G.lugares[c]].sort(ordemIdeias(usados));
+function capaDe(c){ const l = ideias(c); const x = l.find(x => x.foto && x.tipo==="ver") || l.find(x => x.foto); return x ? x.foto : null; }
+// última cidade escolhida em qualquer aba
+function cidadeGuardada(){ try { const c = sessionStorage.getItem("cidade"); return NOME[c] ? c : null; } catch(e){ return null; } }
+function guardaCidade(c){ try { if (NOME[c]) sessionStorage.setItem("cidade", c); } catch(e){} }
 
-function idsDoDia(d){ return [...new Set(d.blocos.filter(b=>!MAIS.test(b.quando)).flatMap(b=>b.ids))]; }
-function fotoDoDia(d){
-  const x = idsDoDia(d).map(i=>porId[i]).find(x=>x.foto && x.tipo==="ver") || d.blocos.flatMap(b=>b.ids).map(i=>porId[i]).find(x=>x.foto);
-  return x ? x.foto : null;
-}
-function corDia(d){ return HEX[d.cidade] || "#b45309"; }
-const hojeISO = new Date().toISOString().slice(0,10);
-const DIA_PADRAO = DIAS.some(d=>d.data===hojeISO) ? hojeISO : DIAS[0].data;
-
-// ---------- faixa de dias ----------
-function faixa(el, atual, view){
-  el.innerHTML = DIAS.map(d => `<button type="button" data-d="${d.data}" class="${d.data===atual?"on":""}" style="--c:${corDia(d)}" aria-label="${DIA_LONGO[wd(d.data)]} ${dm(d.data)}, ${NOME[d.cidade]}">${sem(d.data)}<b class="num">${+d.data.slice(8)}</b><i></i></button>`).join("");
-  el.querySelectorAll("button").forEach(b => b.onclick = () => ir(view, b.dataset.d));
-  const on = el.querySelector(".on"); if (on) on.scrollIntoView({inline:"center", block:"nearest"});
-}
-
-// ---------- linha de lugar ----------
-function linhaLugar(x){
-  const th = x.foto ? `<img class="th" src="${x.foto.url}" alt="" loading="lazy">` : `<span class="th ${x.tipo}">${ICO[x.tipo==="comer"?"comer":"ver"]}</span>`;
-  const sub = x.metro ? `Metrô ${esc(x.metro.nome)} · ${x.metro.min} min` : (x.bairro ? esc(x.bairro.split(/[(/]/)[0]) : "");
-  return `<a class="lg" href="cidade.html?c=${x.cidade}#${x.id}" data-ficha="${x.id}">${th}<div><b>${esc(curto(x.nome))}</b><small>${sub}</small></div></a>`;
-}
-
-// ---------- DIA ----------
-function renderDia(data){
-  const i = DIAS.findIndex(d=>d.data===data), d = DIAS[i];
-  document.documentElement.style.setProperty("--cor", corDia(d));
-  document.getElementById("d-sub").textContent = `Dia ${i+1} de ${DIAS.length} · ${NOME[d.cidade]}`;
-  document.getElementById("d-titulo").textContent = `${DIA_LONGO[wd(data)]}, ${dm(data)}`;
-  faixa(document.getElementById("d-dias"), data, "dia");
-  const f = fotoDoDia(d);
-  document.getElementById("d-capa").innerHTML = `<div class="capa">${f?`<img src="${f.url}" alt=""><span class="credito">Foto: ${esc(f.autor)} · ${esc(f.licenca)}</span>`:""}
-    <button class="play" type="button" id="abrir-stories">${ICO.play} Ver em stories</button>
-    <div class="txt"><small>${NOME[d.cidade]} · ${d.noite?"dorme em "+d.noite:"noite no avião"}</small><h2>${esc(d.titulo)}</h2></div></div>`;
-  document.getElementById("abrir-stories").onclick = () => abrirStories(data);
-  document.getElementById("d-atalhos").innerHTML = `<a href="#/mapa/${data}">${ICO.mapa} Mapa do dia</a><a href="cidade.html?c=${d.cidade}">${ICO.cid} ${NOME[d.cidade]}</a>`;
-  // passos
-  let html = "", aberto = null;
-  const fecha = () => { if (aberto) { html += aberto + "</div></div>"; aberto = null; } };
-  d.blocos.forEach(b => {
-    if (NOTA.test(b.quando)) { fecha(); html += `<div class="nota"><b>${esc(b.quando)}:</b> ${b.texto}</div>`; return; }
-    if (MAIS.test(b.quando) && aberto) {
-      aberto += `<details class="mais"><summary>${esc(b.quando)} (${b.ids.length})</summary>${b.ids.map(id=>linhaLugar(porId[id])).join("")}</details>`; return;
-    }
-    fecha();
-    const rot = b.quando.replace(/\s*\(.*\)$/,"");
-    aberto = `<div class="passo${/Matcha/.test(b.quando)?" matcha":""}"><span class="hora">${esc(rot)}</span><div class="cx"><p>${b.texto}</p>${b.ids.map(id=>linhaLugar(porId[id])).join("")}`;
-  });
-  fecha();
-  document.getElementById("d-linha").innerHTML = html;
-  const ant = DIAS[i-1], prox = DIAS[i+1];
-  document.getElementById("d-nav").innerHTML = (ant?`<button type="button" data-d="${ant.data}"><small>‹ ${sem(ant.data)} ${dm(ant.data)}</small><b>${esc(ant.titulo)}</b></button>`:"<span style='flex:1'></span>")
-    + (prox?`<button type="button" data-d="${prox.data}"><small>${sem(prox.data)} ${dm(prox.data)} ›</small><b>${esc(prox.titulo)}</b></button>`:"<span style='flex:1'></span>");
-  document.querySelectorAll("#d-nav button").forEach(b => b.onclick = () => { ir("dia", b.dataset.d); scrollTo(0,0); });
+// ---------- VIAGEM ----------
+function renderViagem(){
+  const trecho = t => `<div class="it linha trecho"><span class="th ${t[2]}">${ICO_TRECHO[t[2]]}</span><span class="tx"><b>${esc(t[3])}</b><small>${sem(t[0])} ${dm(t[0])}${t[1]?" · "+t[1]:""}${t[4]?" · "+esc(t[4]):""}</small></span></div>`;
+  const parada = ([c,a,b]) => { const f = capaDe(c), n = noites(a,b);
+    return `<a class="it linha parada" href="cidade.html?c=${c}" style="--cor:var(--${c})">${f?`<img class="th" src="${f.url}" alt="" loading="lazy">`:`<span class="th"></span>`}<span class="tx"><b>${NOME[c]}</b><small>${periodo(a,b)} · ${G.lugares[c].length} ideias</small></span><span class="noites">${n} ${n===1?"noite":"noites"}</span></a>`; };
+  let html = trecho(TRECHOS[0]) + trecho(TRECHOS[1]);
+  PARADAS.forEach((p,i) => { html += parada(p) + trecho(TRECHOS[i+2]); });
+  document.getElementById("caminho").innerHTML = html;
+  document.getElementById("extras").innerHTML = [["hospedagens.html","Hospedagem","Airbnb e hotéis"],["matcha.html","Matcha da Camila","Madri"],["futebol.html","Futebol","jogos nas datas"]]
+    .map(([h,t,s]) => `<a class="cidade-card extra" href="${h}"><b>${t}</b><span>${s}</span></a>`).join("");
+  const CHECKS = [["Seguro viagem Schengen","mínimo €30 mil"],["ETIAS","se já estiver valendo"],["Passaporte","válido até junho/2027"],["Mesmo apartamento em Madri na ida e na volta","para guardar as malas"],["Check-in autônomo na chegada","pousamos às 22:35"],["eSIM europeu","vale nos 4 países"],["Roupa de frio de verdade","Innsbruck abaixo de zero"]];
+  document.getElementById("checks").innerHTML = CHECKS.map(([t,s]) => `<li><b>${t}</b><span>${s}</span></li>`).join("");
 }
 
 // ---------- MAPA ----------
-let mapa, camada;
-function renderMapa(data){
-  const d = DIAS.find(x=>x.data===data);
-  document.documentElement.style.setProperty("--cor", corDia(d));
-  faixa(document.getElementById("m-dias"), data, "mapa");
-  const ids = idsDoDia(d).filter(id => porId[id].lat);
-  document.getElementById("m-titulo").textContent = d.titulo;
-  document.getElementById("m-sub").textContent = `${DIA_LONGO[wd(data)]}, ${dm(data)} · ${ids.length} ${ids.length===1?"parada":"paradas"}`;
+let mapa, camada, mTipo = "tudo";
+function renderMapa(c){
+  document.documentElement.style.setProperty("--cor", HEX[c]);
+  document.getElementById("m-cidades").innerHTML = G.cidades.map(([k,n]) => `<button type="button" class="${k===c?"on":""}" data-c="${k}">${n}</button>`).join("");
+  document.querySelectorAll("#m-cidades button").forEach(b => b.onclick = () => ir("mapa", b.dataset.c));
+  const todos = ideias(c).filter(x => x.lat);
+  const conta = t => todos.filter(x => t==="tudo" || x.tipo===t).length;
+  document.getElementById("m-tipos").innerHTML = [["tudo","Tudo"],["ver","Para ver"],["comer","Para comer"]]
+    .map(([k,n]) => `<button type="button" class="${k===mTipo?"on":""}" data-t="${k}">${n} <span>${conta(k)}</span></button>`).join("");
+  document.querySelectorAll("#m-tipos button").forEach(b => b.onclick = () => { mTipo = b.dataset.t; renderMapa(c); });
+  const ls = todos.filter(x => mTipo==="tudo" || x.tipo===mTipo);
+  document.getElementById("m-titulo").textContent = NOME[c];
+  document.getElementById("m-sub").textContent = `${noitesDe(c)} · ${ls.length} ${ls.length===1?"lugar":"lugares"} no mapa`;
   const cor = x => x.tipo==="comer" ? "#c2410c" : "#1d4ed8";
-  document.getElementById("m-lista").innerHTML = ids.map((id,k) => { const x = porId[id];
-    return `<button type="button" class="it" data-id="${id}"><span class="n" style="background:${cor(x)}">${k+1}</span><span><b>${esc(curto(x.nome))}</b><small>${esc(blocoDe(d,id))}</small>${x.metro?`<small class="mm">Metrô ${esc(x.metro.nome)} · ${x.metro.min} min a pé</small>`:""}</span></button>`; }).join("")
-    || '<p class="fraco">Dia de deslocamento, sem paradas no mapa.</p>';
+  document.getElementById("m-lista").innerHTML = ls.map((x,k) =>
+    `<button type="button" class="it" data-id="${x.id}"><span class="n" style="background:${cor(x)}">${k+1}</span><span><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || umaFrase(x.dica))}</small>${x.metro?`<small class="mm">Metrô ${esc(x.metro.nome)} · ${x.metro.min} min a pé</small>`:""}</span></button>`).join("")
+    || '<p class="fraco">Nada no mapa com esse filtro.</p>';
   if (!window.L) return;
   if (!mapa) {
     mapa = L.map("m-mapa", {zoomControl:false});
@@ -187,89 +127,46 @@ function renderMapa(data){
   setTimeout(() => mapa.invalidateSize(), 30);
   if (camada) camada.remove();
   camada = L.layerGroup().addTo(mapa);
-  const pts = ids.map(id => [porId[id].lat, porId[id].lng]);
+  const pts = ls.map(x => [x.lat, x.lng]);
   const dist = (a,b) => { const r=Math.PI/180, X=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r), Y=(b[0]-a[0])*r; return Math.sqrt(X*X+Y*Y)*6371000; };
-  [...new Set(ids.map(id=>porId[id].cidade))].forEach(c => (G.estacoes[c]||[]).forEach(([n,la,lo]) => {
-    if (pts.some(p=>dist(p,[la,lo])<800) || ["verona","innsbruck"].includes(c))
+  (G.estacoes[c]||[]).forEach(([n,la,lo]) => {
+    if (pts.some(p=>dist(p,[la,lo])<600) || ["verona","innsbruck"].includes(c))
       L.marker([la,lo],{icon:L.divIcon({className:"",html:'<div class="pin-m">M</div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(camada).bindTooltip(n);
-  }));
-  const mk = {};
-  ids.forEach((id,k) => { const x = porId[id];
-    mk[id] = L.marker([x.lat,x.lng],{zIndexOffset:1000,icon:L.divIcon({className:"",html:`<div class="pin" style="background:${cor(x)}">${k+1}</div>`,iconSize:[28,28],iconAnchor:[14,14]})})
-      .addTo(camada).bindPopup(`<b>${esc(curto(x.nome))}</b><br><a href="cidade.html?c=${x.cidade}#${id}">Detalhes</a>`)
-      .on("click", () => marca(id));
   });
-  if (pts.length) mapa.fitBounds(pts.length>1?pts:[pts[0],pts[0]], {padding:[40,40], maxZoom:15});
-  else mapa.setView({madri:[40.4168,-3.7038],roma:[41.9028,12.4964],verona:[45.4384,10.9916],innsbruck:[47.2692,11.4041],viena:[48.2082,16.3738],budapeste:[47.4979,19.0402]}[d.cidade], 13);
+  const mk = {};
+  ls.forEach((x,k) => {
+    mk[x.id] = L.marker([x.lat,x.lng],{zIndexOffset:1000,icon:L.divIcon({className:"",html:`<div class="pin" style="background:${cor(x)}">${k+1}</div>`,iconSize:[28,28],iconAnchor:[14,14]})})
+      .addTo(camada).bindPopup(`<b>${esc(curto(x.nome))}</b><br><a href="#" data-ficha="${x.id}">Detalhes</a>`)
+      .on("click", () => marca(x.id));
+  });
+  // enquadra o centro da cidade; bate-voltas (Veneza, Swarovski, Toledo) continuam marcados, fora do quadro
+  const centro = {madri:[40.4168,-3.7038],roma:[41.9028,12.4964],verona:[45.4384,10.9916],innsbruck:[47.2672,11.3925],viena:[48.2082,16.3738],budapeste:[47.4979,19.0402]}[c];
+  const perto = pts.filter(p => dist(p, centro) < 7000);
+  const quadro = perto.length ? perto : pts;
+  if (quadro.length) mapa.fitBounds(quadro.length>1?quadro:[quadro[0],quadro[0]], {paddingTopLeft:[30,70], paddingBottomRight:[30,50], maxZoom:15});
+  else mapa.setView(centro, 13);
   function marca(id){ document.querySelectorAll("#m-lista .it").forEach(b => b.classList.toggle("on", b.dataset.id===id)); }
   document.querySelectorAll("#m-lista .it").forEach(b => b.onclick = () => { const x = porId[b.dataset.id];
     mapa.flyTo([x.lat,x.lng], 16, {duration:.5}); mk[b.dataset.id].openPopup(); marca(b.dataset.id); scrollTo({top:0, behavior:"smooth"}); });
 }
-function blocoDe(d,id){ const b = d.blocos.find(b=>b.ids.includes(id)); return b ? b.quando : ""; }
-
-// ---------- STORIES ----------
-let stI = 0, stSlides = [], stData = null;
-function abrirStories(data){
-  const d = DIAS.find(x=>x.data===data); stData = data;
-  const capa = fotoDoDia(d);
-  stSlides = d.blocos.filter(b=>!MAIS.test(b.quando)).map(b => {
-    const ls = b.ids.map(i=>porId[i]);
-    const f = (ls.find(x=>x.foto)||{}).foto || null;
-    return {rot:b.quando, titulo: ls.length ? ls.slice(0,2).map(x=>curto(x.nome)).join(" · ") : b.quando, texto:b.texto, foto: f || (NOTA.test(b.quando)?null:capa), ls};
-  });
-  const palco = document.getElementById("st-palco");
-  palco.style.setProperty("--cor", corDia(d));
-  palco.innerHTML = stSlides.map((s,k) => `<div class="slide" data-k="${k}">
-      ${s.foto?`<img class="bg" src="${s.foto.url}" alt="">`:`<div class="bg cor"></div>`}
-      <div class="txt"><span class="rot">${esc(s.rot)}</span><h2>${esc(s.titulo)}</h2><p>${s.texto}</p>
-        ${s.ls[0]?.metro?`<div class="m">Metrô ${esc(s.ls[0].metro.nome)} · ${s.ls[0].metro.min} min a pé</div>`:""}
-        ${k===stSlides.length-1 ? (DIAS[DIAS.findIndex(x=>x.data===data)+1] ? `<a class="ir" href="#" id="st-prox">Próximo dia ›</a>` : "") : ""}
-      </div>${s.foto?`<span class="credito">Foto: ${esc(s.foto.autor)}</span>`:""}</div>`).join("")
-    + `<div class="sombra-top"></div><div class="barras">${stSlides.map(()=>"<i></i>").join("")}</div>
-       <div class="quem"><span>${NOME[d.cidade][0]}</span>${NOME[d.cidade]} · ${sem(data)} ${dm(data)} · ${esc(d.titulo)}</div>
-       <button class="fechar" type="button" aria-label="Fechar">×</button>
-       <button class="zona esq" type="button" aria-label="Anterior"></button><button class="zona dir" type="button" aria-label="Próximo"></button>`;
-  palco.querySelector(".fechar").onclick = fecharStories;
-  palco.querySelector(".zona.esq").onclick = () => passo(-1);
-  palco.querySelector(".zona.dir").onclick = () => passo(1);
-  const px = palco.querySelector("#st-prox");
-  if (px) px.onclick = e => { e.preventDefault(); const n = DIAS[DIAS.findIndex(x=>x.data===stData)+1]; ir("dia", n.data); abrirStories(n.data); };
-  stI = 0; mostra();
-  document.getElementById("stories").classList.add("on");
-  document.body.style.overflow = "hidden";
-}
-function mostra(){
-  document.querySelectorAll("#st-palco .slide").forEach((s,k) => s.classList.toggle("on", k===stI));
-  document.querySelectorAll("#st-palco .barras i").forEach((b,k) => { b.className = k<stI ? "feito" : (k===stI ? "agora" : ""); });
-}
-function passo(n){ const k = stI + n; if (k < 0) return; if (k >= stSlides.length) { fecharStories(); return; } stI = k; mostra(); }
-function fecharStories(){ document.getElementById("stories").classList.remove("on"); document.body.style.overflow = ""; }
-document.addEventListener("keydown", e => { if (!document.getElementById("stories").classList.contains("on")) return;
-  if (e.key==="Escape") fecharStories(); if (e.key==="ArrowRight") passo(1); if (e.key==="ArrowLeft") passo(-1); });
-(function(){ let x0 = null; const el = document.getElementById("stories");
-  el.addEventListener("pointerdown", e => x0 = e.clientX);
-  el.addEventListener("pointerup", e => { if (x0 === null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 50) passo(dx < 0 ? 1 : -1); });
-})();
 
 // ---------- rotas ----------
-function ir(view, data){ location.hash = data ? `#/${view}/${data}` : `#/${view}`; }
+function ir(view, param){ location.hash = param ? `#/${view}/${param}` : `#/${view}`; }
 function rota(){
   let h = location.hash.replace(/^#\/?/,"");
-  // links antigos: index.html#dia-2027-02-22, #compras, #transporte, #orcamento, #cidades, #checklist
-  let m = h.match(/^dia-(\d{4}-\d\d-\d\d)$/); if (m) h = "dia/"+m[1];
+  // links antigos: #/dia/…, #dia-…, #/cidades, #compras, #transporte, #orcamento, #checklist
+  if (/^(dia|cidades|checklist)\b/.test(h)) h = "viagem";
   if (/^(compras|transporte|orcamento)$/.test(h)) h = "comprar";
-  if (/^(checklist)$/.test(h)) h = "cidades";
-  const [view, data] = h.split("/");
-  const v = ["dia","mapa","comprar","comer","cidades"].includes(view) ? view : "dia";
-  let guardado = null; try { guardado = sessionStorage.getItem("dia"); } catch(e){}
-  const d = DIAS.some(x=>x.data===data) ? data : (DIAS.some(x=>x.data===guardado) ? guardado : DIA_PADRAO);
-  try { sessionStorage.setItem("dia", d); } catch(e){}
+  let [view, param] = h.split("/");
+  const v = ["viagem","mapa","comprar","comer"].includes(view) ? view : "viagem";
+  if (param && NOME[param]) guardaCidade(param);
+  const c = NOME[param] ? param : (cidadeGuardada() || "madri");
   document.querySelectorAll(".view").forEach(s => s.hidden = s.id !== "v-"+v);
-  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); a.href = (a.dataset.v==="dia"||a.dataset.v==="mapa") ? `#/${a.dataset.v}/${d}` : `#/${a.dataset.v}`; });
-  if (v==="dia") renderDia(d);
-  if (v==="mapa") renderMapa(d);
-  if (v==="comer") renderComer(data);
-  if (v==="comprar"||v==="cidades"||v==="comer") document.documentElement.style.setProperty("--cor", "#b45309");
+  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); a.href = a.dataset.v==="mapa" ? `#/mapa/${c}` : `#/${a.dataset.v}`; });
+  if (v==="viagem") renderViagem();
+  if (v==="mapa") renderMapa(c);
+  if (v==="comer") renderComer(param);
+  if (v!=="mapa") document.documentElement.style.setProperty("--cor", "#b45309");
 }
 addEventListener("hashchange", () => { rota(); if (!location.hash.startsWith("#/mapa")) scrollTo(0,0); });
 </script>

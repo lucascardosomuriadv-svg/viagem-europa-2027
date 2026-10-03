@@ -1,12 +1,19 @@
 {
   "innsbruck": [
     {
-      "id": "7667891453917531422",
-      "rede": "tiktok",
+      "rede": "TikTok",
       "autor": "@gigisworldtour",
-      "titulo": "Cafés com vista em Innsbruck",
+      "titulo": "Cafés com vista",
       "url": "https://www.tiktok.com/@gigisworldtour/photo/7667891453917531422",
-      "nota": "1º da lista: Karaffu, com vista do Arco do Triunfo e das montanhas. O Starbucks com vista do Telhado de Ouro fechou."
+      "fotos": [
+        {"arq": "refs/innsbruck/karaffu.jpg", "nome": "Karaffu", "nota": "café · vista do Arco do Triunfo"},
+        {"arq": "refs/innsbruck/camuna.jpg", "nome": "ca|muna", "nota": "café"},
+        {"arq": "refs/innsbruck/marktbar-am-inn.jpg", "nome": "Marktbar am Inn", "nota": "café · casas coloridas do rio Inn"},
+        {"arq": "refs/innsbruck/the-naked-indigo.jpg", "nome": "The Naked Indigo", "nota": "café · vista do rio e das montanhas"},
+        {"arq": "refs/innsbruck/midori-teehaus.jpg", "nome": "Midori Teehaus", "nota": "matcha"},
+        {"arq": "refs/innsbruck/kula.jpg", "nome": "Kula", "nota": "café e padaria"}
+      ],
+      "obs": "O Starbucks com vista do Telhado de Ouro fechou."
     }
   ]
 }

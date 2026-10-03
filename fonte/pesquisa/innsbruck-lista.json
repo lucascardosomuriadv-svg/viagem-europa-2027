@@ -1,0 +1,145 @@
+{
+ "_fonte": "Anotações do Lucas sobre Innsbruck (03/10/2026). Coordenadas e horários do OpenStreetMap, consultado em 03/10/2026. 'ja' = o lugar já estava na pesquisa e só ganha o selo 'sua lista'.",
+ "lugares": [
+  {
+   "ja": "Goldenes Dachl"
+  },
+  {
+   "ja": "Hofkirche"
+  },
+  {
+   "ja": "Stiftskeller"
+  },
+  {
+   "nome": "Catedral de São Tiago (Dom St. Jakob)",
+   "tipo_lugar": "ver",
+   "tipo": "catedral barroca",
+   "lat": 47.26938,
+   "lng": 11.39418,
+   "endereco": "Domplatz, Innsbruck",
+   "dica": "Entrada grátis; teto todo pintado"
+  },
+  {
+   "nome": "Arco do Triunfo (Triumphpforte)",
+   "tipo_lugar": "ver",
+   "tipo": "arco de 1765, com as montanhas atrás",
+   "lat": 47.2626,
+   "lng": 11.3948,
+   "endereco": "Triumphpforte, Innsbruck",
+   "dica": "Fica no fim da Maria-Theresien-Strasse; o Karaffu é ao lado"
+  },
+  {
+   "nome": "Stadtturm (torre panorâmica)",
+   "tipo_lugar": "ver",
+   "tipo": "torre de 51 m na Cidade Velha",
+   "lat": 47.26823,
+   "lng": 11.39345,
+   "endereco": "Herzog-Friedrich-Straße 21, Innsbruck",
+   "dica": "148 degraus; vista de 360° dos telhados e das montanhas"
+  },
+  {
+   "nome": "Marktplatz (vista das casas coloridas)",
+   "tipo_lugar": "ver",
+   "tipo": "praça na beira do rio Inn",
+   "lat": 47.26788,
+   "lng": 11.39068,
+   "endereco": "Marktplatz, Innsbruck",
+   "dica": "De frente para as casas coloridas do outro lado do rio"
+  },
+  {
+   "nome": "Markthalle (mercado municipal)",
+   "tipo_lugar": "ver",
+   "tipo": "mercado municipal",
+   "lat": 47.26718,
+   "lng": 11.38958,
+   "endereco": "Herzog-Siegmund-Ufer 1-3, Innsbruck",
+   "dica": "Bancas de comida tirolesa; ao lado do Marktplatz",
+   "fecha_em": "Sábado fecha às 13h"
+  },
+  {
+   "nome": "Karaffu (matcha)",
+   "tipo_lugar": "comer",
+   "tipo": "café · matcha",
+   "matcha": true,
+   "foto_ref": "refs/innsbruck/karaffu.jpg",
+   "lat": 47.26142,
+   "lng": 11.39533,
+   "endereco": "Leopoldstraße 9, Innsbruck",
+   "pedir": "Matcha; vista do Arco do Triunfo"
+  },
+  {
+   "nome": "Midori Teehaus",
+   "tipo_lugar": "comer",
+   "tipo": "casa de chá · matcha",
+   "matcha": true,
+   "foto_ref": "refs/innsbruck/midori-teehaus.jpg",
+   "lat": 47.26431,
+   "lng": 11.39078,
+   "endereco": "Bürgerstraße 15, Innsbruck",
+   "pedir": "Matcha com morango",
+   "fecha_em": "Todo dia, 10h às 18h"
+  },
+  {
+   "nome": "Café Kröll (apfelstrudel)",
+   "tipo_lugar": "comer",
+   "tipo": "café · strudel",
+   "lat": 47.26851,
+   "lng": 11.39407,
+   "endereco": "Hofgasse 6, Innsbruck",
+   "pedir": "Apfelstrudel"
+  },
+  {
+   "nome": "Ruetz",
+   "tipo_lugar": "comer",
+   "tipo": "padaria tirolesa",
+   "lat": 47.26556,
+   "lng": 11.39368,
+   "endereco": "Maria-Theresien-Straße 18, Innsbruck",
+   "pedir": "Pães e doces tiroleses; tem várias lojas pela cidade",
+   "fecha_em": "Fecha aos domingos (esta loja)"
+  },
+  {
+   "nome": "Marktbar am Inn",
+   "tipo_lugar": "comer",
+   "tipo": "café e bar",
+   "foto_ref": "refs/innsbruck/marktbar-am-inn.jpg",
+   "lat": 47.26787,
+   "lng": 11.3909,
+   "endereco": "Marktplatz, Innsbruck",
+   "pedir": "Café com vista das casas coloridas",
+   "fecha_em": "Todo dia, das 8h à meia-noite"
+  },
+  {
+   "nome": "ca|muna",
+   "tipo_lugar": "comer",
+   "tipo": "café",
+   "foto_ref": "refs/innsbruck/camuna.jpg",
+   "lat": 47.26458,
+   "lng": 11.40981,
+   "endereco": "camuna, Innsbruck",
+   "pedir": "Café gelado"
+  },
+  {
+   "nome": "The Naked Indigo",
+   "tipo_lugar": "comer",
+   "tipo": "café e restaurante",
+   "foto_ref": "refs/innsbruck/the-naked-indigo.jpg",
+   "lat": 47.26805,
+   "lng": 11.39104,
+   "endereco": "Innrain 2, Innsbruck",
+   "pedir": "Café com vista do rio e das montanhas",
+   "fecha_em": "Abre às 11h"
+  },
+  {
+   "nome": "Kula",
+   "tipo_lugar": "comer",
+   "tipo": "café e padaria",
+   "foto_ref": "refs/innsbruck/kula.jpg",
+   "lat": 47.26463,
+   "lng": 11.39209,
+   "endereco": "Anichstraße 13, Innsbruck",
+   "pedir": "Café e doces da casa",
+   "fecha_em": "Fecha às segundas"
+  }
+ ]
+}

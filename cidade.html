@@ -15,10 +15,11 @@
   .capa-c img{width:100%;height:100%;object-fit:cover}
   .capa-c .txt{position:absolute;inset:auto 0 0 0;padding:60px 18px 14px;background:linear-gradient(transparent,rgb(16 24 40/.88));color:#fff}
   .capa-c small{font-size:.86rem;opacity:.92}.capa-c h1{margin:0;font-size:2.3rem;line-height:1;letter-spacing:-.025em}
-  .capa-c .credito{position:absolute;top:12px;left:12px;font-size:.64rem;color:#fff;background:rgb(16 24 40/.5);border-radius:6px;padding:2px 6px;max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .capa-c .credito{position:absolute;top:12px;left:12px;font-size:.64rem;color:#fff;background:rgb(16 24 40/.5);border-radius:6px;padding:2px 6px;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .capa-c .play{position:absolute;top:12px;right:12px;display:flex;align-items:center;gap:6px;background:rgb(16 24 40/.6);backdrop-filter:blur(6px);color:#fff;border:0;border-radius:999px;padding:8px 13px;font:600 .85rem "Outfit",sans-serif;cursor:pointer}
+  .capa-c .play svg{width:14px;height:14px}
   .transp{margin:12px 18px 0;background:var(--card);border:1px solid var(--soft);border-radius:18px;padding:12px 14px}
-  .transp .lin{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-  .transp .lin b{font-size:1rem}.transp .lin em{font-style:normal;font-weight:700;color:var(--ok);white-space:nowrap}
+  .transp b{font-size:1rem}
   .transp small{display:block;color:var(--ink3);font-size:.84rem;margin-top:2px}
   .mini{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
   .mini span{background:var(--soft);border-radius:8px;padding:4px 9px;font-size:.8rem;color:var(--ink2)}
@@ -28,19 +29,24 @@
   .fc div{padding:8px 10px 10px}
   .fc b{display:block;font-size:.88rem;line-height:1.2}
   .fc small{color:var(--ink3);font-size:.76rem}
-  .fc .dia-tag{display:inline-block;margin-top:5px}
   .dicas{list-style:none;margin:0;padding:0;display:grid;gap:8px}
   .dicas li{background:var(--card);border:1px solid var(--soft);border-left:4px solid var(--cor);border-radius:14px;padding:10px 13px;color:var(--ink2);font-size:.92rem}
   .dicas-t{margin:16px 2px 8px;font-size:.95rem}
   .ref{background:var(--card);border:1px solid var(--soft);border-radius:18px;padding:12px;margin-top:8px}
   .ref-cab{padding:2px 4px 10px}.ref-cab b{display:block;font-size:1rem}.ref-cab small{color:var(--ink3);font-size:.84rem}
-  .ref-cab a{color:var(--cor)}.ref-cab p{margin:6px 0 0;color:var(--ink2);font-size:.9rem}
-  .ref .tiktok-embed{border-radius:14px;overflow:hidden}
+  .ref-cab a{color:var(--cor)}
+  .prints{display:grid;grid-template-columns:1fr 1fr;gap:12px 10px}
+  .print{display:block;text-decoration:none;min-width:0}
+  .print img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;background:var(--soft)}
+  .print b{display:block;margin-top:6px;font-size:.92rem;line-height:1.2}
+  .print small{display:block;color:var(--ink3);font-size:.78rem;line-height:1.3}
+  .ref-obs{margin:12px 4px 2px;color:var(--ink3);font-size:.84rem}
+  @media (min-width:760px){.prints{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
 <div class="app">
-  <a class="voltar" href="index.html#/cidades">‹ Cidades</a>
+  <a class="voltar" href="index.html#/viagem">‹ Viagem</a>
   <div id="capa"></div>
   <div id="transp"></div>
   <div class="seg" id="seg" role="tablist"></div>
@@ -48,17 +54,22 @@
 </div>
 
 <nav class="tabbar" aria-label="Menu">
-  <a href="index.html#/dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Dia a dia</a>
-  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
+  <a href="index.html#/viagem" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
+  <a href="index.html#/mapa" id="tab-mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
   <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
   <a href="index.html#/comer" id="tab-comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-  <a href="index.html#/cidades" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cidades</a>
 </nav>
 
 <div class="ficha-fundo" id="ficha-fundo" hidden></div>
 <div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-label="Detalhes do lugar" hidden></div>
 
+<!-- STORIES: as ideias da cidade que têm foto -->
+<div class="stories" id="stories" role="dialog" aria-modal="true" aria-label="A cidade em stories">
+  <div class="palco" id="st-palco"></div>
+</div>
+
 <script src="dados/guia.js"></script>
+<script src="viagem.js"></script>
 <script>
 const G = window.GUIA;
 const HEX = {madri:"#c2410c",roma:"#b45309",verona:"#9333ea",innsbruck:"#0e7490",viena:"#1d4ed8",budapeste:"#15803d"};
@@ -74,62 +85,58 @@ const c = NOME[p] ? p : "roma";
 document.title = `${NOME[c]} · Europa 2027`;
 document.documentElement.style.setProperty("--cor", HEX[c]);
 document.getElementById("tab-comer").href = `index.html#/comer/${c}`;
+document.getElementById("tab-mapa").href = `index.html#/mapa/${c}`;
+try { sessionStorage.setItem("cidade", c); } catch(e){}
 </script>
 <script src="comer.js"></script>
 <script>
 const lug = G.lugares[c];
 const usados = new Set(G.usados);
-const diasCid = G.dias.filter(d => d.cidade === c || d.blocos.some(b => b.ids.some(id => id.startsWith(c+"-"))));
+// ainda sem roteiro: só as noites de cada estada e as ideias, a lista de vocês primeiro
+const ordem = ordemIdeias(usados);
+const est = estadias(c);
 
 // capa
-const capa = lug.find(x => x.foto && x.tipo==="ver" && usados.has(x.id)) || lug.find(x => x.foto);
+const capa = [...lug].sort(ordem).find(x => x.foto && x.tipo==="ver") || lug.find(x => x.foto);
 document.getElementById("capa").innerHTML = `<div class="capa-c">${capa?`<img src="${capa.foto.url}" alt=""><span class="credito">Foto: ${esc(capa.foto.autor)} · ${esc(capa.foto.licenca)}</span>`:""}
-  <div class="txt"><small>${diasCid.length} ${diasCid.length>1?"dias":"dia"} no roteiro</small><h1>${NOME[c]}</h1></div></div>`;
+  <button class="play" type="button" id="abrir-stories"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg> Stories</button>
+  <div class="txt"><small>${noitesDe(c)} · ${est.map(p => periodo(p[1],p[2])).join(" e ")}</small><h1>${NOME[c]}</h1></div></div>`;
 
 // transporte: uma caixa só
 const TRANSP = {
   madri:["Metrô","1 cartão Multi para os 5, com bilhetes de 10 viagens",["Aeroporto: táxi ~€33","10 viagens €7,30","Muito a pé"]],
   roma:["Metrô e ônibus","Avulso €1,50 por aproximação, cada um com o seu cartão",["Aeroporto: táxi €55 fixo","Teto de €8,50 por dia","Passe não compensa"]],
   verona:["A pé","O centro é pequeno; ônibus só com mala",["Ônibus €1,50","Veneza: vaporetto €9,50"]],
-  innsbruck:["A pé","Estação, centro e teleférico a poucos minutos",["Nordkette ~€50 por pessoa"]],
-  viena:["Metrô e bonde","Dois passes de 24h por pessoa, ter e qua",["24h €9,70","U1 até Stephansplatz","U4 até Schönbrunn"]],
+  innsbruck:["A pé","Estação e centro a poucos minutos",["Sem bilhete de transporte"]],
+  viena:["Metrô e bonde","Passe de 24h por pessoa nos dias de muito metrô",["24h €9,70","U1 até Stephansplatz","U4 até Schönbrunn"]],
   budapeste:["Metrô","Blocos de 10 bilhetes, que o grupo usa junto",["Aeroporto: Bolt XL ~€35","M2 até o Parlamento","Moeda: florim"]],
 };
 const tr = G.transporte?.[c], T = TRANSP[c];
-if (T) document.getElementById("transp").innerHTML = `<div class="transp"><div class="lin"><b>${T[0]}</b>${tr?.recomendado?.total_5_eur?`<em class="num">€${tr.recomendado.total_5_eur.toLocaleString("pt-BR")} os 5</em>`:""}</div><small>${T[1]}</small><div class="mini">${T[2].map(t=>`<span>${t}</span>`).join("")}</div></div>`;
+if (T) document.getElementById("transp").innerHTML = `<div class="transp"><b>${T[0]}</b><small>${T[1]}</small><div class="mini">${T[2].map(t=>`<span>${t}</span>`).join("")}</div></div>`;
 
 // abas
-const quando = {}; G.dias.forEach(d => d.blocos.forEach(b => b.ids.forEach(id => { (quando[id] ||= d.data); })));
-const ordem = (a,b) => (quando[a.id]||"9").localeCompare(quando[b.id]||"9") || curto(a.nome).localeCompare(curto(b.nome));
 const ver = lug.filter(x => x.tipo==="ver").sort(ordem);
 const comer = lug.filter(x => x.tipo==="comer").sort(ordem);
 const dicas = (G.dicas||{})[c] || [];
 const refs = (G.refs||{})[c] || [];
-const ABAS = [["ver","Para ver"],["comer","Para comer"],["dias","Dias"]].concat(refs.length ? [["refs","Referências"]] : []).concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
-const tag = x => quando[x.id] ? `<span class="dia-tag">${sem(quando[x.id])} ${dm(quando[x.id])}</span>` : "";
+const ABAS = [["ver","Para ver"],["comer","Para comer"]].concat(refs.length ? [["refs","Referências"]] : []).concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
 function linha(x){ const tp = x.tipo==="comer" ? tipoComida(x) : null;
-  return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||"ver"}">${iconeComida(tp||"ver")}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span>${tag(x)}</button>`; }
+  return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||"ver"}">${iconeComida(tp||"ver")}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span></button>`; }
 function painel(aba){
   document.querySelectorAll("#seg button").forEach(b => b.classList.toggle("on", b.dataset.a===aba));
   const el = document.getElementById("painel");
   if (aba==="ver") {
     const comFoto = ver.filter(x=>x.foto), semFoto = ver.filter(x=>!x.foto);
-    el.innerHTML = `<div class="grade-f" style="margin-top:6px">${comFoto.map(x => `<button type="button" class="fc" data-ficha="${x.id}"><img src="${x.foto.url}" alt="" loading="lazy"><div><b>${esc(curto(x.nome))}</b>${quando[x.id]?tag(x):`<small>fora do roteiro</small>`}</div></button>`).join("")}</div>
+    el.innerHTML = `<div class="grade-f" style="margin-top:6px">${comFoto.map(x => `<button type="button" class="fc" data-ficha="${x.id}"><img src="${x.foto.url}" alt="" loading="lazy"><div><b>${esc(curto(x.nome))}</b></div></button>`).join("")}</div>
       ${semFoto.length?`<h3 class="dicas-t">Mais</h3><div class="lista">${semFoto.map(linha).join("")}</div>`:""}`;
   }
   if (aba==="comer") el.innerHTML = `<div class="lista" style="margin-top:6px">${comer.map(linha).join("")}</div>`;
-  if (aba==="dias") el.innerHTML = diasCid.map(d => { const ids = [...new Set(d.blocos.filter(b=>!/^(Mais opções|Abertos depois|Lanche antes)/.test(b.quando)).flatMap(b=>b.ids))].filter(id=>id.startsWith(c+"-"));
-      return `<div class="grupo"><b>${sem(d.data)} ${dm(d.data)} · ${esc(d.titulo)}</b></div><div class="lista">${ids.map(id=>linha(porId[id])).join("") || `<div class="it simples"><span class="tx"><small>Dia de deslocamento</small></span></div>`}</div>`; }).join("")
-      + `<p style="margin:14px 2px 0"><a href="index.html#/dia/${diasCid[0]?.data}" style="color:var(--cor);font-weight:600">Ver o roteiro destes dias ›</a></p>`;
   if (aba==="dicas") el.innerHTML = `${dicas.length?`<h3 class="dicas-t">De quem já foi</h3><ul class="dicas">${dicas.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}
       ${tr?.cuidados?.length?`<h3 class="dicas-t">Cuidados</h3><ul class="dicas">${tr.cuidados.slice(0,3).map(t=>`<li>${esc(umaFrase(t))}</li>`).join("")}</ul>`:""}`;
-  // posts incorporados pelo jeito oficial da rede: aparecem com o crédito de quem postou
-  if (aba==="refs") {
-    el.innerHTML = refs.map(r => `<div class="ref"><div class="ref-cab"><b>${esc(r.titulo)}</b><small>${esc(r.autor)} · <a href="${r.url}" target="_blank" rel="noopener">abrir no TikTok</a></small>${r.nota?`<p>${esc(r.nota)}</p>`:""}</div>
-      <blockquote class="tiktok-embed" cite="${r.url.replace("/photo/","/video/")}" data-video-id="${r.id}" style="max-width:605px;min-width:300px;margin:0"><section><a href="${r.url}" target="_blank" rel="noopener">${esc(r.autor)}</a></section></blockquote></div>`).join("");
-    if (!document.getElementById("tiktok-js")) { const s = document.createElement("script"); s.id = "tiktok-js"; s.src = "https://www.tiktok.com/embed.js"; s.async = true; document.body.appendChild(s); }
-    else if (window.tiktokEmbed?.lib?.render) window.tiktokEmbed.lib.render(document.querySelectorAll(".tiktok-embed"));
-  }
+  // prints de posts que mandaram, com o nome de cada lugar e o crédito de quem postou
+  if (aba==="refs") el.innerHTML = refs.map(r => `<div class="ref"><div class="ref-cab"><b>${esc(r.titulo)}</b><small>${esc(r.autor)} no ${esc(r.rede)} · <a href="${r.url}" target="_blank" rel="noopener">ver o post</a></small></div>
+      <div class="prints">${r.fotos.map(f => `<a class="print" href="${f.arq}" target="_blank" rel="noopener"><img src="${f.arq}" alt="${esc(f.nome)}" loading="lazy"><b>${esc(f.nome)}</b><small>${esc(f.nota)}</small></a>`).join("")}</div>
+      ${r.obs?`<p class="ref-obs">${esc(r.obs)}</p>`:""}</div>`).join("");
   try { sessionStorage.setItem("aba-cidade", aba); } catch(e){}
 }
 document.getElementById("seg").innerHTML = ABAS.map(([k,n]) => `<button type="button" data-a="${k}">${n}</button>`).join("");
@@ -138,6 +145,40 @@ let abaIni = "ver"; try { const s = sessionStorage.getItem("aba-cidade"); if (AB
 painel(abaIni);
 // link antigo cidade.html?c=roma#id → abre a ficha do lugar
 if (location.hash && porId[location.hash.slice(1)]) { const id = location.hash.slice(1); painel(porId[id].tipo==="comer"?"comer":"ver"); abrirFicha(id); }
+
+// ---------- stories: uma ideia com foto por tela ----------
+let stI = 0;
+const stSlides = [...ver, ...comer].filter(x => x.foto);
+function abrirStories(){
+  const palco = document.getElementById("st-palco");
+  palco.style.setProperty("--cor", HEX[c]);
+  palco.innerHTML = stSlides.map((x,k) => `<div class="slide" data-k="${k}"><img class="bg" src="${x.foto.url}" alt="">
+      <div class="txt"><span class="rot">${x.tipo==="comer"?"Para comer":"Para ver"}</span><h2>${esc(curto(x.nome))}</h2><p>${esc(umaFrase(x.dica) || umaFrase(x.pedir) || umaFrase(x.categoria))}</p>
+        ${x.metro?`<div class="m">Metrô ${esc(x.metro.nome)} · ${x.metro.min} min a pé</div>`:""}</div><span class="credito">Foto: ${esc(x.foto.autor)}</span></div>`).join("")
+    + `<div class="sombra-top"></div><div class="barras">${stSlides.map(()=>"<i></i>").join("")}</div>
+       <div class="quem"><span>${NOME[c][0]}</span>${NOME[c]} · ${noitesDe(c)}</div>
+       <button class="fechar" type="button" aria-label="Fechar">×</button>
+       <button class="zona esq" type="button" aria-label="Anterior"></button><button class="zona dir" type="button" aria-label="Próximo"></button>`;
+  palco.querySelector(".fechar").onclick = fecharStories;
+  palco.querySelector(".zona.esq").onclick = () => passo(-1);
+  palco.querySelector(".zona.dir").onclick = () => passo(1);
+  stI = 0; mostra();
+  document.getElementById("stories").classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+function mostra(){
+  document.querySelectorAll("#st-palco .slide").forEach((s,k) => s.classList.toggle("on", k===stI));
+  document.querySelectorAll("#st-palco .barras i").forEach((b,k) => { b.className = k<stI ? "feito" : (k===stI ? "agora" : ""); });
+}
+function passo(n){ const k = stI + n; if (k < 0) return; if (k >= stSlides.length) { fecharStories(); return; } stI = k; mostra(); }
+function fecharStories(){ document.getElementById("stories").classList.remove("on"); document.body.style.overflow = ""; }
+document.getElementById("abrir-stories").onclick = abrirStories;
+document.addEventListener("keydown", e => { if (!document.getElementById("stories").classList.contains("on")) return;
+  if (e.key==="Escape") fecharStories(); if (e.key==="ArrowRight") passo(1); if (e.key==="ArrowLeft") passo(-1); });
+(function(){ let x0 = null; const el = document.getElementById("stories");
+  el.addEventListener("pointerdown", e => x0 = e.clientX);
+  el.addEventListener("pointerup", e => { if (x0 === null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 50) passo(dx < 0 ? 1 : -1); });
+})();
 </script>
 </body>
 </html>

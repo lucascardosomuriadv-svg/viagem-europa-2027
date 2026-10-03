@@ -288,3 +288,17 @@ tr.recomendado td{background:var(--ok-bg)}
 
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lista .th.cafe{color:#e0a872;background:#2a1d12}}
 :root[data-theme="dark"] .lista .th.cafe{color:#e0a872;background:#2a1d12}
+/* Viagem: o caminho (paradas e trechos numa lista só) */
+.caminho a.it{text-decoration:none}
+.caminho .th{width:46px;height:46px;border-radius:12px;object-fit:cover}
+.caminho span.th{background:var(--cor)}
+.caminho .parada b{font-size:1.02rem}
+.caminho .trecho{padding-block:8px;background:var(--bg)}
+.caminho .trecho .th{width:30px;height:30px;margin-inline:8px;border-radius:9px;background:var(--soft);color:var(--ink3)}
+.caminho .trecho .th svg{width:16px;height:16px}
+.caminho .trecho b{font-size:.86rem;font-weight:600;color:var(--ink2)}
+.caminho .trecho small{font-size:.78rem}
+.noites{font-size:.78rem;font-weight:700;color:var(--cor);background:color-mix(in srgb,var(--cor) 12%,var(--card));border-radius:8px;padding:4px 8px;white-space:nowrap}
+/* Mapa: cidades por cima do mapa, tipos dentro da folha */
+.mapa-v .filtro{position:absolute;top:0;left:0;right:0;z-index:5;padding-top:12px;padding-bottom:14px;background:linear-gradient(var(--bg),transparent)}
+.folha .filtro{padding:10px 0 4px}
