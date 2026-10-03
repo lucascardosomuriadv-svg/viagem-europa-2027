@@ -327,3 +327,23 @@ tr.recomendado td{background:var(--ok-bg)}
 @media (max-width:380px){.seg button{font-size:.76rem}}
 /* atalho fixo no alto de uma aba */
 .atalho{display:block;margin:10px 18px 0;padding:12px 14px;background:var(--card);border:1px solid var(--soft);border-radius:14px;font-weight:600;font-size:.92rem;text-decoration:none}
+/* Mapa único da viagem: cidades e caminho de longe, lugares de perto (mapa.js) */
+.mapa .leaflet-bottom.leaflet-right{margin-bottom:30px}
+.mapa .leaflet-popup-content{font-family:"Outfit",sans-serif;font-size:.86rem;line-height:1.4;margin:10px 14px}
+/* o mapa ocupa quase a tela toda; da folha fica só a ponta de fora */
+#v-mapa .mapa{height:calc(100dvh - var(--tab-h) - 150px)}
+#v-mapa .folha{min-height:176px}
+.cid{position:absolute;left:0;top:0;--r:12px;cursor:pointer;font-family:"Outfit",sans-serif}
+.cid-p{position:absolute;left:0;top:0;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:24px;height:24px;padding:0 5px;border-radius:999px;background:var(--c);color:#fff;font:700 12px/1 "Outfit",sans-serif;border:2.5px solid #fff;box-shadow:0 2px 6px rgb(0 0 0/.35);white-space:nowrap}
+.cid-t{position:absolute;white-space:nowrap;line-height:1.12;color:#101828;text-shadow:0 0 2px #fff,0 0 2px #fff,0 0 4px #fff,0 0 5px #fff}
+.cid-t b{display:block;font-size:13px}
+.cid-t small{display:block;font-size:10.5px;font-weight:600;color:#475467}
+.lado-b .cid-t{left:0;top:calc(var(--r) + 4px);transform:translateX(-50%);text-align:center}
+.lado-c .cid-t{left:0;bottom:calc(var(--r) + 4px);transform:translateX(-50%);text-align:center}
+.lado-d .cid-t{left:calc(var(--r) + 6px);top:0;transform:translateY(-50%)}
+.lado-e .cid-t{right:calc(var(--r) + 6px);top:0;transform:translateY(-50%);text-align:right}
+.selo{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#fff;color:#101828;border:1.5px solid #101828;box-shadow:0 1px 4px rgb(0 0 0/.3)}
+.selo svg{width:13px;height:13px}
+.perna{display:flex;align-items:center;gap:15px;margin:0;padding:7px 0 7px 8px;font-size:.8rem;color:var(--ink3);border-bottom:1px solid var(--soft)}
+.perna svg{width:15px;height:15px;flex-shrink:0}
+.filtro[hidden]{display:none}

@@ -27,11 +27,11 @@
     <p class="rodape">Pesquisas de 30/09/2026. Fotos: Wikimedia Commons, licenças livres (autor em cada foto). Horários e preços mudam: confiram antes de pagar.</p>
   </section>
 
-  <!-- MAPA: todas as ideias de uma cidade -->
+  <!-- MAPA: a viagem inteira num mapa só (mapa.js) -->
   <section id="v-mapa" class="view" aria-label="Mapa" hidden>
     <div class="mapa-v">
       <nav class="filtro" id="m-cidades" aria-label="Cidade"></nav>
-      <div id="m-mapa" class="mapa" role="img" aria-label="Mapa da cidade"></div>
+      <div id="m-mapa" class="mapa" role="img" aria-label="Mapa da viagem"></div>
     </div>
     <div class="folha"><div class="alca"></div><h2 id="m-titulo"></h2><small id="m-sub"></small>
       <nav class="filtro m-tipos" id="m-tipos" aria-label="Tipo"></nav><div id="m-lista"></div></div>
@@ -96,58 +96,6 @@ function renderViagem(){
   document.getElementById("checks").innerHTML = CHECKS.map(([t,s]) => `<li><b>${t}</b><span>${s}</span></li>`).join("");
 }
 
-// ---------- MAPA ----------
-let mapa, camada, mTipo = "tudo";
-function renderMapa(c){
-  document.documentElement.style.setProperty("--cor", HEX[c]);
-  document.getElementById("m-cidades").innerHTML = G.cidades.map(([k,n]) => `<button type="button" class="${k===c?"on":""}" data-c="${k}">${n}</button>`).join("");
-  document.querySelectorAll("#m-cidades button").forEach(b => b.onclick = () => ir("mapa", b.dataset.c));
-  document.querySelector("#m-cidades .on")?.scrollIntoView({inline:"center", block:"nearest"});
-  const todos = ideias(c).filter(x => x.lat && x.tipo !== "info");
-  const conta = t => todos.filter(x => t==="tudo" || x.tipo===t).length;
-  document.getElementById("m-tipos").innerHTML = [["tudo","Tudo"],["ver","Para ver"],["comer","Para comer"]]
-    .map(([k,n]) => `<button type="button" class="${k===mTipo?"on":""}" data-t="${k}">${n} <span>${conta(k)}</span></button>`).join("");
-  document.querySelectorAll("#m-tipos button").forEach(b => b.onclick = () => { mTipo = b.dataset.t; renderMapa(c); });
-  const ls = todos.filter(x => mTipo==="tudo" || x.tipo===mTipo);
-  document.getElementById("m-titulo").textContent = NOME[c];
-  document.getElementById("m-sub").textContent = `${noitesDe(c)} · ${ls.length} ${ls.length===1?"lugar":"lugares"} no mapa`;
-  const cor = x => x.tipo==="comer" ? "#c2410c" : "#1d4ed8";
-  document.getElementById("m-lista").innerHTML = ls.map((x,k) =>
-    `<button type="button" class="it" data-id="${x.id}"><span class="n" style="background:${cor(x)}">${k+1}</span><span><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || umaFrase(x.dica))}</small></span></button>`).join("")
-    || '<p class="fraco">Nada no mapa com esse filtro.</p>';
-  if (!window.L) return;
-  if (!mapa) {
-    mapa = L.map("m-mapa", {zoomControl:false});
-    const e = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
-    L.tileLayer(e+"World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{attribution:"Esri, HERE, Garmin, OpenStreetMap",maxZoom:16}).addTo(mapa);
-    L.tileLayer(e+"World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16}).addTo(mapa);
-  }
-  setTimeout(() => mapa.invalidateSize(), 30);
-  if (camada) camada.remove();
-  camada = L.layerGroup().addTo(mapa);
-  const pts = ls.map(x => [x.lat, x.lng]);
-  const dist = (a,b) => { const r=Math.PI/180, X=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r), Y=(b[0]-a[0])*r; return Math.sqrt(X*X+Y*Y)*6371000; };
-  (G.estacoes[c]||[]).forEach(([n,la,lo]) => {
-    if (pts.some(p=>dist(p,[la,lo])<600) || ["verona","innsbruck"].includes(c))
-      L.marker([la,lo],{icon:L.divIcon({className:"",html:'<div class="pin-m">M</div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(camada).bindTooltip(n);
-  });
-  const mk = {};
-  ls.forEach((x,k) => {
-    mk[x.id] = L.marker([x.lat,x.lng],{zIndexOffset:1000,icon:L.divIcon({className:"",html:`<div class="pin" style="background:${cor(x)}">${k+1}</div>`,iconSize:[28,28],iconAnchor:[14,14]})})
-      .addTo(camada).bindPopup(`<b>${esc(curto(x.nome))}</b><br><a href="#" data-ficha="${x.id}">Detalhes</a>`)
-      .on("click", () => marca(x.id));
-  });
-  // enquadra o centro da cidade; bate-voltas (Veneza, Swarovski, Toledo) continuam marcados, fora do quadro
-  const centro = {madri:[40.4168,-3.7038],roma:[41.9028,12.4964],verona:[45.4384,10.9916],innsbruck:[47.2672,11.3925],viena:[48.2082,16.3738],budapeste:[47.4979,19.0402]}[c];
-  const perto = pts.filter(p => dist(p, centro) < 7000);
-  const quadro = perto.length ? perto : pts;
-  if (quadro.length) mapa.fitBounds(quadro.length>1?quadro:[quadro[0],quadro[0]], {paddingTopLeft:[30,70], paddingBottomRight:[30,50], maxZoom:15});
-  else mapa.setView(centro, 13);
-  function marca(id){ document.querySelectorAll("#m-lista .it").forEach(b => b.classList.toggle("on", b.dataset.id===id)); }
-  document.querySelectorAll("#m-lista .it").forEach(b => b.onclick = () => { const x = porId[b.dataset.id];
-    mapa.flyTo([x.lat,x.lng], 16, {duration:.5}); mk[b.dataset.id].openPopup(); marca(b.dataset.id); scrollTo({top:0, behavior:"smooth"}); });
-}
-
 // ---------- rotas ----------
 function ir(view, param){ location.hash = param ? `#/${view}/${param}` : `#/${view}`; }
 function rota(){
@@ -159,12 +107,11 @@ function rota(){
   let [view, param] = h.split("/");
   const v = ["viagem","mapa","passagens","ingressos","comer"].includes(view) ? view : "viagem";
   if (param && NOME[param]) guardaCidade(param);
-  const c = NOME[param] ? param : (cidadeGuardada() || "madri");
   document.querySelectorAll(".view").forEach(s => s.hidden = s.id !== "v-"+v);
-  // a barra é a mesma em todas as páginas (tabbar.js); aqui só marca a aba e leva o mapa para a última cidade
-  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); if (a.dataset.v==="mapa") a.href = `index.html#/mapa/${c}`; });
+  // a barra é a mesma em todas as páginas (tabbar.js); aqui só marca a aba. Aberto o mapa, a aba dele volta a apontar para "onde eu estava".
+  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); if (v==="mapa" && a.dataset.v==="mapa") a.href = "index.html#/mapa"; });
   if (v==="viagem") renderViagem();
-  if (v==="mapa") renderMapa(c);
+  if (v==="mapa") renderMapa(NOME[param] ? param : null);
   if (v==="passagens") renderPassagens();
   if (v==="ingressos") renderIngressos();
   if (v==="comer") renderComer(param);
@@ -174,6 +121,7 @@ addEventListener("hashchange", () => { rota(); if (!location.hash.startsWith("#/
 </script>
 <script src="conteudo.js"></script>
 <script src="comer.js"></script>
+<script src="mapa.js"></script>
 <script>rota();</script>
 </body>
 </html>
