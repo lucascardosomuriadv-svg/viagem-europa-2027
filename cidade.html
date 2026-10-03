@@ -32,6 +32,10 @@
   .dicas{list-style:none;margin:0;padding:0;display:grid;gap:8px}
   .dicas li{background:var(--card);border:1px solid var(--soft);border-left:4px solid var(--cor);border-radius:14px;padding:10px 13px;color:var(--ink2);font-size:.92rem}
   .dicas-t{margin:16px 2px 8px;font-size:.95rem}
+  .ref{background:var(--card);border:1px solid var(--soft);border-radius:18px;padding:12px;margin-top:8px}
+  .ref-cab{padding:2px 4px 10px}.ref-cab b{display:block;font-size:1rem}.ref-cab small{color:var(--ink3);font-size:.84rem}
+  .ref-cab a{color:var(--cor)}.ref-cab p{margin:6px 0 0;color:var(--ink2);font-size:.9rem}
+  .ref .tiktok-embed{border-radius:14px;overflow:hidden}
 </style>
 </head>
 <body>
@@ -100,7 +104,8 @@ const ordem = (a,b) => (quando[a.id]||"9").localeCompare(quando[b.id]||"9") || c
 const ver = lug.filter(x => x.tipo==="ver").sort(ordem);
 const comer = lug.filter(x => x.tipo==="comer").sort(ordem);
 const dicas = (G.dicas||{})[c] || [];
-const ABAS = [["ver","Para ver"],["comer","Para comer"],["dias","Dias"]].concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
+const refs = (G.refs||{})[c] || [];
+const ABAS = [["ver","Para ver"],["comer","Para comer"],["dias","Dias"]].concat(refs.length ? [["refs","Referências"]] : []).concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
 const tag = x => quando[x.id] ? `<span class="dia-tag">${sem(quando[x.id])} ${dm(quando[x.id])}</span>` : "";
 function linha(x){ const tp = x.tipo==="comer" ? tipoComida(x) : null;
   return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||"ver"}">${iconeComida(tp||"ver")}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span>${tag(x)}</button>`; }
@@ -118,6 +123,13 @@ function painel(aba){
       + `<p style="margin:14px 2px 0"><a href="index.html#/dia/${diasCid[0]?.data}" style="color:var(--cor);font-weight:600">Ver o roteiro destes dias ›</a></p>`;
   if (aba==="dicas") el.innerHTML = `${dicas.length?`<h3 class="dicas-t">De quem já foi</h3><ul class="dicas">${dicas.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}
       ${tr?.cuidados?.length?`<h3 class="dicas-t">Cuidados</h3><ul class="dicas">${tr.cuidados.slice(0,3).map(t=>`<li>${esc(umaFrase(t))}</li>`).join("")}</ul>`:""}`;
+  // posts incorporados pelo jeito oficial da rede: aparecem com o crédito de quem postou
+  if (aba==="refs") {
+    el.innerHTML = refs.map(r => `<div class="ref"><div class="ref-cab"><b>${esc(r.titulo)}</b><small>${esc(r.autor)} · <a href="${r.url}" target="_blank" rel="noopener">abrir no TikTok</a></small>${r.nota?`<p>${esc(r.nota)}</p>`:""}</div>
+      <blockquote class="tiktok-embed" cite="${r.url.replace("/photo/","/video/")}" data-video-id="${r.id}" style="max-width:605px;min-width:300px;margin:0"><section><a href="${r.url}" target="_blank" rel="noopener">${esc(r.autor)}</a></section></blockquote></div>`).join("");
+    if (!document.getElementById("tiktok-js")) { const s = document.createElement("script"); s.id = "tiktok-js"; s.src = "https://www.tiktok.com/embed.js"; s.async = true; document.body.appendChild(s); }
+    else if (window.tiktokEmbed?.lib?.render) window.tiktokEmbed.lib.render(document.querySelectorAll(".tiktok-embed"));
+  }
   try { sessionStorage.setItem("aba-cidade", aba); } catch(e){}
 }
 document.getElementById("seg").innerHTML = ABAS.map(([k,n]) => `<button type="button" data-a="${k}">${n}</button>`).join("");
