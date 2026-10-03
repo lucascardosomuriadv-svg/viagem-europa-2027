@@ -1,0 +1,3393 @@
+{
+ "madri": [
+  {
+   "nome": "Palacio de Cristal (Retiro)",
+   "tipo": "pavilhão de vidro dentro do Retiro",
+   "dica": "Entrada grátis; fica à beira de um laguinho",
+   "lat": 40.41356,
+   "lng": -3.68206,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg/960px-Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_Cristal,_Retiro,_Madrid.jpg",
+     "autor": "vpogarcia",
+     "licenca": "CC BY-SA 2.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Madrid_-_Palacio_de_Cristal_del_Retiro_-_20150412150114.jpg/960px-Madrid_-_Palacio_de_Cristal_del_Retiro_-_20150412150114.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Madrid_-_Palacio_de_Cristal_del_Retiro_-_20150412150114.jpg",
+     "autor": "E-Ibanez",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Palacio de Cristal del Retiro"
+  },
+  {
+   "nome": "Estação de Atocha (jardim tropical)",
+   "tipo": "estação com jardim de palmeiras",
+   "dica": "O jardim fica no saguão antigo; de lá sai o trem para Toledo",
+   "lat": 40.4065,
+   "lng": -3.6893,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Atocha_railway_station_5.JPG/960px-Atocha_railway_station_5.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Atocha_railway_station_5.JPG",
+     "autor": "antomoro",
+     "licenca": "FAL",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Jard%C3%ADn_Tropical_de_la_Estaci%C3%B3n_de_Atocha_%285374990367%29.jpg/960px-Jard%C3%ADn_Tropical_de_la_Estaci%C3%B3n_de_Atocha_%285374990367%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_Tropical_de_la_Estaci%C3%B3n_de_Atocha_(5374990367).jpg",
+     "autor": "Felipe Gabaldón",
+     "licenca": "CC BY 2.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Madrid Atocha railway station"
+  },
+  {
+   "nome": "Real Jardín Botánico",
+   "tipo": "jardim botânico ao lado do Prado",
+   "dica": "Estufas quentes, bom para um dia frio",
+   "lat": 40.41111,
+   "lng": -3.69167,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Puerta_de_Murillo%2C_Real_Jard%C3%ADn_Bot%C3%A1nico_de_Madrid.jpg/960px-Puerta_de_Murillo%2C_Real_Jard%C3%ADn_Bot%C3%A1nico_de_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Puerta_de_Murillo,_Real_Jard%C3%ADn_Bot%C3%A1nico_de_Madrid.jpg",
+     "autor": "A. Barra",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Real_Jard%C3%ADn_Bot%C3%A1nico_%28Madrid%29_07.jpg/960px-Real_Jard%C3%ADn_Bot%C3%A1nico_%28Madrid%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Real_Jard%C3%ADn_Bot%C3%A1nico_(Madrid)_07.jpg",
+     "autor": "Richie Diesterheft from United States",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Real Jardín Botánico de Madrid"
+  },
+  {
+   "nome": "CaixaForum (jardim vertical)",
+   "tipo": "centro cultural com parede de plantas",
+   "dica": "O jardim vertical fica na rua, não paga",
+   "lat": 40.41101,
+   "lng": -3.69308,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Caixaforum_Madrid_2024.jpg/960px-Caixaforum_Madrid_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Caixaforum_Madrid_2024.jpg",
+     "autor": "Fernando",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/CaixaForum_Madrid_1.JPG/960px-CaixaForum_Madrid_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:CaixaForum_Madrid_1.JPG",
+     "autor": "antomoro",
+     "licenca": "FAL",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:CaixaForum Madrid"
+  },
+  {
+   "nome": "Círculo de Bellas Artes (terraço)",
+   "tipo": "terraço com vista da Gran Vía",
+   "dica": "Uma das melhores vistas do Edifício Metrópolis",
+   "lat": 40.41831,
+   "lng": -3.69658,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Circulo_de_Bellas_Artes_%28Madrid%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Circulo_de_Bellas_Artes_(Madrid).jpg",
+     "autor": "Jean-Pierre Dalbéra",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Madrid_-_C%C3%ADrculo_de_Bellas_Artes%2C_Azotea_07.jpg/960px-Madrid_-_C%C3%ADrculo_de_Bellas_Artes%2C_Azotea_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Madrid_-_C%C3%ADrculo_de_Bellas_Artes,_Azotea_07.jpg",
+     "autor": "Zarateman",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Círculo de Bellas Artes"
+  },
+  {
+   "nome": "Plaza de Oriente",
+   "tipo": "praça em frente ao Palácio Real",
+   "dica": "Estátuas dos reis e o Teatro Real",
+   "lat": 40.41834,
+   "lng": -3.71259,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Estatua_de_Felipe_IV_y_Palacio_Real_25-02-2013.jpg/960px-Estatua_de_Felipe_IV_y_Palacio_Real_25-02-2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Estatua_de_Felipe_IV_y_Palacio_Real_25-02-2013.jpg",
+     "autor": "Sammy pompon",
+     "licenca": "CC0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Madrid_Plaza_Oriente_R02.jpg/960px-Madrid_Plaza_Oriente_R02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Madrid_Plaza_Oriente_R02.jpg",
+     "autor": "Marc Ryckaert",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Plaza de Oriente"
+  },
+  {
+   "nome": "Plaza de la Villa",
+   "tipo": "praça medieval",
+   "dica": "Pequena e quieta, a dois passos da Plaza Mayor",
+   "lat": 40.4153,
+   "lng": -3.7103,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Plaza_de_la_Villa_-_08.jpg/960px-Plaza_de_la_Villa_-_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Villa_-_08.jpg",
+     "autor": "Carlos Delgado",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG/960px-2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG",
+     "autor": "Anagoria",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Plaza de la Villa"
+  },
+  {
+   "nome": "Plaza de Santa Ana (Barrio de las Letras)",
+   "tipo": "praça de bares",
+   "dica": "O bairro dos escritores; frases de livros no chão das ruas",
+   "lat": 40.41471,
+   "lng": -3.7009,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Plaza_de_Santa_Ana_%28Madrid%29_02.jpg/960px-Plaza_de_Santa_Ana_%28Madrid%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_Santa_Ana_(Madrid)_02.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Plaza_de_Santa_Ana%2C_Madrid_01.jpg/960px-Plaza_de_Santa_Ana%2C_Madrid_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_Santa_Ana,_Madrid_01.jpg",
+     "autor": "Simon Burchell",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Plaza de Santa Ana"
+  },
+  {
+   "nome": "Monasterio de las Descalzas Reales",
+   "tipo": "convento real com obras de arte",
+   "dica": "Só com visita guiada; pouca gente conhece",
+   "lat": 40.41827,
+   "lng": -3.70619,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg/960px-Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Monasterio_de_las_Descalzas_Reales_(Madrid)_07.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Monasterio_de_las_Descalzas_Reales_%28Madrid%29_06.jpg/960px-Monasterio_de_las_Descalzas_Reales_%28Madrid%29_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Monasterio_de_las_Descalzas_Reales_(Madrid)_06.jpg",
+     "autor": "Enrique Cordero from Spain",
+     "licenca": "CC BY-SA 2.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Convent of Las Descalzas Reales"
+  },
+  {
+   "nome": "San Francisco el Grande",
+   "tipo": "basílica com cúpula enorme",
+   "dica": "Uma das maiores cúpulas da Europa",
+   "lat": 40.4105,
+   "lng": -3.7144,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Bas%C3%ADlica_de_San_Francisco_el_Grande_%28Madrid%29_13.jpg/960px-Bas%C3%ADlica_de_San_Francisco_el_Grande_%28Madrid%29_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_San_Francisco_el_Grande_(Madrid)_13.jpg",
+     "autor": "Enrique Cordero",
+     "licenca": "CC BY-SA 2.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Real_Bas%C3%ADlica_de_San_Francisco_el_Grande%2C_Madrid%2C_Espa%C3%B1a%2C_2023-01-03%2C_DD_56-58_HDR.jpg/960px-Real_Bas%C3%ADlica_de_San_Francisco_el_Grande%2C_Madrid%2C_Espa%C3%B1a%2C_2023-01-03%2C_DD_56-58_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Real_Bas%C3%ADlica_de_San_Francisco_el_Grande,_Madrid,_Espa%C3%B1a,_2023-01-03,_DD_56-58_HDR.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Basilica of San Francisco el Grande, Madrid"
+  },
+  {
+   "nome": "Ermita de San Antonio de la Florida",
+   "tipo": "capela com afrescos de Goya",
+   "dica": "Grátis; Goya está enterrado ali",
+   "lat": 40.42536,
+   "lng": -3.7256,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/San_Antonio_de_la_Florida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_Antonio_de_la_Florida.jpg",
+     "autor": "J.L. de Diego",
+     "licenca": "Public domain",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ermita_de_San_Antonio_de_la_Florida_-_01.jpg/960px-Ermita_de_San_Antonio_de_la_Florida_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_San_Antonio_de_la_Florida_-_01.jpg",
+     "autor": "Carlos Delgado",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Royal Chapel of St. Anthony of La Florida"
+  },
+  {
+   "nome": "Museo Sorolla",
+   "tipo": "casa-museu do pintor Sorolla",
+   "dica": "Casa com jardim; confiram se já reabriu da reforma",
+   "lat": 40.435,
+   "lng": -3.693,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Museo_Sorolla_%28Madrid%29_01.jpg/960px-Museo_Sorolla_%28Madrid%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Sorolla_(Madrid)_01.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Museo_Sorolla_-_Sala_3_muro_oeste.jpg/960px-Museo_Sorolla_-_Sala_3_muro_oeste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Sorolla_-_Sala_3_muro_oeste.jpg",
+     "autor": "Javier Rodríguez Barrera",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Sorolla Museum"
+  },
+  {
+   "nome": "Museo Cerralbo",
+   "tipo": "palacete do século XIX",
+   "dica": "Casa de marquês intacta, perto da Plaza de España",
+   "lat": 40.42368,
+   "lng": -3.71458,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Palacio_del_Marqu%C3%A9s_de_Cerralbo_%28Madrid%29_01.jpg/960px-Palacio_del_Marqu%C3%A9s_de_Cerralbo_%28Madrid%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_del_Marqu%C3%A9s_de_Cerralbo_(Madrid)_01.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Jewellery_in_Cerralbo_Museum_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jewellery_in_Cerralbo_Museum_2.jpg",
+     "autor": "Uriel1022",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Cerralbo Museum"
+  },
+  {
+   "nome": "Palacio de Liria",
+   "tipo": "palácio da Casa de Alba",
+   "dica": "Visita com hora marcada; Goya e Velázquez na parede",
+   "lat": 40.4277,
+   "lng": -3.7124,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Palacio_de_Liria_05.jpg/960px-Palacio_de_Liria_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_Liria_05.jpg",
+     "autor": "UnDíaPorMadrid",
+     "licenca": "CC0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Palacio_de_Liria_%28Madrid%29_02.jpg/960px-Palacio_de_Liria_%28Madrid%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_Liria_(Madrid)_02.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Liria Palace"
+  },
+  {
+   "nome": "Museo Arqueológico Nacional",
+   "tipo": "museu de arqueologia",
+   "dica": "A Dama de Elche está aqui",
+   "lat": 40.42365,
+   "lng": -3.68942,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/National_Archaeological_Museum%2C_Madrid_%28Spain%29.jpg/960px-National_Archaeological_Museum%2C_Madrid_%28Spain%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:National_Archaeological_Museum,_Madrid_(Spain).jpg",
+     "autor": "Heparina1985",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Trajano_-_Cabeza_-_Museo_Arqueologico_Nacional_-_Madrid_02.jpg/960px-Trajano_-_Cabeza_-_Museo_Arqueologico_Nacional_-_Madrid_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Trajano_-_Cabeza_-_Museo_Arqueologico_Nacional_-_Madrid_02.jpg",
+     "autor": "Javier Pérez Montes",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:National Archaeological Museum (Madrid)"
+  },
+  {
+   "nome": "Campo del Moro",
+   "tipo": "jardim atrás do Palácio Real",
+   "dica": "A melhor foto do palácio, de baixo; grátis",
+   "lat": 40.4182,
+   "lng": -3.7191,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Espa%C3%B1a_-_Madrid_-_Campo_del_Moro_-_Entrada.JPG/960px-Espa%C3%B1a_-_Madrid_-_Campo_del_Moro_-_Entrada.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Campo_del_Moro_-_Entrada.JPG",
+     "autor": "Antonio.velez",
+     "licenca": "CC BY-SA 3.0 es",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Campo_del_Moro_%28Madrid%29_04.jpg/960px-Campo_del_Moro_%28Madrid%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Campo_del_Moro_(Madrid)_04.jpg",
+     "autor": "Bjaglin from Sweden",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Campo del Moro"
+  },
+  {
+   "nome": "Madrid Río",
+   "tipo": "parque na beira do rio Manzanares",
+   "dica": "Passeio plano com pontes modernas",
+   "lat": 40.3985,
+   "lng": -3.7117,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Madrid_in_May_2017_64_edited.jpg/960px-Madrid_in_May_2017_64_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Madrid_in_May_2017_64_edited.jpg",
+     "autor": "Nicolas Vigier",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Madrid Río"
+  },
+  {
+   "nome": "Matadero Madrid",
+   "tipo": "antigo matadouro, hoje centro cultural",
+   "dica": "Exposições grátis; fica no Madrid Río",
+   "lat": 40.39188,
+   "lng": -3.6985,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Matadero_Madrid.jpg/960px-Matadero_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Matadero_Madrid.jpg",
+     "autor": "AlesKubr2",
+     "licenca": "Public domain",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Casa_del_Lector_%28Matadero_Madrid%29_-_diciembre_2012_12.JPG/960px-Casa_del_Lector_%28Matadero_Madrid%29_-_diciembre_2012_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Casa_del_Lector_(Matadero_Madrid)_-_diciembre_2012_12.JPG",
+     "autor": "Ecemaml",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Matadero Madrid"
+  },
+  {
+   "nome": "Teleférico de Madrid",
+   "tipo": "teleférico até a Casa de Campo",
+   "dica": "Vista do Palácio Real de cima; confiram se funciona em fevereiro",
+   "lat": 40.4239,
+   "lng": -3.73535,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Telef%C3%A9rico_de_Madrid_abrir%C3%A1_dos_semanas_completas_en_mayo_01.jpg/960px-Telef%C3%A9rico_de_Madrid_abrir%C3%A1_dos_semanas_completas_en_mayo_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Telef%C3%A9rico_de_Madrid_abrir%C3%A1_dos_semanas_completas_en_mayo_01.jpg",
+     "autor": "Diario de Madrid",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Telef%C3%A9rico_de_Madrid_reabre_al_p%C3%BAblico_este_fin_de_semana_01.jpg/960px-Telef%C3%A9rico_de_Madrid_reabre_al_p%C3%BAblico_este_fin_de_semana_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Telef%C3%A9rico_de_Madrid_reabre_al_p%C3%BAblico_este_fin_de_semana_01.jpg",
+     "autor": "Diario de Madrid",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Teleférico de Madrid"
+  },
+  {
+   "nome": "Faro de Moncloa",
+   "tipo": "torre-mirante de 92 m",
+   "dica": "Mirante envidraçado, barato",
+   "lat": 40.4374,
+   "lng": -3.7217,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Faro_De_Moncloa.jpg/960px-Faro_De_Moncloa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Faro_De_Moncloa.jpg",
+     "autor": "Carlos Reusser Monsalvez",
+     "licenca": "CC0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Faro_de_la_Moncloa_-_04.jpg/960px-Faro_de_la_Moncloa_-_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Faro_de_la_Moncloa_-_04.jpg",
+     "autor": "Carlos Delgado",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Faro de Moncloa"
+  },
+  {
+   "nome": "Estação fantasma de Chamberí",
+   "tipo": "estação de metrô de 1919 parada no tempo",
+   "dica": "Grátis; abre mais no fim de semana",
+   "lat": 40.4323,
+   "lng": -3.69772,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/And%C3%A9n_0-_Estaci%C3%B3n_de_Chamber%C3%AD_%2834808988711%29.jpg/960px-And%C3%A9n_0-_Estaci%C3%B3n_de_Chamber%C3%AD_%2834808988711%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:And%C3%A9n_0-_Estaci%C3%B3n_de_Chamber%C3%AD_(34808988711).jpg",
+     "autor": "Emilio J. Rodríguez Posada",
+     "licenca": "CC BY-SA 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Estaci%C3%B3n_de_Chamber%C3%AD%2C_interior_de_la_ventanilla%2C_Madrid%2C_Espa%C3%B1a%2C_2015_02.JPG/960px-Estaci%C3%B3n_de_Chamber%C3%AD%2C_interior_de_la_ventanilla%2C_Madrid%2C_Espa%C3%B1a%2C_2015_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Chamber%C3%AD,_interior_de_la_ventanilla,_Madrid,_Espa%C3%B1a,_2015_02.JPG",
+     "autor": "Benjamín Núñez González",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "es:Estación de Chamberí"
+  },
+  {
+   "nome": "Las Ventas",
+   "tipo": "praça de touros em estilo mourisco",
+   "dica": "Vale pela fachada; metrô Ventas",
+   "lat": 40.43208,
+   "lng": -3.66328,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Plaza_de_Toros_de_Las_Ventas_%28Madrid%29_05.jpg/960px-Plaza_de_Toros_de_Las_Ventas_%28Madrid%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_Toros_de_Las_Ventas_(Madrid)_05.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Plaza_de_Toros_de_Las_Ventas_%28Madrid%29_04.jpg/960px-Plaza_de_Toros_de_Las_Ventas_%28Madrid%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_Toros_de_Las_Ventas_(Madrid)_04.jpg",
+     "autor": "Luis García (Zaqarbal)",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Las Ventas"
+  },
+  {
+   "nome": "Parque de El Capricho",
+   "tipo": "jardim romântico pouco conhecido",
+   "dica": "Só abre sábado e domingo",
+   "lat": 40.4561,
+   "lng": -3.5987,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/MADRID_PARQUE_DEL_CAPRICHO_LAGUNA_3-12-2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:MADRID_PARQUE_DEL_CAPRICHO_LAGUNA_3-12-2006.jpg",
+     "autor": "Wikimedia Commons",
+     "licenca": "Public domain",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Madrid%2C_Parque_de_El_Capricho_1977_05.jpg/960px-Madrid%2C_Parque_de_El_Capricho_1977_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Madrid,_Parque_de_El_Capricho_1977_05.jpg",
+     "autor": "LBM1948",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Parque de El Capricho"
+  },
+  {
+   "nome": "Bate-volta Segóvia",
+   "tipo": "aqueduto romano e castelo",
+   "dica": "Trem rápido de Chamartín, ~30 min",
+   "lat": 40.9479,
+   "lng": -4.1178,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Aqueduct_of_Segovia_08.jpg/960px-Aqueduct_of_Segovia_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Aqueduct_of_Segovia_08.jpg",
+     "autor": "Bernard Gagnon",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Aqueduct of Segovia"
+  },
+  {
+   "nome": "Bate-volta El Escorial",
+   "tipo": "mosteiro-palácio de Felipe II",
+   "dica": "Trem ou ônibus, ~1h; fecha às segundas",
+   "lat": 40.59,
+   "lng": -4.15,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/960px-Monasterio_de_El_Escorial_en_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Monasterio_de_El_Escorial_en_Madrid.jpg",
+     "autor": "Zvonimir Stamenov",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Real_Monasterio_de_San_Lorenzo_de_El_Escorial%2C_Madrid%2C_Espa%C3%B1a%2C_2025-12-30%2C_DD_49.jpg/960px-Real_Monasterio_de_San_Lorenzo_de_El_Escorial%2C_Madrid%2C_Espa%C3%B1a%2C_2025-12-30%2C_DD_49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Real_Monasterio_de_San_Lorenzo_de_El_Escorial,_Madrid,_Espa%C3%B1a,_2025-12-30,_DD_49.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:El Escorial"
+  }
+ ],
+ "roma": [
+  {
+   "nome": "Piazza del Popolo",
+   "tipo": "praça com obelisco e igrejas gêmeas",
+   "dica": "Santa Maria del Popolo tem dois Caravaggios, grátis",
+   "lat": 41.9107,
+   "lng": 12.4763,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Piazza_del_Popolo%2C_Roma_%28Rome%29.jpg/960px-Piazza_del_Popolo%2C_Roma_%28Rome%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Piazza_del_Popolo,_Roma_(Rome).jpg",
+     "autor": "Apaleutos25",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Fontana_del_Nettuno%2C_Piazza_del_Popolo%2C_Rome%2C_Italie.jpg/960px-Fontana_del_Nettuno%2C_Piazza_del_Popolo%2C_Rome%2C_Italie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Fontana_del_Nettuno,_Piazza_del_Popolo,_Rome,_Italie.jpg",
+     "autor": "Jebulon",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Piazza del Popolo"
+  },
+  {
+   "nome": "Terrazza del Pincio",
+   "tipo": "mirante sobre a Piazza del Popolo",
+   "dica": "Pôr do sol com a cúpula de São Pedro ao fundo",
+   "lat": 41.91167,
+   "lng": 12.47972,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Terrazza_del_Pincio_%2846397854832%29.jpg/960px-Terrazza_del_Pincio_%2846397854832%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Terrazza_del_Pincio_(46397854832).jpg",
+     "autor": "Sonse",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Pincian Hill"
+  },
+  {
+   "nome": "Jardim das Laranjeiras (Giardino degli Aranci)",
+   "tipo": "jardim com mirante no Aventino",
+   "dica": "Vista do Tibre e de São Pedro; grátis",
+   "lat": 41.8851,
+   "lng": 12.4804,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Ripa_-_giardino_degli_aranci_01.JPG/960px-Ripa_-_giardino_degli_aranci_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ripa_-_giardino_degli_aranci_01.JPG",
+     "autor": "user:Lalupa",
+     "licenca": "Public domain",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Vista_de_Roma_desde_el_jard%C3%ADn_de_los_Naranjos%2C_Italia%2C_2022-09-15%2C_DD_106-108_HDR.jpg/960px-Vista_de_Roma_desde_el_jard%C3%ADn_de_los_Naranjos%2C_Italia%2C_2022-09-15%2C_DD_106-108_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vista_de_Roma_desde_el_jard%C3%ADn_de_los_Naranjos,_Italia,_2022-09-15,_DD_106-108_HDR.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Giardino degli Aranci"
+  },
+  {
+   "nome": "Buraco da fechadura do Aventino",
+   "tipo": "a cúpula de São Pedro pela fechadura",
+   "dica": "Fica ao lado do Jardim das Laranjeiras; tem fila curta",
+   "lat": 41.88361,
+   "lng": 12.4775,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Aventino_s_Maria_del_Priorato_villa_dal_giardino_1050419.JPG/960px-Aventino_s_Maria_del_Priorato_villa_dal_giardino_1050419.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Aventino_s_Maria_del_Priorato_villa_dal_giardino_1050419.JPG",
+     "autor": "Lalupa",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Villa_del_Priorato_dei_Cavalieri_di_Malta_IMG_2730_%286182195148%29.jpg/960px-Villa_del_Priorato_dei_Cavalieri_di_Malta_IMG_2730_%286182195148%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Villa_del_Priorato_dei_Cavalieri_di_Malta_IMG_2730_(6182195148).jpg",
+     "autor": "chuck b. from San Francisco, USA",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Villa del Priorato di Malta"
+  },
+  {
+   "nome": "Bocca della Verità",
+   "tipo": "a máscara de mármore do filme",
+   "dica": "Fica na entrada de Santa Maria in Cosmedin",
+   "lat": 41.88806,
+   "lng": 12.48167,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Et%C3%A0_imperiale%2C_chiusino_a_forma_di_mascherone_di_divinit%C3%A0_fluviale%2C_detta_bocca_della_verit%C3%A0%2C_collocata_qui_nel_1632.jpg/960px-Et%C3%A0_imperiale%2C_chiusino_a_forma_di_mascherone_di_divinit%C3%A0_fluviale%2C_detta_bocca_della_verit%C3%A0%2C_collocata_qui_nel_1632.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Et%C3%A0_imperiale,_chiusino_a_forma_di_mascherone_di_divinit%C3%A0_fluviale,_detta_bocca_della_verit%C3%A0,_collocata_qui_nel_1632.jpg",
+     "autor": "Sailko",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Rome_%28IT%29%2C_Bocca_della_Verit%C3%A0_--_2013_--_3479.jpg/960px-Rome_%28IT%29%2C_Bocca_della_Verit%C3%A0_--_2013_--_3479.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Rome_(IT),_Bocca_della_Verit%C3%A0_--_2013_--_3479.jpg",
+     "autor": "Dietmar Rabich",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Bocca della Verità"
+  },
+  {
+   "nome": "São João de Latrão",
+   "tipo": "a catedral de Roma",
+   "dica": "Grátis; a Scala Santa fica em frente",
+   "lat": 41.88591,
+   "lng": 12.50616,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/San_Giovanni_in_Laterano_2021.jpg/960px-San_Giovanni_in_Laterano_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg",
+     "autor": "NikonZ7II",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2014-11-06_Archbasilica_of_Saint_John_Lateran_03.jpg/960px-2014-11-06_Archbasilica_of_Saint_John_Lateran_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:2014-11-06_Archbasilica_of_Saint_John_Lateran_03.jpg",
+     "autor": "Szilas",
+     "licenca": "CC BY 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Archbasilica of Saint John Lateran"
+  },
+  {
+   "nome": "Santa Maria Maggiore",
+   "tipo": "basílica com mosaicos do século V",
+   "dica": "Grátis; perto da estação Termini",
+   "lat": 41.8975,
+   "lng": 12.49861,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/960px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
+     "autor": "NikonZ7II",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Dome_of_Cappella_Paolina_in_Santa_Maria_Maggiore_%28Roma%29.jpg/960px-Dome_of_Cappella_Paolina_in_Santa_Maria_Maggiore_%28Roma%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Dome_of_Cappella_Paolina_in_Santa_Maria_Maggiore_(Roma).jpg",
+     "autor": "Wikimedia Commons",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Santa Maria Maggiore"
+  },
+  {
+   "nome": "San Pietro in Vincoli",
+   "tipo": "igreja do Moisés de Michelangelo",
+   "dica": "Grátis; a 5 min do Coliseu",
+   "lat": 41.89389,
+   "lng": 12.49306,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/San_Pietro_in_Vincoli_-_esterno.jpg/960px-San_Pietro_in_Vincoli_-_esterno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_Pietro_in_Vincoli_-_esterno.jpg",
+     "autor": "Rione I Monti",
+     "licenca": "CC BY 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/San_Pietro_in_Vincoli_%28Rome%29_-_Interior_2016.jpg/960px-San_Pietro_in_Vincoli_%28Rome%29_-_Interior_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_Pietro_in_Vincoli_(Rome)_-_Interior_2016.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:San Pietro in Vincoli"
+  },
+  {
+   "nome": "Santa Maria in Trastevere",
+   "tipo": "basílica de mosaicos dourados",
+   "dica": "A praça em frente é o coração do Trastevere",
+   "lat": 41.88944,
+   "lng": 12.46972,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/01_Santa_Maria_in_Trastevere_Facade.jpg/960px-01_Santa_Maria_in_Trastevere_Facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:01_Santa_Maria_in_Trastevere_Facade.jpg",
+     "autor": "NateBergin",
+     "licenca": "CC BY 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Santa_Maria_in_Trastevere_-Nativit%C3%A0_of_Etienne_Parrocel.jpg/960px-Santa_Maria_in_Trastevere_-Nativit%C3%A0_of_Etienne_Parrocel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Santa_Maria_in_Trastevere_-Nativit%C3%A0_of_Etienne_Parrocel.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Santa Maria in Trastevere"
+  },
+  {
+   "nome": "San Luigi dei Francesi",
+   "tipo": "igreja com três Caravaggios",
+   "dica": "Grátis; entre o Panteão e a Piazza Navona",
+   "lat": 41.89972,
+   "lng": 12.47472,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg/960px-%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:%C3%89glise_San_Luigi_Francesi_-_Rome_(IT62)_-_2021-08-28_-_2.jpg",
+     "autor": "Chabe01",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/San_Luigi_dei_Francesi_%28Rome%29_-_Interior_HDR.jpg/960px-San_Luigi_dei_Francesi_%28Rome%29_-_Interior_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_Luigi_dei_Francesi_(Rome)_-_Interior_HDR.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:San Luigi dei Francesi"
+  },
+  {
+   "nome": "Sant'Ignazio",
+   "tipo": "igreja com teto em ilusão de ótica",
+   "dica": "A cúpula é pintada; tem um espelho para ver o teto",
+   "lat": 41.899,
+   "lng": 12.47978,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Church_of_Sant%27Ignazio_di_Loyola.jpg/960px-Church_of_Sant%27Ignazio_di_Loyola.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Church_of_Sant%27Ignazio_di_Loyola.jpg",
+     "autor": "Fiat 500e",
+     "licenca": "CC BY 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Sant%27Ignazio_%28Rome%29_-False_Dome.jpg/960px-Sant%27Ignazio_%28Rome%29_-False_Dome.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sant%27Ignazio_(Rome)_-False_Dome.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Sant'Ignazio, Rome"
+  },
+  {
+   "nome": "Santa Maria della Vittoria",
+   "tipo": "igreja do Êxtase de Santa Teresa",
+   "dica": "A escultura de Bernini; grátis",
+   "lat": 41.90472,
+   "lng": 12.49417,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg/960px-Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg",
+     "autor": "Architas",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Santa_Maria_della_Vittoria_in_Rome_-_Dome_HDR.jpg/960px-Santa_Maria_della_Vittoria_in_Rome_-_Dome_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Santa_Maria_della_Vittoria_in_Rome_-_Dome_HDR.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Santa Maria della Vittoria, Rome"
+  },
+  {
+   "nome": "Basílica de San Clemente",
+   "tipo": "igreja em três níveis",
+   "dica": "Desce-se até uma casa romana; perto do Coliseu",
+   "lat": 41.88944,
+   "lng": 12.4975,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/960px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg",
+     "autor": "Labicanense",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Basilica_di_San_Clemente_al_Laterano_-_interno.jpg/960px-Basilica_di_San_Clemente_al_Laterano_-_interno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Clemente_al_Laterano_-_interno.jpg",
+     "autor": "Ninfamania",
+     "licenca": "CC BY 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Basilica of San Clemente al Laterano"
+  },
+  {
+   "nome": "Piazza del Campidoglio",
+   "tipo": "praça desenhada por Michelangelo",
+   "dica": "Atrás dela, vista do Fórum Romano de graça",
+   "lat": 41.89333,
+   "lng": 12.48278,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Piazza_del_Campidoglio_2015.jpg/960px-Piazza_del_Campidoglio_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Piazza_del_Campidoglio_2015.jpg",
+     "autor": "Kameister",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Fountain_in_Piazza_del_Campidoglio_%28Rome%29_-_Nile.jpg/960px-Fountain_in_Piazza_del_Campidoglio_%28Rome%29_-_Nile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Fountain_in_Piazza_del_Campidoglio_(Rome)_-_Nile.jpg",
+     "autor": "Diana Ringo",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Piazza del Campidoglio"
+  },
+  {
+   "nome": "Museus Capitolinos",
+   "tipo": "museu no Campidoglio",
+   "dica": "A Loba Capitolina e a vista do Fórum",
+   "lat": 41.8931,
+   "lng": 12.4828,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG/960px-0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG",
+     "autor": "Jean-Pol GRANDMONT",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Capitoline Museums"
+  },
+  {
+   "nome": "Mercados de Trajano",
+   "tipo": "o shopping da Roma antiga",
+   "dica": "Dá para ver boa parte da rua, sem pagar",
+   "lat": 41.89561,
+   "lng": 12.48619,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Mercati_di_Traiano_-_Roma.jpg/960px-Mercati_di_Traiano_-_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mercati_di_Traiano_-_Roma.jpg",
+     "autor": "NikonZ7II",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Rome_Trajan%27s_Market_interior.jpg/960px-Rome_Trajan%27s_Market_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Rome_Trajan%27s_Market_interior.jpg",
+     "autor": "Nicholas Hartmann",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Trajan's Market"
+  },
+  {
+   "nome": "Termas de Caracalla",
+   "tipo": "ruínas de termas gigantes",
+   "dica": "Pouca fila; perto do Circo Massimo",
+   "lat": 41.87944,
+   "lng": 12.49306,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Baths_of_Caracalla%2C_facing_Caldarium.jpg/960px-Baths_of_Caracalla%2C_facing_Caldarium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Baths_of_Caracalla,_facing_Caldarium.jpg",
+     "autor": "Ethan Doyle White",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Baths of Caracalla"
+  },
+  {
+   "nome": "Via Appia Antica",
+   "tipo": "a estrada romana e as catacumbas",
+   "dica": "Melhor no domingo, quando fecha para carros",
+   "lat": 41.84139,
+   "lng": 12.5325,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Paesaggio_dell%27Appia_antica.jpg/960px-Paesaggio_dell%27Appia_antica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Paesaggio_dell%27Appia_antica.jpg",
+     "autor": "LuisaV72",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Appian_Way.jpg/960px-Appian_Way.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Appian_Way.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Appian Way"
+  },
+  {
+   "nome": "Gianicolo (mirante)",
+   "tipo": "morro com vista de Roma inteira",
+   "dica": "Ao meio-dia dispara um canhão",
+   "lat": 41.89167,
+   "lng": 12.46111,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Janiculum.jpg/960px-Janiculum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Janiculum.jpg",
+     "autor": "Wikimedia Commons",
+     "licenca": "Public domain",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Janiculum"
+  },
+  {
+   "nome": "Fontana dell'Acqua Paola",
+   "tipo": "o fontanone do Gianicolo",
+   "dica": "Fonte monumental com mirante",
+   "lat": 41.88875,
+   "lng": 12.46417,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Fontanone_dell%27Acqua_Paola.jpg/960px-Fontanone_dell%27Acqua_Paola.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Fontanone_dell%27Acqua_Paola.jpg",
+     "autor": "Labicanense",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Roma_Fontana_dell%27Acqua_Paola_%2852345941605%29.jpg/960px-Roma_Fontana_dell%27Acqua_Paola_%2852345941605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Roma_Fontana_dell%27Acqua_Paola_(52345941605).jpg",
+     "autor": "Jorge Franganillo",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Fontana dell'Acqua Paola"
+  },
+  {
+   "nome": "Quartiere Coppedè",
+   "tipo": "quarteirão de arquitetura fantástica",
+   "dica": "Pouco turista; parece cenário de filme",
+   "lat": 41.91861,
+   "lng": 12.50135,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Quartiere_Copped%C3%A9_09.jpg/960px-Quartiere_Copped%C3%A9_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Quartiere_Copped%C3%A9_09.jpg",
+     "autor": "This Photo was taken by Andrea Bertozzi.  \n\nFeel free to use my photos, but plea",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lampadario_Quartiere_copped%C3%A8.jpg/960px-Lampadario_Quartiere_copped%C3%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Lampadario_Quartiere_copped%C3%A8.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Quartiere Coppedè"
+  },
+  {
+   "nome": "Pirâmide de Céstio",
+   "tipo": "pirâmide romana de 12 a.C.",
+   "dica": "Ao lado do Testaccio e do cemitério dos poetas",
+   "lat": 41.87639,
+   "lng": 12.48083,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Piramide_Cestia.jpg/960px-Piramide_Cestia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Piramide_Cestia.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Pyramid of Cestius"
+  },
+  {
+   "nome": "Largo di Torre Argentina",
+   "tipo": "ruínas onde César foi morto",
+   "dica": "Hoje é um santuário de gatos",
+   "lat": 41.89528,
+   "lng": 12.47694,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Curia_of_Pompey.jpg/960px-Curia_of_Pompey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Curia_of_Pompey.jpg",
+     "autor": "Sotamies",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Largo di Torre Argentina"
+  },
+  {
+   "nome": "Gueto Judeu e Pórtico de Otávia",
+   "tipo": "bairro judeu de Roma",
+   "dica": "A alcachofra frita (carciofo alla giudia) é daqui",
+   "lat": 41.89244,
+   "lng": 12.47853,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Portico_Octavia_Rome_2.jpg/960px-Portico_Octavia_Rome_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Portico_Octavia_Rome_2.jpg",
+     "autor": "Portico_Octavia_Rome.jpg: Jensens\nderivative work: Ptyx (talk)",
+     "licenca": "Public domain",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/P-Octavia1.JPG/960px-P-Octavia1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:P-Octavia1.JPG",
+     "autor": "Joris1919",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Porticus Octaviae"
+  },
+  {
+   "nome": "Ilha Tiberina",
+   "tipo": "ilha no meio do Tibre",
+   "dica": "Caminho bonito entre o Gueto e o Trastevere",
+   "lat": 41.89083,
+   "lng": 12.47722,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Isola_Tiberina%2C_Rome_%2824824736817%29.jpg/960px-Isola_Tiberina%2C_Rome_%2824824736817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Isola_Tiberina,_Rome_(24824736817).jpg",
+     "autor": "Deensel",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Tiber Island"
+  },
+  {
+   "nome": "Fontana delle Tartarughe",
+   "tipo": "fonte das tartarugas",
+   "dica": "Escondida numa pracinha do Gueto",
+   "lat": 41.89389,
+   "lng": 12.4775,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/The_Turtle_Fountain.jpg/960px-The_Turtle_Fountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:The_Turtle_Fountain.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Fontana delle Tartarughe"
+  },
+  {
+   "nome": "Galleria Doria Pamphilj",
+   "tipo": "palácio com galeria de espelhos",
+   "dica": "Velázquez e Caravaggio, sem multidão",
+   "lat": 41.89767,
+   "lng": 12.48114,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Palazzo_Doria_Pamphilj.jpg/960px-Palazzo_Doria_Pamphilj.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palazzo_Doria_Pamphilj.jpg",
+     "autor": "Fiat 500e",
+     "licenca": "CC BY 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Interior_of_Galleria_Doria_Pamphilj%2C_Rome_03.jpg/960px-Interior_of_Galleria_Doria_Pamphilj%2C_Rome_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_of_Galleria_Doria_Pamphilj,_Rome_03.jpg",
+     "autor": "Lamelolguy",
+     "licenca": "CC0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Doria Pamphilj Gallery"
+  },
+  {
+   "nome": "Galleria Sciarra",
+   "tipo": "pátio coberto com afrescos Art Nouveau",
+   "dica": "Grátis, a 2 min da Fontana di Trevi",
+   "lat": 41.89981,
+   "lng": 12.48213,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Galleria_Sciarra.jpg/960px-Galleria_Sciarra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galleria_Sciarra.jpg",
+     "autor": "Labicanense",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Galer%C3%ADa_Sciarra%2C_Roma%2C_Italia%2C_2022-09-16%2C_DD_117-119.jpg/960px-Galer%C3%ADa_Sciarra%2C_Roma%2C_Italia%2C_2022-09-16%2C_DD_117-119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Sciarra,_Roma,_Italia,_2022-09-16,_DD_117-119.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Galleria Sciarra"
+  },
+  {
+   "nome": "Cripta dos Capuchinhos",
+   "tipo": "capelas decoradas com ossos",
+   "dica": "Na Via Veneto; impressiona",
+   "lat": 41.90464,
+   "lng": 12.48867,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg/960px-Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Rom,_Santa_Maria_Immacolata_a_Via_Veneto,_Krypta_der_Kapuziner_1.jpg",
+     "autor": "Dnalor 01",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Capuchin Crypt"
+  },
+  {
+   "nome": "Centrale Montemartini",
+   "tipo": "estátuas romanas numa usina elétrica",
+   "dica": "Museu vazio e diferente de tudo",
+   "lat": 41.8931,
+   "lng": 12.4828,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg/960px-Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Le_mus%C3%A9e_de_la_centrale_Montemartini_(Rome)_(34321364485).jpg",
+     "autor": "Jean-Pierre Dalbéra from Paris, France",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Clad_muse_leaning._Located_in_Centrale_Montemartini%2C_Rome_%2846620997561%29.jpg/960px-Clad_muse_leaning._Located_in_Centrale_Montemartini%2C_Rome_%2846620997561%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Clad_muse_leaning._Located_in_Centrale_Montemartini,_Rome_(46620997561).jpg",
+     "autor": "Andy Montgomery",
+     "licenca": "CC BY-SA 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Centrale Montemartini"
+  },
+  {
+   "nome": "Colosseo Quadrato (EUR)",
+   "tipo": "o Coliseu quadrado",
+   "dica": "Bairro EUR, de metrô",
+   "lat": 41.83668,
+   "lng": 12.46531,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Palazzo_della_civilt%C3%A0_del_lavoro_%28EUR%2C_Rome%29_%285904657870%29.jpg/960px-Palazzo_della_civilt%C3%A0_del_lavoro_%28EUR%2C_Rome%29_%285904657870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palazzo_della_civilt%C3%A0_del_lavoro_(EUR,_Rome)_(5904657870).jpg",
+     "autor": "dalbera from Paris, France",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Palazzo-della-Civilta-Italiana-traffic-sunset.jpg/960px-Palazzo-della-Civilta-Italiana-traffic-sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Palazzo-della-Civilta-Italiana-traffic-sunset.jpg",
+     "autor": "Acediscovery",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Palazzo della Civiltà Italiana"
+  },
+  {
+   "nome": "Bate-volta Ostia Antica",
+   "tipo": "cidade romana em ruínas",
+   "dica": "Trem de Piramide, ~30 min; fecha às segundas",
+   "lat": 41.75583,
+   "lng": 12.29167,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/La_place_des_corporations_%28Ostia_Antica%29_%285900530118%29.jpg/960px-La_place_des_corporations_%28Ostia_Antica%29_%285900530118%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:La_place_des_corporations_(Ostia_Antica)_(5900530118).jpg",
+     "autor": "Jean-Pierre Dalbéra from Paris, France",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Panoramica_Teatro_di_Ostia.jpg/960px-Panoramica_Teatro_di_Ostia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Panoramica_Teatro_di_Ostia.jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Ostia Antica"
+  },
+  {
+   "nome": "Bate-volta Tivoli (Villa d'Este)",
+   "tipo": "jardins com centenas de fontes",
+   "dica": "Trem ou ônibus, ~1h",
+   "lat": 41.9631,
+   "lng": 12.7961,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Villa_Deste_park_Rometta_2011_2.jpg/960px-Villa_Deste_park_Rometta_2011_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Villa_Deste_park_Rometta_2011_2.jpg",
+     "autor": "Karelj",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Villa d'Este"
+  }
+ ],
+ "verona": [
+  {
+   "nome": "Ponte Pietra",
+   "tipo": "ponte romana sobre o Ádige",
+   "dica": "A vista mais bonita é no fim da tarde",
+   "lat": 45.4477,
+   "lng": 10.9999,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Verona_%28119277577%29.jpeg/960px-Verona_%28119277577%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Verona_(119277577).jpeg",
+     "autor": "Raphael Andres",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Verona_Italy_Ponte-Pietra-01.jpg/960px-Verona_Italy_Ponte-Pietra-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Verona_Italy_Ponte-Pietra-01.jpg",
+     "autor": "CEphoto, Uwe Aranas",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Ponte Pietra (Verona)"
+  },
+  {
+   "nome": "Teatro Romano",
+   "tipo": "teatro romano na encosta",
+   "dica": "Museu arqueológico em cima, com vista",
+   "lat": 45.44742,
+   "lng": 11.00164,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Roman_Theatre_in_Verona_%2889828%29.jpg/960px-Roman_Theatre_in_Verona_%2889828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Roman_Theatre_in_Verona_(89828).jpg",
+     "autor": "Carla Brain",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Teatro_romano_di_Verona_1.jpg/960px-Teatro_romano_di_Verona_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Teatro_romano_di_Verona_1.jpg",
+     "autor": "Orledio",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Roman theatre, Verona"
+  },
+  {
+   "nome": "Duomo de Verona",
+   "tipo": "catedral românica",
+   "dica": "Tem um Ticiano no altar lateral",
+   "lat": 45.44705,
+   "lng": 10.99685,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Italy_-_Verona_-_Cathedral.jpg/960px-Italy_-_Verona_-_Cathedral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Italy_-_Verona_-_Cathedral.jpg",
+     "autor": "Arne Müseler",
+     "licenca": "CC BY-SA 3.0 de",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Verona Cathedral"
+  },
+  {
+   "nome": "Sant'Anastasia",
+   "tipo": "a maior igreja gótica da cidade",
+   "dica": "O afresco de Pisanello fica no alto",
+   "lat": 45.44528,
+   "lng": 11,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Verona_Blick_vom_Torre_dei_Lamberti_auf_die_Chiesa_di_Sant%27Anastasia_2.jpg/960px-Verona_Blick_vom_Torre_dei_Lamberti_auf_die_Chiesa_di_Sant%27Anastasia_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Verona_Blick_vom_Torre_dei_Lamberti_auf_die_Chiesa_di_Sant%27Anastasia_2.jpg",
+     "autor": "Zairon",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Basilica_di_Santa_Anastasia_%28Verona%29_-_Facciata.jpg/960px-Basilica_di_Santa_Anastasia_%28Verona%29_-_Facciata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Anastasia_(Verona)_-_Facciata.jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Sant'Anastasia (Verona)"
+  },
+  {
+   "nome": "San Fermo Maggiore",
+   "tipo": "duas igrejas, uma sobre a outra",
+   "dica": "O teto de madeira parece um casco de navio",
+   "lat": 45.43917,
+   "lng": 11,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/VeronaSFermoERustico.jpg/960px-VeronaSFermoERustico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:VeronaSFermoERustico.jpg",
+     "autor": "MM",
+     "licenca": "Public domain",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Verona_Chiesa_di_San_Fermo_Maggiore_Innen_Oberkirche_Gegenfassade.jpg/960px-Verona_Chiesa_di_San_Fermo_Maggiore_Innen_Oberkirche_Gegenfassade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Verona_Chiesa_di_San_Fermo_Maggiore_Innen_Oberkirche_Gegenfassade.jpg",
+     "autor": "Zairon",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:San Fermo Maggiore, Verona"
+  },
+  {
+   "nome": "Giardino Giusti",
+   "tipo": "jardim renascentista",
+   "dica": "Labirinto e mirante no alto",
+   "lat": 45.44361,
+   "lng": 11.00722,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Green_symphony%2C_giardino_Giusti_%28Verona%29.jpg/960px-Green_symphony%2C_giardino_Giusti_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Green_symphony,_giardino_Giusti_(Verona).jpg",
+     "autor": "Garden tourist",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Giardino Giusti"
+  },
+  {
+   "nome": "Arche Scaligere",
+   "tipo": "túmulos góticos dos senhores de Verona",
+   "dica": "Dá para ver da rua, de graça",
+   "lat": 45.44364,
+   "lng": 10.99893,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Arche_scaligere_%28Verona%29.jpg/960px-Arche_scaligere_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Arche_scaligere_(Verona).jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Aleksander_Gierymski_-_Scaliger_Tombs_in_Verona_-_MP_630_MNW_-_National_Museum_in_Warsaw.jpg/960px-Aleksander_Gierymski_-_Scaliger_Tombs_in_Verona_-_MP_630_MNW_-_National_Museum_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Aleksander_Gierymski_-_Scaliger_Tombs_in_Verona_-_MP_630_MNW_-_National_Museum_in_Warsaw.jpg",
+     "autor": "Aleksander Gierymski",
+     "licenca": "Public domain",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Scaliger Tombs"
+  },
+  {
+   "nome": "Porta Borsari",
+   "tipo": "portão romano do século I",
+   "dica": "No meio da rua de comércio",
+   "lat": 45.44194,
+   "lng": 10.99333,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Porta_Borsari_%28Verona%29.jpg/960px-Porta_Borsari_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Porta_Borsari_(Verona).jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Porta_Borsari_giorno.jpg/960px-Porta_Borsari_giorno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Porta_Borsari_giorno.jpg",
+     "autor": "Maurizio Moro5153",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Porta Borsari"
+  },
+  {
+   "nome": "Arco dei Gavi",
+   "tipo": "arco romano ao lado do Castelvecchio",
+   "dica": "",
+   "lat": 45.44,
+   "lng": 10.98889,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Arco_Gavi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Arco_Gavi.jpg",
+     "autor": "This Photo was taken by Andrea Bertozzi.  \n\nFeel free to use my photos, but plea",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Arco_dei_Gavi-XE3F2333a.jpg/960px-Arco_dei_Gavi-XE3F2333a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Arco_dei_Gavi-XE3F2333a.jpg",
+     "autor": "Claconvr",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Arco dei Gavi"
+  },
+  {
+   "nome": "Ponte Scaligero",
+   "tipo": "ponte fortificada medieval",
+   "dica": "Atravessar a pé; boa para fotos",
+   "lat": 45.44028,
+   "lng": 10.98722,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Italy_-_Verona_-_Ponte_Scaligero.jpg/960px-Italy_-_Verona_-_Ponte_Scaligero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Italy_-_Verona_-_Ponte_Scaligero.jpg",
+     "autor": "Arne Müseler",
+     "licenca": "CC BY-SA 3.0 de",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/The_Keep_of_Castelvecchio_and_Ponte_Scaligero_Verona_Italy.jpg/960px-The_Keep_of_Castelvecchio_and_Ponte_Scaligero_Verona_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:The_Keep_of_Castelvecchio_and_Ponte_Scaligero_Verona_Italy.jpg",
+     "autor": "Ввласенко",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Castelvecchio Bridge"
+  },
+  {
+   "nome": "Piazza Bra",
+   "tipo": "a praça da Arena",
+   "dica": "O Liston é o calçadão dos cafés",
+   "lat": 45.4386,
+   "lng": 10.9925,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Piazza_Bra%2C_Verona.jpg/960px-Piazza_Bra%2C_Verona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Piazza_Bra,_Verona.jpg",
+     "autor": "Veronika Bashak",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Piazza_Bra_seen_from_the_arenas_%28Verona%29.jpg/960px-Piazza_Bra_seen_from_the_arenas_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Piazza_Bra_seen_from_the_arenas_(Verona).jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Piazza Bra"
+  },
+  {
+   "nome": "Via Mazzini",
+   "tipo": "rua de compras",
+   "dica": "Liga a Piazza Bra à Piazza delle Erbe",
+   "lat": 45.441,
+   "lng": 10.9954,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Via_Mazzini_Verona.JPG/960px-Via_Mazzini_Verona.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Via_Mazzini_Verona.JPG",
+     "autor": "Wikimedia Commons",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Via Mazzini (Verona)"
+  },
+  {
+   "nome": "Tomba di Giulietta",
+   "tipo": "o túmulo da lenda",
+   "dica": "Num convento com museu de afrescos",
+   "lat": 45.4336,
+   "lng": 10.9987,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Tomba_di_Giulietta_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Tomba_di_Giulietta_01.jpg",
+     "autor": "Testus",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Plaques_in_Tomba_di_Giulietta_%28Verona%29.jpg/960px-Plaques_in_Tomba_di_Giulietta_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Plaques_in_Tomba_di_Giulietta_(Verona).jpg",
+     "autor": "Livioandronico2013",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Tomba di Giulietta"
+  },
+  {
+   "nome": "Casa di Romeo",
+   "tipo": "casa medieval dos Montecchi",
+   "dica": "Só por fora",
+   "lat": 45.44333,
+   "lng": 10.99917,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Casa_di_Romeo_%283%29.jpg/960px-Casa_di_Romeo_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Casa_di_Romeo_(3).jpg",
+     "autor": "This Photo was taken by Andrea Bertozzi.  \n\nFeel free to use my photos, but plea",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Casa di Romeo"
+  },
+  {
+   "nome": "Santuário de Lourdes (mirante)",
+   "tipo": "mirante mais alto da cidade",
+   "dica": "De táxi ou ônibus; pôr do sol",
+   "lat": 45.453,
+   "lng": 10.995,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Il_Santuario_della_Madonna_di_Lourdes.jpg/960px-Il_Santuario_della_Madonna_di_Lourdes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Il_Santuario_della_Madonna_di_Lourdes.jpg",
+     "autor": "Xavier-fardont",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Santuario della Madonna di Lourdes di Verona"
+  },
+  {
+   "nome": "Bate-volta Borghetto sul Mincio",
+   "tipo": "vilarejo de moinhos",
+   "dica": "Tortellini de Valeggio; melhor de carro ou táxi",
+   "lat": 45.35383,
+   "lng": 10.72373,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Italyvenetoborghettomincio01.jpg/960px-Italyvenetoborghettomincio01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Italyvenetoborghettomincio01.jpg",
+     "autor": "Daniel Di Palma",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Borghetto_sul_mincio_verona_antico_guado.jpg/960px-Borghetto_sul_mincio_verona_antico_guado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Borghetto_sul_mincio_verona_antico_guado.jpg",
+     "autor": "Emmego",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "it:Borghetto (Valeggio sul Mincio)"
+  },
+  {
+   "nome": "Bate-volta Mântua",
+   "tipo": "cidade dos Gonzaga",
+   "dica": "Trem direto, ~45 min",
+   "lat": 45.15639,
+   "lng": 10.79167,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Dsc_1150_Mantua.jpg/960px-Dsc_1150_Mantua.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Dsc_1150_Mantua.jpg",
+     "autor": "User:EdoM",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Santa_Anastasia_%28Verona%29_-_Altare_Pindemonte.jpg/960px-Santa_Anastasia_%28Verona%29_-_Altare_Pindemonte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Santa_Anastasia_(Verona)_-_Altare_Pindemonte.jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Mantua"
+  },
+  {
+   "nome": "Bate-volta Pádua (Capela Scrovegni)",
+   "tipo": "os afrescos de Giotto",
+   "dica": "Trem ~45 min; a capela exige reserva",
+   "lat": 45.41184,
+   "lng": 11.87952,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg/960px-Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg",
+     "autor": "Zairon",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Scrovegni Chapel"
+  },
+  {
+   "nome": "Bate-volta Vicenza",
+   "tipo": "a cidade de Palladio",
+   "dica": "Trem ~30 min",
+   "lat": 45.55,
+   "lng": 11.54917,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Interior_of_Teatro_Olimpico_%28Vicenza%29_scena_.jpg/960px-Interior_of_Teatro_Olimpico_%28Vicenza%29_scena_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Interior_of_Teatro_Olimpico_(Vicenza)_scena_.jpg",
+     "autor": "Didier Descouens",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Teatro Olimpico"
+  },
+  {
+   "nome": "Bate-volta Soave",
+   "tipo": "vila murada do vinho branco",
+   "dica": "Trem até San Bonifacio, ~20 min",
+   "lat": 45.4213,
+   "lng": 11.2466,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Veduta_di_Soave%2C_Veneto.jpg/960px-Veduta_di_Soave%2C_Veneto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Veduta_di_Soave,_Veneto.jpg",
+     "autor": "MZ14",
+     "licenca": "CC0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Veneto%2C_Agriturismo_Corte_Tamellini%2C_Soave_%28Verona%29.jpg/960px-Veneto%2C_Agriturismo_Corte_Tamellini%2C_Soave_%28Verona%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Veneto,_Agriturismo_Corte_Tamellini,_Soave_(Verona).jpg",
+     "autor": "Toprural",
+     "licenca": "CC BY-SA 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Soave, Veneto"
+  }
+ ],
+ "innsbruck": [
+  {
+   "nome": "Schloss Ambras",
+   "tipo": "castelo renascentista",
+   "dica": "O Salão Espanhol e o gabinete de curiosidades",
+   "lat": 47.2567,
+   "lng": 11.4336,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Chateau_ambras.jpg/960px-Chateau_ambras.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Chateau_ambras.jpg",
+     "autor": "The original uploader was Manu25 at French Wikipedia.",
+     "licenca": "CC BY-SA 2.5",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/AUT_%E2%80%94_Tirol_%E2%80%94_Innsbruck_%E2%80%94_Schloss_Ambras_%28Spanischer_Saal%29_2021_Mattes_%28cropped%29.jpg/960px-AUT_%E2%80%94_Tirol_%E2%80%94_Innsbruck_%E2%80%94_Schloss_Ambras_%28Spanischer_Saal%29_2021_Mattes_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:AUT_%E2%80%94_Tirol_%E2%80%94_Innsbruck_%E2%80%94_Schloss_Ambras_(Spanischer_Saal)_2021_Mattes_(cropped).jpg",
+     "autor": "Photographer: User:Mateus2019",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Ambras Castle"
+  },
+  {
+   "nome": "Helblinghaus",
+   "tipo": "fachada rococó",
+   "dica": "Em frente ao Telhado de Ouro",
+   "lat": 47.26841,
+   "lng": 11.39291,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Innsbruck_Helblinghaus.jpg/960px-Innsbruck_Helblinghaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck_Helblinghaus.jpg",
+     "autor": "Ikiwaner",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Innsbruck_Austria_Helbling_House_5-2013.jpeg/960px-Innsbruck_Austria_Helbling_House_5-2013.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck_Austria_Helbling_House_5-2013.jpeg",
+     "autor": "Wikimedia Commons",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Helbling House"
+  },
+  {
+   "nome": "Museu de Arte Popular Tirolesa",
+   "tipo": "museu de cultura tirolesa",
+   "dica": "O ingresso vale também para a Hofkirche",
+   "lat": 47.26861,
+   "lng": 11.39556,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Hofkirche_Innsbruck_2.jpg/960px-Hofkirche_Innsbruck_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hofkirche_Innsbruck_2.jpg",
+     "autor": "Bede735c",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Ausstellung_Arbeit_und_Feste_im_Innsbrucker_Volkskunstmuseum.jpg/960px-Ausstellung_Arbeit_und_Feste_im_Innsbrucker_Volkskunstmuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ausstellung_Arbeit_und_Feste_im_Innsbrucker_Volkskunstmuseum.jpg",
+     "autor": "Burkhard Mücke",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Tyrolean Folk Art Museum"
+  },
+  {
+   "nome": "Ferdinandeum",
+   "tipo": "museu estadual do Tirol",
+   "dica": "",
+   "lat": 47.26733,
+   "lng": 11.39773,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/IA_TirolerLandesmuseum_A.jpg/960px-IA_TirolerLandesmuseum_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:IA_TirolerLandesmuseum_A.jpg",
+     "autor": "Bbb",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Ferdinandeum_Innsbruck_%E2%80%94_1._OG_%28Raumflucht%29.jpg/960px-Ferdinandeum_Innsbruck_%E2%80%94_1._OG_%28Raumflucht%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ferdinandeum_Innsbruck_%E2%80%94_1._OG_(Raumflucht).jpg",
+     "autor": "Photographer: User:Mateus2019",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Tyrolean State Museum"
+  },
+  {
+   "nome": "Basílica de Wilten",
+   "tipo": "igreja rococó",
+   "dica": "Interior dourado; ao pé do Bergisel",
+   "lat": 47.2541,
+   "lng": 11.39838,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Basilika-Wilten.01.vm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Basilika-Wilten.01.vm.jpg",
+     "autor": "Veit Mueller at de.wikipedia",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Innsbruck-Wilten-10-Basilika_Mariae_Empfaengnis-2006-gje.jpg/960px-Innsbruck-Wilten-10-Basilika_Mariae_Empfaengnis-2006-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck-Wilten-10-Basilika_Mariae_Empfaengnis-2006-gje.jpg",
+     "autor": "Gerd Eichmann",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "de:Basilika Wilten"
+  },
+  {
+   "nome": "Abadia de Wilten",
+   "tipo": "abadia barroca",
+   "dica": "Ao lado da basílica",
+   "lat": 47.2537,
+   "lng": 11.4005,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Stift-Wilten.01.vm.jpg/960px-Stift-Wilten.01.vm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stift-Wilten.01.vm.jpg",
+     "autor": "Veitmueller",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Stiftskirche-Wilten-Innen.jpg/960px-Stiftskirche-Wilten-Innen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stiftskirche-Wilten-Innen.jpg",
+     "autor": "Hafelekar",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "de:Stift Wilten"
+  },
+  {
+   "nome": "Tirol Panorama",
+   "tipo": "pintura gigante em 360°",
+   "dica": "No Bergisel; a batalha de 1809",
+   "lat": 47.25028,
+   "lng": 11.40167,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Tirol_panorama_kaiserj%C3%A4germuseum.jpg/960px-Tirol_panorama_kaiserj%C3%A4germuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Tirol_panorama_kaiserj%C3%A4germuseum.jpg",
+     "autor": "Rosco (Diskussion)",
+     "licenca": "Copyrighted free use",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Tirol_Panorama_35.jpg/960px-Tirol_Panorama_35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Tirol_Panorama_35.jpg",
+     "autor": "Burkhard Mücke",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "de:Das Tirol Panorama"
+  },
+  {
+   "nome": "Hofgarten",
+   "tipo": "parque ao lado da Hofburg",
+   "dica": "Grátis",
+   "lat": 47.27167,
+   "lng": 11.39761,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hofgarten_N.JPG/960px-Hofgarten_N.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hofgarten_N.JPG",
+     "autor": "Svíčková",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Hofgarten_Innsbruck_Eingang.jpg/960px-Hofgarten_Innsbruck_Eingang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hofgarten_Innsbruck_Eingang.jpg",
+     "autor": "Burkhard Mücke",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "de:Hofgarten (Innsbruck)"
+  },
+  {
+   "nome": "Hungerburg (mirante)",
+   "tipo": "funicular de Zaha Hadid",
+   "dica": "Só até a Hungerburg sai bem mais barato que subir a Nordkette",
+   "lat": 47.28301,
+   "lng": 11.40095,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hungerburgbahn-Station-Alpenzoo.jpg/960px-Hungerburgbahn-Station-Alpenzoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hungerburgbahn-Station-Alpenzoo.jpg",
+     "autor": "Hafelekar",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Innsbruck-old_Hungerburgbahn-Innbridge-02ASD.jpg/960px-Innsbruck-old_Hungerburgbahn-Innbridge-02ASD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck-old_Hungerburgbahn-Innbridge-02ASD.jpg",
+     "autor": "Asurnipal",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Hungerburgbahn"
+  },
+  {
+   "nome": "Fundição de sinos Grassmayr",
+   "tipo": "museu dos sinos, família desde 1599",
+   "dica": "Dá para tocar os sinos; pouco conhecido",
+   "lat": 47.2573,
+   "lng": 11.3986,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Innsbruck-Grassmayr-Glockengie%C3%9Ferei.jpg/960px-Innsbruck-Grassmayr-Glockengie%C3%9Ferei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck-Grassmayr-Glockengie%C3%9Ferei.jpg",
+     "autor": "Hafelekar",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Glockenspiel_Grassmayr.jpg/960px-Glockenspiel_Grassmayr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Glockenspiel_Grassmayr.jpg",
+     "autor": "Shabicht",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Grassmayr Bell Foundry"
+  },
+  {
+   "nome": "Igreja dos Jesuítas",
+   "tipo": "igreja barroca da universidade",
+   "dica": "",
+   "lat": 47.26843,
+   "lng": 11.39791,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Jesuitenkirche_Innsbruck_%28IMG_0984%29.jpg/960px-Jesuitenkirche_Innsbruck_%28IMG_0984%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jesuitenkirche_Innsbruck_(IMG_0984).jpg",
+     "autor": "Simon Legner (User:simon04)",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Innsbruck_Jesuitenkirche_Altar_-20130528-RM-152315.jpg/960px-Innsbruck_Jesuitenkirche_Altar_-20130528-RM-152315.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck_Jesuitenkirche_Altar_-20130528-RM-152315.jpg",
+     "autor": "Reinhold Möller Ermell",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "de:Jesuitenkirche (Innsbruck)"
+  },
+  {
+   "nome": "Ottoburg",
+   "tipo": "torre residencial de 1494",
+   "dica": "Na ponta da Cidade Velha, à beira do rio",
+   "lat": 47.2686,
+   "lng": 11.3918,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Innsbruck_Ottoburg_from_river.jpg/960px-Innsbruck_Ottoburg_from_river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Innsbruck_Ottoburg_from_river.jpg",
+     "autor": "Daderot",
+     "licenca": "Public domain",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ottoburg_1.JPG/960px-Ottoburg_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ottoburg_1.JPG",
+     "autor": "Freddy Alexander Bugueño Tolmo",
+     "licenca": "CC BY-SA 3.0 at",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "de:Ottoburg"
+  },
+  {
+   "nome": "Patscherkofel",
+   "tipo": "montanha do outro lado do vale",
+   "dica": "Teleférico moderno; vista da cidade e da Nordkette",
+   "lat": 47.20889,
+   "lng": 11.46083,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Patscherkofel_vm01.jpg/960px-Patscherkofel_vm01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Patscherkofel_vm01.jpg",
+     "autor": "No machine-readable author provided. Veitmueller assumed (based on copyright cla",
+     "licenca": "CC BY-SA 2.5",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Patscherkofel"
+  },
+  {
+   "nome": "Bate-volta Hall in Tirol",
+   "tipo": "cidade medieval a 10 min de trem",
+   "dica": "Centro histórico maior que o de Innsbruck e sem turista",
+   "lat": 47.28333,
+   "lng": 11.5,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/AUT_Hall_in_Tirol%2C_Burg_Hasegg_004.jpg/960px-AUT_Hall_in_Tirol%2C_Burg_Hasegg_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:AUT_Hall_in_Tirol,_Burg_Hasegg_004.jpg",
+     "autor": "-wuppertaler",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Hall in Tirol"
+  },
+  {
+   "nome": "Bate-volta Seefeld",
+   "tipo": "vila alpina num platô",
+   "dica": "Trem ~35 min; paisagem de neve",
+   "lat": 47.32944,
+   "lng": 11.18917,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Seefeld_%28133061911%29.jpeg/960px-Seefeld_%28133061911%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Seefeld_(133061911).jpeg",
+     "autor": "Jeff Croisé",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Seefeld in Tirol"
+  }
+ ],
+ "viena": [
+  {
+   "nome": "Hundertwasserhaus",
+   "tipo": "prédio colorido e torto",
+   "dica": "Só por fora; a Kunst Haus Wien fica perto",
+   "lat": 48.20722,
+   "lng": 16.39417,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG/960px-Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Hundertwasserhaus_(03).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wien%2C_Hundertwasserhaus_--_2018_--_3180.jpg/960px-Wien%2C_Hundertwasserhaus_--_2018_--_3180.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien,_Hundertwasserhaus_--_2018_--_3180.jpg",
+     "autor": "Dietmar Rabich",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Hundertwasserhaus"
+  },
+  {
+   "nome": "Biblioteca Nacional (Prunksaal)",
+   "tipo": "salão barroco de livros",
+   "dica": "Uma das bibliotecas mais bonitas do mundo",
+   "lat": 48.20611,
+   "lng": 16.36639,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Neue_Burg_Vienna_June_2006_271.jpg/960px-Neue_Burg_Vienna_June_2006_271.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Neue_Burg_Vienna_June_2006_271.jpg",
+     "autor": "Gryffindor",
+     "licenca": "CC BY 2.5",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Allegory_of_war_and_Law_-_Prunksaal_-_Austrian_National_Library.jpg/960px-Allegory_of_war_and_Law_-_Prunksaal_-_Austrian_National_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Allegory_of_war_and_Law_-_Prunksaal_-_Austrian_National_Library.jpg",
+     "autor": "Daniel Gran",
+     "licenca": "CC BY 2.5",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Austrian National Library"
+  },
+  {
+   "nome": "Votivkirche",
+   "tipo": "igreja neogótica",
+   "dica": "Grátis",
+   "lat": 48.21528,
+   "lng": 16.35861,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Wien_-_Votivkirche_%28a%29.JPG/960px-Wien_-_Votivkirche_%28a%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Votivkirche_(a).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Votivkirche_Vienna_June_2006_147.jpg/960px-Votivkirche_Vienna_June_2006_147.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Votivkirche_Vienna_June_2006_147.jpg",
+     "autor": "Gryffindor",
+     "licenca": "CC BY 2.5",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Votivkirche, Vienna"
+  },
+  {
+   "nome": "Parlamento",
+   "tipo": "prédio em estilo grego",
+   "dica": "Visita grátis com reserva",
+   "lat": 48.20806,
+   "lng": 16.35806,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Wien_-_Parlamentsgeb%C3%A4ude.JPG/960px-Wien_-_Parlamentsgeb%C3%A4ude.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Parlamentsgeb%C3%A4ude.JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Classical_parliament_interior_%28Unsplash%29.jpg/960px-Classical_parliament_interior_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Classical_parliament_interior_(Unsplash).jpg",
+     "autor": "Frederic Köberl internetztube",
+     "licenca": "CC0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Austrian Parliament Building"
+  },
+  {
+   "nome": "Burgtheater",
+   "tipo": "teatro nacional",
+   "dica": "Em frente à prefeitura",
+   "lat": 48.21028,
+   "lng": 16.36139,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Wien_-_Burgtheater.JPG/960px-Wien_-_Burgtheater.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Burgtheater.JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Burgtheater_Vienna_September_2006_001.jpg/960px-Burgtheater_Vienna_September_2006_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Burgtheater_Vienna_September_2006_001.jpg",
+     "autor": "Gryffindor",
+     "licenca": "CC BY 2.5",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Burgtheater"
+  },
+  {
+   "nome": "Volksgarten",
+   "tipo": "jardim com templo de Teseu",
+   "dica": "",
+   "lat": 48.20806,
+   "lng": 16.36111,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Wien_-_Volksgarten_%28b%29.JPG/960px-Wien_-_Volksgarten_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Volksgarten_(b).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Wien%2C_Volksgarten%2C_Theseustempel_--_2018_--_3128.jpg/960px-Wien%2C_Volksgarten%2C_Theseustempel_--_2018_--_3128.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien,_Volksgarten,_Theseustempel_--_2018_--_3128.jpg",
+     "autor": "Dietmar Rabich",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Volksgarten, Vienna"
+  },
+  {
+   "nome": "Stadtpark (Strauss dourado)",
+   "tipo": "parque da estátua de Strauss",
+   "dica": "A estátua mais fotografada de Viena",
+   "lat": 48.20472,
+   "lng": 16.38056,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_102-104_HDR.jpg/960px-Monumento_a_Johann_Strauss%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_102-104_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Monumento_a_Johann_Strauss,_Stadtpark,_Viena,_Austria,_2020-01-31,_DD_102-104_HDR.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Reloj_de_flores%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_96-98_HDR.jpg/960px-Reloj_de_flores%2C_Stadtpark%2C_Viena%2C_Austria%2C_2020-01-31%2C_DD_96-98_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Reloj_de_flores,_Stadtpark,_Viena,_Austria,_2020-01-31,_DD_96-98_HDR.jpg",
+     "autor": "Diego Delso",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Stadtpark, Vienna"
+  },
+  {
+   "nome": "Secession",
+   "tipo": "pavilhão Art Nouveau",
+   "dica": "O Friso de Beethoven, de Klimt, fica no subsolo",
+   "lat": 48.20052,
+   "lng": 16.36567,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Secession_2016%2C_Vienna.jpg/960px-Secession_2016%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Secession_2016,_Vienna.jpg",
+     "autor": "Thomas Ledl",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Secession Building"
+  },
+  {
+   "nome": "Museu Leopold",
+   "tipo": "Schiele e Klimt",
+   "dica": "No MuseumsQuartier",
+   "lat": 48.20265,
+   "lng": 16.35914,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_07_Leopold_Museum_a.jpg/960px-Wien_07_Leopold_Museum_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_07_Leopold_Museum_a.jpg",
+     "autor": "Gugerell",
+     "licenca": "CC0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/David_Teniers_the_Younger_-_Archduke_Leopold_William_in_his_Gallery_at_Brussels_-_Google_Art_Project.jpg/960px-David_Teniers_the_Younger_-_Archduke_Leopold_William_in_his_Gallery_at_Brussels_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Younger_-_Archduke_Leopold_William_in_his_Gallery_at_Brussels_-_Google_Art_Project.jpg",
+     "autor": "David Teniers the Younger",
+     "licenca": "Public domain",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Leopold Museum"
+  },
+  {
+   "nome": "Museu de História Natural",
+   "tipo": "o gêmeo do Kunsthistorisches",
+   "dica": "A Vênus de Willendorf está aqui",
+   "lat": 48.2052,
+   "lng": 16.3599,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Wien_-_Naturhistorisches_Museum_%284%29.JPG/960px-Wien_-_Naturhistorisches_Museum_%284%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Naturhistorisches_Museum_(4).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Staircase_in_Natural_History_Museum_in_Vienna.jpg/960px-Staircase_in_Natural_History_Museum_in_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Staircase_in_Natural_History_Museum_in_Vienna.jpg",
+     "autor": "mendhak",
+     "licenca": "CC BY-SA 2.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Natural History Museum, Vienna"
+  },
+  {
+   "nome": "Tesouro Imperial (Schatzkammer)",
+   "tipo": "coroas e joias dos Habsburgo",
+   "dica": "Dentro da Hofburg",
+   "lat": 48.20667,
+   "lng": 16.36556,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Imperial_Crown_Orb_and_Sceptre_of_Austria_%28Imperial_Treasury%29.jpg/960px-Imperial_Crown_Orb_and_Sceptre_of_Austria_%28Imperial_Treasury%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Imperial_Crown_Orb_and_Sceptre_of_Austria_(Imperial_Treasury).jpg",
+     "autor": "Bede735c",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Vienna%2C_Schatzkammer_-_13488496585.jpg/960px-Vienna%2C_Schatzkammer_-_13488496585.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vienna,_Schatzkammer_-_13488496585.jpg",
+     "autor": "bradhostetler",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Imperial Treasury, Vienna"
+  },
+  {
+   "nome": "Cripta Imperial (Kaisergruft)",
+   "tipo": "túmulos dos Habsburgo",
+   "dica": "Sisi e Francisco José estão aqui",
+   "lat": 48.20556,
+   "lng": 16.36972,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kapuzinerkirche_77198_in_A-1010_Wien.jpg/960px-Kapuzinerkirche_77198_in_A-1010_Wien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Kapuzinerkirche_77198_in_A-1010_Wien.jpg",
+     "autor": "Robert Heilinger",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Sarcophagus_Ferdinand_1_of_Austria_Kaisergruft_Vienna.jpg/960px-Sarcophagus_Ferdinand_1_of_Austria_Kaisergruft_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sarcophagus_Ferdinand_1_of_Austria_Kaisergruft_Vienna.jpg",
+     "autor": "Jebulon",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Imperial Crypt"
+  },
+  {
+   "nome": "Escola Espanhola de Equitação",
+   "tipo": "os cavalos lipizzaners",
+   "dica": "O treino da manhã é mais barato que a apresentação",
+   "lat": 48.2075,
+   "lng": 16.36611,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Spanische_Hofreitschule_Wien_Vienna_Winter_riding_manege_1.jpg/960px-Spanische_Hofreitschule_Wien_Vienna_Winter_riding_manege_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Spanische_Hofreitschule_Wien_Vienna_Winter_riding_manege_1.jpg",
+     "autor": "Jebulon",
+     "licenca": "CC0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Spanish_Riding_School_arena_Vienna_detail.jpg/960px-Spanish_Riding_School_arena_Vienna_detail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Spanish_Riding_School_arena_Vienna_detail.jpg",
+     "autor": "Jebulon",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Spanish Riding School"
+  },
+  {
+   "nome": "Mozarthaus",
+   "tipo": "o apartamento de Mozart",
+   "dica": "Atrás da catedral",
+   "lat": 48.20778,
+   "lng": 16.37528,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wien.Mozarthouse02.jpg/960px-Wien.Mozarthouse02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien.Mozarthouse02.jpg",
+     "autor": "Georges Jansoone",
+     "licenca": "CC BY 2.5",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Mozarthaus Vienna"
+  },
+  {
+   "nome": "Haus der Musik",
+   "tipo": "museu interativo de música",
+   "dica": "Dá para reger a Filarmônica",
+   "lat": 48.20417,
+   "lng": 16.37333,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Haus-Der-Musik-Wien.jpg/960px-Haus-Der-Musik-Wien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Haus-Der-Musik-Wien.jpg",
+     "autor": "Clemens PFEIFFER, A-1190 Wien",
+     "licenca": "Attribution",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Haus der Musik"
+  },
+  {
+   "nome": "Ankeruhr",
+   "tipo": "relógio Art Nouveau",
+   "dica": "Ao meio-dia desfilam todas as figuras",
+   "lat": 48.21076,
+   "lng": 16.37367,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankeruhr%2C_Hoher_Markt%2C_Vienna.jpg/960px-Ankeruhr%2C_Hoher_Markt%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ankeruhr,_Hoher_Markt,_Vienna.jpg",
+     "autor": "Thomas Ledl",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Wien%2C_Ankeruhr_--_2018_--_3098.jpg/960px-Wien%2C_Ankeruhr_--_2018_--_3098.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien,_Ankeruhr_--_2018_--_3098.jpg",
+     "autor": "Dietmar Rabich",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "de:Ankeruhr"
+  },
+  {
+   "nome": "Palais Ferstel (passagem)",
+   "tipo": "galeria coberta",
+   "dica": "O Café Central fica aqui",
+   "lat": 48.2106,
+   "lng": 16.3656,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rudolf_von_Alt_Palais_Ferstel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Rudolf_von_Alt_Palais_Ferstel.jpg",
+     "autor": "Friedrich Würthle / After Rudolf von Alt",
+     "licenca": "Public domain",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg/960px-Wien%2C_Ferstel-Passage_--_2018_--_3091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien,_Ferstel-Passage_--_2018_--_3091.jpg",
+     "autor": "Dietmar Rabich",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Palais Ferstel"
+  },
+  {
+   "nome": "Igreja dos Jesuítas",
+   "tipo": "igreja com cúpula pintada em ilusão",
+   "dica": "Pouco visitada",
+   "lat": 48.20897,
+   "lng": 16.37717,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wien_-_Universit%C3%A4tskirche_%281%29.JPG/960px-Wien_-_Universit%C3%A4tskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Universit%C3%A4tskirche_(1).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/AT_119587_Jesuitenkirche_Wien_Innenansicht_9059.jpg/960px-AT_119587_Jesuitenkirche_Wien_Innenansicht_9059.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:AT_119587_Jesuitenkirche_Wien_Innenansicht_9059.jpg",
+     "autor": "Hubertl",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Jesuit Church, Vienna"
+  },
+  {
+   "nome": "Palácio da Justiça (café no terraço)",
+   "tipo": "escadaria monumental",
+   "dica": "Café no último andar, com vista e preço normal",
+   "lat": 48.20639,
+   "lng": 16.35722,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wien_01_Justizpalast_a.jpg/960px-Wien_01_Justizpalast_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_01_Justizpalast_a.jpg",
+     "autor": "Gugerell",
+     "licenca": "CC0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Justizpalast_Vienna_interior_Oct_2007b.jpg/960px-Justizpalast_Vienna_interior_Oct_2007b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Justizpalast_Vienna_interior_Oct_2007b.jpg",
+     "autor": "MyName (Gryffindor)",
+     "licenca": "Public domain",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Palace of Justice, Vienna"
+  },
+  {
+   "nome": "Pavilhões de Otto Wagner (Karlsplatz)",
+   "tipo": "estação Art Nouveau",
+   "dica": "Em frente à Karlskirche",
+   "lat": 48.20028,
+   "lng": 16.37028,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Otto_Wagner_Pavillon_-_Karlsplatz.jpg/960px-Otto_Wagner_Pavillon_-_Karlsplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Otto_Wagner_Pavillon_-_Karlsplatz.jpg",
+     "autor": "Pudelek",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Karlsplatz_station_Vienna_June_2006_493.jpg/960px-Karlsplatz_station_Vienna_June_2006_493.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Karlsplatz_station_Vienna_June_2006_493.jpg",
+     "autor": "Gryffindor",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Karlsplatz Stadtbahn Station"
+  },
+  {
+   "nome": "Gloriette",
+   "tipo": "mirante no alto de Schönbrunn",
+   "dica": "A subida pelo jardim é grátis",
+   "lat": 48.1783,
+   "lng": 16.3087,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Gloriette_Sch%C3%B6nbrunn_Wien.jpg/960px-Gloriette_Sch%C3%B6nbrunn_Wien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gloriette_Sch%C3%B6nbrunn_Wien.jpg",
+     "autor": "Thomas Wolf, www.foto-tw.de",
+     "licenca": "CC BY-SA 3.0 de",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Schloss_Schoenbrunn_Gloriette_DSC02028.JPG/960px-Schloss_Schoenbrunn_Gloriette_DSC02028.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Schloss_Schoenbrunn_Gloriette_DSC02028.JPG",
+     "autor": "David Monniaux Copyright © 2005.\n\nFrench translation by Berrucomons using text f",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Gloriette"
+  },
+  {
+   "nome": "Zoológico de Schönbrunn",
+   "tipo": "o zoológico mais antigo do mundo",
+   "dica": "Tem pandas",
+   "lat": 48.1822,
+   "lng": 16.3027,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gro%C3%9Fe_Pandas_Yang_Yang_und_Fu_Long.jpg/960px-Gro%C3%9Fe_Pandas_Yang_Yang_und_Fu_Long.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Pandas_Yang_Yang_und_Fu_Long.jpg",
+     "autor": "Daniel Zupanc",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Otaria_byronia_in_Tiergarten_Sch%C3%B6nbrunn_24_July_2020_JM_%283%29.jpg/960px-Otaria_byronia_in_Tiergarten_Sch%C3%B6nbrunn_24_July_2020_JM_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Otaria_byronia_in_Tiergarten_Sch%C3%B6nbrunn_24_July_2020_JM_(3).jpg",
+     "autor": "Johannes Maximilian",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Tiergarten Schönbrunn"
+  },
+  {
+   "nome": "Haus des Meeres",
+   "tipo": "aquário numa torre antiaérea",
+   "dica": "Terraço com vista",
+   "lat": 48.1975,
+   "lng": 16.35306,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Haus_des_Meeres_2026%2C_Wien_3.jpg/960px-Haus_des_Meeres_2026%2C_Wien_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Haus_des_Meeres_2026,_Wien_3.jpg",
+     "autor": "Thomas Ledl",
+     "licenca": "CC BY 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Wien_Haus_des_Meeres_Atlantiktunnel-0877.jpg/960px-Wien_Haus_des_Meeres_Atlantiktunnel-0877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_Haus_des_Meeres_Atlantiktunnel-0877.jpg",
+     "autor": "Isiwal",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Haus des Meeres"
+  },
+  {
+   "nome": "Augarten",
+   "tipo": "parque barroco com torres antiaéreas",
+   "dica": "Fábrica de porcelana ao lado",
+   "lat": 48.226,
+   "lng": 16.376,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Wien_-_Palais_Augarten_%282%29.JPG/960px-Wien_-_Palais_Augarten_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Palais_Augarten_(2).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Augarten_Flakturm_Wien2008a.jpg/960px-Augarten_Flakturm_Wien2008a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Augarten_Flakturm_Wien2008a.jpg",
+     "autor": "Manfred Werner - Tsui",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Augarten"
+  },
+  {
+   "nome": "Donauturm",
+   "tipo": "torre-mirante de 252 m",
+   "dica": "",
+   "lat": 48.24,
+   "lng": 16.41083,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Donauturm_NW.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Donauturm_NW.jpg",
+     "autor": "QEDquid",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Donauturm_Wien_Turmkorb.jpg/960px-Donauturm_Wien_Turmkorb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Donauturm_Wien_Turmkorb.jpg",
+     "autor": "Wladyslaw Sojka",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Donauturm"
+  },
+  {
+   "nome": "Kahlenberg (mirante)",
+   "tipo": "morro com vista de Viena inteira",
+   "dica": "Ônibus 38A",
+   "lat": 48.28333,
+   "lng": 16.33333,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/D%C3%B6bling_%28Wien%29_-_Kahlenberg_%282%29.JPG/960px-D%C3%B6bling_%28Wien%29_-_Kahlenberg_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:D%C3%B6bling_(Wien)_-_Kahlenberg_(2).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Kahlenberg"
+  },
+  {
+   "nome": "Grinzing",
+   "tipo": "vila das tabernas de vinho",
+   "dica": "Bonde 38 até o fim",
+   "lat": 48.2567,
+   "lng": 16.3414,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Grinzing_Endstation_Vienna_%2813666723105%29.jpg/960px-Grinzing_Endstation_Vienna_%2813666723105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Grinzing_Endstation_Vienna_(13666723105).jpg",
+     "autor": "Andrew Nash from Vienna, Austria",
+     "licenca": "CC BY-SA 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Old_Grinzing_and_Modern_Vienna_%2824745128985%29.jpg/960px-Old_Grinzing_and_Modern_Vienna_%2824745128985%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Old_Grinzing_and_Modern_Vienna_(24745128985).jpg",
+     "autor": "Bernd Thaller from Graz, Austria",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Grinzing"
+  },
+  {
+   "nome": "Cemitério Central",
+   "tipo": "túmulos de Beethoven, Schubert e Strauss",
+   "dica": "Bonde 71",
+   "lat": 48.1525,
+   "lng": 16.44,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Simmering_%28Wien%29_-_Luegerkirche_%281%29.JPG/960px-Simmering_%28Wien%29_-_Luegerkirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Simmering_(Wien)_-_Luegerkirche_(1).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Wien_Zentralfriedhof_Allee_A_20221111_01.jpg/960px-Wien_Zentralfriedhof_Allee_A_20221111_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_Zentralfriedhof_Allee_A_20221111_01.jpg",
+     "autor": "Uoaei1",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Vienna Central Cemetery"
+  },
+  {
+   "nome": "Gasometer",
+   "tipo": "gasômetros que viraram prédios",
+   "dica": "Metrô U3",
+   "lat": 48.185,
+   "lng": 16.42,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Gasometer_wien.jpg/960px-Gasometer_wien.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gasometer_wien.jpg",
+     "autor": "Arne Müseler",
+     "licenca": "CC BY-SA 3.0 de",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Simmering_%28Wien%29_-_Gasometer_%282%29.JPG/960px-Simmering_%28Wien%29_-_Gasometer_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Simmering_(Wien)_-_Gasometer_(2).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Gasometer, Vienna"
+  },
+  {
+   "nome": "Museu Sigmund Freud",
+   "tipo": "a casa e o consultório de Freud",
+   "dica": "",
+   "lat": 48.21861,
+   "lng": 16.36306,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Wien_-_Sigmund_Freud_Museum_%28b%29.JPG/960px-Wien_-_Sigmund_Freud_Museum_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wien_-_Sigmund_Freud_Museum_(b).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Austria_Vienna_2022-79.jpg/960px-Austria_Vienna_2022-79.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Austria_Vienna_2022-79.jpg",
+     "autor": "Scotch Mist",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Sigmund Freud Museum (Vienna)"
+  },
+  {
+   "nome": "Bate-volta Bratislava",
+   "tipo": "a capital da Eslováquia",
+   "dica": "Trem ~1h",
+   "lat": 48.14222,
+   "lng": 17.1,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Bratislava_-_Burg_%28b%29.JPG/960px-Bratislava_-_Burg_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Bratislava_-_Burg_(b).JPG",
+     "autor": "C.Stadler/Bwag",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Bratislava Castle"
+  },
+  {
+   "nome": "Bate-volta Abadia de Melk",
+   "tipo": "abadia barroca sobre o Danúbio",
+   "dica": "Trem ~1h",
+   "lat": 48.22806,
+   "lng": 15.33389,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Stift_Melk%2C_Westansicht.jpg/960px-Stift_Melk%2C_Westansicht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stift_Melk,_Westansicht.jpg",
+     "autor": "Thomas Ledl",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Stift_Melk_%2842306310451%29.jpg/960px-Stift_Melk_%2842306310451%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stift_Melk_(42306310451).jpg",
+     "autor": "Herbert Frank from Wien (Vienna), AT",
+     "licenca": "CC BY 2.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Melk Abbey"
+  }
+ ],
+ "budapeste": [
+  {
+   "nome": "Ponte das Correntes",
+   "tipo": "a ponte mais famosa",
+   "dica": "Bonita à noite, iluminada",
+   "lat": 47.49889,
+   "lng": 19.04361,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg/960px-Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg",
+     "autor": "Wilfredor",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Széchenyi Chain Bridge"
+  },
+  {
+   "nome": "Ponte da Liberdade",
+   "tipo": "ponte verde de ferro",
+   "dica": "Liga o Mercado Central ao Monte Gellért",
+   "lat": 47.48583,
+   "lng": 19.055,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Szabads%C3%A1g_h%C3%ADd_Budapest_September_2013.JPG/960px-Szabads%C3%A1g_h%C3%ADd_Budapest_September_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Szabads%C3%A1g_h%C3%ADd_Budapest_September_2013.JPG",
+     "autor": "Felix König",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Most_Svobody%2C_Budape%C5%A1%C5%A5.jpg/960px-Most_Svobody%2C_Budape%C5%A1%C5%A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Most_Svobody,_Budape%C5%A1%C5%A5.jpg",
+     "autor": "Ondřej Žváček",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Liberty Bridge (Budapest)"
+  },
+  {
+   "nome": "Monte Gellért e Cidadela",
+   "tipo": "mirante com a Estátua da Liberdade",
+   "dica": "A melhor vista do Danúbio; subida a pé",
+   "lat": 47.48639,
+   "lng": 19.04583,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Gell%C3%A9rtHillSkyline.jpg/960px-Gell%C3%A9rtHillSkyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Gell%C3%A9rtHillSkyline.jpg",
+     "autor": "Wikimedia Commons",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/View_from_the_Gellert_Hill_2014_02.jpg/960px-View_from_the_Gellert_Hill_2014_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:View_from_the_Gellert_Hill_2014_02.jpg",
+     "autor": "Perituss",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Gellért Hill"
+  },
+  {
+   "nome": "Igreja na Rocha",
+   "tipo": "capela dentro de uma caverna",
+   "dica": "Ao pé do Monte Gellért",
+   "lat": 47.48511,
+   "lng": 19.05198,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/IMG_0291_-_Hungary%2C_Buda_-_Gell%C3%A9rt_Hill_Cave_%28Szent_Gell%C3%A9rt_t%C3%A9r%29.JPG/960px-IMG_0291_-_Hungary%2C_Buda_-_Gell%C3%A9rt_Hill_Cave_%28Szent_Gell%C3%A9rt_t%C3%A9r%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:IMG_0291_-_Hungary,_Buda_-_Gell%C3%A9rt_Hill_Cave_(Szent_Gell%C3%A9rt_t%C3%A9r).JPG",
+     "autor": "Andrew Bossi",
+     "licenca": "CC BY-SA 2.5",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Statue_of_Our_Lady_of_Lourdes_by_Antal_Czinder%2C_Gell%C3%A9rt_Hill_Cave%2C_Budapest_2016.jpg/960px-Statue_of_Our_Lady_of_Lourdes_by_Antal_Czinder%2C_Gell%C3%A9rt_Hill_Cave%2C_Budapest_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Statue_of_Our_Lady_of_Lourdes_by_Antal_Czinder,_Gell%C3%A9rt_Hill_Cave,_Budapest_2016.jpg",
+     "autor": "August Dominus",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Gellért Hill Cave"
+  },
+  {
+   "nome": "Avenida Andrássy",
+   "tipo": "o bulevar de Budapeste",
+   "dica": "Do centro até a Praça dos Heróis",
+   "lat": 47.50972,
+   "lng": 19.07,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Andr%C3%A1ssi%C3%BAtl%C3%A9gifot%C3%B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Andr%C3%A1ssi%C3%BAtl%C3%A9gifot%C3%B3.jpg",
+     "autor": "Civertan",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Budapest%2C_Andr%C3%A1ssy_%C3%BAt%2C_3.jpg/960px-Budapest%2C_Andr%C3%A1ssy_%C3%BAt%2C_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest,_Andr%C3%A1ssy_%C3%BAt,_3.jpg",
+     "autor": "Random photos 1989",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Andrássy út"
+  },
+  {
+   "nome": "Ópera de Budapeste",
+   "tipo": "ópera neorrenascentista",
+   "dica": "Tem visita guiada",
+   "lat": 47.50278,
+   "lng": 19.05806,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Opera_blue.jpg/960px-Opera_blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Opera_blue.jpg",
+     "autor": "Snóbli Iván",
+     "licenca": "CC BY-SA 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Hungarian_State_Opera_House%2C_2013_Budapest_%2859%29_%2813229657603%29.jpg/960px-Hungarian_State_Opera_House%2C_2013_Budapest_%2859%29_%2813229657603%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hungarian_State_Opera_House,_2013_Budapest_(59)_(13229657603).jpg",
+     "autor": "xorge",
+     "licenca": "CC BY-SA 2.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Hungarian State Opera House"
+  },
+  {
+   "nome": "Casa do Terror",
+   "tipo": "museu das ditaduras nazista e comunista",
+   "dica": "Fecha às segundas",
+   "lat": 47.5069,
+   "lng": 19.0651,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Budapest_Haus_des_Terrors.jpg/960px-Budapest_Haus_des_Terrors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest_Haus_des_Terrors.jpg",
+     "autor": "Tbachner",
+     "licenca": "CC BY 3.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Budapest-House_of_Terror-_Tank.jpg/960px-Budapest-House_of_Terror-_Tank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest-House_of_Terror-_Tank.jpg",
+     "autor": "Manta22",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:House of Terror"
+  },
+  {
+   "nome": "Ilha Margarida",
+   "tipo": "parque no meio do Danúbio",
+   "dica": "Sem carros",
+   "lat": 47.5275,
+   "lng": 19.0475,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Budapest_Donauinsel_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest_Donauinsel_2.jpg",
+     "autor": "Darkone (talk · contribs)",
+     "licenca": "CC BY-SA 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Margaret_Island_2014.jpg/960px-Margaret_Island_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Margaret_Island_2014.jpg",
+     "autor": "Perituss",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Margaret Island"
+  },
+  {
+   "nome": "Rua Váci",
+   "tipo": "calçadão de compras",
+   "dica": "Turística; os preços são melhores fora dela",
+   "lat": 47.49422,
+   "lng": 19.05242,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Vaci_utca_street_sign-Budapest.jpg/960px-Vaci_utca_street_sign-Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vaci_utca_street_sign-Budapest.jpg",
+     "autor": "Ertly",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Vaci_utca_2014_2.jpg/960px-Vaci_utca_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Vaci_utca_2014_2.jpg",
+     "autor": "Perituss",
+     "licenca": "CC0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Váci Street"
+  },
+  {
+   "nome": "Praça da Liberdade",
+   "tipo": "praça de prédios monumentais",
+   "dica": "Entre o Parlamento e a Basílica",
+   "lat": 47.50472,
+   "lng": 19.05028,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/13-Liberty-Square-Budapest-2012.jpg/960px-13-Liberty-Square-Budapest-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:13-Liberty-Square-Budapest-2012.jpg",
+     "autor": "Acediscovery",
+     "licenca": "CC BY 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Liberty Square (Budapest)"
+  },
+  {
+   "nome": "Hospital na Rocha",
+   "tipo": "hospital e bunker sob o castelo",
+   "dica": "Só com visita guiada",
+   "lat": 47.50099,
+   "lng": 19.03148,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sz_bejarat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Sz_bejarat.jpg",
+     "autor": "unknown, \"Riado\" civil defence news",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Budapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG/960px-Budapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG",
+     "autor": "Globetrotter19",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Hospital in the Rock"
+  },
+  {
+   "nome": "Biblioteca Szabó Ervin",
+   "tipo": "salas de palácio dentro de uma biblioteca",
+   "dica": "Pouco conhecida; ingresso barato",
+   "lat": 47.48938,
+   "lng": 19.0648,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Szab%C3%B3_Ervin_K%C3%B6nyvt%C3%A1r_%28961._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_111.jpg/960px-Szab%C3%B3_Ervin_K%C3%B6nyvt%C3%A1r_%28961._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Szab%C3%B3_Ervin_K%C3%B6nyvt%C3%A1r_(961._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k)_111.jpg",
+     "autor": "desperado",
+     "licenca": "CC BY 2.5 hu",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Wenckheim_Palace%2C_today_the_Szabo_Ervin_Library_-_a_reading_room.jpg/960px-Wenckheim_Palace%2C_today_the_Szabo_Ervin_Library_-_a_reading_room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Wenckheim_Palace,_today_the_Szabo_Ervin_Library_-_a_reading_room.jpg",
+     "autor": "Backofbourke99",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Metropolitan Ervin Szabó Library"
+  },
+  {
+   "nome": "New York Café",
+   "tipo": "o café mais ornamentado da cidade",
+   "dica": "Caro e com fila; vale espiar o salão",
+   "lat": 47.4986,
+   "lng": 19.0705,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20130612_Budapest_190.jpg/960px-20130612_Budapest_190.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:20130612_Budapest_190.jpg",
+     "autor": "Mark Ahsmann",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Clocks_in_New_York_Caf%C3%A9_Budapest_%282%29.jpg/960px-Clocks_in_New_York_Caf%C3%A9_Budapest_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Clocks_in_New_York_Caf%C3%A9_Budapest_(2).jpg",
+     "autor": "Gzzz",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:New York Café"
+  },
+  {
+   "nome": "Gozsdu Udvar",
+   "tipo": "passagem de bares e restaurantes",
+   "dica": "No bairro judeu",
+   "lat": 47.49934,
+   "lng": 19.05869,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Budapest%2C_Gozsdu_Udvar%2C_3.jpg/960px-Budapest%2C_Gozsdu_Udvar%2C_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest,_Gozsdu_Udvar,_3.jpg",
+     "autor": "Christo",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "hu:Gozsdu-udvar"
+  },
+  {
+   "nome": "Sinagoga da Rua Kazinczy",
+   "tipo": "sinagoga Art Nouveau",
+   "dica": "A duas quadras do Szimpla",
+   "lat": 47.4983,
+   "lng": 19.0619,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Budapest_Kazinczy_utcai_zsinag%C3%B3ga_2.jpg/960px-Budapest_Kazinczy_utcai_zsinag%C3%B3ga_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest_Kazinczy_utcai_zsinag%C3%B3ga_2.jpg",
+     "autor": "Diana",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Budapest_Kazinczy_utcai_zsinag%C3%B3ga_4.jpg/960px-Budapest_Kazinczy_utcai_zsinag%C3%B3ga_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest_Kazinczy_utcai_zsinag%C3%B3ga_4.jpg",
+     "autor": "Diana",
+     "licenca": "CC BY 2.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "hu:Kazinczy utcai zsinagóga"
+  },
+  {
+   "nome": "Museu de Belas Artes",
+   "tipo": "museu na Praça dos Heróis",
+   "dica": "",
+   "lat": 47.51587,
+   "lng": 19.07678,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Budapest_Fine_Arts_Museum_R01.jpg/960px-Budapest_Fine_Arts_Museum_R01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest_Fine_Arts_Museum_R01.jpg",
+     "autor": "Marc Ryckaert (MJJR)",
+     "licenca": "CC BY 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Museum_of_Fine_Arts_Budapest_C%C3%A9zanne_exhibition_2012-11-04_cropped.jpg/960px-Museum_of_Fine_Arts_Budapest_C%C3%A9zanne_exhibition_2012-11-04_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museum_of_Fine_Arts_Budapest_C%C3%A9zanne_exhibition_2012-11-04_cropped.jpg",
+     "autor": "Slaunger",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Museum of Fine Arts (Budapest)"
+  },
+  {
+   "nome": "Museu Nacional Húngaro",
+   "tipo": "a história da Hungria",
+   "dica": "",
+   "lat": 47.49111,
+   "lng": 19.06278,
+   "fotos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Magyar_Nemzeti_M%C3%BAzeum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Magyar_Nemzeti_M%C3%BAzeum.jpg",
+     "autor": "hu:user:Pasztilla",
+     "licenca": "Public domain",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Budapest%2C_Hungarian_National_Museum%2C_staircase%2C_photo_1.jpg/960px-Budapest%2C_Hungarian_National_Museum%2C_staircase%2C_photo_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest,_Hungarian_National_Museum,_staircase,_photo_1.jpg",
+     "autor": "Dguendel",
+     "licenca": "CC BY 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Hungarian National Museum"
+  },
+  {
+   "nome": "Museu de Etnografia",
+   "tipo": "prédio novo com telhado-jardim",
+   "dica": "Dá para subir no telhado de graça",
+   "lat": 47.5115,
+   "lng": 19.0814,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/N%C3%A9prajzi_M%C3%BAzeum_%2840%29.jpg/960px-N%C3%A9prajzi_M%C3%BAzeum_%2840%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:N%C3%A9prajzi_M%C3%BAzeum_(40).jpg",
+     "autor": "Elekes Andor",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Museum of Ethnography (Budapest)"
+  },
+  {
+   "nome": "Casa da Música Húngara",
+   "tipo": "prédio de vidro no parque",
+   "dica": "Projeto de Sou Fujimoto",
+   "lat": 47.5133,
+   "lng": 19.0822,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/House_of_Hungarian_Music_%283%29.jpg/960px-House_of_Hungarian_Music_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:House_of_Hungarian_Music_(3).jpg",
+     "autor": "Elekes Andor",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/House_of_Hungarian_Music_%285%29.jpg/960px-House_of_Hungarian_Music_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:House_of_Hungarian_Music_(5).jpg",
+     "autor": "Elekes Andor",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:House of Music Hungary"
+  },
+  {
+   "nome": "Várkert Bazár",
+   "tipo": "jardins e escadarias ao pé do castelo",
+   "dica": "Escada rolante grátis até o castelo",
+   "lat": 47.49333,
+   "lng": 19.04333,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/V%C3%A1rkert_Baz%C3%A1r%2C_L%C3%A9pcs%C5%91pavilon%2C_2017_Budapest.jpg/960px-V%C3%A1rkert_Baz%C3%A1r%2C_L%C3%A9pcs%C5%91pavilon%2C_2017_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:V%C3%A1rkert_Baz%C3%A1r,_L%C3%A9pcs%C5%91pavilon,_2017_Budapest.jpg",
+     "autor": "Globetrotter19",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "hu:Várkert Bazár"
+  },
+  {
+   "nome": "Estação Nyugati",
+   "tipo": "estação de ferro e vidro",
+   "dica": "Construída pela empresa de Eiffel",
+   "lat": 47.5108,
+   "lng": 19.0575,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Nyugati_p%C3%A1lyaudvar%2C_Budapest.jpg/960px-Nyugati_p%C3%A1lyaudvar%2C_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Nyugati_p%C3%A1lyaudvar,_Budapest.jpg",
+     "autor": "Varius",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Budapest Nyugati station"
+  },
+  {
+   "nome": "Metrô M1 (linha histórica)",
+   "tipo": "o metrô mais antigo do continente",
+   "dica": "Estações de azulejo, sob a Andrássy",
+   "lat": 47.4969,
+   "lng": 19.0508,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Museum_metro_line_1_Budapest_02.JPG/960px-Museum_metro_line_1_Budapest_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museum_metro_line_1_Budapest_02.JPG",
+     "autor": "Smiley.toerist",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/In_subway_car_of_Budapest_Metro_line_1.jpg/960px-In_subway_car_of_Budapest_Metro_line_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:In_subway_car_of_Budapest_Metro_line_1.jpg",
+     "autor": "Vasyatka1",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Line 1 (Budapest Metro)"
+  },
+  {
+   "nome": "Banhos Lukács",
+   "tipo": "termas dos moradores",
+   "dica": "Mais barato e vazio que o Széchenyi",
+   "lat": 47.51783,
+   "lng": 19.03672,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Budapest%2C_Luk%C3%A1cs_f%C3%BCrd%C5%91%2C_65.jpg/960px-Budapest%2C_Luk%C3%A1cs_f%C3%BCrd%C5%91%2C_65.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest,_Luk%C3%A1cs_f%C3%BCrd%C5%91,_65.jpg",
+     "autor": "Christo",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por fora"
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Budapest%2C_Lukacs_Thermal_Baths_05.JPG/960px-Budapest%2C_Lukacs_Thermal_Baths_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Budapest,_Lukacs_Thermal_Baths_05.JPG",
+     "autor": "Globetrotter19",
+     "licenca": "CC BY-SA 4.0",
+     "rot": "por dentro"
+    }
+   ],
+   "wiki": "en:Lukács Baths"
+  },
+  {
+   "nome": "Mirante Erzsébet",
+   "tipo": "torre no ponto mais alto da cidade",
+   "dica": "Sobe-se de teleférico de cadeirinha",
+   "lat": 47.5182,
+   "lng": 18.95918,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Janoshegy.jpg/960px-Janoshegy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Janoshegy.jpg",
+     "autor": "Tanár",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Elizabeth Lookout"
+  },
+  {
+   "nome": "Memento Park",
+   "tipo": "estátuas da era comunista",
+   "dica": "Fora do centro, de ônibus",
+   "lat": 47.42639,
+   "lng": 18.99889,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Main_entrance_of_the_Memento_Park.JPG/960px-Main_entrance_of_the_Memento_Park.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Main_entrance_of_the_Memento_Park.JPG",
+     "autor": "Ferran Cornellà",
+     "licenca": "CC BY-SA 3.0",
+     "rot": ""
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Memento_Park%2C_Budapest_04.jpg/960px-Memento_Park%2C_Budapest_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Memento_Park,_Budapest_04.jpg",
+     "autor": "Pudelek",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Memento Park"
+  },
+  {
+   "nome": "Bate-volta Szentendre",
+   "tipo": "vila de artistas no Danúbio",
+   "dica": "Trem HÉV, ~40 min",
+   "lat": 47.7044,
+   "lng": 19.06858,
+   "fotos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Szentendre_montage1.jpg/960px-Szentendre_montage1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Szentendre_montage1.jpg",
+     "autor": "SNRTZ Minden kép saját",
+     "licenca": "CC BY-SA 4.0",
+     "rot": ""
+    }
+   ],
+   "wiki": "en:Szentendre"
+  }
+ ]
+}

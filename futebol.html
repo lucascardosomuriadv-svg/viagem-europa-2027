@@ -11,23 +11,19 @@
 <link rel="stylesheet" href="app.css">
 <style>.voltar{display:inline-flex;margin:14px 18px 0;font-size:.9rem;color:var(--ink2);text-decoration:none}.jg{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:12px 14px;border-top:1px solid var(--soft)}.jg:first-child{border-top:0}.jg .dt{border-radius:12px;background:var(--soft);text-align:center;padding:6px 0;line-height:1.05;height:fit-content}.jg .dt b{display:block;font-size:1.25rem}.jg .dt small{font-size:.72rem;color:var(--ink3);font-weight:600}.jg h3{margin:0;font-size:1rem;line-height:1.25}.jg p{margin:2px 0 0;color:var(--ink3);font-size:.82rem}.jg .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.tg{font-size:.74rem;font-weight:700;border-radius:7px;padding:3px 8px}.tg.prov{background:var(--warn-bg);color:var(--warn)}.tg.poss{background:var(--soft);color:var(--ink2)}.tg.ok{background:var(--ok-bg);color:var(--ok)}</style>
 </head>
-<body>
+<body data-aba="ingressos">
 <div class="app">
-  <a class="voltar" href="index.html#/viagem">‹ Viagem</a>
-  <header class="topo"><div><small>jogos nas datas da viagem · só 1ª divisão</small><h1>Futebol</h1></div></header>
+  <a class="voltar" href="index.html#/ingressos">‹ Ingressos</a>
+  <header class="topo"><div><small>só 1ª divisão · a data é a da rodada; dia e hora saem em janeiro</small><h1>Futebol</h1></div></header>
   <div class="sec" id="painel"></div>
   <p class="rodape">Pesquisa de 30/09/2026. Dia e hora exatos saem 3 a 5 semanas antes de cada jogo.</p>
 </div>
-<nav class="tabbar" aria-label="Menu">
-  <a href="index.html#/viagem" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
-  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
-  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
-  <a href="index.html#/comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-</nav>
+<nav class="tabbar" id="tabbar" aria-label="Menu"></nav>
+<script src="tabbar.js"></script>
 <script src="dados/guia.js"></script>
 <script>
 const G = window.GUIA;
-const NOME = {...Object.fromEntries(G.cidades), veneza:"Veneza"};
+const NOME = Object.fromEntries(G.cidades);
 const DIA_SEM = ["dom","seg","ter","qua","qui","sex","sáb"], MES3 = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
 const dm = iso => iso.slice(8,10)+"/"+iso.slice(5,7);
 const sem = iso => DIA_SEM[new Date(iso+"T12:00:00Z").getUTCDay()];
@@ -37,7 +33,7 @@ const porId = {}; Object.values(G.lugares).flat().forEach(x => porId[x.id] = x);
 </script>
 <script>
 const F = G.futebol || {jogos:[]};
-const ORDEM = ["madri","roma","verona","veneza","innsbruck","viena","budapeste"];
+const ORDEM = ["madri","roma","verona","innsbruck","viena","budapeste"];
 const st = s => { s = (s||"").toLowerCase(); if (s.startsWith("confirm") && !s.includes("provis")) return ["ok","data firme"]; if (s.includes("provis") || s.startsWith("confronto")) return ["prov","data provisória"]; return ["poss","possível"]; };
 const limpa = t => String(t||"").replace(/\s*(EA Sports|Enilive|Admiral|OTP Bank Liga)\s*/g," ").replace(/\s+/g," ").trim();
 // uma frase curta: corta no primeiro ponto ou em ~90 caracteres, sem quebrar palavra

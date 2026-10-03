@@ -62,7 +62,7 @@
    "lat": 47.26142,
    "lng": 11.39533,
    "endereco": "Leopoldstraße 9, Innsbruck",
-   "pedir": "Cheesecake de pistache (10/10); o matcha divide opiniões"
+   "pedir": "Cheesecake de pistache, nota 10. O matcha divide opiniões: uma adorou, outra deu 3/10"
   },
   {
    "nome": "Midori Teehaus",
@@ -214,7 +214,8 @@
   },
   {
    "ja": "Die Wilderin",
-   "foto_ref": "refs/innsbruck/aven-wilderin.jpg"
+   "foto_ref": "refs/innsbruck/aven-wilderin.jpg",
+   "pedir": "Carne de caça e Käsespätzle; o cardápio muda todo dia"
   },
   {
    "nome": "Alpenzoo",
@@ -383,6 +384,18 @@
    "endereco": "Maximilianstraße 27, Innsbruck",
    "pedir": "Bolos e tortas; nota 9/10",
    "fecha_em": "Fecha aos domingos"
+  },
+  {
+   "ja": "Restaurant Ottoburg",
+   "pedir": "Cozinha tirolesa numa torre de 1494"
+  },
+  {
+   "ja": "Bosna-Imbiss",
+   "pedir": "Bosna, o cachorro-quente apimentado da cidade"
+  },
+  {
+   "ja": "Café Munding",
+   "pedir": "Tortas e doces; confeitaria desde 1803"
   }
  ]
 }

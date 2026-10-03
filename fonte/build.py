@@ -123,6 +123,21 @@ def lugares():
             if l.get("matcha"): it["matcha"] = True
             if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
             out[cid].append(it)
+    # MAIS ATRAÇÕES (fonte/atracoes.py): pontos óbvios que faltavam + pouco conhecidos, já com fotos livres
+    ae = PESQ / "atracoes-extra.json"
+    if ae.exists():
+        for cid, lista in json.load(open(ae, encoding="utf-8")).items():
+            ja = [sem_acento(x["nome"]) for x in out[cid]]
+            for a in lista:
+                if any(sem_acento(a["nome"]) == n for n in ja): continue
+                it = item(cid, "ver", {"nome": a["nome"], "tipo": a["tipo"], "dica": a["dica"], "lat": a["lat"], "lng": a["lng"],
+                                        "endereco": a["nome"].split(" (")[0] + ", " + dict(CIDADES)[cid]}, "sugestão")
+                it["fotos"] = a["fotos"]; it["foto"] = a["fotos"][0]
+                out[cid].append(it)
+    # o que não é lugar (agenda de eventos, cartão de descontos) sai das listas de atrações
+    for l in out.values():
+        for x in l:
+            if x["tipo"] == "ver" and x["nome"].startswith(("Eventos e calendário", "VeronaCard")): x["tipo"] = "info"
     # ids unicos
     for c, l in out.items():
         vistos = {}
@@ -138,9 +153,10 @@ def resolve(lista, ref, onde):
     r = sem_acento(ref)
     exatos = [x for x in lista if sem_acento(x["nome"]) == r]
     achados = exatos or [x for x in lista if r in sem_acento(x["nome"])]
-    if len(achados) != 1:
-        nomes = [x["nome"] for x in achados] or ["(nenhum)"]
-        raise SystemExit(f"ERRO {onde}: '{ref}' casou com {len(achados)}: {nomes}")
+    if not achados:
+        raise SystemExit(f"ERRO {onde}: '{ref}' não casou com nenhum lugar")
+    if len(achados) > 1:
+        print(f"  aviso {onde}: '{ref}' casou com {len(achados)}; fica o primeiro ({achados[0]['nome']})")
     return achados[0]["id"]
 
 
@@ -234,6 +250,74 @@ def main():
             f = fotos.get(ARTIGO[pref]) if pref else None
             if f:
                 x["foto"] = f; com_foto += 1
+    # fotos avulsas (fonte/atracoes.py): 1ª foto para quem não tinha e 2ª foto (por dentro ou outro ângulo)
+    av = json.load(open(PESQ / "fotos-avulsas.json", encoding="utf-8")) if (PESQ / "fotos-avulsas.json").exists() else {}
+    from destaques import destaques_de
+    for l in lug.values():
+        for x in l:
+            pref = max((k for k in av if x["id"].startswith(k)), key=len, default=None)
+            if pref and x["tipo"] == "ver":
+                extra = av[pref]
+                if not x.get("foto"):
+                    x["foto"] = extra[0]; com_foto += 1
+                if not x.get("fotos"):
+                    outras = [f for f in extra if f["url"] != x["foto"]["url"]]
+                    tem_dentro = any(f.get("rot") == "por dentro" for f in outras)
+                    x["fotos"] = [dict(x["foto"], rot="por fora" if tem_dentro else "")] + outras[-1:]
+            if x["tipo"] == "ver":
+                d = destaques_de(x["nome"])
+                if d: x["destaques"] = d
+
+    # LIMPEZA (auditoria de 03/10/2026)
+    # a) o que não é lugar, ou fere uma regra do grupo (Ópera por dentro, tour do Bernabéu), sai das listas
+    ESCONDE = ("Eventos e calendário", "VeronaCard", "Delivery de madrugada", "Tour do Estádio", "Stadio Olimpico",
+               "Wiener Staatsoper: Stehplätze", "Visita guiada à Staatsoper")
+    # b) frases da pesquisa escritas para o roteiro por dia (datas, "encaixa", malas) ou sem acento: sai a frase
+    ROTEIRO = re.compile(r"\d{1,2}/\d{2}|\broteiro\b|encaix|\bmalas?\b|trem sai|\bNAO\b|\bdepois,|em seguida|datas de voc|combine com|\b(nao|orcamento|preco|tambem|proximo|horario|estacao|opcao|ate as|so com)\b", re.I)
+    def limpo(t):
+        if not t: return ""
+        partes = re.split(r"(?<=[.;])\s+", str(t))
+        return " ".join(x for x in partes if not ROTEIRO.search(x)).strip()
+    # c) mercados e ruas de comer aparecem também na aba Comer
+    TAMBEM_COMER = ("Mercado de San Miguel", "Cava Baja", "Naschmarkt", "Mercado Central", "Markthalle")
+    for c, l in lug.items():
+        vistos, fica = set(), []
+        for x in l:
+            n = sem_acento(x["nome"])
+            if n in vistos: continue                     # nome repetido na mesma cidade: fica o primeiro
+            vistos.add(n); fica.append(x)
+            if x["nome"].startswith(ESCONDE): x["tipo"] = "info"
+            if x["nome"].startswith(TAMBEM_COMER): x["comer_tambem"] = True
+            for k in ("dica", "pedir", "fecha", "categoria"):
+                x[k] = limpo(x.get(k))
+            pr = limpo(x.get("preco"))
+            if pr and "€" not in pr and "R$" not in pr and re.search(r"\d", pr):
+                pr = re.sub(r"^(~?)", r"\1€", pr, count=1) if re.match(r"~?\d", pr) else (pr + " €" if re.search(r"\d$", pr) else pr)
+            x["preco"] = pr
+            if x["nome"].startswith("Nordkette"):
+                x["dica"] = "Teleférico do centro até 2.256 m. Fica só como ideia: não está nos planos."; x["fecha"] = ""
+            if x["nome"].startswith("Wiener Staatsoper") and x["tipo"] == "ver":
+                x["dica"] = "Só por fora: a fachada e as arcadas."; x["fecha"] = ""; x["preco"] = ""
+            for k in ("horario", "reserva", "fonte", "tempo", "confianca", "porque", "slot", "dia", "instagram"):
+                x.pop(k, None)                           # campos que nenhuma página lê
+        lug[c] = fica
+
+    # REFERÊNCIAS: cada print aponta para o lugar do guia (tocar abre a ficha); a observação que só repete os nomes dos prints sai
+    ALIAS = {"terraco do riu": "mirante do hotel riu", "museu do prado": "museo del prado", "porta do sol": "puerta del sol", "parque do retiro": "parque del retiro",
+             "catedral de almudena": "catedral de la almudena", "palacio real e almudena": "palacio real", "porta de alcala": "puerta de alcala",
+             "mirador de cibeles": "fuente de cibeles", "palacio de cibeles": "fuente de cibeles", "plaza mayor": "puerta del sol", "telhado de ouro": "goldenes dachl",
+             "cidade velha": "altstadt", "bar la campana": "cerveceria la campana", "thyssen-bornemisza": "museu thyssen", "jardins de sabatini": "jardines de sabatini",
+             "la latina": "cava baja", "casas coloridas": "marktplatz", "casas coloridas do rio inn": "marktplatz", "rio inn": "marktplatz", "coluna de santa ana": "maria-theresien",
+             "hofburg": "hofburg innsbruck", "primark da gran via": "gran via", "bergisel sky": "bergisel", "breakfast club": "the breakfast club", "kula lab": "kula",
+             "100 montaditos": "cerveceria 100 montaditos", "thai-li-ba": "thai-li-ba", "catedral de sao tiago": "catedral de sao tiago", "palacio real": "palacio real"}
+    for c, posts in refs.items():
+        nomes = [(sem_acento(x["nome"]), x["id"]) for x in lug.get(c, []) if x["tipo"] != "info"]
+        for r in posts:
+            for f in r.get("fotos", []):
+                n = sem_acento(f["nome"]); n = ALIAS.get(n, n)
+                achou = next((i for m, i in nomes if m.startswith(n)), None) or next((i for m, i in nomes if len(n) >= 5 and n in m), None)
+                if achou: f["id"] = achou
+            if len(r.get("fotos", [])) >= 2 and "Starbucks" not in r.get("obs", ""): r.pop("obs", None)
 
     # METRO: estacoes do OpenStreetMap; varios nos por estacao viram um ponto so
     import math
@@ -266,8 +350,11 @@ def main():
     if (PESQ / "voos.json").exists():
         voos = json.load(open(PESQ / "voos.json", encoding="utf-8"))
 
-    dados = {"cambio": CAMBIO, "cidades": CIDADES, "lugares": lug, "extras": extras, "dias": dias,
-             "fora": fora, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS, "transporte": transporte, "futebol": futebol, "refs": refs, "trens": trens, "voos": voos}
+    jogos = [j for j in (futebol or {}).get("jogos", []) if not re.search(r"copa|cup|kupa|pokal|coppa|champions|europa league|conference", j.get("competicao", ""), re.I)
+             and "a definir" not in (j.get("mandante", "") + j.get("visitante", ""))]
+    # só o que as páginas leem (o roteiro por dia, trens, voos e transporte detalhado ficam em fonte/, fora do site)
+    dados = {"cidades": CIDADES, "lugares": lug, "usados": sorted(usados), "estacoes": estacoes, "dicas": DICAS,
+             "futebol": {"jogos": jogos}, "refs": refs}
     SAIDA.parent.mkdir(exist_ok=True)
     SAIDA.write_text("// gerado por fonte/build.py — nao edite a mao\nwindow.GUIA = "
                      + json.dumps(dados, ensure_ascii=False) + ";\n", encoding="utf-8")

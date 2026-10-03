@@ -24,29 +24,24 @@
   .todos summary::-webkit-details-marker{display:none}
 </style>
 </head>
-<body>
+<body data-aba="hospedagem">
 <div class="app">
-  <a class="voltar" href="index.html#/viagem">‹ Viagem</a>
   <header class="topo"><div><small id="sub"></small><h1>Onde dormir</h1></div></header>
   <nav class="filtro" id="cidades" aria-label="Parada"></nav>
   <p class="nota-c" id="nota"></p>
   <div class="sec" id="painel"></div>
-  <p class="rodape">Busca no Airbnb e no Booking em 30/09/2026, para 5 pessoas nas datas do roteiro. Preço com taxas. Muda toda semana: reservem com cancelamento grátis.</p>
+  <p class="rodape">Busca no Airbnb e no Booking em 30/09/2026, para 5 pessoas nas datas da viagem. Preço com taxas. Muda toda semana: reservem com cancelamento grátis.</p>
 </div>
 
-<nav class="tabbar" aria-label="Menu">
-  <a href="index.html#/viagem" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
-  <a href="index.html#/mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
-  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
-  <a href="index.html#/comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-</nav>
+<nav class="tabbar" id="tabbar" aria-label="Menu"></nav>
+<script src="tabbar.js"></script>
 
 <script src="hospedagens-dados.js"></script>
 <script>
 const H = window.HOSP || [];
 const HEX = {"madri-ida":"#c2410c",roma:"#b45309",verona:"#9333ea",innsbruck:"#0e7490",viena:"#1d4ed8",budapeste:"#15803d","madri-volta":"#c2410c"};
 const NOTA = {
-  "madri-ida": "Chegada à meia-noite: confirmem check-in autônomo antes de reservar.",
+  "madri-ida": "O pouso é às 22:35: confirmem check-in autônomo antes de reservar.",
   "roma": "No Airbnb, a taxa turística (~€6 por pessoa por noite) é paga na chegada.",
   "verona": "Cidade pequena: tudo a até 2 km da Arena.",
   "innsbruck": "Uma noite só: fiquem perto da estação de trem.",

@@ -12,16 +12,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="app.css">
 </head>
-<body>
+<body data-aba="viagem">
 <div class="app">
 
-  <!-- VIAGEM: só o que está fechado (noites e trechos); as ideias ficam em cada cidade -->
+  <!-- VIAGEM: as paradas e as noites em cada uma; as ideias ficam na página de cada cidade -->
   <section id="v-viagem" class="view" aria-label="Viagem">
     <header class="topo"><div><small>18/02 → 08/03/2027 · 18 noites</small><h1>Europa em fevereiro</h1></div></header>
     <div class="sec">
       <div class="lista caminho" id="caminho"></div>
-      <h2>Também</h2>
-      <div class="cidades" id="extras"></div>
       <h2>Antes de ir</h2>
       <ul class="checks" id="checks"></ul>
     </div>
@@ -38,9 +36,16 @@
       <nav class="filtro m-tipos" id="m-tipos" aria-label="Tipo"></nav><div id="m-lista"></div></div>
   </section>
 
-  <!-- COMPRAR -->
-  <section id="v-comprar" class="view" aria-label="Comprar e reservar" hidden>
-    <header class="topo"><div><small>o que falta, em ordem</small><h1>Comprar e reservar</h1></div></header>
+  <!-- PASSAGENS: cada voo e trem, na ordem da viagem, com a situação da compra -->
+  <section id="v-passagens" class="view" aria-label="Passagens" hidden>
+    <header class="topo"><div><small id="p-sub"></small><h1>Passagens</h1></div></header>
+    <div id="p-topo"></div>
+    <div id="p-lista" class="agenda"></div>
+  </section>
+
+  <!-- INGRESSOS: atrações que pedem ingresso ou reserva, na ordem em que a venda abre -->
+  <section id="v-ingressos" class="view" aria-label="Ingressos" hidden>
+    <header class="topo"><div><small>o que pede ingresso ou reserva</small><h1>Ingressos</h1></div></header>
     <div id="c-topo"></div>
     <div id="c-agenda" class="agenda"></div>
   </section>
@@ -54,12 +59,8 @@
   </section>
 </div>
 
-<nav class="tabbar" aria-label="Menu">
-  <a href="#/viagem" data-v="viagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
-  <a href="#/mapa" data-v="mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
-  <a href="#/comprar" data-v="comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
-  <a href="#/comer" data-v="comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-</nav>
+<nav class="tabbar" id="tabbar" aria-label="Menu"></nav>
+<script src="tabbar.js"></script>
 
 <!-- FICHA (bottom sheet) -->
 <div class="ficha-fundo" id="ficha-fundo" hidden></div>
@@ -87,15 +88,10 @@ function guardaCidade(c){ try { if (NOME[c]) sessionStorage.setItem("cidade", c)
 
 // ---------- VIAGEM ----------
 function renderViagem(){
-  const trecho = t => `<div class="it linha trecho"><span class="th ${t[2]}">${ICO_TRECHO[t[2]]}</span><span class="tx"><b>${esc(t[3])}</b><small>${sem(t[0])} ${dm(t[0])}${t[1]?" · "+t[1]:""}${t[4]?" · "+esc(t[4]):""}</small></span></div>`;
   const parada = ([c,a,b]) => { const f = capaDe(c), n = noites(a,b);
     return `<a class="it linha parada" href="cidade.html?c=${c}" style="--cor:var(--${c})">${f?`<img class="th" src="${f.url}" alt="" loading="lazy">`:`<span class="th"></span>`}<span class="tx"><b>${NOME[c]}</b><small>${periodo(a,b)} · ${G.lugares[c].length} ideias</small></span><span class="noites">${n} ${n===1?"noite":"noites"}</span></a>`; };
-  let html = trecho(TRECHOS[0]) + trecho(TRECHOS[1]);
-  PARADAS.forEach((p,i) => { html += parada(p) + trecho(TRECHOS[i+2]); });
-  document.getElementById("caminho").innerHTML = html;
-  document.getElementById("extras").innerHTML = [["hospedagens.html","Hospedagem","Airbnb e hotéis"],["matcha.html","Matcha da Camila","Madri"],["futebol.html","Futebol","jogos nas datas"]]
-    .map(([h,t,s]) => `<a class="cidade-card extra" href="${h}"><b>${t}</b><span>${s}</span></a>`).join("");
-  const CHECKS = [["Seguro viagem Schengen","mínimo €30 mil"],["ETIAS","se já estiver valendo"],["Passaporte","válido até junho/2027"],["Mesmo apartamento em Madri na ida e na volta","para guardar as malas"],["Check-in autônomo na chegada","pousamos às 22:35"],["eSIM europeu","vale nos 4 países"],["Roupa de frio de verdade","Innsbruck abaixo de zero"]];
+  document.getElementById("caminho").innerHTML = PARADAS.map(parada).join("");
+  const CHECKS = [["Seguro viagem Schengen","mínimo €30 mil"],["ETIAS","se já estiver valendo"],["Passaporte","válido até junho/2027"],["eSIM europeu","vale nos 4 países"],["Roupa de frio de verdade","Innsbruck abaixo de zero"]];
   document.getElementById("checks").innerHTML = CHECKS.map(([t,s]) => `<li><b>${t}</b><span>${s}</span></li>`).join("");
 }
 
@@ -105,7 +101,8 @@ function renderMapa(c){
   document.documentElement.style.setProperty("--cor", HEX[c]);
   document.getElementById("m-cidades").innerHTML = G.cidades.map(([k,n]) => `<button type="button" class="${k===c?"on":""}" data-c="${k}">${n}</button>`).join("");
   document.querySelectorAll("#m-cidades button").forEach(b => b.onclick = () => ir("mapa", b.dataset.c));
-  const todos = ideias(c).filter(x => x.lat);
+  document.querySelector("#m-cidades .on")?.scrollIntoView({inline:"center", block:"nearest"});
+  const todos = ideias(c).filter(x => x.lat && x.tipo !== "info");
   const conta = t => todos.filter(x => t==="tudo" || x.tipo===t).length;
   document.getElementById("m-tipos").innerHTML = [["tudo","Tudo"],["ver","Para ver"],["comer","Para comer"]]
     .map(([k,n]) => `<button type="button" class="${k===mTipo?"on":""}" data-t="${k}">${n} <span>${conta(k)}</span></button>`).join("");
@@ -115,7 +112,7 @@ function renderMapa(c){
   document.getElementById("m-sub").textContent = `${noitesDe(c)} · ${ls.length} ${ls.length===1?"lugar":"lugares"} no mapa`;
   const cor = x => x.tipo==="comer" ? "#c2410c" : "#1d4ed8";
   document.getElementById("m-lista").innerHTML = ls.map((x,k) =>
-    `<button type="button" class="it" data-id="${x.id}"><span class="n" style="background:${cor(x)}">${k+1}</span><span><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || umaFrase(x.dica))}</small>${x.metro?`<small class="mm">Metrô ${esc(x.metro.nome)} · ${x.metro.min} min a pé</small>`:""}</span></button>`).join("")
+    `<button type="button" class="it" data-id="${x.id}"><span class="n" style="background:${cor(x)}">${k+1}</span><span><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || umaFrase(x.dica))}</small></span></button>`).join("")
     || '<p class="fraco">Nada no mapa com esse filtro.</p>';
   if (!window.L) return;
   if (!mapa) {
@@ -156,15 +153,19 @@ function rota(){
   let h = location.hash.replace(/^#\/?/,"");
   // links antigos: #/dia/…, #dia-…, #/cidades, #compras, #transporte, #orcamento, #checklist
   if (/^(dia|cidades|checklist)\b/.test(h)) h = "viagem";
-  if (/^(compras|transporte|orcamento)$/.test(h)) h = "comprar";
+  if (/^(compras|comprar|orcamento)$/.test(h)) h = "ingressos";
+  if (h === "transporte") h = "passagens";
   let [view, param] = h.split("/");
-  const v = ["viagem","mapa","comprar","comer"].includes(view) ? view : "viagem";
+  const v = ["viagem","mapa","passagens","ingressos","comer"].includes(view) ? view : "viagem";
   if (param && NOME[param]) guardaCidade(param);
   const c = NOME[param] ? param : (cidadeGuardada() || "madri");
   document.querySelectorAll(".view").forEach(s => s.hidden = s.id !== "v-"+v);
-  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); a.href = a.dataset.v==="mapa" ? `#/mapa/${c}` : `#/${a.dataset.v}`; });
+  // a barra é a mesma em todas as páginas (tabbar.js); aqui só marca a aba e leva o mapa para a última cidade
+  document.querySelectorAll(".tabbar a").forEach(a => { a.classList.toggle("on", a.dataset.v===v); if (a.dataset.v==="mapa") a.href = `index.html#/mapa/${c}`; });
   if (v==="viagem") renderViagem();
   if (v==="mapa") renderMapa(c);
+  if (v==="passagens") renderPassagens();
+  if (v==="ingressos") renderIngressos();
   if (v==="comer") renderComer(param);
   if (v!=="mapa") document.documentElement.style.setProperty("--cor", "#b45309");
 }

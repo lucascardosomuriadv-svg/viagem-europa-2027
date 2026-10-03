@@ -36,7 +36,9 @@
   .ref-cab{padding:2px 4px 10px}.ref-cab b{display:block;font-size:1rem}.ref-cab small{color:var(--ink3);font-size:.84rem}
   .ref-cab a{color:var(--cor)}
   .prints{display:grid;grid-template-columns:1fr 1fr;gap:12px 10px}
-  .print{display:block;text-decoration:none;min-width:0}
+  .print{display:block;text-decoration:none;min-width:0;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer;width:100%}
+  .mais-prints{margin-top:12px}.mais-prints summary{cursor:pointer;list-style:none;font-weight:600;font-size:.9rem;color:var(--cor);padding:2px 4px 10px}
+  .mais-prints summary::-webkit-details-marker{display:none}.mais-prints[open] summary{display:none}
   .print img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;background:var(--soft)}
   .print b{display:block;margin-top:6px;font-size:.92rem;line-height:1.2}
   .print small{display:block;color:var(--ink3);font-size:.78rem;line-height:1.3}
@@ -48,7 +50,7 @@
   @media (min-width:760px){.prints{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
-<body>
+<body data-aba="viagem">
 <div class="app">
   <a class="voltar" href="index.html#/viagem">‹ Viagem</a>
   <div id="capa"></div>
@@ -57,12 +59,8 @@
   <div class="sec"><div id="painel"></div></div>
 </div>
 
-<nav class="tabbar" aria-label="Menu">
-  <a href="index.html#/viagem" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Viagem</a>
-  <a href="index.html#/mapa" id="tab-mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
-  <a href="index.html#/comprar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2zM9 7a3 3 0 0 1 6 0"/></svg>Comprar</a>
-  <a href="index.html#/comer" id="tab-comer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v9a2 2 0 0 0 2 2v9M7 2v6M11 2v6M17 2c-2 2-2 6 0 8v12"/></svg>Comer</a>
-</nav>
+<nav class="tabbar" id="tabbar" aria-label="Menu"></nav>
+<script src="tabbar.js"></script>
 
 <div class="ficha-fundo" id="ficha-fundo" hidden></div>
 <div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-label="Detalhes do lugar" hidden></div>
@@ -88,8 +86,9 @@ const p = new URLSearchParams(location.search).get("c");
 const c = NOME[p] ? p : "roma";
 document.title = `${NOME[c]} · Europa 2027`;
 document.documentElement.style.setProperty("--cor", HEX[c]);
-document.getElementById("tab-comer").href = `index.html#/comer/${c}`;
-document.getElementById("tab-mapa").href = `index.html#/mapa/${c}`;
+const aba_ = v => document.querySelector(`.tabbar a[data-v="${v}"]`);
+if (aba_("comer")) aba_("comer").href = `index.html#/comer/${c}`;
+if (aba_("mapa")) aba_("mapa").href = `index.html#/mapa/${c}`;
 try { sessionStorage.setItem("cidade", c); } catch(e){}
 </script>
 <script src="comer.js"></script>
@@ -115,7 +114,7 @@ const TRANSP = {
   viena:["Metrô e bonde","Passe de 24h por pessoa nos dias de muito metrô",["24h €9,70","U1 até Stephansplatz","U4 até Schönbrunn"]],
   budapeste:["Metrô","Blocos de 10 bilhetes, que o grupo usa junto",["Aeroporto: Bolt XL ~€35","M2 até o Parlamento","Moeda: florim"]],
 };
-const tr = G.transporte?.[c], T = TRANSP[c];
+const T = TRANSP[c];
 if (T) document.getElementById("transp").innerHTML = `<div class="transp"><b>${T[0]}</b><small>${T[1]}</small><div class="mini">${T[2].map(t=>`<span>${t}</span>`).join("")}</div></div>`;
 
 // abas
@@ -123,7 +122,7 @@ const ver = lug.filter(x => x.tipo==="ver").sort(ordem);
 const comer = lug.filter(x => x.tipo==="comer").sort(ordem);
 const dicas = (G.dicas||{})[c] || [];
 const refs = (G.refs||{})[c] || [];
-const ABAS = [["ver","Para ver"],["comer","Para comer"]].concat(refs.length ? [["refs","Referências"]] : []).concat(dicas.length || tr?.cuidados?.length ? [["dicas","Dicas"]] : []);
+const ABAS = [["ver","Para ver"],["comer","Para comer ›"]].concat(refs.length ? [["refs","Referências"]] : []).concat(dicas.length ? [["dicas","Dicas"]] : []);
 function linha(x){ const tp = x.tipo==="comer" ? tipoComida(x) : null;
   return `<button type="button" class="it linha" data-ficha="${x.id}">${x.foto?`<img class="th" src="${x.foto.url}" alt="" loading="lazy" style="object-fit:cover">`:`<span class="th ${tp||"ver"}">${iconeComida(tp||"ver")}</span>`}<span class="tx"><b>${esc(curto(x.nome))}</b><small>${esc(umaFrase(x.pedir) || umaFrase(x.categoria) || (x.metro?`Metrô ${x.metro.nome}`:""))}</small></span></button>`; }
 function painel(aba){
@@ -134,30 +133,34 @@ function painel(aba){
     el.innerHTML = `<div class="grade-f" style="margin-top:6px">${comFoto.map(x => `<button type="button" class="fc" data-ficha="${x.id}"><img src="${x.foto.url}" alt="" loading="lazy"><div><b>${esc(curto(x.nome))}</b></div></button>`).join("")}</div>
       ${semFoto.length?`<h3 class="dicas-t">Mais</h3><div class="lista">${semFoto.map(linha).join("")}</div>`:""}`;
   }
-  if (aba==="comer") el.innerHTML = `<div class="lista" style="margin-top:6px">${comer.map(linha).join("")}</div>`;
-  if (aba==="dicas") el.innerHTML = `${dicas.length?`<h3 class="dicas-t">De quem já foi</h3><ul class="dicas">${dicas.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}
-      ${tr?.cuidados?.length?`<h3 class="dicas-t">Cuidados</h3><ul class="dicas">${tr.cuidados.slice(0,3).map(t=>`<li>${esc(umaFrase(t))}</li>`).join("")}</ul>`:""}`;
+  if (aba==="dicas") el.innerHTML = `${dicas.length?`<h3 class="dicas-t">De quem já foi</h3><ul class="dicas">${dicas.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}`;
   // prints de posts que mandaram, com o nome de cada lugar e o crédito de quem postou
   // post com vários lugares: grade de prints; com um print só: cartão compacto
-  if (aba==="refs") el.innerHTML = refs.map(r => { const cab = `<b>${esc(r.titulo)}</b><small>${esc(r.autor)} no ${esc(r.rede)} · <a href="${r.url}" target="_blank" rel="noopener">ver o post</a></small>`;
-    if (r.fotos.length === 1) { const f = r.fotos[0];
-      return `<div class="ref um"><a class="print" href="${f.arq}" target="_blank" rel="noopener"><img src="${f.arq}" alt="${esc(f.nome)}" loading="lazy"></a><div class="ref-cab">${cab}<p><b class="lugar">${esc(f.nome)}</b> · ${esc(f.nota)}</p>${r.obs?`<p>${esc(r.obs)}</p>`:""}</div></div>`; }
-    if (!r.fotos.length) return `<div class="ref"><div class="ref-cab" style="padding-bottom:2px">${cab}</div>${r.obs?`<p class="ref-obs" style="margin-top:6px">${esc(r.obs)}</p>`:""}</div>`;
-    return `<div class="ref"><div class="ref-cab">${cab}</div>
-      <div class="prints">${r.fotos.map(f => `<a class="print" href="${f.arq}" target="_blank" rel="noopener"><img src="${f.arq}" alt="${esc(f.nome)}" loading="lazy"><b>${esc(f.nome)}</b><small>${esc(f.nota)}</small></a>`).join("")}</div>
-      ${r.obs?`<p class="ref-obs">${esc(r.obs)}</p>`:""}</div>`; }).join("");
+  if (aba==="refs") {
+    // print de lugar que está no guia abre a ficha dele; os outros abrem a imagem. Post longo mostra 4 e guarda o resto.
+    const print = (f, texto) => { const dentro = `<img src="${f.arq}" alt="${esc(f.nome)}" loading="lazy">${texto?`<b>${esc(f.nome)}</b><small>${esc(f.nota)}</small>`:""}`;
+      return f.id ? `<button type="button" class="print" data-ficha="${f.id}">${dentro}</button>` : `<a class="print" href="${f.arq}" target="_blank" rel="noopener">${dentro}</a>`; };
+    el.innerHTML = refs.map(r => { const cab = `<b>${esc(r.titulo)}</b><small>${esc(r.autor)} no ${esc(r.rede)} · <a href="${r.url}" target="_blank" rel="noopener">ver o post</a></small>`;
+      if (!r.fotos.length) return `<div class="ref"><div class="ref-cab" style="padding-bottom:2px">${cab}</div>${r.obs?`<p class="ref-obs" style="margin-top:6px">${esc(r.obs)}</p>`:""}</div>`;
+      if (r.fotos.length === 1) { const f = r.fotos[0];
+        return `<div class="ref um">${print(f, false)}<div class="ref-cab">${cab}<p><b class="lugar">${esc(f.nome)}</b>${f.nota?" · "+esc(f.nota):""}</p>${r.obs?`<p>${esc(r.obs)}</p>`:""}</div></div>`; }
+      const resto = r.fotos.slice(4);
+      return `<div class="ref"><div class="ref-cab">${cab}</div><div class="prints">${r.fotos.slice(0,4).map(f => print(f, true)).join("")}</div>
+        ${resto.length?`<details class="mais-prints"><summary>Mostrar os outros ${resto.length}</summary><div class="prints">${resto.map(f => print(f, true)).join("")}</div></details>`:""}
+        ${r.obs?`<p class="ref-obs">${esc(r.obs)}</p>`:""}</div>`; }).join("");
+  }
   try { sessionStorage.setItem("aba-cidade", aba); } catch(e){}
 }
 document.getElementById("seg").innerHTML = ABAS.map(([k,n]) => `<button type="button" data-a="${k}">${n}</button>`).join("");
-document.querySelectorAll("#seg button").forEach(b => b.onclick = () => painel(b.dataset.a));
-let abaIni = "ver"; try { const s = sessionStorage.getItem("aba-cidade"); if (ABAS.some(a=>a[0]===s)) abaIni = s; } catch(e){}
+document.querySelectorAll("#seg button").forEach(b => b.onclick = () => { if (b.dataset.a === "comer") location.href = `index.html#/comer/${c}`; else painel(b.dataset.a); });
+let abaIni = "ver"; try { const s = sessionStorage.getItem("aba-cidade"); if (s !== "comer" && ABAS.some(a=>a[0]===s)) abaIni = s; } catch(e){}
 painel(abaIni);
 // link antigo cidade.html?c=roma#id → abre a ficha do lugar
-if (location.hash && porId[location.hash.slice(1)]) { const id = location.hash.slice(1); painel(porId[id].tipo==="comer"?"comer":"ver"); abrirFicha(id); }
+if (location.hash && porId[location.hash.slice(1)]) { const id = location.hash.slice(1); painel("ver"); abrirFicha(id); }
 
 // ---------- stories: uma ideia com foto por tela ----------
-let stI = 0;
-const stSlides = [...ver, ...comer].filter(x => x.foto);
+let stI = 0, stArrasto = 0;
+const stSlides = ver.filter(x => x.foto).slice(0, 15);   // só atrações, as 15 primeiras: a comida tem a sua aba
 function abrirStories(){
   const palco = document.getElementById("st-palco");
   palco.style.setProperty("--cor", HEX[c]);
@@ -169,8 +172,9 @@ function abrirStories(){
        <button class="fechar" type="button" aria-label="Fechar">×</button>
        <button class="zona esq" type="button" aria-label="Anterior"></button><button class="zona dir" type="button" aria-label="Próximo"></button>`;
   palco.querySelector(".fechar").onclick = fecharStories;
-  palco.querySelector(".zona.esq").onclick = () => passo(-1);
-  palco.querySelector(".zona.dir").onclick = () => passo(1);
+  // depois de arrastar, o clique que vem junto não conta (senão avançava duas vezes com o mouse)
+  palco.querySelector(".zona.esq").onclick = () => { if (Date.now() - stArrasto > 350) passo(-1); };
+  palco.querySelector(".zona.dir").onclick = () => { if (Date.now() - stArrasto > 350) passo(1); };
   stI = 0; mostra();
   document.getElementById("stories").classList.add("on");
   document.body.style.overflow = "hidden";
@@ -186,7 +190,7 @@ document.addEventListener("keydown", e => { if (!document.getElementById("storie
   if (e.key==="Escape") fecharStories(); if (e.key==="ArrowRight") passo(1); if (e.key==="ArrowLeft") passo(-1); });
 (function(){ let x0 = null; const el = document.getElementById("stories");
   el.addEventListener("pointerdown", e => x0 = e.clientX);
-  el.addEventListener("pointerup", e => { if (x0 === null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 50) passo(dx < 0 ? 1 : -1); });
+  el.addEventListener("pointerup", e => { if (x0 === null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 50) { stArrasto = Date.now(); passo(dx < 0 ? 1 : -1); } });
 })();
 </script>
 </body>

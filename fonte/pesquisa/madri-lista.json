@@ -3,16 +3,16 @@
  "lugares": [
   {
    "ja": "100 Montaditos",
-   "pedir": "Montaditos a €1; quarta e domingo o cardápio todo sai a €1 (Euromanía)",
+   "pedir": "Montaditos a €1. Quarta e domingo o cardápio todo sai a €1",
    "foto_ref": "refs/madri/babi-montaditos.jpg"
   },
   {
    "ja": "Mercado de San Miguel",
-   "dica": "Tapas de salmão a €2, jamón e huevos rotos; ir antes das 12h para fugir da fila"
+   "dica": "Tapas de salmão a €2, jamón e huevos rotos. Ir antes das 12h para fugir da fila"
   },
   {
    "ja": "Chocolatería San Ginés",
-   "pedir": "Churros com chocolate, ~€6; abre às 8h; paga antes no caixa",
+   "pedir": "Churros com chocolate, ~€6. Abre às 8h e paga-se antes, no caixa",
    "foto_ref": "refs/madri/melhor-san-gines.jpg"
   },
   {
@@ -21,11 +21,11 @@
   },
   {
    "ja": "Palacio Real",
-   "dica": "Grátis de segunda a quinta, 16h às 18h (out–mar); troca da guarda às quartas"
+   "dica": "Grátis de segunda a quinta, das 16h às 18h. Troca da guarda às quartas"
   },
   {
    "ja": "Templo de Debod",
-   "dica": "Melhor no pôr do sol; tem vista para a Catedral"
+   "dica": "Melhor no pôr do sol. Tem vista para a Catedral"
   },
   {
    "ja": "Cervecería La Campana",
@@ -120,14 +120,16 @@
    "lat": 40.42471,
    "lng": -3.70379,
    "endereco": "Calle de Jesús del Valle 28, Madrid",
-   "dica": "Aulas avulsas de cerâmica"
+   "dica": "Aulas avulsas de cerâmica",
+   "foto_ref": "refs/madri/yarden-barro.jpg"
   },
   {
    "nome": "Nomad Museo Inmersivo",
    "tipo_lugar": "ver",
    "tipo": "museu imersivo",
    "endereco": "Nomad Museo Inmersivo, Madrid",
-   "dica": "Exposições com projeção"
+   "dica": "Exposições com projeção",
+   "foto_ref": "refs/madri/yarden-nomad.jpg"
   },
   {
    "nome": "Lamucca de Prado",
@@ -238,7 +240,7 @@
    "lat": 40.4205,
    "lng": -3.7056,
    "endereco": "Gran Vía 44, Madrid",
-   "pedir": "Drinks com vista da Gran Vía",
+   "pedir": "Drinks no terraço, à tarde",
    "foto_ref": "refs/madri/iselin-sky-44.jpg"
   },
   {
@@ -254,15 +256,15 @@
   },
   {
    "ja": "Casa Dani",
-   "pedir": "Tortilla de patatas cremosa; fica no Mercado de La Paz, posto 49"
+   "pedir": "Tortilla de patatas cremosa. Fica no Mercado de La Paz, posto 49"
   },
   {
    "ja": "La Casa del Abuelo",
-   "pedir": "Gambas al ajillo; o Leo Abreu achou que só tem gosto de alho"
+   "pedir": "Gambas al ajillo, o prato da casa. O Leo Abreu não gostou: achou só alho"
   },
   {
    "ja": "Los Artesanos 1902",
-   "pedir": "Churros com chocolate; o Leo Abreu preferiu este ao San Ginés"
+   "pedir": "Churros com chocolate. O Leo Abreu preferiu este ao San Ginés"
   },
   {
    "ja": "Antonio Sánchez",
@@ -340,6 +342,15 @@
    "lng": -3.3641,
    "endereco": "Alcalá de Henares",
    "dica": "A cidade de Cervantes; fica a leste de Madri, de trem"
+  },
+  {
+   "ja": "Bodega de la Ardosa"
+  },
+  {
+   "ja": "Taberna de la Dolores"
+  },
+  {
+   "ja": "Bar La Ideal"
   }
  ]
 }

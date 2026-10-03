@@ -839,6 +839,11 @@
      "nota": "tênis com miçangas"
     },
     {
+     "arq": "refs/madri/yarden-nomad.jpg",
+     "nome": "Nomad Museo Inmersivo",
+     "nota": "museu imersivo"
+    },
+    {
      "arq": "refs/madri/yarden-candlelight.jpg",
      "nome": "Candlelight",
      "nota": "concerto à luz de velas"
@@ -857,6 +862,11 @@
      "arq": "refs/madri/yarden-thyssen.jpg",
      "nome": "Thyssen-Bornemisza",
      "nota": "museu"
+    },
+    {
+     "arq": "refs/madri/yarden-barro.jpg",
+     "nome": "Barro",
+     "nota": "aula de cerâmica"
     }
    ]
   },
@@ -954,7 +964,7 @@
   },
   {
    "autor": "@tripvisual3",
-   "titulo": "Gran Vía ao anoitecer",
+   "titulo": "Gran Vía e Edifício Metrópolis",
    "url": "https://www.tiktok.com/@tripvisual3/video/7661039502651182343",
    "obs": "Só imagens: o Edifício Metrópolis e a Gran Vía iluminada.",
    "rede": "TikTok",
@@ -962,12 +972,12 @@
     {
      "arq": "refs/madri/trip-metropolis.jpg",
      "nome": "Edifício Metrópolis",
-     "nota": "ao anoitecer"
+     "nota": ""
     },
     {
      "arq": "refs/madri/trip-gran-via.jpg",
      "nome": "Gran Vía",
-     "nota": "ao anoitecer"
+     "nota": ""
     }
    ]
   },
