@@ -84,23 +84,13 @@ def lugares():
     # usam o print do post como foto (credito de quem postou).
     # credito do print: o arquivo comeca com o apelido de quem postou
     AUTOR = {"jing": "@jingeybells", "sara": "@sarasspace", "aven": "@aventuretravels1", "steven": "@stevenchristabel.day",
-             "aleya": "@aleyaadventures", "mia": "@mia.lina57", "gabor": "@gaborrgg", "lucy": "@lucyybitt"}
+             "aleya": "@aleyaadventures", "mia": "@mia.lina57", "gabor": "@gaborrgg", "lucy": "@lucyybitt",
+             "milo": "@milocafr", "eutenho": "@eutenhoumaviagem", "iselin": "@iselin.travel", "yarden": "@yarden_meron", "noz": "@nozviajando",
+             "becca": "@beccapires", "diario": "@diariodemilheiro", "melhor": "@melhorviagemdicas", "itsione": "@itsionebastos",
+             "babi": "@babicherubini", "mustache": "@reviewsdomustache", "paloma": "@palomaaviaja", "trip": "@tripvisual3"}
     def foto_post(arq):
         pre = arq.split("/")[-1].split("-")[0]
         return {"url": arq, "autor": AUTOR.get(pre, "@gigisworldtour") + " (TikTok)", "licenca": "print do post"}
-    il = PESQ / "innsbruck-lista.json"
-    if il.exists():
-        for l in json.load(open(il, encoding="utf-8"))["lugares"]:
-            if "ja" in l:
-                x = next(x for x in out["innsbruck"] if l["ja"] in x["nome"])
-                x["origem"] = "sua lista"
-                x.update({k: l[k] for k in ("pedir", "dica") if k in l})
-                if l.get("foto_ref"): x["foto"] = foto_post(l["foto_ref"])
-                continue
-            it = item("innsbruck", l["tipo_lugar"], l, "sua lista")
-            if l.get("matcha"): it["matcha"] = True
-            if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
-            out["innsbruck"].append(it)
     # MAIS RESTAURANTES EM MADRI (pesquisa de 30/09/2026), cada um com o seu
     # "slot" — o momento do roteiro em que ele cabe
     mr = PESQ / "madri-restaurantes.json"
@@ -118,6 +108,21 @@ def lugares():
             it.update(matcha="extra" if l.get("categoria") == "extra" else True, dia=l.get("dia_sugerido"),
                       porque=l.get("por_que") or "", instagram=l.get("instagram") or "")
             out["madri"].append(it)
+    # AS LISTAS QUE O LUCAS MANDOU (Innsbruck, Madri): depois de tudo, para o 'ja' achar qualquer lugar
+    for cid in ("innsbruck", "madri"):
+        il = PESQ / f"{cid}-lista.json"
+        if not il.exists(): continue
+        for l in json.load(open(il, encoding="utf-8"))["lugares"]:
+            if "ja" in l:
+                x = next(x for x in out[cid] if l["ja"] in x["nome"])
+                x["origem"] = "sua lista"
+                x.update({k: l[k] for k in ("pedir", "dica") if k in l})
+                if l.get("foto_ref"): x["foto"] = foto_post(l["foto_ref"])
+                continue
+            it = item(cid, l["tipo_lugar"], l, "sua lista")
+            if l.get("matcha"): it["matcha"] = True
+            if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
+            out[cid].append(it)
     # ids unicos
     for c, l in out.items():
         vistos = {}

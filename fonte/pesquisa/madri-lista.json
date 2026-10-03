@@ -1,0 +1,256 @@
+{
+ "_fonte": "Lugares citados em posts do TikTok que o Lucas mandou (03/10/2026). Coordenadas e horários do OpenStreetMap, consultado em 03/10/2026. 'ja' = já estava na pesquisa; só ganha a dica.",
+ "lugares": [
+  {
+   "ja": "100 Montaditos",
+   "pedir": "Montaditos a €1; quarta e domingo o cardápio todo sai a €1 (Euromanía)",
+   "foto_ref": "refs/madri/babi-montaditos.jpg"
+  },
+  {
+   "ja": "Mercado de San Miguel",
+   "dica": "Tapas de salmão a €2, jamón e huevos rotos; ir antes das 12h para fugir da fila"
+  },
+  {
+   "ja": "Chocolatería San Ginés",
+   "pedir": "Churros com chocolate, ~€6; abre às 8h",
+   "foto_ref": "refs/madri/melhor-san-gines.jpg"
+  },
+  {
+   "ja": "Fuente de Cibeles",
+   "dica": "Subir ao mirador do Palácio de Cibeles: barato e uma das melhores vistas"
+  },
+  {
+   "ja": "Palacio Real",
+   "dica": "Grátis de segunda a quinta, 16h às 18h (out–mar); troca da guarda às quartas"
+  },
+  {
+   "ja": "Templo de Debod",
+   "dica": "Melhor no pôr do sol; tem vista para a Catedral"
+  },
+  {
+   "ja": "Cervecería La Campana",
+   "pedir": "Bocadillo de calamares, ~€4",
+   "foto_ref": "refs/madri/eutenho-la-campana.jpg"
+  },
+  {
+   "nome": "Plaza de España",
+   "tipo_lugar": "ver",
+   "tipo": "praça renovada, monumento a Cervantes",
+   "lat": 40.42276,
+   "lng": -3.71294,
+   "endereco": "Plaza de España, Madrid",
+   "dica": "Boa para descansar; fica entre a Gran Vía e o Templo de Debod",
+   "foto_ref": "refs/madri/noz-plaza-de-espana.jpg"
+  },
+  {
+   "nome": "Mirante do Hotel Riu (Plaza de España)",
+   "tipo_lugar": "ver",
+   "tipo": "mirante 360° no terraço",
+   "lat": 40.42413,
+   "lng": -3.71095,
+   "endereco": "Hotel Riu Plaza España, Madrid",
+   "dica": "Vista 360° da cidade; bonito no pôr do sol",
+   "foto_ref": "refs/madri/noz-mirante-riu.jpg"
+  },
+  {
+   "nome": "Edifício Metrópolis",
+   "tipo_lugar": "ver",
+   "tipo": "prédio ícone no começo da Gran Vía",
+   "lat": 40.41877,
+   "lng": -3.69748,
+   "endereco": "Calle de Alcalá 39, Madrid",
+   "dica": "A foto clássica da Gran Vía, da esquina com Alcalá",
+   "foto_ref": "refs/madri/milo-metropolis.jpg"
+  },
+  {
+   "nome": "Museu Thyssen-Bornemisza",
+   "tipo_lugar": "ver",
+   "tipo": "museu de arte",
+   "lat": 40.41622,
+   "lng": -3.6951,
+   "endereco": "Paseo del Prado 8, Madrid",
+   "dica": "Em frente ao Prado",
+   "fecha_em": "Segunda só das 12h às 16h",
+   "foto_ref": "refs/madri/yarden-thyssen.jpg"
+  },
+  {
+   "nome": "Cava Baja (La Latina)",
+   "tipo_lugar": "ver",
+   "tipo": "rua de bares e tavernas",
+   "lat": 40.4125,
+   "lng": -3.7095,
+   "endereco": "Calle de la Cava Baja, Madrid",
+   "dica": "Para almoçar de tapas; chegar entre 13h e 14h",
+   "foto_ref": "refs/madri/melhor-cava-baja.jpg"
+  },
+  {
+   "nome": "Malasaña (brechós)",
+   "tipo_lugar": "ver",
+   "tipo": "bairro de lojas vintage",
+   "lat": 40.4262,
+   "lng": -3.7032,
+   "endereco": "Calle de Velarde, Madrid",
+   "dica": "Roupa vintage a partir de €10",
+   "foto_ref": "refs/madri/iselin-malasana.jpg"
+  },
+  {
+   "nome": "Casa del Libro (Gran Vía)",
+   "tipo_lugar": "ver",
+   "tipo": "livraria com vista",
+   "lat": 40.41995,
+   "lng": -3.70325,
+   "endereco": "Gran Vía 29, Madrid",
+   "dica": "Tem janela com vista para a Gran Vía",
+   "foto_ref": "refs/madri/yarden-casa-del-libro.jpg"
+  },
+  {
+   "nome": "HOFF (tênis personalizado)",
+   "tipo_lugar": "ver",
+   "tipo": "loja",
+   "lat": 40.4262,
+   "lng": -3.6838,
+   "endereco": "Calle de Velázquez 37, Madrid",
+   "dica": "Dá para montar o tênis com miçangas; só nesta loja",
+   "foto_ref": "refs/madri/yarden-hoff.jpg"
+  },
+  {
+   "nome": "Barro (aula de cerâmica)",
+   "tipo_lugar": "ver",
+   "tipo": "ateliê",
+   "lat": 40.42471,
+   "lng": -3.70379,
+   "endereco": "Calle de Jesús del Valle 28, Madrid",
+   "dica": "Aulas avulsas de cerâmica"
+  },
+  {
+   "nome": "Nomad Museo Inmersivo",
+   "tipo_lugar": "ver",
+   "tipo": "museu imersivo",
+   "endereco": "Nomad Museo Inmersivo, Madrid",
+   "dica": "Exposições com projeção"
+  },
+  {
+   "nome": "Lamucca de Prado",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante",
+   "lat": 40.41478,
+   "lng": -3.69865,
+   "endereco": "Calle del Prado 16, Madrid",
+   "pedir": "Menu del día a €15: entrada, prato, sobremesa e bebida",
+   "fecha_em": "Abre às 13h",
+   "foto_ref": "refs/madri/diario-menu.jpg"
+  },
+  {
+   "nome": "Pecorilo",
+   "tipo_lugar": "comer",
+   "tipo": "massa fresca",
+   "lat": 40.42075,
+   "lng": -3.69975,
+   "endereco": "Plaza de Pedro Zerolo 1, Madrid",
+   "pedir": "Massa fresca a partir de €7, finalizada no queijo",
+   "foto_ref": "refs/madri/babi-massa.jpg"
+  },
+  {
+   "nome": "Honest Greens (Gran Vía)",
+   "tipo_lugar": "comer",
+   "tipo": "saladas e pratos leves",
+   "lat": 40.41937,
+   "lng": -3.69886,
+   "endereco": "Gran Vía 7, Madrid",
+   "pedir": "Pratos de €7 a €15",
+   "fecha_em": "Todo dia, 8h30 às 23h",
+   "foto_ref": "refs/madri/eutenho-honest-greens.jpg"
+  },
+  {
+   "nome": "Oink (bocadillo de jamón)",
+   "tipo_lugar": "comer",
+   "tipo": "sanduíche de jamón ibérico",
+   "lat": 40.42004,
+   "lng": -3.70046,
+   "endereco": "Gran Vía 22, Madrid",
+   "pedir": "Bocadillo de jamón, ~€4",
+   "fecha_em": "Aberto 24h",
+   "foto_ref": "refs/madri/eutenho-oink.jpg"
+  },
+  {
+   "nome": "Bar Gyoza Go!",
+   "tipo_lugar": "comer",
+   "tipo": "guiozas",
+   "lat": 40.41625,
+   "lng": -3.70856,
+   "endereco": "Plaza del Comandante Las Morenas 5, Madrid",
+   "pedir": "10 guiozas por menos de €6",
+   "foto_ref": "refs/madri/becca-gyoza.jpg"
+  },
+  {
+   "nome": "Tiki Taco",
+   "tipo_lugar": "comer",
+   "tipo": "tacos",
+   "endereco": "Tiki Taco, Madrid",
+   "pedir": "Tacos na faixa de €1; tem vários pela cidade",
+   "foto_ref": "refs/madri/becca-tiki-taco.jpg"
+  },
+  {
+   "nome": "Kebab House",
+   "tipo_lugar": "comer",
+   "tipo": "kebab, desde 1978",
+   "lat": 40.43299,
+   "lng": -3.71722,
+   "endereco": "Calle de Meléndez Valdés 67, Madrid",
+   "pedir": "Kebab, ~€5",
+   "fecha_em": "Fecha domingo; sábado só no almoço",
+   "foto_ref": "refs/madri/becca-kebab-house.jpg"
+  },
+  {
+   "nome": "Five Guys (Gran Vía)",
+   "tipo_lugar": "comer",
+   "tipo": "hambúrguer",
+   "lat": 40.42046,
+   "lng": -3.70557,
+   "endereco": "Gran Vía 44, Madrid",
+   "pedir": "Hambúrguer, €10 a €12",
+   "foto_ref": "refs/madri/eutenho-five-guys.jpg"
+  },
+  {
+   "nome": "llaollao",
+   "tipo_lugar": "comer",
+   "tipo": "frozen yogurt",
+   "lat": 40.41781,
+   "lng": -3.7037,
+   "endereco": "Calle del Carmen 6, Madrid",
+   "pedir": "Frozen yogurt com calda e frutas",
+   "foto_ref": "refs/madri/eutenho-llaollao.jpg"
+  },
+  {
+   "nome": "El Viajero (terraço)",
+   "tipo_lugar": "comer",
+   "tipo": "bar com terraço em La Latina",
+   "lat": 40.41165,
+   "lng": -3.71018,
+   "endereco": "Plaza de la Cebada 11, Madrid",
+   "pedir": "Petiscos no terraço",
+   "foto_ref": "refs/madri/iselin-el-viajero.jpg"
+  },
+  {
+   "nome": "Sky 44 (rooftop)",
+   "tipo_lugar": "comer",
+   "tipo": "bar no terraço",
+   "lat": 40.4205,
+   "lng": -3.7056,
+   "endereco": "Gran Vía 44, Madrid",
+   "pedir": "Drinks com vista da Gran Vía",
+   "foto_ref": "refs/madri/iselin-sky-44.jpg"
+  },
+  {
+   "nome": "Quinto Elemento",
+   "tipo_lugar": "comer",
+   "tipo": "jantar com balada",
+   "lat": 40.4098,
+   "lng": -3.6932,
+   "endereco": "Calle de Atocha 125, Madrid",
+   "pedir": "Restaurante com acesso à balada de vários andares",
+   "reserva": "Reserva obrigatória",
+   "foto_ref": "refs/madri/itsione-vida-noturna.jpg"
+  }
+ ]
+}

@@ -412,5 +412,564 @@
     }
    ]
   }
+ ],
+ "madri": [
+  {
+   "autor": "@milocafr",
+   "titulo": "12 atrações imperdíveis",
+   "url": "https://www.tiktok.com/@milocafr/photo/7646539762706189588",
+   "obs": "Retiro, Gran Vía, Porta do Sol, Palácio de Cibeles (subir ao mirador), Plaza Mayor, Almudena, Mercado de San Miguel, Prado, Bernabéu, Palácio Real, Templo de Debod e Porta de Alcalá.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/milo-retiro.jpg",
+     "nome": "Parque do Retiro",
+     "nota": "o lugar favorito dela"
+    },
+    {
+     "arq": "refs/madri/milo-gran-via.jpg",
+     "nome": "Gran Vía",
+     "nota": "prédios lindos, muita gente"
+    },
+    {
+     "arq": "refs/madri/milo-sol.jpg",
+     "nome": "Porta do Sol",
+     "nota": "o urso e o medronheiro"
+    },
+    {
+     "arq": "refs/madri/milo-mirador-cibeles.jpg",
+     "nome": "Mirador de Cibeles",
+     "nota": "vista barata e das melhores"
+    },
+    {
+     "arq": "refs/madri/milo-plaza-mayor.jpg",
+     "nome": "Plaza Mayor",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/milo-almudena.jpg",
+     "nome": "Catedral de Almudena",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/milo-san-miguel.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/milo-prado.jpg",
+     "nome": "Museu do Prado",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/milo-palacio-real.jpg",
+     "nome": "Palácio Real",
+     "nota": "os jardins"
+    },
+    {
+     "arq": "refs/madri/milo-debod.jpg",
+     "nome": "Templo de Debod",
+     "nota": "dá para entrar"
+    },
+    {
+     "arq": "refs/madri/milo-alcala.jpg",
+     "nome": "Porta de Alcalá",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/milo-metropolis.jpg",
+     "nome": "Edifício Metrópolis",
+     "nota": "fim da Gran Vía"
+    }
+   ]
+  },
+  {
+   "autor": "@itsionebastos",
+   "titulo": "Roteiro de 2 dias",
+   "url": "https://www.tiktok.com/@itsionebastos/video/7477533046929902853",
+   "obs": "Centro histórico, La Latina, Debod no pôr do sol, Gran Vía (Primark), Cibeles, Alcalá e Retiro. Palácio Real grátis seg a qui, 16h–18h; Prado grátis seg a sáb, 18h–20h. Para comer: San Ginés, Botín e Quinto Elemento.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/itsione-sol.jpg",
+     "nome": "Puerta del Sol",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/itsione-plaza-mayor.jpg",
+     "nome": "Plaza Mayor",
+     "nota": "cuidado com os golpes"
+    },
+    {
+     "arq": "refs/madri/itsione-sabatini.jpg",
+     "nome": "Jardins de Sabatini",
+     "nota": "entrada gratuita"
+    },
+    {
+     "arq": "refs/madri/itsione-la-latina.jpg",
+     "nome": "La Latina",
+     "nota": "bares com preço bom"
+    },
+    {
+     "arq": "refs/madri/itsione-debod.jpg",
+     "nome": "Templo de Debod",
+     "nota": "pôr do sol"
+    },
+    {
+     "arq": "refs/madri/itsione-gran-via.jpg",
+     "nome": "Gran Vía",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/itsione-primark.jpg",
+     "nome": "Primark da Gran Vía",
+     "nota": "a segunda maior da Europa"
+    },
+    {
+     "arq": "refs/madri/itsione-cibeles.jpg",
+     "nome": "Palácio de Cibeles",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/itsione-retiro.jpg",
+     "nome": "Parque del Retiro",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/itsione-vida-noturna.jpg",
+     "nome": "Quinto Elemento",
+     "nota": "jantar e balada"
+    }
+   ]
+  },
+  {
+   "autor": "@nozviajando",
+   "titulo": "12 lugares para conhecer",
+   "url": "https://www.tiktok.com/@nozviajando/video/7503218867473337606",
+   "obs": "Sol, Plaza Mayor, San Miguel, Almudena, Palácio Real, Jardins de Sabatini, Plaza de España, mirante do Hotel Riu, Prado, Retiro, Porta de Alcalá e Cibeles.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/noz-plaza-mayor.jpg",
+     "nome": "Plaza Mayor",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-san-miguel.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-almudena.jpg",
+     "nome": "Catedral de la Almudena",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-sabatini.jpg",
+     "nome": "Jardins de Sabatini",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-plaza-de-espana.jpg",
+     "nome": "Plaza de España",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-mirante-riu.jpg",
+     "nome": "Mirante do Hotel Riu",
+     "nota": "vista 360°"
+    },
+    {
+     "arq": "refs/madri/noz-retiro.jpg",
+     "nome": "Parque del Retiro",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-cibeles.jpg",
+     "nome": "Palácio de Cibeles",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/noz-alcala.jpg",
+     "nome": "Puerta de Alcalá",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "autor": "@melhorviagemdicas",
+   "titulo": "Madri em um dia",
+   "url": "https://www.tiktok.com/@melhorviagemdicas/video/7584272102526586132",
+   "obs": "San Ginés às 8h, Sol, Plaza Mayor, San Miguel antes das 12h, Palácio e Almudena, almoço na Cava Baja, Templo de Debod, Plaza de España, Gran Vía e pôr do sol no terraço do Riu. Museus barram mala e mochila grande.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/melhor-san-gines.jpg",
+     "nome": "Chocolatería San Ginés",
+     "nota": "começar o dia, abre às 8h"
+    },
+    {
+     "arq": "refs/madri/melhor-sol.jpg",
+     "nome": "Puerta del Sol",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/melhor-plaza-mayor.jpg",
+     "nome": "Plaza Mayor",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/melhor-san-miguel.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "antes das 12h"
+    },
+    {
+     "arq": "refs/madri/melhor-palacio.jpg",
+     "nome": "Palácio Real e Almudena",
+     "nota": "um ao lado do outro"
+    },
+    {
+     "arq": "refs/madri/melhor-cava-baja.jpg",
+     "nome": "Cava Baja",
+     "nota": "almoço em La Latina"
+    },
+    {
+     "arq": "refs/madri/melhor-debod.jpg",
+     "nome": "Templo de Debod",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/melhor-plaza-de-espana.jpg",
+     "nome": "Plaza de España",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/melhor-riu.jpg",
+     "nome": "Terraço do Riu",
+     "nota": "pôr do sol"
+    }
+   ]
+  },
+  {
+   "autor": "@iselin.travel",
+   "titulo": "8 coisas para fazer",
+   "url": "https://www.tiktok.com/@iselin.travel/video/7569343841422314754",
+   "obs": "La Latina, Plaza Mayor, rooftop Sky 44, terraço do El Viajero, compras na Gran Vía, Retiro, Prado e brechós de Malasaña.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/iselin-la-latina.jpg",
+     "nome": "La Latina",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/iselin-plaza-mayor.jpg",
+     "nome": "Plaza Mayor",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/iselin-sky-44.jpg",
+     "nome": "Sky 44",
+     "nota": "bar no terraço"
+    },
+    {
+     "arq": "refs/madri/iselin-el-viajero.jpg",
+     "nome": "El Viajero",
+     "nota": "terraço escondido"
+    },
+    {
+     "arq": "refs/madri/iselin-gran-via.jpg",
+     "nome": "Gran Vía",
+     "nota": "compras"
+    },
+    {
+     "arq": "refs/madri/iselin-retiro.jpg",
+     "nome": "Parque do Retiro",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/iselin-prado.jpg",
+     "nome": "Museu do Prado",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/iselin-malasana.jpg",
+     "nome": "Malasaña",
+     "nota": "brechós"
+    }
+   ]
+  },
+  {
+   "autor": "@eutenhoumaviagem",
+   "titulo": "Comidas que provei",
+   "url": "https://www.tiktok.com/@eutenhoumaviagem/photo/7616506624953339156",
+   "obs": "Tapas de salmão no San Miguel (€2), Honest Greens, bocadillo de jamón no Oink (€4), San Ginés, calamares no La Campana (€4), llaollao, 100 Montaditos e Five Guys.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/eutenho-salmao.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "tapas de salmão, €2"
+    },
+    {
+     "arq": "refs/madri/eutenho-honest-greens.jpg",
+     "nome": "Honest Greens",
+     "nota": "saladas, €7 a €15"
+    },
+    {
+     "arq": "refs/madri/eutenho-oink.jpg",
+     "nome": "Oink",
+     "nota": "bocadillo de jamón, €4"
+    },
+    {
+     "arq": "refs/madri/eutenho-san-gines.jpg",
+     "nome": "Chocolatería San Ginés",
+     "nota": "churros, €6"
+    },
+    {
+     "arq": "refs/madri/eutenho-la-campana.jpg",
+     "nome": "Bar La Campana",
+     "nota": "bocadillo de calamares, €4"
+    },
+    {
+     "arq": "refs/madri/eutenho-llaollao.jpg",
+     "nome": "llaollao",
+     "nota": "frozen yogurt"
+    },
+    {
+     "arq": "refs/madri/eutenho-montaditos.jpg",
+     "nome": "100 Montaditos",
+     "nota": "quarta e domingo tudo a €1"
+    },
+    {
+     "arq": "refs/madri/eutenho-five-guys.jpg",
+     "nome": "Five Guys",
+     "nota": "hambúrguer, €10 a €12"
+    }
+   ]
+  },
+  {
+   "autor": "@babicherubini",
+   "titulo": "4 lugares bons e baratos",
+   "url": "https://www.tiktok.com/@babicherubini/video/7529989575574310150",
+   "obs": "100 Montaditos, Pecorilo (massa fresca), Chocolatería San Ginés e Mercado de San Miguel.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/babi-montaditos.jpg",
+     "nome": "100 Montaditos",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/babi-euromania.jpg",
+     "nome": "100 Montaditos",
+     "nota": "cardápio Euromanía, a €1"
+    },
+    {
+     "arq": "refs/madri/babi-pecorilo.jpg",
+     "nome": "Pecorilo",
+     "nota": "massa fresca"
+    },
+    {
+     "arq": "refs/madri/babi-massa.jpg",
+     "nome": "Pecorilo",
+     "nota": "a partir de €7"
+    },
+    {
+     "arq": "refs/madri/babi-san-gines.jpg",
+     "nome": "Chocolatería San Ginés",
+     "nota": "desde 1894"
+    },
+    {
+     "arq": "refs/madri/babi-san-miguel.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "autor": "@reviewsdomustache",
+   "titulo": "Tudo que comi no San Miguel",
+   "url": "https://www.tiktok.com/@reviewsdomustache/video/7514095228194802949",
+   "obs": "Jamón ibérico, tortilla, paella, atum bluefin, huevos rotos e churros.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/mustache-fachada.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/mustache-jamon.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "jamón ibérico"
+    },
+    {
+     "arq": "refs/madri/mustache-tortilla.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "tortillas"
+    },
+    {
+     "arq": "refs/madri/mustache-paella.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "paella"
+    },
+    {
+     "arq": "refs/madri/mustache-huevos-rotos.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "huevos rotos"
+    },
+    {
+     "arq": "refs/madri/mustache-churros.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": "churros"
+    }
+   ]
+  },
+  {
+   "autor": "@yarden_meron",
+   "titulo": "8 programas diferentes",
+   "url": "https://www.tiktok.com/@yarden_meron/video/7612937964594810120",
+   "obs": "HOFF (tênis personalizado), Nomad Museo Inmersivo, concertos Candlelight, Casa del Libro, aula de cerâmica no Barro, spa Riela, CentroCentro e Thyssen.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/yarden-hoff.jpg",
+     "nome": "HOFF",
+     "nota": "tênis com miçangas"
+    },
+    {
+     "arq": "refs/madri/yarden-candlelight.jpg",
+     "nome": "Candlelight",
+     "nota": "concerto à luz de velas"
+    },
+    {
+     "arq": "refs/madri/yarden-casa-del-libro.jpg",
+     "nome": "Casa del Libro",
+     "nota": "livraria com vista"
+    },
+    {
+     "arq": "refs/madri/yarden-riela.jpg",
+     "nome": "Riela",
+     "nota": "spa"
+    },
+    {
+     "arq": "refs/madri/yarden-thyssen.jpg",
+     "nome": "Thyssen-Bornemisza",
+     "nota": "museu"
+    }
+   ]
+  },
+  {
+   "autor": "@beccapires",
+   "titulo": "5 lugares por menos de €10",
+   "url": "https://www.tiktok.com/@beccapires/video/7449516532859817222",
+   "obs": "100 Montaditos, Kebab House, Tiki Taco, Bar Gyoza Go! e Honest Greens.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/becca-montaditos.jpg",
+     "nome": "100 Montaditos",
+     "nota": "sanduichinhos a €1"
+    },
+    {
+     "arq": "refs/madri/becca-kebab-house.jpg",
+     "nome": "Kebab House",
+     "nota": "o kebab mais antigo de Madri"
+    },
+    {
+     "arq": "refs/madri/becca-tiki-taco.jpg",
+     "nome": "Tiki Taco",
+     "nota": "tacos na faixa de €1"
+    },
+    {
+     "arq": "refs/madri/becca-gyoza.jpg",
+     "nome": "Bar Gyoza Go!",
+     "nota": "10 guiozas por menos de €6"
+    },
+    {
+     "arq": "refs/madri/becca-honest-greens.jpg",
+     "nome": "Honest Greens",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "autor": "@diariodemilheiro",
+   "titulo": "Lamucca: menu del día a €15",
+   "url": "https://www.tiktok.com/@diariodemilheiro/video/7517040586134703365",
+   "obs": "Entrada, prato, sobremesa e bebida por €15, na Calle del Prado 16. Ele pediu salada vietnamita, tira de asado e bolo de banana; a batata brava é bem apimentada.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/diario-menu.jpg",
+     "nome": "Lamucca de Prado",
+     "nota": "menu del día a €15"
+    },
+    {
+     "arq": "refs/madri/diario-salada.jpg",
+     "nome": "Lamucca de Prado",
+     "nota": "salada vietnamita"
+    },
+    {
+     "arq": "refs/madri/diario-asado.jpg",
+     "nome": "Lamucca de Prado",
+     "nota": "tira de asado"
+    },
+    {
+     "arq": "refs/madri/diario-brava.jpg",
+     "nome": "Lamucca de Prado",
+     "nota": "batata brava, bem apimentada"
+    },
+    {
+     "arq": "refs/madri/diario-salao.jpg",
+     "nome": "Lamucca de Prado",
+     "nota": "o salão"
+    }
+   ]
+  },
+  {
+   "autor": "@palomaaviaja",
+   "titulo": "Dicas de Madri",
+   "url": "https://www.tiktok.com/@palomaaviaja/video/7502027418580831493",
+   "obs": "Ficar perto da Sol, 3 dias bastam, San Miguel, Plaza Mayor, Cibeles, Retiro e Gran Vía.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/paloma-san-miguel.jpg",
+     "nome": "Mercado de San Miguel",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/paloma-cibeles.jpg",
+     "nome": "Palácio de Cibeles",
+     "nota": ""
+    },
+    {
+     "arq": "refs/madri/paloma-retiro.jpg",
+     "nome": "Parque del Retiro",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "autor": "@tripvisual3",
+   "titulo": "Gran Vía ao anoitecer",
+   "url": "https://www.tiktok.com/@tripvisual3/video/7661039502651182343",
+   "obs": "Só imagens: o Edifício Metrópolis e a Gran Vía iluminada.",
+   "rede": "TikTok",
+   "fotos": [
+    {
+     "arq": "refs/madri/trip-metropolis.jpg",
+     "nome": "Edifício Metrópolis",
+     "nota": "ao anoitecer"
+    },
+    {
+     "arq": "refs/madri/trip-gran-via.jpg",
+     "nome": "Gran Vía",
+     "nota": "ao anoitecer"
+    }
+   ]
+  }
  ]
 }

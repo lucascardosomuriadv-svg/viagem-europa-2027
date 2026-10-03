@@ -455,5 +455,35 @@
   "pagina": "https://commons.wikimedia.org/wiki/File:Triumphpforte_(IMG_1820).jpg",
   "autor": "Simon Legner (User:simon04)",
   "licenca": "CC BY-SA 4.0"
+ },
+ "Edificio España": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Edificio_Espa%C3%B1a_%28Madrid%29_01.jpg/960px-Edificio_Espa%C3%B1a_%28Madrid%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Edificio_Espa%C3%B1a_(Madrid)_01.jpg",
+  "autor": "Malouette from Copenhagen (Denmark)",
+  "licenca": "CC BY-SA 2.0"
+ },
+ "Malasaña": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Tejiendo_Malasa%C3%B1a_2014_%2814223976313%29.jpg/960px-Tejiendo_Malasa%C3%B1a_2014_%2814223976313%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Tejiendo_Malasa%C3%B1a_2014_(14223976313).jpg",
+  "autor": "Tejiendo Malasaña",
+  "licenca": "CC BY 2.0"
+ },
+ "Metropolis Building": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg/960px-Edificio_Metr%C3%B3polis%2C_calle_de_Alcal%C3%A1%2C_Madrid%2C_Espa%C3%B1a%2C_2017-05-18%2C_DD_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Edificio_Metr%C3%B3polis,_calle_de_Alcal%C3%A1,_Madrid,_Espa%C3%B1a,_2017-05-18,_DD_08.jpg",
+  "autor": "Diego Delso",
+  "licenca": "CC BY-SA 4.0"
+ },
+ "Plaza de España (Madrid)": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg/960px-Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg",
+  "autor": "Carlos Delgado",
+  "licenca": "CC BY-SA 3.0"
+ },
+ "Thyssen-Bornemisza Museum": {
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg/960px-Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Site_of_the_Retiro_and_the_Prado_in_Madrid_49_(29684554308).jpg",
+  "autor": "Kyle Magnuson from Los Angeles, United States",
+  "licenca": "CC BY 2.0"
  }
 }

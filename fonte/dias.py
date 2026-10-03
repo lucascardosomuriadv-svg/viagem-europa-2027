@@ -30,7 +30,7 @@ DIAS = [
     blocos=[
       ("Manhã", "Retiro → Puerta de Alcalá → Cibeles. Suba ao mirante do CentroCentro.", ["Retiro", "Puerta de Alcalá", "Cibeles"]),
       ("Almoço", "Tapas no balcão, no Barrio de las Letras.", ["Cervecería Cervantes"]),
-      ("Tarde", "Letras a pé. Às 17h30, fila do Prado: <b>grátis das 18h às 20h</b>.", ["Acid Café", "Prado"]),
+      ("Tarde", "Letras a pé. Às 17h30, fila do Prado: <b>grátis das 18h às 20h</b>.", ["Acid Café", "Museo del Prado"]),
       ("Noite", "Gambas al ajillo perto de Sol.", ["Casa del Abuelo"]),
     ]),
   dict(data="2027-02-20", cidade="madri", titulo="Gran Vía de manhã, Palácio e Madri dos Áustrias", noite="Madri",
