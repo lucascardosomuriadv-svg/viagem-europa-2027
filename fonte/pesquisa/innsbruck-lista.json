@@ -65,7 +65,7 @@
    "lat": 47.26142,
    "lng": 11.39533,
    "endereco": "Leopoldstraße 9, Innsbruck",
-   "pedir": "Matcha; vista do Arco do Triunfo"
+   "pedir": "Matcha e cheesecake de pistache; vista do Arco do Triunfo"
   },
   {
    "nome": "Midori Teehaus",
@@ -140,6 +140,15 @@
    "endereco": "Anichstraße 13, Innsbruck",
    "pedir": "Café e doces da casa",
    "fecha_em": "Fecha às segundas"
+  },
+  {
+   "nome": "Riesengasse (lojinhas)",
+   "tipo_lugar": "ver",
+   "tipo": "beco de lojinhas de lembrancinhas",
+   "lat": 47.26803,
+   "lng": 11.3944,
+   "endereco": "Riesengasse, Innsbruck",
+   "dica": "Ao lado do Telhado de Ouro; lojinhas locais"
   }
  ]
 }
