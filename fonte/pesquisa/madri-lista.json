@@ -12,7 +12,7 @@
   },
   {
    "ja": "Chocolatería San Ginés",
-   "pedir": "Churros com chocolate, ~€6; abre às 8h",
+   "pedir": "Churros com chocolate, ~€6; abre às 8h; paga antes no caixa",
    "foto_ref": "refs/madri/melhor-san-gines.jpg"
   },
   {
@@ -251,6 +251,95 @@
    "pedir": "Restaurante com acesso à balada de vários andares",
    "reserva": "Reserva obrigatória",
    "foto_ref": "refs/madri/itsione-vida-noturna.jpg"
+  },
+  {
+   "ja": "Casa Dani",
+   "pedir": "Tortilla de patatas cremosa; fica no Mercado de La Paz, posto 49"
+  },
+  {
+   "ja": "La Casa del Abuelo",
+   "pedir": "Gambas al ajillo; o Leo Abreu achou que só tem gosto de alho"
+  },
+  {
+   "ja": "Los Artesanos 1902",
+   "pedir": "Churros com chocolate; o Leo Abreu preferiu este ao San Ginés"
+  },
+  {
+   "ja": "Antonio Sánchez",
+   "pedir": "Vermute"
+  },
+  {
+   "ja": "Mercado de Vallehermoso",
+   "pedir": "Bancas de comida; dentro ficam o Kitchen 154 e o BATCH (postos 47 e 48)"
+  },
+  {
+   "ja": "Mercado de Antón Martín",
+   "pedir": "Bancas de comida; dentro fica a La López (postos 29 a 32)"
+  },
+  {
+   "nome": "Mercado de La Paz",
+   "tipo_lugar": "comer",
+   "tipo": "mercado no bairro de Salamanca",
+   "lat": 40.42722,
+   "lng": -3.68563,
+   "endereco": "Calle de Ayala 28, Madrid",
+   "pedir": "Embutidos, peixes e frutas; a tortilla da Casa Dani fica aqui dentro"
+  },
+  {
+   "nome": "Taberna Pedraza",
+   "tipo_lugar": "comer",
+   "tipo": "taberna tradicional",
+   "lat": 40.42214,
+   "lng": -3.69086,
+   "endereco": "Calle de Recoletos 4, Madrid",
+   "pedir": "Tortilla e cozido"
+  },
+  {
+   "nome": "Taberna El Boquerón",
+   "tipo_lugar": "comer",
+   "tipo": "bar de frutos do mar em Lavapiés",
+   "lat": 40.40746,
+   "lng": -3.70045,
+   "endereco": "Calle de Valencia 14, Madrid",
+   "pedir": "Boquerones e frutos do mar no balcão",
+   "fecha_em": "Fecha às quartas"
+  },
+  {
+   "nome": "Gota (bar de vinhos)",
+   "tipo_lugar": "comer",
+   "tipo": "bar de vinhos",
+   "lat": 40.4222,
+   "lng": -3.6945,
+   "endereco": "Calle de Prim 5, Madrid",
+   "pedir": "Vinhos em taça"
+  },
+  {
+   "nome": "Devil's Cut (coquetéis)",
+   "tipo_lugar": "comer",
+   "tipo": "bar de coquetéis",
+   "lat": 40.415,
+   "lng": -3.6992,
+   "endereco": "Calle del León 3, Madrid",
+   "pedir": "Coquetéis"
+  },
+  {
+   "nome": "DSTAgE",
+   "tipo_lugar": "comer",
+   "tipo": "alta gastronomia",
+   "lat": 40.42459,
+   "lng": -3.69633,
+   "endereco": "Calle de Regueros 8, Madrid",
+   "pedir": "Menu degustação",
+   "reserva": "Reserva obrigatória"
+  },
+  {
+   "nome": "Alcalá de Henares (bate-volta)",
+   "tipo_lugar": "ver",
+   "tipo": "cidade histórica perto de Madri",
+   "lat": 40.4818,
+   "lng": -3.3641,
+   "endereco": "Alcalá de Henares",
+   "dica": "A cidade de Cervantes; fica a leste de Madri, de trem"
   }
  ]
 }
