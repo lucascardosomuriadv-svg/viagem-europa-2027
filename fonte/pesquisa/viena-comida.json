@@ -1,0 +1,153 @@
+{
+ "_fonte": "Lugares de comer citados em vídeos de comida do YouTube (03/10/2026). Só fatos, com palavras próprias. Coordenadas do OpenStreetMap.",
+ "lugares": [
+  {
+   "nome": "Schnitzel One",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante de schnitzel",
+   "pedir": "Wiener Schnitzel de vitela, extra grande, com salada de batata",
+   "endereco": "Neuer Markt 8A, 1010 Wien, Wien",
+   "bairro": "Innere Stadt (1º distrito)",
+   "lat": 48.20541,
+   "lng": 16.37021
+  },
+  {
+   "ja": "Trzesniewski",
+   "pedir": "Sanduichinhos abertos (ovo, presunto com trufa) e um Pfiff de cerveja"
+  },
+  {
+   "nome": "Schachtelwirt",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante caseiro austríaco (Beisl)",
+   "pedir": "Porco assado com Knödel e repolho; gulasch. Comida caseira",
+   "endereco": "Judengasse 5, 1010 Wien, Wien",
+   "bairro": "Innere Stadt (1º distrito)",
+   "lat": 48.21146,
+   "lng": 16.37357
+  },
+  {
+   "nome": "Leberkas-Pepi (Operngasse)",
+   "tipo_lugar": "comer",
+   "tipo": "lanchonete de Leberkäse",
+   "pedir": "Sanduíche de Leberkäse com queijo e mostarda doce",
+   "endereco": "Operngasse 12, 1010 Wien, Wien",
+   "bairro": "Innere Stadt (1º distrito)",
+   "lat": 48.20226,
+   "lng": 16.36759
+  },
+  {
+   "nome": "Würstelstand Leo",
+   "tipo_lugar": "comer",
+   "tipo": "barraca de salsicha",
+   "pedir": "Käsekrainer, bratwurst e Leberkäse",
+   "endereco": "Döblinger Gürtel 2, 1090 Wien, Wien",
+   "bairro": "Alsergrund (9º distrito)",
+   "lat": 48.23192,
+   "lng": 16.35433
+  },
+  {
+   "nome": "Boro Bäckerei",
+   "tipo_lugar": "comer",
+   "tipo": "padaria balcânica",
+   "pedir": "Burek de queijo feito na hora",
+   "endereco": "Wallensteinstraße 9, 1200 Wien, Wien",
+   "bairro": "Brigittenau (20º distrito)",
+   "lat": 48.22833,
+   "lng": 16.36728
+  },
+  {
+   "nome": "Kaiser's – Kaiser'schmarrn",
+   "tipo_lugar": "comer",
+   "tipo": "quiosque de Kaiserschmarrn",
+   "pedir": "Kaiserschmarrn com cobertura; um pouco caro",
+   "endereco": "Favoritenstraße 83, 1100 Wien, Wien",
+   "bairro": "Favoriten (10º distrito)",
+   "lat": 48.18034,
+   "lng": 16.37591
+  },
+  {
+   "nome": "Rado's Gastwirtschaft",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante austríaco tradicional (Gasthaus)",
+   "pedir": "Schnitzel, gulasch e costela de porco; porções enormes. Reservar",
+   "endereco": "Alserbachstraße 1, 1090 Wien, Wien",
+   "bairro": "Alsergrund (9º distrito)",
+   "lat": 48.2253,
+   "lng": 16.35534
+  },
+  {
+   "ja": "Plachutta Wollzeile (Tafelspitz)",
+   "pedir": "Tafelspitz com caldo e acompanhamentos. Reservar"
+  },
+  {
+   "ja": "Café Central (fechado em obras) / pop-up DECENTRAL",
+   "pedir": "Melange e torta (Apfelstrudel ou Sachertorte)"
+  },
+  {
+   "ja": "Zum Schwarzen Kameel",
+   "pedir": "Sanduichinhos abertos e uma taça de vinho; mini schnitzel no balcão"
+  },
+  {
+   "nome": "Cucina Itameshi",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante de fusão japonesa-italiana",
+   "pedir": "Fusão japonesa e italiana: udon cacio e pepe. Reservar",
+   "endereco": "Praterstraße 70, 1020 Wien, Wien",
+   "bairro": "Leopoldstadt (2º distrito)",
+   "lat": 48.21692,
+   "lng": 16.3892
+  },
+  {
+   "nome": "Mraz & Sohn",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante de alta gastronomia",
+   "pedir": "Menu degustação surpresa; alta gastronomia. Reservar",
+   "endereco": "Wallensteinstraße 59, 1200 Wien, Wien",
+   "bairro": "Brigittenau (20º distrito)",
+   "lat": 48.23136,
+   "lng": 16.37606
+  }
+ ],
+ "pratos_tipicos": [
+  {
+   "prato": "Wiener Schnitzel",
+   "o_que_e": "Bife bem fino empanado e frito (vitela no original, porco ou frango nas versões), com limão e salada de batata"
+  },
+  {
+   "prato": "Tafelspitz",
+   "o_que_e": "Carne de boi cozida no caldo com legumes, servida com molhos de raiz-forte e maçã"
+  },
+  {
+   "prato": "Gulasch",
+   "o_que_e": "Ensopado de carne com páprica e cebola, herança húngara"
+  },
+  {
+   "prato": "Schweinsbraten mit Semmelknödel",
+   "o_que_e": "Porco assado com molho, bolinhos de pão e repolho azedo"
+  },
+  {
+   "prato": "Kaiserschmarrn",
+   "o_que_e": "Panqueca fofa rasgada em pedaços, com açúcar de confeiteiro e compota de fruta"
+  },
+  {
+   "prato": "Apfelstrudel",
+   "o_que_e": "Massa finíssima enrolada com maçã, passas e canela"
+  },
+  {
+   "prato": "Sachertorte",
+   "o_que_e": "Bolo denso de chocolate com camada de geleia de damasco e cobertura de chocolate"
+  },
+  {
+   "prato": "Punschkrapfen",
+   "o_que_e": "Bolinho cúbico embebido em rum com cobertura rosa de açúcar"
+  },
+  {
+   "prato": "Leberkäse",
+   "o_que_e": "Bolo de carne de porco assado, fatiado e servido no pão com mostarda"
+  },
+  {
+   "prato": "Käsekrainer",
+   "o_que_e": "Salsicha grelhada recheada com queijo, clássica das barracas de rua"
+  }
+ ]
+}

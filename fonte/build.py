@@ -109,20 +109,26 @@ def lugares():
                       porque=l.get("por_que") or "", instagram=l.get("instagram") or "")
             out["madri"].append(it)
     # AS LISTAS QUE O LUCAS MANDOU (Innsbruck, Madri): depois de tudo, para o 'ja' achar qualquer lugar
-    for cid in ("innsbruck", "madri"):
-        il = PESQ / f"{cid}-lista.json"
-        if not il.exists(): continue
-        for l in json.load(open(il, encoding="utf-8"))["lugares"]:
-            if "ja" in l:
-                x = next(x for x in out[cid] if l["ja"] in x["nome"])
-                x["origem"] = "sua lista"
-                x.update({k: l[k] for k in ("pedir", "dica") if k in l})
-                if l.get("foto_ref"): x["foto"] = foto_post(l["foto_ref"])
-                continue
-            it = item(cid, l["tipo_lugar"], l, "sua lista")
-            if l.get("matcha"): it["matcha"] = True
-            if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
-            out[cid].append(it)
+    for cid, _nome in CIDADES:
+        # <cidade>-lista.json = lista que o Lucas mandou (a de Viena tem formato próprio, lida acima);
+        # <cidade>-comida.json = lugares de comer tirados de vídeos de comida do YouTube
+        for arq in (f"{cid}-lista.json", f"{cid}-comida.json"):
+            il = PESQ / arq
+            if not il.exists() or arq == "viena-lista.json": continue
+            for l in json.load(open(il, encoding="utf-8"))["lugares"]:
+                if "ja" in l:
+                    x = next((x for x in out[cid] if l["ja"] in x["nome"]), None)
+                    if not x:
+                        print(f"  aviso {arq}: 'ja' sem lugar no guia: {l['ja']}"); continue
+                    x["origem"] = "sua lista"
+                    x.update({k: l[k] for k in ("pedir", "dica") if k in l})
+                    if l.get("foto_ref"): x["foto"] = foto_post(l["foto_ref"])
+                    continue
+                if any(sem_acento(x["nome"]) == sem_acento(l["nome"]) for x in out[cid]): continue
+                it = item(cid, l["tipo_lugar"], l, "sua lista")
+                if l.get("matcha"): it["matcha"] = True
+                if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
+                out[cid].append(it)
     # MAIS ATRAÇÕES (fonte/atracoes.py): pontos óbvios que faltavam + pouco conhecidos, já com fotos livres
     ae = PESQ / "atracoes-extra.json"
     if ae.exists():

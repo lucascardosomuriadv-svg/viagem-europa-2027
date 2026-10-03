@@ -141,7 +141,7 @@ function painel(aba){
     // print de lugar que está no guia abre a ficha dele; os outros abrem a imagem. Post longo mostra 4 e guarda o resto.
     const print = (f, texto) => { const dentro = `<img src="${f.arq}" alt="${esc(f.nome)}" loading="lazy">${texto?`<b>${esc(f.nome)}</b><small>${esc(f.nota)}</small>`:""}`;
       return f.id ? `<button type="button" class="print" data-ficha="${f.id}">${dentro}</button>` : `<a class="print" href="${f.arq}" target="_blank" rel="noopener">${dentro}</a>`; };
-    el.innerHTML = refs.map(r => { const cab = `<b>${esc(r.titulo)}</b><small>${esc(r.autor)} no ${esc(r.rede)} · <a href="${r.url}" target="_blank" rel="noopener">ver o post</a></small>`;
+    el.innerHTML = refs.map(r => { const cab = `<b>${esc(r.titulo)}</b><small>${esc(r.autor)} no ${esc(r.rede)} · <a href="${r.url}" target="_blank" rel="noopener">${r.rede==="YouTube"?"ver o vídeo":"ver o post"}</a></small>`;
       if (!r.fotos.length) return `<div class="ref"><div class="ref-cab" style="padding-bottom:2px">${cab}</div>${r.obs?`<p class="ref-obs" style="margin-top:6px">${esc(r.obs)}</p>`:""}</div>`;
       if (r.fotos.length === 1) { const f = r.fotos[0];
         return `<div class="ref um">${print(f, false)}<div class="ref-cab">${cab}<p><b class="lugar">${esc(f.nome)}</b>${f.nota?" · "+esc(f.nota):""}</p>${r.obs?`<p>${esc(r.obs)}</p>`:""}</div></div>`; }

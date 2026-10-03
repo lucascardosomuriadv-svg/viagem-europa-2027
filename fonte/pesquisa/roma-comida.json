@@ -1,0 +1,259 @@
+{
+ "_fonte": "Lugares de comer citados em vídeos de comida do YouTube (03/10/2026). Só fatos, com palavras próprias. Coordenadas do OpenStreetMap.",
+ "lugares": [
+  {
+   "nome": "Bar San Calisto",
+   "tipo_lugar": "comer",
+   "tipo": "bar e café de bairro",
+   "pedir": "Maritozzo com chantilly e cappuccino; bar de bairro, barato",
+   "endereco": "Piazza di San Calisto 3, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88905,
+   "lng": 12.47074
+  },
+  {
+   "ja": "Fatamorgana (unidade Monti; também em Trastevere)",
+   "pedir": "Sabores autorais: manjericão com nozes e mel, morango, pistache"
+  },
+  {
+   "nome": "Osteria La Gensola",
+   "tipo_lugar": "comer",
+   "tipo": "osteria de frutos do mar",
+   "pedir": "Frutos do mar, ravioli de robalo e coda alla vaccinara",
+   "endereco": "Piazza della Gensola 15, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88939,
+   "lng": 12.47638
+  },
+  {
+   "nome": "Trattoria Da Enzo al 29",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Carciofo alla giudia e massas romanas. Não aceita reserva; a fila é longa",
+   "endereco": "Via dei Vascellari 29, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88809,
+   "lng": 12.47781
+  },
+  {
+   "ja": "Nuovo Mercato di Testaccio",
+   "pedir": "Panino de bollito no Mordi & Vai (box 15), pizza al taglio na CasaManco (box 22) e supplì"
+  },
+  {
+   "ja": "CasaManco",
+   "pedir": "2 ou 3 fatias de sabores diferentes da pizza alla pala; peça para cortar e dividir"
+  },
+  {
+   "ja": "Trapizzino Trastevere (Piazza Trilussa)",
+   "pedir": "Trapizzino de pollo alla cacciatora ou de coda alla vaccinara; supplì"
+  },
+  {
+   "nome": "Fiaschetteria Marini",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Carbonara e trippa alla romana",
+   "endereco": "Via Raffaele Cadorna 9, Roma",
+   "bairro": "Sallustiano (perto da Piazza della Repubblica)",
+   "lat": 41.90858,
+   "lng": 12.49816
+  },
+  {
+   "nome": "Baccano",
+   "tipo_lugar": "comer",
+   "tipo": "brasserie italiana",
+   "pedir": "Carbonara e tiramisù montado na mesa",
+   "endereco": "Via delle Muratte 23, Roma",
+   "bairro": "Trevi",
+   "lat": 41.90037,
+   "lng": 12.48236
+  },
+  {
+   "nome": "La Gattabuia",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Amatriciana, cacio e pepe e tiramisù de pistache; salão numa antiga prisão",
+   "endereco": "Via del Porto 1, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88642,
+   "lng": 12.47707
+  },
+  {
+   "nome": "La Tavernaccia da Bruno",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana e úmbria",
+   "pedir": "Leitão do forno a lenha; lasanha só aos domingos",
+   "endereco": "Via Giovanni da Castel Bolognese 63, Roma",
+   "bairro": "Trastevere (lado de Porta Portese)",
+   "lat": 41.8741,
+   "lng": 12.46863
+  },
+  {
+   "nome": "Osteria Fratelli Mori",
+   "tipo_lugar": "comer",
+   "tipo": "osteria romana contemporânea",
+   "pedir": "Rigatoni de rabada e carbonara",
+   "endereco": "Via dei Conciatori 10, Roma",
+   "bairro": "Ostiense",
+   "lat": 41.87446,
+   "lng": 12.48005
+  },
+  {
+   "nome": "Grappolo d'Oro",
+   "tipo_lugar": "comer",
+   "tipo": "osteria romana",
+   "pedir": "Menu degustação romano de €36 (a mesa inteira pede junto)",
+   "endereco": "Piazza della Cancelleria 80, Roma",
+   "bairro": "Campo de' Fiori",
+   "lat": 41.89629,
+   "lng": 12.47223
+  },
+  {
+   "nome": "Trattoria Da Teo",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Coda alla vaccinara e polpette al limone",
+   "endereco": "Piazza dei Ponziani 7A, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.8885,
+   "lng": 12.47767
+  },
+  {
+   "nome": "Norcineria Viola",
+   "tipo_lugar": "comer",
+   "tipo": "salumeria (embutidos)",
+   "pedir": "Sanduíche de porchetta",
+   "endereco": "Piazza Campo de' Fiori 43, Roma",
+   "bairro": "Campo de' Fiori",
+   "lat": 41.89558,
+   "lng": 12.47255
+  },
+  {
+   "ja": "Antico Forno Roscioli",
+   "pedir": "Pizza bianca, pizza rossa e crostata de ricota com ginja"
+  },
+  {
+   "nome": "La Taverna del Ghetto",
+   "tipo_lugar": "comer",
+   "tipo": "cozinha judaico-romana kosher",
+   "pedir": "Baccalà frito, supplì e abobrinha; cozinha judaico-romana",
+   "endereco": "Via del Portico d'Ottavia 8, Roma",
+   "bairro": "Gueto Judaico",
+   "lat": 41.89294,
+   "lng": 12.47769
+  },
+  {
+   "nome": "Spirito DiVino",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante romano",
+   "pedir": "Amatriciana; a adega é da Roma antiga",
+   "endereco": "Via dei Genovesi 31, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88783,
+   "lng": 12.47678
+  },
+  {
+   "ja": "All'Antico Vinaio – Piazza della Maddalena (Pantheon)",
+   "pedir": "La Paradiso (mortadela, stracciatella e pistache) ou La Favolosa"
+  },
+  {
+   "nome": "Hostaria da Pietro",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante romano (forte em carnes)",
+   "pedir": "Entrecôte na brasa e alcachofra alla romana",
+   "endereco": "Via di Gesù e Maria 18, Roma",
+   "bairro": "Piazza del Popolo / Via del Corso",
+   "lat": 41.90842,
+   "lng": 12.47832
+  },
+  {
+   "nome": "Alfredo alla Scrofa",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante histórico",
+   "pedir": "Fettuccine Alfredo (€25); caro",
+   "endereco": "Via della Scrofa 104/a, Roma",
+   "bairro": "Centro histórico (perto da Piazza Navona)",
+   "lat": 41.90227,
+   "lng": 12.47481
+  },
+  {
+   "nome": "Mr. 100 Tiramisù",
+   "tipo_lugar": "comer",
+   "tipo": "tiramisù e enoteca",
+   "pedir": "Tiramisù em vários sabores",
+   "endereco": "Via dei Sediari 11/12, Roma",
+   "bairro": "Entre Pantheon e Piazza Navona",
+   "lat": 41.89785,
+   "lng": 12.47462
+  },
+  {
+   "ja": "Pizzarium Bonci",
+   "pedir": "Fatias variadas de pizza em teglia e supplì de carbonara"
+  },
+  {
+   "ja": "Fiordiluna Gelato & Cioccolato",
+   "pedir": "Avelã e os sabores de chocolate"
+  },
+  {
+   "nome": "Tonnarello",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Tonnarello all'amatriciana, servido na panelinha; barato",
+   "endereco": "Via della Paglia 1, Roma",
+   "bairro": "Trastevere",
+   "lat": 41.88894,
+   "lng": 12.46791
+  },
+  {
+   "nome": "Armando al Pantheon",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria romana",
+   "pedir": "Massas romanas e tiramisù. Sem reserva, chegar 40 min antes de abrir",
+   "endereco": "Salita de' Crescenzi 31, Roma",
+   "bairro": "Pantheon",
+   "lat": 41.89906,
+   "lng": 12.4762
+  }
+ ],
+ "pratos_tipicos": [
+  {
+   "prato": "Carbonara",
+   "o_que_e": "Massa com ovo, pecorino, pimenta-do-reino e guanciale; sem creme de leite"
+  },
+  {
+   "prato": "Cacio e pepe",
+   "o_que_e": "Massa só com pecorino, pimenta-do-reino e água do cozimento"
+  },
+  {
+   "prato": "Amatriciana",
+   "o_que_e": "Massa com molho de tomate, guanciale e pecorino"
+  },
+  {
+   "prato": "Gricia",
+   "o_que_e": "Massa com guanciale, pecorino e pimenta-do-reino, sem tomate nem ovo"
+  },
+  {
+   "prato": "Supplì",
+   "o_que_e": "Bolinho frito de arroz com mussarela derretida no meio"
+  },
+  {
+   "prato": "Carciofo alla giudia",
+   "o_que_e": "Alcachofra inteira frita duas vezes, receita judaico-romana"
+  },
+  {
+   "prato": "Coda alla vaccinara",
+   "o_que_e": "Rabada cozida lentamente em molho de tomate"
+  },
+  {
+   "prato": "Trippa alla romana",
+   "o_que_e": "Dobradinha com tomate, hortelã e pecorino"
+  },
+  {
+   "prato": "Maritozzo",
+   "o_que_e": "Pãozinho doce recheado de chantilly, comido no café da manhã"
+  },
+  {
+   "prato": "Pizza al taglio",
+   "o_que_e": "Pizza de assadeira cortada no tamanho pedido e vendida por peso"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "_fonte": "Lugares de comer citados em vídeos de comida do YouTube (03/10/2026). Só fatos, com palavras próprias. Coordenadas do OpenStreetMap.",
+ "lugares": [
+  {
+   "nome": "Osteria Alla Torre",
+   "tipo_lugar": "comer",
+   "tipo": "osteria na praça",
+   "pedir": "Risotto all'Amarone (pedir cedo, leva uns 50 min), frios e tiramisù",
+   "endereco": "Piazza Erbe 10, 37121 Verona, Verona",
+   "bairro": "Città Antica (Piazza delle Erbe)",
+   "lat": 45.44283,
+   "lng": 10.99766
+  },
+  {
+   "nome": "Ostregheteria Sottoriva 23",
+   "tipo_lugar": "comer",
+   "tipo": "osteria veronesa",
+   "pedir": "Risotto al tastasal e gnocchi. Abre fora do horário de almoço",
+   "endereco": "Via Sottoriva 23, 37121 Verona, Verona",
+   "bairro": "Città Antica (Via Sottoriva, perto do rio)",
+   "lat": 45.4451,
+   "lng": 11.00046
+  },
+  {
+   "nome": "Ristorante Greppia",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante veronês tradicional",
+   "pedir": "O tris da casa: bigoli, ravioli e gnocchi",
+   "endereco": "Vicolo Samaritana 3, 37121 Verona, Verona",
+   "bairro": "Città Antica (perto da Via Mazzini)",
+   "lat": 45.44172,
+   "lng": 10.99763
+  },
+  {
+   "nome": "La Prosciutteria",
+   "tipo_lugar": "comer",
+   "tipo": "sanduíches e tábuas de frios",
+   "pedir": "Schiacciata de mortadela com burrata e pistache; é grande, dá para dividir",
+   "endereco": "Piazza delle Erbe 38, 37121 Verona, Verona",
+   "bairro": "Città Antica (Piazza delle Erbe)",
+   "lat": 45.44324,
+   "lng": 10.99671
+  },
+  {
+   "nome": "Miscusi",
+   "tipo_lugar": "comer",
+   "tipo": "massas frescas (rede)",
+   "pedir": "Massa fresca boa e barata; tiramisù a €6",
+   "endereco": "Corso Porta Nuova, Verona, Verona",
+   "bairro": "Corso Porta Nuova (ao lado do centro histórico)",
+   "lat": 45.43746,
+   "lng": 10.99131
+  },
+  {
+   "nome": "Amorino",
+   "tipo_lugar": "comer",
+   "tipo": "gelateria (rede)",
+   "pedir": "Gelato montado em forma de flor",
+   "endereco": "Corso Sant'Anastasia, Verona, Verona",
+   "bairro": "Città Antica (perto da Piazza delle Erbe)",
+   "lat": 45.4437,
+   "lng": 10.99685
+  },
+  {
+   "ja": "Trattoria Al Pompiere",
+   "pedir": "Tábua de frios cortados na hora e queijos; risotto all'Amarone e bigoli"
+  },
+  {
+   "ja": "Antica Trattoria al Bersagliere",
+   "pedir": "Bigoli com pato, pastissada de caval com polenta e risotto all'Amarone"
+  },
+  {
+   "nome": "Locanda 4 Cuochi",
+   "tipo_lugar": "comer",
+   "tipo": "italiana contemporânea",
+   "pedir": "Cozinha italiana contemporânea; risoto de açafrão com camarão",
+   "endereco": "Via Alberto Mario 12, 37121 Verona, Verona",
+   "bairro": "Città Antica (atrás da Arena)",
+   "lat": 45.44018,
+   "lng": 10.99379
+  },
+  {
+   "nome": "Trattoria I Masenini",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria de carnes na grelha",
+   "pedir": "Carnes na grelha",
+   "endereco": "Via Roma 34, 37121 Verona, Verona",
+   "bairro": "Em frente ao Castelvecchio",
+   "lat": 45.43926,
+   "lng": 10.98881
+  },
+  {
+   "nome": "L'Oste Scuro",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante de peixe e frutos do mar",
+   "pedir": "Peixe e frutos do mar",
+   "endereco": "Vicolo San Silvestro 10, 37122 Verona, Verona",
+   "bairro": "Centro (entre Castelvecchio e Piazza Bra)",
+   "lat": 45.43833,
+   "lng": 10.98768
+  }
+ ],
+ "pratos_tipicos": [
+  {
+   "prato": "Risotto all'Amarone",
+   "o_que_e": "Risoto cozido no vinho Amarone, de cor roxa, finalizado com parmesão"
+  },
+  {
+   "prato": "Risotto al tastasal",
+   "o_que_e": "Risoto com carne de porco moída e temperada, a mesma massa do salame"
+  },
+  {
+   "prato": "Gnocchi di patate",
+   "o_que_e": "Nhoque de batata ligado ao carnaval veronês (Venerdì Gnocolar), servido com molho de tomate"
+  },
+  {
+   "prato": "Bigoli",
+   "o_que_e": "Espaguete grosso do Vêneto, clássico com ragù de pato"
+  },
+  {
+   "prato": "Pastissada de caval",
+   "o_que_e": "Ensopado de carne de cavalo cozido por horas no vinho"
+  },
+  {
+   "prato": "Polenta",
+   "o_que_e": "Acompanhamento de milho presente nos antepastos da região"
+  },
+  {
+   "prato": "Crema fritta",
+   "o_que_e": "Creme de confeiteiro frito e passado no açúcar, doce de rua do Natal"
+  },
+  {
+   "prato": "Affettati misti",
+   "o_que_e": "Tábua de frios variados, pedida de entrada nas osterias"
+  },
+  {
+   "prato": "Tiramisù",
+   "o_que_e": "Sobremesa do Vêneto com creme de mascarpone, biscoito, café e cacau"
+  },
+  {
+   "prato": "Amarone della Valpolicella",
+   "o_que_e": "Tinto encorpado da região, feito de uvas passificadas"
+  }
+ ]
+}

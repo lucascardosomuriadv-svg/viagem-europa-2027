@@ -1,0 +1,80 @@
+{
+ "_fonte": "Lugares de comer citados em vídeos de comida do YouTube (03/10/2026). Só fatos, com palavras próprias. Coordenadas do OpenStreetMap.",
+ "lugares": [
+  {
+   "ja": "Stiftskeller",
+   "pedir": "Käsespätzle, Tiroler Gröstl e schnitzel; Apfelstrudel de sobremesa. Casa cheia e barulhenta"
+  },
+  {
+   "nome": "Tribaun",
+   "tipo_lugar": "comer",
+   "tipo": "bar de cerveja artesanal com pizza",
+   "pedir": "Cervejas artesanais da torneira e pizza",
+   "endereco": "Museumstraße 5, 6020 Innsbruck, Innsbruck",
+   "bairro": "Centro",
+   "lat": 47.2674,
+   "lng": 11.39587
+  },
+  {
+   "nome": "Koi Street Bar (Markthalle)",
+   "tipo_lugar": "comer",
+   "tipo": "banca de comida asiática de rua",
+   "pedir": "Frango frito coreano; banca dentro do Markthalle",
+   "endereco": "Herzog-Siegmund-Ufer 1-3, 6020 Innsbruck, Innsbruck",
+   "bairro": "Marktplatz, em frente à Markthalle",
+   "lat": 47.26719,
+   "lng": 11.3896
+  },
+  {
+   "ja": "Markthalle (mercado municipal)"
+  },
+  {
+   "ja": "Ruetz",
+   "pedir": "Croissant de chocolate, pães e doces tiroleses. Tem várias lojas pela cidade"
+  },
+  {
+   "nome": "Bäckerei Moschen",
+   "tipo_lugar": "comer",
+   "tipo": "padaria (rede local)",
+   "pedir": "Rolinho de canela",
+   "endereco": "Bozner Platz 2, Innsbruck",
+   "bairro": "",
+   "lat": 47.2652,
+   "lng": 11.39777
+  },
+  {
+   "ja": "Himal",
+   "pedir": "Butter chicken e momos"
+  }
+ ],
+ "pratos_tipicos": [
+  {
+   "prato": "Tiroler Gröstl",
+   "o_que_e": "Batata salteada com carne e cebola, servida com ovo frito por cima"
+  },
+  {
+   "prato": "Käsespätzle",
+   "o_que_e": "Massinha de ovo gratinada com queijo de montanha forte e cebola frita"
+  },
+  {
+   "prato": "Wiener Schnitzel",
+   "o_que_e": "Escalope de vitela empanado, com geleia de frutas vermelhas e batata com salsinha"
+  },
+  {
+   "prato": "Rindsgulasch com Knödel",
+   "o_que_e": "Ensopado de boi em molho escuro, acompanhado de bolinho de pão"
+  },
+  {
+   "prato": "Apfelstrudel",
+   "o_que_e": "Massa fina recheada de maçã, servida com creme de baunilha ou chantilly"
+  },
+  {
+   "prato": "Kartoffelsuppe mit Würstel",
+   "o_que_e": "Sopa de batata com salsicha, comum nos restaurantes de montanha"
+  },
+  {
+   "prato": "Leberwurst",
+   "o_que_e": "Patê de fígado para passar no pão, aparece no café da manhã austríaco"
+  }
+ ]
+}
