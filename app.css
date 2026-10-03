@@ -347,3 +347,31 @@ tr.recomendado td{background:var(--ok-bg)}
 .perna{display:flex;align-items:center;gap:15px;margin:0;padding:7px 0 7px 8px;font-size:.8rem;color:var(--ink3);border-bottom:1px solid var(--soft)}
 .perna svg{width:15px;height:15px;flex-shrink:0}
 .filtro[hidden]{display:none}
+/* Tela larga (celular deitado, computador, TV espelhada): menu em trilho na lateral, listas em colunas, mapa com a lista ao lado.
+   O "html" na frente é só para estas regras ganharem das que cada página define para o celular em pé. */
+@media (min-width:700px){
+  html{--trilho:calc(78px + env(safe-area-inset-left))}
+  html body{background:var(--bg);padding-left:var(--trilho)}
+  html .app{max-width:1100px;box-shadow:none;padding-bottom:22px}
+  html .app:has(#v-mapa:not([hidden])){max-width:none;padding-bottom:0}
+  html .tabbar{left:0;top:0;bottom:0;transform:none;width:var(--trilho);max-width:none;height:auto;flex-direction:column;justify-content:center;align-items:stretch;gap:4px;padding:0 0 0 env(safe-area-inset-left);border-top:0;border-right:1px solid var(--line)}
+  html .tabbar a{flex:0 0 auto;padding:9px 0}
+  /* listas em duas colunas, fotos em mais colunas */
+  html .agenda{display:grid;grid-template-columns:1fr 1fr;gap:0 12px;align-items:start}
+  html .agenda .mes{grid-column:1/-1}
+  html .lista:not(.caminho){display:grid;grid-template-columns:1fr 1fr}
+  html .lista:not(.caminho) > :nth-child(2){border-top:0}
+  html .grade-f{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+  html .prints{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+  html .stories .palco{max-width:none}
+  /* a ficha do lugar abre ao lado, sem escurecer o resto */
+  html .ficha{left:auto;right:0;top:0;bottom:0;width:440px;max-width:60vw;max-height:none;border-radius:24px 0 0 24px;transform:translateX(100%);padding-top:18px}
+  html .ficha.on{transform:none}
+  html .ficha-fundo{background:transparent}
+  /* mapa: ocupa a altura toda, com a lista ao lado */
+  html #v-mapa:not([hidden]){display:grid;grid-template-columns:minmax(0,1fr) 370px;height:100dvh}
+  html #v-mapa .mapa{height:100%;min-height:0}
+  html #v-mapa .folha{margin-top:0;border-radius:0;box-shadow:none;border-left:1px solid var(--line);overflow-y:auto;min-height:0;padding-top:16px}
+  html #v-mapa .alca{display:none}
+  html .mapa .leaflet-bottom.leaflet-right{margin-bottom:0}
+}
