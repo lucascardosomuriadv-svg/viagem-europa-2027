@@ -82,16 +82,24 @@ def lugares():
     # A LISTA DE INNSBRUCK DO LUCAS: "ja" marca o que a pesquisa ja tinha; o
     # resto entra com coordenada do OpenStreetMap. Cafes que vieram de um post
     # usam o print do post como foto (credito de quem postou).
+    # credito do print: o arquivo comeca com o apelido de quem postou
+    AUTOR = {"jing": "@jingeybells", "sara": "@sarasspace", "aven": "@aventuretravels1", "steven": "@stevenchristabel.day",
+             "aleya": "@aleyaadventures", "mia": "@mia.lina57", "gabor": "@gaborrgg", "lucy": "@lucyybitt"}
+    def foto_post(arq):
+        pre = arq.split("/")[-1].split("-")[0]
+        return {"url": arq, "autor": AUTOR.get(pre, "@gigisworldtour") + " (TikTok)", "licenca": "print do post"}
     il = PESQ / "innsbruck-lista.json"
     if il.exists():
         for l in json.load(open(il, encoding="utf-8"))["lugares"]:
             if "ja" in l:
                 x = next(x for x in out["innsbruck"] if l["ja"] in x["nome"])
                 x["origem"] = "sua lista"
+                x.update({k: l[k] for k in ("pedir", "dica") if k in l})
+                if l.get("foto_ref"): x["foto"] = foto_post(l["foto_ref"])
                 continue
             it = item("innsbruck", l["tipo_lugar"], l, "sua lista")
             if l.get("matcha"): it["matcha"] = True
-            if l.get("foto_ref"): it["foto"] = {"url": l["foto_ref"], "autor": "@gigisworldtour (TikTok)", "licenca": "print do post"}
+            if l.get("foto_ref"): it["foto"] = foto_post(l["foto_ref"])
             out["innsbruck"].append(it)
     # MAIS RESTAURANTES EM MADRI (pesquisa de 30/09/2026), cada um com o seu
     # "slot" — o momento do roteiro em que ele cabe

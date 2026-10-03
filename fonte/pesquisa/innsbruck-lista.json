@@ -8,9 +8,6 @@
    "ja": "Hofkirche"
   },
   {
-   "ja": "Stiftskeller"
-  },
-  {
    "nome": "Catedral de São Tiago (Dom St. Jakob)",
    "tipo_lugar": "ver",
    "tipo": "catedral barroca",
@@ -61,11 +58,11 @@
    "tipo_lugar": "comer",
    "tipo": "café · matcha",
    "matcha": true,
-   "foto_ref": "refs/innsbruck/karaffu.jpg",
+   "foto_ref": "refs/innsbruck/jing-karaffu.jpg",
    "lat": 47.26142,
    "lng": 11.39533,
    "endereco": "Leopoldstraße 9, Innsbruck",
-   "pedir": "Matcha e cheesecake de pistache; vista do Arco do Triunfo"
+   "pedir": "Cheesecake de pistache (10/10); o matcha divide opiniões"
   },
   {
    "nome": "Midori Teehaus",
@@ -76,7 +73,7 @@
    "lat": 47.26431,
    "lng": 11.39078,
    "endereco": "Bürgerstraße 15, Innsbruck",
-   "pedir": "Matcha com morango",
+   "pedir": "Matcha e açaí bowl",
    "fecha_em": "Todo dia, 10h às 18h"
   },
   {
@@ -86,7 +83,8 @@
    "lat": 47.26851,
    "lng": 11.39407,
    "endereco": "Hofgasse 6, Innsbruck",
-   "pedir": "Apfelstrudel"
+   "pedir": "Apfelstrudel",
+   "foto_ref": "refs/innsbruck/sara-strudel.jpg"
   },
   {
    "nome": "Ruetz",
@@ -96,7 +94,8 @@
    "lng": 11.39368,
    "endereco": "Maria-Theresien-Straße 18, Innsbruck",
    "pedir": "Pães e doces tiroleses; tem várias lojas pela cidade",
-   "fecha_em": "Fecha aos domingos (esta loja)"
+   "fecha_em": "Fecha aos domingos (esta loja)",
+   "foto_ref": "refs/innsbruck/jing-ruetz.jpg"
   },
   {
    "nome": "Marktbar am Inn",
@@ -138,7 +137,7 @@
    "lat": 47.26463,
    "lng": 11.39209,
    "endereco": "Anichstraße 13, Innsbruck",
-   "pedir": "Café e doces da casa",
+   "pedir": "Brunch com pão de fermentação natural",
    "fecha_em": "Fecha às segundas"
   },
   {
@@ -148,7 +147,242 @@
    "lat": 47.26803,
    "lng": 11.3944,
    "endereco": "Riesengasse, Innsbruck",
-   "dica": "Ao lado do Telhado de Ouro; lojinhas locais"
+   "dica": "Ao lado do Telhado de Ouro; lojinhas locais",
+   "foto_ref": "refs/innsbruck/jing-riesengasse.jpg"
+  },
+  {
+   "ja": "Stiftskeller",
+   "pedir": "Käsespätzle, Tiroler Gröstl e schnitzel",
+   "foto_ref": "refs/innsbruck/sara-kasespatzle.jpg"
+  },
+  {
+   "ja": "Weisses Rössl",
+   "pedir": "Tiroler Gröstl e Kaiserschmarrn",
+   "foto_ref": "refs/innsbruck/lucy-weisses-rossl.jpg"
+  },
+  {
+   "ja": "Bergisel",
+   "dica": "No alto, o restaurante Bergisel Sky tem vista da cidade e a Bergiseltorte"
+  },
+  {
+   "nome": "Eisgrotte",
+   "tipo_lugar": "comer",
+   "tipo": "sorveteria",
+   "foto_ref": "refs/innsbruck/lucy-eisgrotte.jpg",
+   "lat": 47.26772,
+   "lng": 11.39485,
+   "endereco": "Burggraben 23, Innsbruck",
+   "pedir": "Gelato; a bola vem com dois sabores"
+  },
+  {
+   "nome": "Steneck",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante austríaco",
+   "foto_ref": "refs/innsbruck/lucy-steneck.jpg",
+   "lat": 47.26005,
+   "lng": 11.39621,
+   "endereco": "Leopoldstraße 21, Innsbruck",
+   "pedir": "Schnitzel clássico; não tem cardápio",
+   "fecha_em": "Domingo fechado; sábado só à noite"
+  },
+  {
+   "nome": "Akropolis",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante grego",
+   "foto_ref": "refs/innsbruck/lucy-akropolis.jpg",
+   "lat": 47.26667,
+   "lng": 11.39102,
+   "endereco": "Innrain 13, Innsbruck",
+   "pedir": "Moussaká",
+   "fecha_em": "Fecha às terças"
+  },
+  {
+   "nome": "Rooftop One (bar)",
+   "tipo_lugar": "comer",
+   "tipo": "bar no 13º andar",
+   "foto_ref": "refs/innsbruck/lucy-rooftop-one.jpg",
+   "lat": 47.2629,
+   "lng": 11.4005,
+   "endereco": "Südbahnstraße 1, Innsbruck",
+   "pedir": "Drinks no pôr do sol, vista dos Alpes",
+   "fecha_em": "Até 1h"
+  },
+  {
+   "ja": "Gasthaus Goldenes Dachl",
+   "pedir": "Wiener Schnitzel e Kaiserschmarrn",
+   "foto_ref": "refs/innsbruck/steven-schnitzel.jpg"
+  },
+  {
+   "ja": "Die Wilderin",
+   "foto_ref": "refs/innsbruck/aven-wilderin.jpg"
+  },
+  {
+   "nome": "Alpenzoo",
+   "tipo_lugar": "ver",
+   "tipo": "zoológico dos Alpes",
+   "foto_ref": "refs/innsbruck/gabor-alpenzoo.jpg",
+   "lat": 47.28174,
+   "lng": 11.39765,
+   "endereco": "Weiherburggasse 37, Innsbruck",
+   "dica": "Bichos dos Alpes no frio; fica no morro, ônibus W do Marktplatz"
+  },
+  {
+   "nome": "Aqua Dome (bate-volta)",
+   "tipo_lugar": "ver",
+   "tipo": "spa termal no vale do Ötztal",
+   "foto_ref": "refs/innsbruck/aleya-aqua-dome.jpg",
+   "lat": 47.0717,
+   "lng": 10.9686,
+   "endereco": "Oberlängenfeld 140, Längenfeld",
+   "dica": "Piscinas quentes ao ar livre com neve em volta; ~1h de Innsbruck"
+  },
+  {
+   "nome": "Café Sacher Innsbruck",
+   "tipo_lugar": "comer",
+   "tipo": "café vienense",
+   "foto_ref": "refs/innsbruck/sara-sacher.jpg",
+   "lat": 47.26905,
+   "lng": 11.3956,
+   "endereco": "Rennweg 1, Innsbruck",
+   "pedir": "Sachertorte"
+  },
+  {
+   "nome": "Altstadtbeisl",
+   "tipo_lugar": "comer",
+   "tipo": "restaurante tirolês",
+   "foto_ref": "refs/innsbruck/sara-knodel.jpg",
+   "lat": 47.26848,
+   "lng": 11.39346,
+   "endereco": "Herzog-Friedrich-Straße 2, Innsbruck",
+   "pedir": "Tiroler Speckknödel"
+  },
+  {
+   "nome": "The Breakfast Club",
+   "tipo_lugar": "comer",
+   "tipo": "café da manhã e brunch",
+   "foto_ref": "refs/innsbruck/aven-breakfast-club.jpg",
+   "lat": 47.26389,
+   "lng": 11.39556,
+   "endereco": "Maria-Theresien-Straße 49a, Innsbruck",
+   "pedir": "Waffle, omelete; nota 9/10",
+   "fecha_em": "Todo dia, 7h30 às 16h"
+  },
+  {
+   "nome": "Summit & Friends",
+   "tipo_lugar": "comer",
+   "tipo": "brunch",
+   "foto_ref": "refs/innsbruck/aven-summit.jpg",
+   "lat": 47.26396,
+   "lng": 11.39543,
+   "endereco": "Maria-Theresien-Straße 49a, Innsbruck",
+   "pedir": "Ovos benedict",
+   "fecha_em": "Fecha domingo e segunda, os dois dias de vocês lá"
+  },
+  {
+   "nome": "Die Pizzerei",
+   "tipo_lugar": "comer",
+   "tipo": "pizzaria",
+   "foto_ref": "refs/innsbruck/aven-pizzerei.jpg",
+   "lat": 47.26459,
+   "lng": 11.39785,
+   "endereco": "Bozner Platz 6, Innsbruck",
+   "pedir": "Massas e pizza"
+  },
+  {
+   "nome": "Café Central",
+   "tipo_lugar": "comer",
+   "tipo": "café vienense",
+   "foto_ref": "refs/innsbruck/aven-cafe-central.jpg",
+   "lat": 47.26594,
+   "lng": 11.39609,
+   "endereco": "Gilmstraße 5, Innsbruck",
+   "pedir": "Café e torrada gratinada",
+   "fecha_em": "Fecha aos domingos"
+  },
+  {
+   "nome": "Ludwig (hambúrguer)",
+   "tipo_lugar": "comer",
+   "tipo": "hamburgueria",
+   "lat": 47.2674,
+   "lng": 11.39551,
+   "endereco": "Museumstraße 3, Innsbruck",
+   "pedir": "Hambúrguer",
+   "fecha_em": "Domingo só à noite"
+  },
+  {
+   "nome": "Due Sicilie",
+   "tipo_lugar": "comer",
+   "tipo": "trattoria italiana",
+   "foto_ref": "refs/innsbruck/mia-due-sicilie.jpg",
+   "lat": 47.26908,
+   "lng": 11.3893,
+   "endereco": "Höttinger Gasse 15, Innsbruck",
+   "pedir": "Pizza; nota 10/10"
+  },
+  {
+   "nome": "Yummy Noodles",
+   "tipo_lugar": "comer",
+   "tipo": "asiático, sushi",
+   "foto_ref": "refs/innsbruck/mia-yummy-noodles.jpg",
+   "lat": 47.26674,
+   "lng": 11.39154,
+   "endereco": "Innrain 11a, Innsbruck",
+   "pedir": "Sushi bom e barato; nota 9,5/10",
+   "fecha_em": "Fecha aos domingos"
+  },
+  {
+   "nome": "Nami",
+   "tipo_lugar": "comer",
+   "tipo": "asiático fusion",
+   "foto_ref": "refs/innsbruck/mia-nami.jpg",
+   "lat": 47.26467,
+   "lng": 11.39138,
+   "endereco": "Anichstraße 18, Innsbruck",
+   "pedir": "Sushi; nota 9,5/10, um pouco caro",
+   "fecha_em": "Fecha às segundas"
+  },
+  {
+   "nome": "Thai-Li-Ba",
+   "tipo_lugar": "comer",
+   "tipo": "tailandês",
+   "foto_ref": "refs/innsbruck/mia-thai-li-ba.jpg",
+   "lat": 47.2648,
+   "lng": 11.394,
+   "endereco": "Adolf-Pichler-Platz 3 (Rathausgalerie), Innsbruck",
+   "pedir": "Pad thai; nota 9,5/10, chega rápido"
+  },
+  {
+   "nome": "Himal",
+   "tipo_lugar": "comer",
+   "tipo": "nepalês",
+   "foto_ref": "refs/innsbruck/mia-himal.jpg",
+   "lat": 47.26899,
+   "lng": 11.3979,
+   "endereco": "Universitätsstraße 13, Innsbruck",
+   "pedir": "Butter chicken; nota 9/10",
+   "fecha_em": "Domingo só à noite"
+  },
+  {
+   "nome": "Haepinest",
+   "tipo_lugar": "comer",
+   "tipo": "café e brunch",
+   "foto_ref": "refs/innsbruck/mia-haepinest.jpg",
+   "lat": 47.27116,
+   "lng": 11.39207,
+   "endereco": "Innstraße 2a, Innsbruck",
+   "pedir": "Brunch; nota 8,5/10",
+   "fecha_em": "Fecha às segundas"
+  },
+  {
+   "nome": "Konditorei Valier",
+   "tipo_lugar": "comer",
+   "tipo": "confeitaria",
+   "foto_ref": "refs/innsbruck/mia-konditorei-valier.jpg",
+   "lat": 47.26219,
+   "lng": 11.39046,
+   "endereco": "Maximilianstraße 27, Innsbruck",
+   "pedir": "Bolos e tortas; nota 9/10",
+   "fecha_em": "Fecha aos domingos"
   }
  ]
 }

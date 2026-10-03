@@ -2,6 +2,323 @@
  "innsbruck": [
   {
    "rede": "TikTok",
+   "autor": "@mia.lina57",
+   "titulo": "Ranking de comida",
+   "url": "https://www.tiktok.com/@mia.lina57/photo/7663524370987371798",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/mia-yummy-noodles.jpg",
+     "nome": "Yummy Noodles",
+     "nota": "9,5/10 · sushi bom e barato"
+    },
+    {
+     "arq": "refs/innsbruck/mia-due-sicilie.jpg",
+     "nome": "Due Sicilie",
+     "nota": "10/10 · trattoria italiana"
+    },
+    {
+     "arq": "refs/innsbruck/mia-thai-li-ba.jpg",
+     "nome": "Thai-Li-Ba",
+     "nota": "9,5/10 · asiático, rápido"
+    },
+    {
+     "arq": "refs/innsbruck/mia-midori-teehaus.jpg",
+     "nome": "Midori Teehaus",
+     "nota": "8/10 · matcha e açaí"
+    },
+    {
+     "arq": "refs/innsbruck/mia-hard-rock-cafe.jpg",
+     "nome": "Hard Rock Cafe",
+     "nota": "7/10 · caro, entradas boas"
+    },
+    {
+     "arq": "refs/innsbruck/mia-karaffu.jpg",
+     "nome": "Karaffu",
+     "nota": "3/10 · não gostou do matcha"
+    },
+    {
+     "arq": "refs/innsbruck/mia-nami.jpg",
+     "nome": "Nami",
+     "nota": "9,5/10 · sushi, um pouco caro"
+    },
+    {
+     "arq": "refs/innsbruck/mia-breakfast-club.jpg",
+     "nome": "Breakfast Club",
+     "nota": "9/10 · brunch, terraço"
+    },
+    {
+     "arq": "refs/innsbruck/mia-haepinest.jpg",
+     "nome": "Haepinest",
+     "nota": "8,5/10 · brunch, café pequeno"
+    },
+    {
+     "arq": "refs/innsbruck/mia-himal.jpg",
+     "nome": "Himal",
+     "nota": "9/10 · nepalês, butter chicken"
+    },
+    {
+     "arq": "refs/innsbruck/mia-whisper-inn.jpg",
+     "nome": "Whisper Inn",
+     "nota": "7/10 · brunch, um pouco caro"
+    },
+    {
+     "arq": "refs/innsbruck/mia-aydin-backerei.jpg",
+     "nome": "Aydin Bäckerei",
+     "nota": "7/10 · café da manhã turco"
+    },
+    {
+     "arq": "refs/innsbruck/mia-konditorei-valier.jpg",
+     "nome": "Konditorei Valier",
+     "nota": "9/10 · bolos e doces"
+    },
+    {
+     "arq": "refs/innsbruck/mia-kula-lab.jpg",
+     "nome": "Kula Lab",
+     "nota": "8,5/10 · brunch, pão de fermentação natural"
+    }
+   ]
+  },
+  {
+   "rede": "TikTok",
+   "autor": "@aleyaadventures",
+   "titulo": "18 coisas para fazer",
+   "url": "https://www.tiktok.com/@aleyaadventures/photo/7608270549575355670",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/aleya-aqua-dome.jpg",
+     "nome": "Aqua Dome",
+     "nota": "dia de spa (fora da cidade)"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-karaffu.jpg",
+     "nome": "Karaffu",
+     "nota": "cheesecake de pistache 10/10"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-stiftskeller.jpg",
+     "nome": "Stiftskeller",
+     "nota": "comida austríaca"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-stadtturm.jpg",
+     "nome": "Stadtturm",
+     "nota": "a torre do relógio"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-swarovski.jpg",
+     "nome": "Swarovski Kristallwelten",
+     "nota": "museu"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-hofburg.jpg",
+     "nome": "Hofburg",
+     "nota": "palácio imperial"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-bergisel.jpg",
+     "nome": "Bergisel",
+     "nota": "trampolim de esqui"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-alpenzoo.jpg",
+     "nome": "Alpenzoo",
+     "nota": "zoológico dos Alpes"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-arte-de-rua.jpg",
+     "nome": "Cidade Velha",
+     "nota": "pintores de rua"
+    },
+    {
+     "arq": "refs/innsbruck/aleya-strudel.jpg",
+     "nome": "Café de strudel",
+     "nota": "\"obrigatório na Áustria\""
+    }
+   ],
+   "obs": "Também: 3 teleféricos até o topo (Nordkette), Arco do Triunfo, ruas coloridas, esqui em Oberperfuss, pôr do sol do alto, lojinhas, Telhado de Ouro e casas coloridas."
+  },
+  {
+   "rede": "TikTok",
+   "autor": "@lucyybitt",
+   "titulo": "Onde comer e beber",
+   "url": "https://www.tiktok.com/@lucyybitt/photo/7558779132822179080",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/lucy-stiftskeller.jpg",
+     "nome": "Stiftskeller",
+     "nota": "schnitzel, spätzle e salada"
+    },
+    {
+     "arq": "refs/innsbruck/lucy-eisgrotte.jpg",
+     "nome": "Eisgrotte",
+     "nota": "gelato"
+    },
+    {
+     "arq": "refs/innsbruck/lucy-weisses-rossl.jpg",
+     "nome": "Weisses Rössl",
+     "nota": "Tiroler Gröstl"
+    },
+    {
+     "arq": "refs/innsbruck/lucy-weisses-rossl-2.jpg",
+     "nome": "Weisses Rössl",
+     "nota": "Kaiserschmarrn, \"a estrela\""
+    },
+    {
+     "arq": "refs/innsbruck/lucy-steneck.jpg",
+     "nome": "Steneck",
+     "nota": "schnitzel clássico, sem cardápio"
+    },
+    {
+     "arq": "refs/innsbruck/lucy-bergisel.jpg",
+     "nome": "Bergisel",
+     "nota": "café com vista da cidade"
+    },
+    {
+     "arq": "refs/innsbruck/lucy-akropolis.jpg",
+     "nome": "Akropolis",
+     "nota": "grego; \"um dos melhores jantares\""
+    },
+    {
+     "arq": "refs/innsbruck/lucy-rooftop-one.jpg",
+     "nome": "Rooftop One",
+     "nota": "drinks no pôr do sol"
+    }
+   ],
+   "obs": "E Milka de qualquer mercado."
+  },
+  {
+   "rede": "TikTok",
+   "autor": "@jingeybells",
+   "titulo": "12 coisas em Innsbruck",
+   "url": "https://www.tiktok.com/@jingeybells/video/7622298763167747349",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/jing-rio-inn.jpg",
+     "nome": "Rio Inn",
+     "nota": "passear na beira, casas coloridas"
+    },
+    {
+     "arq": "refs/innsbruck/jing-catedral.jpg",
+     "nome": "Catedral de São Tiago",
+     "nota": "o teto pintado"
+    },
+    {
+     "arq": "refs/innsbruck/jing-telhado.jpg",
+     "nome": "Telhado de Ouro",
+     "nota": "Cidade Velha"
+    },
+    {
+     "arq": "refs/innsbruck/jing-stiftskeller.jpg",
+     "nome": "Stiftskeller",
+     "nota": "comida austríaca"
+    },
+    {
+     "arq": "refs/innsbruck/jing-riesengasse.jpg",
+     "nome": "Riesengasse",
+     "nota": "lojinhas de lembrancinhas"
+    },
+    {
+     "arq": "refs/innsbruck/jing-ruetz.jpg",
+     "nome": "Ruetz",
+     "nota": "padaria; ela foi duas vezes no dia"
+    },
+    {
+     "arq": "refs/innsbruck/jing-karaffu.jpg",
+     "nome": "Karaffu",
+     "nota": "matcha e cheesecake de pistache"
+    }
+   ],
+   "obs": "Também: teleférico da Nordkette (mais barato das 8h às 9h30) e o hostel Montagu."
+  },
+  {
+   "rede": "TikTok",
+   "autor": "@gaborrgg",
+   "titulo": "Innsbruck no inverno",
+   "url": "https://www.tiktok.com/@gaborrgg/photo/7588982905133649174",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/gabor-casas.jpg",
+     "nome": "Casas coloridas",
+     "nota": "fim de tarde, rio Inn"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-stadtturm.jpg",
+     "nome": "Stadtturm",
+     "nota": "Cidade Velha"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-annasaule.jpg",
+     "nome": "Coluna de Santa Ana",
+     "nota": "Maria-Theresien-Strasse"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-arco.jpg",
+     "nome": "Arco do Triunfo",
+     "nota": "com as montanhas atrás"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-alpenzoo.jpg",
+     "nome": "Alpenzoo",
+     "nota": "cabritos-monteses"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-bergisel.jpg",
+     "nome": "Bergisel",
+     "nota": "vista do alto do trampolim"
+    },
+    {
+     "arq": "refs/innsbruck/gabor-catedral.jpg",
+     "nome": "Catedral de São Tiago",
+     "nota": "Domplatz"
+    }
+   ]
+  },
+  {
+   "rede": "TikTok",
+   "autor": "@aventuretravels1",
+   "titulo": "Onde comer",
+   "url": "https://www.tiktok.com/@aventuretravels1/video/7532866131372018974",
+   "fotos": [
+    {
+     "arq": "refs/innsbruck/aven-summit.jpg",
+     "nome": "Summit & Friends",
+     "nota": "brunch"
+    },
+    {
+     "arq": "refs/innsbruck/aven-wilderin.jpg",
+     "nome": "Die Wilderin",
+     "nota": "cozinha tirolesa moderna"
+    },
+    {
+     "arq": "refs/innsbruck/aven-breakfast-club.jpg",
+     "nome": "The Breakfast Club",
+     "nota": "waffle e café da manhã"
+    },
+    {
+     "arq": "refs/innsbruck/aven-pizzerei.jpg",
+     "nome": "Die Pizzerei",
+     "nota": "massa e pizza"
+    },
+    {
+     "arq": "refs/innsbruck/aven-cafe-central.jpg",
+     "nome": "Café Central",
+     "nota": "café vienense"
+    },
+    {
+     "arq": "refs/innsbruck/aven-backerei-inn.jpg",
+     "nome": "Bäckerei INN",
+     "nota": "doces de padaria"
+    },
+    {
+     "arq": "refs/innsbruck/aven-kroll.jpg",
+     "nome": "Café Kröll",
+     "nota": "strudel"
+    }
+   ],
+   "obs": "Também citado, sem foto: Ludwig (hambúrguer)."
+  },
+  {
+   "rede": "TikTok",
    "autor": "@gigisworldtour",
    "titulo": "Cafés com vista",
    "url": "https://www.tiktok.com/@gigisworldtour/photo/7667891453917531422",
@@ -41,106 +358,57 @@
   },
   {
    "rede": "TikTok",
-   "autor": "@jingeybells",
-   "titulo": "12 coisas em Innsbruck",
-   "url": "https://www.tiktok.com/@jingeybells/video/7622298763167747349",
-   "fotos": [
-    {
-     "arq": "refs/innsbruck/capa-jingeybells.jpg",
-     "nome": "Arco do Triunfo",
-     "nota": "capa do vídeo"
-    }
-   ],
-   "obs": "Da legenda: passear pelo rio Inn (casas coloridas), Catedral de São Tiago, Cidade Velha, spätzle e Tiroler Gröstl no Stiftskeller, lojinhas da Riesengasse, doces do Ruetz, matcha e cheesecake de pistache no Karaffu."
-  },
-  {
-   "rede": "TikTok",
    "autor": "@sarasspace",
    "titulo": "6 comidas típicas",
    "url": "https://www.tiktok.com/@sarasspace/video/7253727708163607835",
    "fotos": [
     {
-     "arq": "refs/innsbruck/capa-sarasspace.jpg",
+     "arq": "refs/innsbruck/sara-kasespatzle.jpg",
+     "nome": "Stiftskeller",
+     "nota": "1. Käsespätzle"
+    },
+    {
+     "arq": "refs/innsbruck/sara-strudel.jpg",
      "nome": "Café Kröll",
-     "nota": "apfelstrudel"
+     "nota": "2. Apfelstrudel"
+    },
+    {
+     "arq": "refs/innsbruck/sara-grostl.jpg",
+     "nome": "Stiftskeller",
+     "nota": "3. Tiroler Gröstl"
+    },
+    {
+     "arq": "refs/innsbruck/sara-sacher.jpg",
+     "nome": "Café Sacher Innsbruck",
+     "nota": "4. Sachertorte"
+    },
+    {
+     "arq": "refs/innsbruck/sara-knodel.jpg",
+     "nome": "Altstadtbeisl",
+     "nota": "5. Speckknödel"
+    },
+    {
+     "arq": "refs/innsbruck/sara-bergiseltorte.jpg",
+     "nome": "Bergisel Sky",
+     "nota": "6. Bergiseltorte"
     }
    ]
   },
   {
    "rede": "TikTok",
    "autor": "@stevenchristabel.day",
-   "titulo": "Schnitzel no Goldenes Dachl",
+   "titulo": "Jantar no Goldenes Dachl",
    "url": "https://www.tiktok.com/@stevenchristabel.day/video/7289660657220357381",
    "fotos": [
     {
-     "arq": "refs/innsbruck/capa-stevenchristabel-day.jpg",
+     "arq": "refs/innsbruck/steven-schnitzel.jpg",
      "nome": "Gasthaus Goldenes Dachl",
      "nota": "Wiener Schnitzel de porco e de frango"
-    }
-   ]
-  },
-  {
-   "rede": "TikTok",
-   "autor": "@aleyaadventures",
-   "titulo": "18 coisas para fazer",
-   "url": "https://www.tiktok.com/@aleyaadventures/photo/7608270549575355670",
-   "fotos": [
+    },
     {
-     "arq": "refs/innsbruck/capa-aleyaadventures.jpg",
-     "nome": "Casas coloridas do rio Inn",
-     "nota": "capa; a lista está no post"
-    }
-   ]
-  },
-  {
-   "rede": "TikTok",
-   "autor": "@gaborrgg",
-   "titulo": "Innsbruck no inverno",
-   "url": "https://www.tiktok.com/@gaborrgg/photo/7588982905133649174",
-   "fotos": [
-    {
-     "arq": "refs/innsbruck/capa-gaborrgg.jpg",
-     "nome": "Casas coloridas do rio Inn",
-     "nota": "capa do post"
-    }
-   ]
-  },
-  {
-   "rede": "TikTok",
-   "autor": "@aventuretravels1",
-   "titulo": "Onde comer",
-   "url": "https://www.tiktok.com/@aventuretravels1/video/7532866131372018974",
-   "fotos": [
-    {
-     "arq": "refs/innsbruck/capa-aventuretravels1.jpg",
-     "nome": "Coluna de Santa Ana",
-     "nota": "capa; os lugares estão no vídeo"
-    }
-   ]
-  },
-  {
-   "rede": "TikTok",
-   "autor": "@lucyybitt",
-   "titulo": "Onde comer e beber",
-   "url": "https://www.tiktok.com/@lucyybitt/photo/7558779132822179080",
-   "fotos": [
-    {
-     "arq": "refs/innsbruck/capa-lucyybitt.jpg",
-     "nome": "Maria-Theresien-Strasse",
-     "nota": "capa; as notas estão no post"
-    }
-   ]
-  },
-  {
-   "rede": "TikTok",
-   "autor": "@mia.lina57",
-   "titulo": "Ranking de comida",
-   "url": "https://www.tiktok.com/@mia.lina57/photo/7663524370987371798",
-   "fotos": [
-    {
-     "arq": "refs/innsbruck/capa-mia-lina57.jpg",
-     "nome": "Ranking de lugares",
-     "nota": "capa; o ranking está no post"
+     "arq": "refs/innsbruck/steven-kaiserschmarrn.jpg",
+     "nome": "Gasthaus Goldenes Dachl",
+     "nota": "Kaiserschmarrn, \"1000/1000\""
     }
    ]
   }
