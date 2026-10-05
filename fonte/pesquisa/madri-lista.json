@@ -351,6 +351,69 @@
   },
   {
    "ja": "Bar La Ideal"
+  },
+  {
+   "ja": "Casa Toni",
+   "pedir": "Oreja, zarajos e secreto ibérico; também bravas e berinjela frita"
+  },
+  {
+   "ja": "Los Caracoles"
+  },
+  {
+   "ja": "Casa Revuelta"
+  },
+  {
+   "nome": "El Riojano",
+   "tipo_lugar": "comer",
+   "tipo": "pastelaria",
+   "lat": 40.4165,
+   "lng": -3.70593,
+   "endereco": "Calle Mayor 10, Madrid",
+   "pedir": "Torrija; pastelaria de 1855, com salão de chá nos fundos",
+   "fecha_em": ""
+  },
+  {
+   "nome": "Docamar",
+   "tipo_lugar": "comer",
+   "tipo": "bar de tapas",
+   "lat": 40.43359,
+   "lng": -3.64815,
+   "endereco": "Calle de Alcalá 337, Madrid",
+   "pedir": "Patatas bravas com o molho da casa e fideuá",
+   "dica": "Fora do centro: metrô Quintana (linha 5)",
+   "fecha_em": ""
+  },
+  {
+   "nome": "Juana la Loca",
+   "tipo_lugar": "comer",
+   "tipo": "bar de pinchos",
+   "lat": 40.41131,
+   "lng": -3.71106,
+   "endereco": "Plaza de Puerta de Moros 4, Madrid",
+   "pedir": "Pincho de tortilla com cebola caramelizada",
+   "dica": "Esta é a de La Latina; há outra na Calle de Recoletos 10",
+   "fecha_em": "segunda"
+  },
+  {
+   "nome": "Malacatín",
+   "tipo_lugar": "comer",
+   "tipo": "taberna",
+   "lat": 40.41032,
+   "lng": -3.70764,
+   "endereco": "Calle de la Ruda 5, Madrid",
+   "pedir": "Cocido madrileño completo, no almoço. Reservar",
+   "fecha_em": "domingo a terça fecha às 17h30"
+  },
+  {
+   "nome": "La Oreja de Jaime",
+   "tipo_lugar": "comer",
+   "tipo": "bar de tapas",
+   "lat": 40.41561,
+   "lng": -3.70161,
+   "endereco": "Calle de la Cruz 15, Madrid",
+   "pedir": "Oreja a la plancha",
+   "dica": "A poucos passos da Casa Toni",
+   "fecha_em": ""
   }
  ]
 }
