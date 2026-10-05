@@ -111,8 +111,9 @@ def lugares():
     # AS LISTAS QUE O LUCAS MANDOU (Innsbruck, Madri): depois de tudo, para o 'ja' achar qualquer lugar
     for cid, _nome in CIDADES:
         # <cidade>-lista.json = lista que o Lucas mandou (a de Viena tem formato próprio, lida acima);
-        # <cidade>-comida.json = lugares de comer tirados de vídeos de comida do YouTube
-        for arq in (f"{cid}-lista.json", f"{cid}-comida.json"):
+        # <cidade>-comida.json = lugares de comer tirados de vídeos de comida do YouTube;
+        # <cidade>-anotacoes.json = nomes soltos que ele mandou depois
+        for arq in (f"{cid}-lista.json", f"{cid}-comida.json", f"{cid}-anotacoes.json"):
             il = PESQ / arq
             if not il.exists() or arq == "viena-lista.json": continue
             for l in json.load(open(il, encoding="utf-8"))["lugares"]:

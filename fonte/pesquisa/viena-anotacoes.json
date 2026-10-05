@@ -1,0 +1,10 @@
+{
+ "_fonte": "Anotações soltas que o Lucas mandou depois da lista principal (05/10/2026). Mesmo formato das listas: 'ja' marca o que o guia já tinha. Coordenadas e horários do OpenStreetMap.",
+ "lugares": [
+  {"ja": "Naschmarkt"},
+  {"nome": "Opern Schnitzel", "tipo_lugar": "comer", "tipo": "lanchonete de schnitzel", "lat": 48.19943, "lng": 16.36648, "endereco": "Operngasse 20A, 1040 Wien",
+   "pedir": "Schnitzel", "dica": "Perto do Naschmarkt e da Karlsplatz", "fecha_em": ""},
+  {"nome": "Schank zum Reichsapfel", "tipo_lugar": "comer", "tipo": "taberna de vinho (Heuriger)", "lat": 48.21611, "lng": 16.37953, "endereco": "Karmeliterplatz 3, 1020 Wien",
+   "pedir": "Vinho austríaco e cozinha vienense de taberna", "fecha_em": "domingo e segunda; abre só às 16h"}
+ ]
+}
